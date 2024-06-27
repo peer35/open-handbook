@@ -3,10 +3,12 @@
     "listing": "/topics.html",
     "items": [
       "/topics/bazis.html",
+      "/topics/compute.html",
       "/topics/data-management-plan.html",
       "/topics/data-publication.html",
       "/topics/fair-principles.html",
-      "/topics/research-data-management.html"
+      "/topics/research-data-management.html",
+      "/topics/scistor.html"
     ]
   },
   {
