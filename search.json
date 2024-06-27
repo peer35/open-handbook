@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "pathways.html",
-    "href": "pathways.html",
-    "title": "Pathways",
+    "objectID": "topics.html",
+    "href": "topics.html",
+    "title": "Topics",
     "section": "",
-    "text": "Data lifecycle\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nBAZIS HPC\n\n\n \n\n\n\n\nConnect\n\n\n \n\n\n\n\nConnect to VU Yoda with icommands\n\n\n \n\n\n\n\nData Management Plan\n\n\n \n\n\n\n\nData Publication\n\n\n \n\n\n\n\nFAIR Principles\n\n\n \n\n\n\n\nMatlab example\n\n\n \n\n\n\n\nPractical Research Data Management\n\n\n \n\n\n\n\nPyTorch\n\n\n \n\n\n\n\nPython virtual environments\n\n\n \n\n\n\n\nR environment\n\n\n \n\n\n\n\nResearch Data Management\n\n\n \n\n\n\n\nSlurm examplejobs\n\n\n \n\n\n\n\nSlurm examplejobs\n\n\n \n\n\n\n\nSlurm examplejobs\n\n\n \n\n\n\n\nUsing Slurm\n\n\n \n\n\n\n\nWorkspace\n\n\n \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "topics/fair-principles.html",
@@ -12,146 +12,6 @@
     "title": "FAIR Principles",
     "section": "",
     "text": "FAIR Principles\nThe purpose of good data documentation is to facilitate knowledge exchange. The FAIR principles (Wilkinson et al. 2016) are the guidelines for every form of research output, and in making data available to others.\nEvery research group should apply these principles when structuring and preserving their data or other research outputs. Making data FAIR involves many aspects of data collection, organization, availability and storage. FAIR does not mean open or public, it means that there is documentation about how access to the data can be achieved.\n\n\n\n\n\nReferences\n\nWilkinson, Mark D, Michel Dumontier, Ijsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Sci. Data 3 (1): 160018."
-  },
-  {
-    "objectID": "topics/research-data-management.html",
-    "href": "topics/research-data-management.html",
-    "title": "Research Data Management",
-    "section": "",
-    "text": "Research Data Management\nResearch data management (RDM) concerns the organisation, documentation, storage, archiving and sharing of digital and analogue data. Data management applies throughout the entire research data life cycle, which is visualised in the circle above. RDM aims to ensure reliable verification of results, and permits new and innovative research built on existing information. RDM is also part of the research process and is intended to make the research process as efficient as possible. This LibGuide provides guidance on research data management planning, data storage and protection, data archiving, and other resources. The Data Management Plan provides information on how these activities will be carried out during the research project.\nGood data management will heighten the quality of your own research (data) as well as your institution’s scientific output, and it contributes significantly to your field as a whole.\nGood data management:\n\nPromotes the integrity of your research,\nIncreases the impact of your research,\nImproves the quality of your data,\nSupports future use of your research data, and\nComplies with internal and external regulations."
-  },
-  {
-    "objectID": "topics.html",
-    "href": "topics.html",
-    "title": "Topics",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nData Management Plan\n\n\n \n\n\n\n\nData Publication\n\n\n \n\n\n\n\nFAIR Principles\n\n\n \n\n\n\n\nResearch Data Management\n\n\n \n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/2024-05-23welcome.html",
-    "href": "blog/2024-05-23welcome.html",
-    "title": "Hello world!",
-    "section": "",
-    "text": "This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Hello world!\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "The Open Handbook is a project started by Research Data Support in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.\nThe Open Handbook centralizes resources that VU researchers need to do their work. The Open Handbook also provides everyone with direct pathways to change resources in case anything has become outdated.\nPreviously such resources were spread out across many different pages at VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.\n\n\nThe Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
-  },
-  {
-    "objectID": "about.html#contributors",
-    "href": "about.html#contributors",
-    "title": "About",
-    "section": "",
-    "text": "The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html",
-    "href": "pathways/data-lifecycle.html",
-    "title": "Data lifecycle",
-    "section": "",
-    "text": "The data lifecycle helps you find, document, and preserve data."
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#overview",
-    "href": "pathways/data-lifecycle.html#overview",
-    "title": "Data lifecycle",
-    "section": "Overview",
-    "text": "Overview"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#discover-initiate",
-    "href": "pathways/data-lifecycle.html#discover-initiate",
-    "title": "Data lifecycle",
-    "section": "Discover & Initiate",
-    "text": "Discover & Initiate\nThere are two pages in this section:\nFinding Existing Data: how to find and reuse data that already exist\nData Citation: how to cite data that you use in your research\n\nFinding Existing Data\n\nRe-using Existing Data\nAnything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called Open Data.\nDatasets may contain different kinds of data files, e.g. raw or edited/cleaned data, and macro or micro data. Raw data refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. Edited or cleaned data refers to data that have been tidied up for analysis and publication. Macro data and statistics are results based on micro data units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.\nWhen re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a report on the legal status of raw data including information on the types of consent required for the re-use of data. Your Privacy Champion can answer questions about the use of personal data. IXA can provide legal help with the re-use of data.\nSee also the ZonMw explanation of different kinds of property rights in the Netherlands (text available in Dutch only).\n\n\nSources for Finding Existing Datasets\nThe number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.\n\nPopular Free and Licensed Databases: These can be found in the library e-resources list or with LibSearch Advanced.\n\nIf you need help finding & using free or licensed sources you can contact the Research Data Services Helpdesk. For students and personnel in the fields of economics, finance, or organisation science a separate LibGuide has been created to help them find and use/re-use data.\nYou can also start looking for data in these four places:\n\nThe literature. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in Data Journals.\nScientific data repositories. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands use DataverseNL to archive datasets for the mid-term. Long-term archiving is provided by the national research data archives DANS and 4TU.Research Data. In Europe, B2SHARE and Zenodo are platforms used to access research data. Data repositories can be accessed by searching by topic or country using Re3data, a data repository registry. The VU has its own research portal, PURE, where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the Dataset Registration page of this LibGuide.\nData search engines. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: DataCite, Google DataSet Search, Elsevier Dataset Search.\nData portals of (governmental) organisations. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is Eurostat, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the Finding data LibGuide.\n\n\n\nData Sources for VU Researchers\nResearchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:\n\nNederlands Tweelingenregister (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.\nGeoplaza VU - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.\nDutch monasteries - database with information about Dutch monasteries of the Middle Ages.\nSlave owners in Amsterdam 1863 - the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.\nDeaths at the Borders Database - collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North & West Africa, and whose bodies were found in or brought to Europe.\nDatasets published by VU Researchers can be found at the VU Research Portal.\n\n\n\n\nData Citation\n\nCitation Elements\nCiting data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:\n\nAuthor(s): Name of the author (creator) of the dataset\nTitle: Name of the dataset\nDate of publication\nPublisher: Archive where dataset is stored\nPersistent Identifier: Unique identifier, most common is the DOI (see section Data Publication).\n\nOptional elements that may be included in the reference are:\n\nFile Type: Codebook, movie, software\nVersion: Version number of the edition\nCreation Date\nDate of Consultation (last) Example of a data citation:\n\nStephens, William, 2020, “Resiliences to Radicalisation - QSort Data”, https://doi.org/10.34894/35MTMN, DataverseNL, V1.\nFor more information, see the following guidelines:\n\nDataverse\nDataCite\nDCC UK\nData Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#plan-design",
-    "href": "pathways/data-lifecycle.html#plan-design",
-    "title": "Data lifecycle",
-    "section": "Plan & Design",
-    "text": "Plan & Design"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#collect-store",
-    "href": "pathways/data-lifecycle.html#collect-store",
-    "title": "Data lifecycle",
-    "section": "Collect & Store",
-    "text": "Collect & Store"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#process-analyse",
-    "href": "pathways/data-lifecycle.html#process-analyse",
-    "title": "Data lifecycle",
-    "section": "Process & Analyse",
-    "text": "Process & Analyse"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#document-preserve",
-    "href": "pathways/data-lifecycle.html#document-preserve",
-    "title": "Data lifecycle",
-    "section": "Document & Preserve",
-    "text": "Document & Preserve"
-  },
-  {
-    "objectID": "pathways/data-lifecycle.html#publish-share",
-    "href": "pathways/data-lifecycle.html#publish-share",
-    "title": "Data lifecycle",
-    "section": "Publish & Share",
-    "text": "Publish & Share"
-  },
-  {
-    "objectID": "topics/data-publication.html",
-    "href": "topics/data-publication.html",
-    "title": "Data Publication",
-    "section": "",
-    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. UNESCO defines Open Science as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences).\n\n\n\nInstead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data\n\n\n\n\nA persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda.\n\n\n\nA data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license.\n\n\n\n\nAs with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
-  },
-  {
-    "objectID": "topics/data-publication.html#open-access-and-open-science",
-    "href": "topics/data-publication.html#open-access-and-open-science",
-    "title": "Data Publication",
-    "section": "",
-    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. UNESCO defines Open Science as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences)."
-  },
-  {
-    "objectID": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
-    "href": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
-    "title": "Data Publication",
-    "section": "",
-    "text": "Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data"
-  },
-  {
-    "objectID": "topics/data-publication.html#what-is-a-persistent-identifier",
-    "href": "topics/data-publication.html#what-is-a-persistent-identifier",
-    "title": "Data Publication",
-    "section": "",
-    "text": "A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda."
-  },
-  {
-    "objectID": "topics/data-publication.html#licensing-the-data",
-    "href": "topics/data-publication.html#licensing-the-data",
-    "title": "Data Publication",
-    "section": "",
-    "text": "A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license."
-  },
-  {
-    "objectID": "topics/data-publication.html#licensing-software",
-    "href": "topics/data-publication.html#licensing-software",
-    "title": "Data Publication",
-    "section": "",
-    "text": "As with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
   },
   {
     "objectID": "topics/data-management-plan.html",
@@ -210,6 +70,153 @@
     "text": "The VU DMP template consists of seven sections with questions. In DMPonline, there is guidance available for all sections, as well as example answers. When you are writing your DMP, you can consult this information directly in DMPonline. Below we provide references to information and support available for various RDM-related aspects.\n\n\nIf you have questions about working with personal data in research, please get in touch with the Privacy Champion of your faculty. The overview of Privacy Champions can be found on the VU website. Make sure to contact your Privacy Champion in the following situations:\n\nIf you need to carry out a DPIA, or if you’re unsure if you need to do one\nIf you work with special category personal data, or otherwise very sensitive data\nIf you are collaborating with other parties\nIf you need software for which no licence is set up on behalf of the VU\nIf you wish to reuse existing data containing personal data\n\nIt is impossible to provide an overview of tasks to be carried out to ensure compliance with the GDPR that fits all research projects. For that reason, it is important to contact your Privacy Champion. They will be able to identify what needs to be arranged to adhere to the GDPR.\nEthical aspects of research should be addressed in the ethics procedure of your faculty. Each faculty has their own ethics committee. The webpages of all committees are listed below. Please go to the page of the ethics committee of your faculty to find instructions for ethical review procedures for your study.\n\nACTA: ACTA Institutional Review Board (IRB)\nBeta: Research ethics review committee Faculty of Science (BETHCIE)\nFGB: Scientific and Ethical Review Board (VCWE)\nFGW: Ethische Toetsingscommissie Onderzoek (EtCO)\nFSW: Research Ethics Review Committee (RERC)\nRCH (Faculty of Law): Ethics Committee\nSBE: Research Ethics and Integrity\nVUmc: METc (Medical Ethical Review Committee)\n\n\n\n\nAn overview of storage facilities at the VU is available in the Data Storage Finder. You can use this as a starting point to navigate storage solutions.\nIf you have questions about data storage and backup, send an email to rdm@vu.nl.\n\n\n\nIf your research data contains personal data and you’re unsure about which data may be published, please contact your Privacy Champion."
   },
   {
+    "objectID": "topics/bazis/workspace.html",
+    "href": "topics/bazis/workspace.html",
+    "title": "Workspace",
+    "section": "",
+    "text": "Each slurm job will have a fast scratch dir allocated on the nodes which is deleted after finishing the job. use the $TMPDIR virable to use this space for example to store intermediate results or work on many files.\n\n\n\nUse the workspace tools on the beegfs parallel filesystem to create a project space. The project space is a directory, with an associated expiration date, created on behalf of a user, to prevent disks from uncontrolled filling. The beegeefs parallel filesystem is faster than your usual NFS home space, but not backed up, so ideal for data which is easily recreated.\nYour project space lives in the filesystem under: /scratch-shared/ws\nThe project space is managed with the hpc-workspace tooling You can add them to your environment with: module load hpc-workspace\nExample: setup a workspace “MyData” in a batchjob for 10 days.\nSCR=$(ws_allocate MyData 10)\ncd $SCR\nCheck your workspaces\n$ ws_list \nid: MyData\n     workspace directory  : /scratch-shared/ws/username-MyData\n     remaining time       : 9 days 23 hours\n     creation time        : Wed Mar 13 23:51:57 2013\n     expiration date      : Sat Mar 23 23:51:57 2013\n     available extensions : 15\nRelease the project space with\nws_release MyData\nFor user guide see https://github.com/holgerBerger/hpc-workspace/blob/master/user-guide.md"
+  },
+  {
+    "objectID": "topics/bazis/workspace.html#scratch-tmpdir",
+    "href": "topics/bazis/workspace.html#scratch-tmpdir",
+    "title": "Workspace",
+    "section": "",
+    "text": "Each slurm job will have a fast scratch dir allocated on the nodes which is deleted after finishing the job. use the $TMPDIR virable to use this space for example to store intermediate results or work on many files."
+  },
+  {
+    "objectID": "topics/bazis/workspace.html#scratch-shared-experimental",
+    "href": "topics/bazis/workspace.html#scratch-shared-experimental",
+    "title": "Workspace",
+    "section": "",
+    "text": "Use the workspace tools on the beegfs parallel filesystem to create a project space. The project space is a directory, with an associated expiration date, created on behalf of a user, to prevent disks from uncontrolled filling. The beegeefs parallel filesystem is faster than your usual NFS home space, but not backed up, so ideal for data which is easily recreated.\nYour project space lives in the filesystem under: /scratch-shared/ws\nThe project space is managed with the hpc-workspace tooling You can add them to your environment with: module load hpc-workspace\nExample: setup a workspace “MyData” in a batchjob for 10 days.\nSCR=$(ws_allocate MyData 10)\ncd $SCR\nCheck your workspaces\n$ ws_list \nid: MyData\n     workspace directory  : /scratch-shared/ws/username-MyData\n     remaining time       : 9 days 23 hours\n     creation time        : Wed Mar 13 23:51:57 2013\n     expiration date      : Sat Mar 23 23:51:57 2013\n     available extensions : 15\nRelease the project space with\nws_release MyData\nFor user guide see https://github.com/holgerBerger/hpc-workspace/blob/master/user-guide.md"
+  },
+  {
+    "objectID": "topics/bazis/simpleslurm.html",
+    "href": "topics/bazis/simpleslurm.html",
+    "title": "Slurm examplejobs",
+    "section": "",
+    "text": "#!/bin/bash -l\n#SBATCH -J MyTestJob\n#SBATCH -N 1\n#SBATCH -p defq\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\ncd $TMPDIR\n# Your more useful application can be started below!\nhostname"
+  },
+  {
+    "objectID": "topics/bazis/simpleslurm.html#simple-job",
+    "href": "topics/bazis/simpleslurm.html#simple-job",
+    "title": "Slurm examplejobs",
+    "section": "",
+    "text": "#!/bin/bash -l\n#SBATCH -J MyTestJob\n#SBATCH -N 1\n#SBATCH -p defq\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\ncd $TMPDIR\n# Your more useful application can be started below!\nhostname"
+  },
+  {
+    "objectID": "topics/bazis/R.html",
+    "href": "topics/bazis/R.html",
+    "title": "R environment",
+    "section": "",
+    "text": "R has many powerfull scientific packages and a strong community. Installing and maintaining packages for R can be hard. On BAZIS the Bioconductor suite is installed and can be loaded with the appropiate module environment.\nWhen first running R on a Cluster some changes in the workflow are required making the transition from working interactively from a terminal to scripts in batchmode."
+  },
+  {
+    "objectID": "topics/bazis/R.html#tips-and-caveats",
+    "href": "topics/bazis/R.html#tips-and-caveats",
+    "title": "R environment",
+    "section": "Tips and Caveats",
+    "text": "Tips and Caveats"
+  },
+  {
+    "objectID": "topics/bazis/montecarlo.html",
+    "href": "topics/bazis/montecarlo.html",
+    "title": "Slurm examplejobs",
+    "section": "",
+    "text": "Running multiple experiments with different parameters can make efficient use of a compute cluster by running them in parallel. Such parameter sweeps are called MOnte Carlo simulations. GNU parallel makes it easy to setup a set of workers for you.\n#!/bin/bash\n#SBATCH --ntasks=32\n#SBATCH --time=40:00:00\n\n# load modules\nmodule load shared 2022\nmodule load Python/3.9.6-GCCcore-11.2.0\n\n# install extra packages\npip install -r requirements.txt\n\n# prepare output directories\nmkdir $HOME/output_dir\n# assuming scratch-shared present created module hpc-workspace\n# for limited i/o using a folder under $HOME is sufficient.\nTMPSHARED = /scratch-shared/ws/xyz123-MyData\nmkdir \"$TMPSHARED\"/output_dir\nseq 800 | parallel mkdir \"$TMPSHARD\"/output_dir/{}\n\n# prepare input directories\nmkdir \"$TMPSHARED\"/input_dir\ncp -r $HOME/data/ \"$TMPSHARED\"/input_dir/\n\n# This specifies the options used to run srun. The \"-N1 -n1\" options are\n# used to allocates a single core to each task.\nsrun=\"srun --export=all --exclusive -N1 -n1\"\n\n# This specifies the options used to run GNU parallel:\n#\n#   -j is the number of tasks run simultaneously.\n#   --joblog uses a log to track task execution, and can be used to later resume tasks or retry failed tasks by adding --resume or --resume-failed to the below command respectively.\nparallel=\"parallel -j $SLURM_NTASKS --joblog runtask.log\"\n\n# Execute command that runs the simulation in parallel, and copies the output after each succesfull execution to the home directory. This way the outputs of the tasks that did succeeded are not lost in case the job runs out of time of fails.\n$parallel \"$srun python experiment.py --data_path $TMPSHARED/input_dir/data --output_path $TMPSHARED/output_dir --run_id {#} && cp -r $TMPSHARED/output_dir/{#} $HOME/output_dir\" ::: {1..800}\nLinks:\n\nHow to schedule massively parallel jobs on clusters\n\nMatlab\n\nHPC workspaces"
+  },
+  {
+    "objectID": "topics/bazis/montecarlo.html#monte-carlo-simulation-using-gnu-parallel",
+    "href": "topics/bazis/montecarlo.html#monte-carlo-simulation-using-gnu-parallel",
+    "title": "Slurm examplejobs",
+    "section": "",
+    "text": "Running multiple experiments with different parameters can make efficient use of a compute cluster by running them in parallel. Such parameter sweeps are called MOnte Carlo simulations. GNU parallel makes it easy to setup a set of workers for you.\n#!/bin/bash\n#SBATCH --ntasks=32\n#SBATCH --time=40:00:00\n\n# load modules\nmodule load shared 2022\nmodule load Python/3.9.6-GCCcore-11.2.0\n\n# install extra packages\npip install -r requirements.txt\n\n# prepare output directories\nmkdir $HOME/output_dir\n# assuming scratch-shared present created module hpc-workspace\n# for limited i/o using a folder under $HOME is sufficient.\nTMPSHARED = /scratch-shared/ws/xyz123-MyData\nmkdir \"$TMPSHARED\"/output_dir\nseq 800 | parallel mkdir \"$TMPSHARD\"/output_dir/{}\n\n# prepare input directories\nmkdir \"$TMPSHARED\"/input_dir\ncp -r $HOME/data/ \"$TMPSHARED\"/input_dir/\n\n# This specifies the options used to run srun. The \"-N1 -n1\" options are\n# used to allocates a single core to each task.\nsrun=\"srun --export=all --exclusive -N1 -n1\"\n\n# This specifies the options used to run GNU parallel:\n#\n#   -j is the number of tasks run simultaneously.\n#   --joblog uses a log to track task execution, and can be used to later resume tasks or retry failed tasks by adding --resume or --resume-failed to the below command respectively.\nparallel=\"parallel -j $SLURM_NTASKS --joblog runtask.log\"\n\n# Execute command that runs the simulation in parallel, and copies the output after each succesfull execution to the home directory. This way the outputs of the tasks that did succeeded are not lost in case the job runs out of time of fails.\n$parallel \"$srun python experiment.py --data_path $TMPSHARED/input_dir/data --output_path $TMPSHARED/output_dir --run_id {#} && cp -r $TMPSHARED/output_dir/{#} $HOME/output_dir\" ::: {1..800}\nLinks:\n\nHow to schedule massively parallel jobs on clusters\n\nMatlab\n\nHPC workspaces"
+  },
+  {
+    "objectID": "topics/bazis/jupyter.html",
+    "href": "topics/bazis/jupyter.html",
+    "title": "Slurm examplejobs",
+    "section": "",
+    "text": "Jupyter notebooks are widely in use and can even be used as an IDE, for teaching and sharing code and comments. When notebooks are taking a long time to process, yo umay turn to a HPC cluster and have to deal with a scheduler.\nRunning the notebook interactively on a compute node with a webservice is possible, but wastes a lot of compute resources when the notebook is not actively used or keeps running untill stopped by the scheduler.\nOne solution on recent jupyterlab versions is to save the notebook as a python script and process it like any other script.\nAlternatively if the script is an ipynb notebook and you have a python environment with jupyter installed, you can run it with nbconvert\njupyter nbconvert –to notebook –execute mynotebook.ipynb\nThis command can be wrapped in whatever job submission script you would normally use: example:\n#!/bin/bash -l\n#SBATCH -J Mynotebook\n#SBATCH -N 1\n#SBATCH -p defq\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\nmodule load jupyter\n\n# Run ipynb non-interactive and save the result as a notebook\nsrun jupyter nbconvert --to notebook --execute mynotebook.ipynb\nRunning notebooks through the web would need some port redirection but can also be done using our Open on Demand portal: https://hpc-ood.labs.vu.nl\nHere’s a way to add your ikernel to jupyter list of kernels, using a fresh environment.\n$ module load shared 2022 Python jupyter $ python -m venv myIkernel $ source myIkernel/activate $ pip install ipykernel $ jupyter kernelspec install ~/myIkernel/share/jupyter/kernels/python3 –user"
+  },
+  {
+    "objectID": "topics/bazis/jupyter.html#run-a-jupyter-notebook-as-a-script",
+    "href": "topics/bazis/jupyter.html#run-a-jupyter-notebook-as-a-script",
+    "title": "Slurm examplejobs",
+    "section": "",
+    "text": "Jupyter notebooks are widely in use and can even be used as an IDE, for teaching and sharing code and comments. When notebooks are taking a long time to process, yo umay turn to a HPC cluster and have to deal with a scheduler.\nRunning the notebook interactively on a compute node with a webservice is possible, but wastes a lot of compute resources when the notebook is not actively used or keeps running untill stopped by the scheduler.\nOne solution on recent jupyterlab versions is to save the notebook as a python script and process it like any other script.\nAlternatively if the script is an ipynb notebook and you have a python environment with jupyter installed, you can run it with nbconvert\njupyter nbconvert –to notebook –execute mynotebook.ipynb\nThis command can be wrapped in whatever job submission script you would normally use: example:\n#!/bin/bash -l\n#SBATCH -J Mynotebook\n#SBATCH -N 1\n#SBATCH -p defq\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\nmodule load jupyter\n\n# Run ipynb non-interactive and save the result as a notebook\nsrun jupyter nbconvert --to notebook --execute mynotebook.ipynb\nRunning notebooks through the web would need some port redirection but can also be done using our Open on Demand portal: https://hpc-ood.labs.vu.nl\nHere’s a way to add your ikernel to jupyter list of kernels, using a fresh environment.\n$ module load shared 2022 Python jupyter $ python -m venv myIkernel $ source myIkernel/activate $ pip install ipykernel $ jupyter kernelspec install ~/myIkernel/share/jupyter/kernels/python3 –user"
+  },
+  {
+    "objectID": "topics/bazis/connect.html",
+    "href": "topics/bazis/connect.html",
+    "title": "Connect",
+    "section": "",
+    "text": "Use your favourite SSH client to login at (bazis.labs.vu.nl?). On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone (ssh.data.vu.nl?), or use eduVPN Institutional Access (below).\n\n\n\nInstall the client. Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( kb-item 11809 )\n\n\n\nMobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you’ll be asked if you want change these files on the HPC system.\nOther SFTP browsers There are a large number of free FTP browser out there. Some examples are\n\nFilezilla (Windows, MacOS, Linux)\nCyberduck (Windows, MacOS)\nWinSCP (Windows)\n\n\n\n\nSSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.\nThe cluster uses ssh keys to manage batch jobs.\nOn your workstation create ssh key pair ssh-keygen -t ed25519 -a 100\n\n-a (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.\n-t (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.\n-f (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don’t specify!\n\nIf ed25519 is not available, use the older (but strong and trusted) RSA cryptography: ssh-keygen -a 100 -t rsa -b 4096\nWhen prompted, enter a strong password that you will remember.\nNote: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.\nIn your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.\nNow, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.\nYou can either use copy-paste or the ssh-copy-id command:\n$ ssh-copy-id user@remote-host\nThe authenticity of host 'remote-host (192.168.111.135)' can't be established.\nECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.\nAre you sure you want to continue connecting (yes/no)? yes\n/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed\n/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys\nuser@remote-host's password:\n\nNumber of key(s) added: 2\nNow try logging into the machine, with: “ssh ‘user@remote-host’” and check to make sure that only the key(s) you wanted were added.\n##Advanced: Forwarding X\n##Fix Warning: Remote Host Identification Has Changed If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:\n$ ssh -o \"UserKnownHostsFile=/dev/null\" -o \"StrictHostKeyChecking=no\" username@bazis.labs.vu.nl\nTo make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:\nssh-keygen -R \"hostname\"\n\nReferences: 1. hpc carpentry 2. Comparing SSH keys 3. public key cryptography for non geeks 4. disable ssh host key checking"
+  },
+  {
+    "objectID": "topics/bazis/connect.html#ssh",
+    "href": "topics/bazis/connect.html#ssh",
+    "title": "Connect",
+    "section": "",
+    "text": "Use your favourite SSH client to login at (bazis.labs.vu.nl?). On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone (ssh.data.vu.nl?), or use eduVPN Institutional Access (below)."
+  },
+  {
+    "objectID": "topics/bazis/connect.html#eduvpn",
+    "href": "topics/bazis/connect.html#eduvpn",
+    "title": "Connect",
+    "section": "",
+    "text": "Install the client. Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( kb-item 11809 )"
+  },
+  {
+    "objectID": "topics/bazis/connect.html#data-transfer",
+    "href": "topics/bazis/connect.html#data-transfer",
+    "title": "Connect",
+    "section": "",
+    "text": "MobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you’ll be asked if you want change these files on the HPC system.\nOther SFTP browsers There are a large number of free FTP browser out there. Some examples are\n\nFilezilla (Windows, MacOS, Linux)\nCyberduck (Windows, MacOS)\nWinSCP (Windows)"
+  },
+  {
+    "objectID": "topics/bazis/connect.html#advanced-using-ssh-keys",
+    "href": "topics/bazis/connect.html#advanced-using-ssh-keys",
+    "title": "Connect",
+    "section": "",
+    "text": "SSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.\nThe cluster uses ssh keys to manage batch jobs.\nOn your workstation create ssh key pair ssh-keygen -t ed25519 -a 100\n\n-a (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.\n-t (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.\n-f (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don’t specify!\n\nIf ed25519 is not available, use the older (but strong and trusted) RSA cryptography: ssh-keygen -a 100 -t rsa -b 4096\nWhen prompted, enter a strong password that you will remember.\nNote: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.\nIn your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.\nNow, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.\nYou can either use copy-paste or the ssh-copy-id command:\n$ ssh-copy-id user@remote-host\nThe authenticity of host 'remote-host (192.168.111.135)' can't be established.\nECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.\nAre you sure you want to continue connecting (yes/no)? yes\n/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed\n/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys\nuser@remote-host's password:\n\nNumber of key(s) added: 2\nNow try logging into the machine, with: “ssh ‘user@remote-host’” and check to make sure that only the key(s) you wanted were added.\n##Advanced: Forwarding X\n##Fix Warning: Remote Host Identification Has Changed If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:\n$ ssh -o \"UserKnownHostsFile=/dev/null\" -o \"StrictHostKeyChecking=no\" username@bazis.labs.vu.nl\nTo make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:\nssh-keygen -R \"hostname\"\n\nReferences: 1. hpc carpentry 2. Comparing SSH keys 3. public key cryptography for non geeks 4. disable ssh host key checking"
+  },
+  {
+    "objectID": "pathways.html",
+    "href": "pathways.html",
+    "title": "Pathways",
+    "section": "",
+    "text": "Data lifecycle\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Hello world!\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The Open Handbook is a project started by Research Data Support in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.\nThe Open Handbook centralizes resources that VU researchers need to do their work. The Open Handbook also provides everyone with direct pathways to change resources in case anything has become outdated.\nPreviously such resources were spread out across many different pages at VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.\n\n\nThe Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
+  },
+  {
+    "objectID": "about.html#contributors",
+    "href": "about.html#contributors",
+    "title": "About",
+    "section": "",
+    "text": "The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
+  },
+  {
+    "objectID": "blog/2024-05-23welcome.html",
+    "href": "blog/2024-05-23welcome.html",
+    "title": "Hello world!",
+    "section": "",
+    "text": "This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
+  },
+  {
     "objectID": "contributing.html",
     "href": "contributing.html",
     "title": "Contributing",
@@ -236,5 +243,257 @@
     "title": "Contributing",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIf you are really enthusiastic and want to do it yourself: The topic needs to be added to the topics list in _quarto.yml. You can find the topics list around line 24 of that file.↩︎"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html",
+    "href": "pathways/data-lifecycle.html",
+    "title": "Data lifecycle",
+    "section": "",
+    "text": "The data lifecycle helps you find, document, and preserve data."
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#overview",
+    "href": "pathways/data-lifecycle.html#overview",
+    "title": "Data lifecycle",
+    "section": "Overview",
+    "text": "Overview"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#discover-initiate",
+    "href": "pathways/data-lifecycle.html#discover-initiate",
+    "title": "Data lifecycle",
+    "section": "Discover & Initiate",
+    "text": "Discover & Initiate\nThere are two pages in this section:\nFinding Existing Data: how to find and reuse data that already exist\nData Citation: how to cite data that you use in your research\n\nFinding Existing Data\n\nRe-using Existing Data\nAnything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called Open Data.\nDatasets may contain different kinds of data files, e.g. raw or edited/cleaned data, and macro or micro data. Raw data refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. Edited or cleaned data refers to data that have been tidied up for analysis and publication. Macro data and statistics are results based on micro data units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.\nWhen re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a report on the legal status of raw data including information on the types of consent required for the re-use of data. Your Privacy Champion can answer questions about the use of personal data. IXA can provide legal help with the re-use of data.\nSee also the ZonMw explanation of different kinds of property rights in the Netherlands (text available in Dutch only).\n\n\nSources for Finding Existing Datasets\nThe number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.\n\nPopular Free and Licensed Databases: These can be found in the library e-resources list or with LibSearch Advanced.\n\nIf you need help finding & using free or licensed sources you can contact the Research Data Services Helpdesk. For students and personnel in the fields of economics, finance, or organisation science a separate LibGuide has been created to help them find and use/re-use data.\nYou can also start looking for data in these four places:\n\nThe literature. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in Data Journals.\nScientific data repositories. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands use DataverseNL to archive datasets for the mid-term. Long-term archiving is provided by the national research data archives DANS and 4TU.Research Data. In Europe, B2SHARE and Zenodo are platforms used to access research data. Data repositories can be accessed by searching by topic or country using Re3data, a data repository registry. The VU has its own research portal, PURE, where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the Dataset Registration page of this LibGuide.\nData search engines. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: DataCite, Google DataSet Search, Elsevier Dataset Search.\nData portals of (governmental) organisations. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is Eurostat, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the Finding data LibGuide.\n\n\n\nData Sources for VU Researchers\nResearchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:\n\nNederlands Tweelingenregister (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.\nGeoplaza VU - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.\nDutch monasteries - database with information about Dutch monasteries of the Middle Ages.\nSlave owners in Amsterdam 1863 - the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.\nDeaths at the Borders Database - collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North & West Africa, and whose bodies were found in or brought to Europe.\nDatasets published by VU Researchers can be found at the VU Research Portal.\n\n\n\n\nData Citation\n\nCitation Elements\nCiting data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:\n\nAuthor(s): Name of the author (creator) of the dataset\nTitle: Name of the dataset\nDate of publication\nPublisher: Archive where dataset is stored\nPersistent Identifier: Unique identifier, most common is the DOI (see section Data Publication).\n\nOptional elements that may be included in the reference are:\n\nFile Type: Codebook, movie, software\nVersion: Version number of the edition\nCreation Date\nDate of Consultation (last) Example of a data citation:\n\nStephens, William, 2020, “Resiliences to Radicalisation - QSort Data”, https://doi.org/10.34894/35MTMN, DataverseNL, V1.\nFor more information, see the following guidelines:\n\nDataverse\nDataCite\nDCC UK\nData Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#plan-design",
+    "href": "pathways/data-lifecycle.html#plan-design",
+    "title": "Data lifecycle",
+    "section": "Plan & Design",
+    "text": "Plan & Design"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#collect-store",
+    "href": "pathways/data-lifecycle.html#collect-store",
+    "title": "Data lifecycle",
+    "section": "Collect & Store",
+    "text": "Collect & Store"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#process-analyse",
+    "href": "pathways/data-lifecycle.html#process-analyse",
+    "title": "Data lifecycle",
+    "section": "Process & Analyse",
+    "text": "Process & Analyse"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#document-preserve",
+    "href": "pathways/data-lifecycle.html#document-preserve",
+    "title": "Data lifecycle",
+    "section": "Document & Preserve",
+    "text": "Document & Preserve"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#publish-share",
+    "href": "pathways/data-lifecycle.html#publish-share",
+    "title": "Data lifecycle",
+    "section": "Publish & Share",
+    "text": "Publish & Share"
+  },
+  {
+    "objectID": "topics/bazis/commands.html",
+    "href": "topics/bazis/commands.html",
+    "title": "Using Slurm",
+    "section": "",
+    "text": "See jobs in the queue for a given user\n   squeue -u username\nShow available node features\n   sinfo -o \"%20N  %10c  %10m  %25f  %10G \"\nSubmit a job\n   sbatch script\nShow the status of a currently running job\n   sstat -j jobID\nShow the final status of a finished job\n   sacct -j jobID\nCancel a job\n   scancel jobid\n\n\n\nOrganise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).\nDon’t run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun –pty bash option.\n\n\n\nThe SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.\nConstraints available on BAZIS are cpu architecture and gpu. Example (singole constraint):\n#SBATCH --constraint=zen2\nExample combining constraints:\n#SBATCH --constraint=\"zen2|haswell\"\n##Computer architecture The parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)\n###Board A physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.\n###Socket A physical socket on a motherboard which accepts a physical CPU part.\n###CPU A physical part that is plugged into a socket.\n###Core A physical CPU core, one of many possible cores, that are part of a CPU.\n###HyperThread A virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system. On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.\n###Memory Bus A communication bus between system memory and a Socket/CPU.\n###PCI Bus A communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,…) in the server.\nSlurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. –cpus-per-taks= for example is actually specifying the number of cores per task."
+  },
+  {
+    "objectID": "topics/bazis/commands.html#usefull-commands",
+    "href": "topics/bazis/commands.html#usefull-commands",
+    "title": "Using Slurm",
+    "section": "",
+    "text": "See jobs in the queue for a given user\n   squeue -u username\nShow available node features\n   sinfo -o \"%20N  %10c  %10m  %25f  %10G \"\nSubmit a job\n   sbatch script\nShow the status of a currently running job\n   sstat -j jobID\nShow the final status of a finished job\n   sacct -j jobID\nCancel a job\n   scancel jobid"
+  },
+  {
+    "objectID": "topics/bazis/commands.html#best-practices",
+    "href": "topics/bazis/commands.html#best-practices",
+    "title": "Using Slurm",
+    "section": "",
+    "text": "Organise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).\nDon’t run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun –pty bash option."
+  },
+  {
+    "objectID": "topics/bazis/commands.html#constraints",
+    "href": "topics/bazis/commands.html#constraints",
+    "title": "Using Slurm",
+    "section": "",
+    "text": "The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.\nConstraints available on BAZIS are cpu architecture and gpu. Example (singole constraint):\n#SBATCH --constraint=zen2\nExample combining constraints:\n#SBATCH --constraint=\"zen2|haswell\"\n##Computer architecture The parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)\n###Board A physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.\n###Socket A physical socket on a motherboard which accepts a physical CPU part.\n###CPU A physical part that is plugged into a socket.\n###Core A physical CPU core, one of many possible cores, that are part of a CPU.\n###HyperThread A virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system. On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.\n###Memory Bus A communication bus between system memory and a Socket/CPU.\n###PCI Bus A communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,…) in the server.\nSlurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. –cpus-per-taks= for example is actually specifying the number of cores per task."
+  },
+  {
+    "objectID": "topics/bazis/irods.html",
+    "href": "topics/bazis/irods.html",
+    "title": "Connect to VU Yoda with icommands",
+    "section": "",
+    "text": "Connect to VU Yoda with icommands\niRODS/Yoda is a middleware and webinterface to store enriched data. On BAZIS the icommands are available to allow direct access.\nTo use the icommands a configuration file in your home folder is required. https://yoda.vu.nl/site/getting-started/icommands.html#configuration\nAfter configuration use iinit to connect, use a Data Access Password, similar to a WebDAV connection.\nFind an overview of the icommands here: https://docs.irods.org/master/icommands/user/ Check the ipwd, ils, icd, iput, iget en irsync commands for navigation and data transfer.\nYour project folder is located at /vu/home\nicommands Yoda-VU"
+  },
+  {
+    "objectID": "topics/bazis/matlab.html",
+    "href": "topics/bazis/matlab.html",
+    "title": "Matlab example",
+    "section": "",
+    "text": "Matlab has several features to work in batch mode on a HPC cluster. Assuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node\n\n\nRequest resources (1 node, 1 cpu) in a partition\nsrun -N 1 -p defq --pty /bin/bash\nmodule load matlab/R2023a\ncd your/data/\nHere is an example of a trivial MATLAB script (hello_world.m):\nfprintf('Hello world.\\n')\nRun with matlab using only one computational thread.\n$ matlab -nodisplay -singleCompThread -r hello_world\nHello world.\n&gt;&gt;\nMatlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.\n-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop\n                              and certain interactive capabilities disabled. Terminates\n                              upon successful completion of the command and returns exit\n                              code 0. Upon failure, MATLAB terminates with a non-zero exit.\n                              Cannot be combined with -r.\n$ matlab -batch hello_world\n\n\n\nCombining this in a slurm script we can queue matlab workloads.\n    #!/bin/bash -l\n    #SBATCH -J MyMatlab\n    #SBATCH -N 1\n    #SBATCH --cpus-per-task=1\n    #SBATCH -p defq   \n    #SBATCH --output=%x_%j.out\n    #SBATCH --error=%x_%j.err\n    #SBATCH --mail-type=END,FAIL\n    #SBATCH --mail-user=&lt;YOUR EMAIL&gt;\n    \n    # Note: for parallel operations increase cpus-per-task above\n    # Note 2: output and error logs can be given absolute paths \n    \n    echo \"== Starting run at $(date)\"\n    echo \"== Job ID: ${SLURM_JOBID}\"\n    echo \"== Node list: ${SLURM_NODELIST}\"\n    echo \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\n    echo \"== Scratch dir. : ${TMPDIR}\"\n    \n    # cd $TMPDIR\n    # or change to a project folder with matlab file e.g. hello_World.m\n    # cd your/data\n\n    # Load matlab module\n    module load 2022 matlab/R2023a\n    \n    # execute\n    matlab -batch hello_world\n\n\n\n\n\n\n\nmathworks-parpool"
+  },
+  {
+    "objectID": "topics/bazis/matlab.html#interactive",
+    "href": "topics/bazis/matlab.html#interactive",
+    "title": "Matlab example",
+    "section": "",
+    "text": "Request resources (1 node, 1 cpu) in a partition\nsrun -N 1 -p defq --pty /bin/bash\nmodule load matlab/R2023a\ncd your/data/\nHere is an example of a trivial MATLAB script (hello_world.m):\nfprintf('Hello world.\\n')\nRun with matlab using only one computational thread.\n$ matlab -nodisplay -singleCompThread -r hello_world\nHello world.\n&gt;&gt;\nMatlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.\n-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop\n                              and certain interactive capabilities disabled. Terminates\n                              upon successful completion of the command and returns exit\n                              code 0. Upon failure, MATLAB terminates with a non-zero exit.\n                              Cannot be combined with -r.\n$ matlab -batch hello_world"
+  },
+  {
+    "objectID": "topics/bazis/matlab.html#batch-mode",
+    "href": "topics/bazis/matlab.html#batch-mode",
+    "title": "Matlab example",
+    "section": "",
+    "text": "Combining this in a slurm script we can queue matlab workloads.\n    #!/bin/bash -l\n    #SBATCH -J MyMatlab\n    #SBATCH -N 1\n    #SBATCH --cpus-per-task=1\n    #SBATCH -p defq   \n    #SBATCH --output=%x_%j.out\n    #SBATCH --error=%x_%j.err\n    #SBATCH --mail-type=END,FAIL\n    #SBATCH --mail-user=&lt;YOUR EMAIL&gt;\n    \n    # Note: for parallel operations increase cpus-per-task above\n    # Note 2: output and error logs can be given absolute paths \n    \n    echo \"== Starting run at $(date)\"\n    echo \"== Job ID: ${SLURM_JOBID}\"\n    echo \"== Node list: ${SLURM_NODELIST}\"\n    echo \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\n    echo \"== Scratch dir. : ${TMPDIR}\"\n    \n    # cd $TMPDIR\n    # or change to a project folder with matlab file e.g. hello_World.m\n    # cd your/data\n\n    # Load matlab module\n    module load 2022 matlab/R2023a\n    \n    # execute\n    matlab -batch hello_world"
+  },
+  {
+    "objectID": "topics/bazis/matlab.html#reading",
+    "href": "topics/bazis/matlab.html#reading",
+    "title": "Matlab example",
+    "section": "",
+    "text": "mathworks-parpool"
+  },
+  {
+    "objectID": "topics/bazis/python_env.html",
+    "href": "topics/bazis/python_env.html",
+    "title": "Python virtual environments",
+    "section": "",
+    "text": "Python virtual environments\nPython has many powerfull powerfull packages. In scientific computing many packages may be used in a single project. To manage many python packages often a package manager as conda is used.\nOn a HPC system we do not prefer conda as it does not use optimised binaries and the cache can take up a lot of space, but we understand it is usefull in some cases and try to help.\nWorking with virtual environments further makes the python environment better to manage\n\nA virtual environment is a named, isolated, working copy of Python that that maintains its own files,\ndirectories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.\nVirtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requirements across components.\n\nIn short: - use virtualenv (preferred) or conda - create an isolated environment - Install packages - Activate a virtual environment - Deactivate a virtual environment - Delete a virtual environment\n\n\nAdding a requirements file\nPython requirements files are a great way to keep track of the Python modules. It is a simple text file that saves a list of the modules and packages required by your project. By creating a Python requirements.txt file, you save yourself the hassle of having to track down and install all of the required modules manually.\nA reuirements file is a simple text file, which looks like this.\ntensorflow==2.3.1\nuvicorn==0.12.2\nfastapi==0.63.0\nInstalling modules from a requirements file is easy as.\npip install -r requirements.txt\nA requirements file can also be generated with:\npip freeze &gt; requirements.txt\nSee the article referenced below for more information.\n\n\nPortable scripts\nThe first line in a script usually starts the interpreter and is called the Shebang. It is recommended to use /usr/bin/env, which can interpret your $PATH. This makes scripts more portable than hard coded paths..\n#!/usr/local/bin/python\nWill only run your script if python is installed in /usr/local/bin.\n#!/usr/bin/env python\nWill interpret your $PATH, and find python in any directory in your $PATH.\nSo your script is more portable, and will work without modification on systems where python is installed as /usr/bin/python, or /usr/local/bin/python, or even custom directories (that have been added to $PATH), like /opt/local/bin/python.\nFurther Reading * python virtual environments primer * python requirements.txt file"
+  },
+  {
+    "objectID": "topics/bazis/rdm.html",
+    "href": "topics/bazis/rdm.html",
+    "title": "README rules",
+    "section": "",
+    "text": "A clear way of organising and annotating your data helps re-use and understanding by others and by your future you. A practical way to organise data, scripts e.d. developed by Izel Erdogan."
+  },
+  {
+    "objectID": "topics/bazis/rdm.html#practical-research-data-management",
+    "href": "topics/bazis/rdm.html#practical-research-data-management",
+    "title": "README rules",
+    "section": "",
+    "text": "A clear way of organising and annotating your data helps re-use and understanding by others and by your future you. A practical way to organise data, scripts e.d. developed by Izel Erdogan."
+  },
+  {
+    "objectID": "topics/bazis/rdm.html#folder-structure",
+    "href": "topics/bazis/rdm.html#folder-structure",
+    "title": "README rules",
+    "section": "Folder structure",
+    "text": "Folder structure\nWhat is often suggested is project based structure. However in many cases the data you collected or downloaded will be used by more than that project or by others doing other projects in the group. A better approach is dataype based structure: for example summary statistics, This can co-exist with project_name based folders by the way. Meaning you dont have to have a datatype folder if that data is specific to that project. You can still have the project folder where you run your analyses and have your intermediate data, but this data will be used as a symbolic link to the actual data folder.\n\n\n\nFolder Structure\n\n\nReferences: * Readme rules everyone can apply during data analysis on HPC (I. Erdogan)"
+  },
+  {
+    "objectID": "topics/bazis/torch.html",
+    "href": "topics/bazis/torch.html",
+    "title": "PyTorch",
+    "section": "",
+    "text": "PyTorch is a popular deep learning library for training artificial neural networks.\nIt can be installed in many ways. Optimized versions with Easybuild are available in the software stack on BAZIS. Search the module environment for the appropiate version.\n\n\n\nThis example recipe from the PyTorch tutorials site measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.\nIt can be run as a standalone python script. Download the script:\nwget https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py\nThis script can be run interactively\npython amp_recipe.py\nBut we will create a slurm script Torch-AMP-ex.sh to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.\n#!/bin/bash -l\n#SBATCH -J Torch-AMP-example\n#SBATCH -N 1\n#SBATCH --ntasks-per-node=2\n#SBATCH --gpus=1\n#SBATCH --time=0-00:10:00\n#SBATCH --mail-type=end,fail\n#SBATCH --mail-user= &lt;your email address&gt;\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\n# environment modules\nmodule load shared 2022\nmodule load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1\n\n# https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py\n# Your more useful application can be started below!\npython amp_recipe.py\nSubmit and run the script with Slurm\nsbatch Torch-AMP-ex.sh\nYou can monitor the status of the job with squeue -u $USER. Once the job runs, you’ll have a slurm-xxxxx.out file in the directory. This log file contains both PyTorch and Slurm output.\n\n\n\nDepending on the type of GPU you may find different performance.\n\n\n\nGPU\nNVIDIA RTX 2070 super\nNVIDIA A30\n\n\n\n\nDefault precision:\n6.835 sec\n4.444 sec\n\n\n——————–\n————————\n————–\n\n\nMixed precision:\n4.747 sec\n0.858 sec\n\n\n——————–\n————————\n————–\n\n\n\n\n\n\n\nPyTorch tutorials site"
+  },
+  {
+    "objectID": "topics/bazis/torch.html#introduction",
+    "href": "topics/bazis/torch.html#introduction",
+    "title": "PyTorch",
+    "section": "",
+    "text": "PyTorch is a popular deep learning library for training artificial neural networks.\nIt can be installed in many ways. Optimized versions with Easybuild are available in the software stack on BAZIS. Search the module environment for the appropiate version."
+  },
+  {
+    "objectID": "topics/bazis/torch.html#example-gpu-job",
+    "href": "topics/bazis/torch.html#example-gpu-job",
+    "title": "PyTorch",
+    "section": "",
+    "text": "This example recipe from the PyTorch tutorials site measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.\nIt can be run as a standalone python script. Download the script:\nwget https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py\nThis script can be run interactively\npython amp_recipe.py\nBut we will create a slurm script Torch-AMP-ex.sh to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.\n#!/bin/bash -l\n#SBATCH -J Torch-AMP-example\n#SBATCH -N 1\n#SBATCH --ntasks-per-node=2\n#SBATCH --gpus=1\n#SBATCH --time=0-00:10:00\n#SBATCH --mail-type=end,fail\n#SBATCH --mail-user= &lt;your email address&gt;\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\n# environment modules\nmodule load shared 2022\nmodule load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1\n\n# https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py\n# Your more useful application can be started below!\npython amp_recipe.py\nSubmit and run the script with Slurm\nsbatch Torch-AMP-ex.sh\nYou can monitor the status of the job with squeue -u $USER. Once the job runs, you’ll have a slurm-xxxxx.out file in the directory. This log file contains both PyTorch and Slurm output."
+  },
+  {
+    "objectID": "topics/bazis/torch.html#performance-and-results",
+    "href": "topics/bazis/torch.html#performance-and-results",
+    "title": "PyTorch",
+    "section": "",
+    "text": "Depending on the type of GPU you may find different performance.\n\n\n\nGPU\nNVIDIA RTX 2070 super\nNVIDIA A30\n\n\n\n\nDefault precision:\n6.835 sec\n4.444 sec\n\n\n——————–\n————————\n————–\n\n\nMixed precision:\n4.747 sec\n0.858 sec\n\n\n——————–\n————————\n————–"
+  },
+  {
+    "objectID": "topics/bazis/torch.html#references",
+    "href": "topics/bazis/torch.html#references",
+    "title": "PyTorch",
+    "section": "",
+    "text": "PyTorch tutorials site"
+  },
+  {
+    "objectID": "topics/bazis.html",
+    "href": "topics/bazis.html",
+    "title": "BAZIS HPC",
+    "section": "",
+    "text": "The BAZIS is a compute cluster for research at the Vrije Universiteit Amsterdam. It provides a service between the general facilties at the SURF HPC center and the desktop. It is a heterogenious system composed of clusters and servers from research departments and a general partition.\nIn this topic you will find information to get you started and best practices. Clustercomputing can be very powerfull and usefull skill to add to your toolbox and get more science done.\nAlso take a look at the SURF wiki about Snellius, it contains a lot of information which applies to Bazis as well. https://servicedesk.surf.nl/wiki/display/WIKI/Snellius\nInformation and how to get an account can be found on VU Service Portal under IT &gt; Research &gt; HPC Cluster Computing\nBAZIS is maintained by IT for Research.\n\n\n\nVU BAZIS Cluster\n\n\n\n\n\n\nUse your favourite SSH client to login at (bazis.labs.vu.nl?). On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone (ssh.data.vu.nl?), or use eduVPN Institutional Access (below).\n\n\n\nInstall the client. Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( kb-item 11809 )\n\n\n\nMobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you’ll be asked if you want change these files on the HPC system.\nOther SFTP browsers There are a large number of free FTP browser out there. Some examples are\n\nFilezilla (Windows, MacOS, Linux)\nCyberduck (Windows, MacOS)\nWinSCP (Windows)\n\n\n\n\nSSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.\nThe cluster uses ssh keys to manage batch jobs.\nOn your workstation create ssh key pair ssh-keygen -t ed25519 -a 100\n\n-a (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.\n-t (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.\n-f (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don’t specify!\n\nIf ed25519 is not available, use the older (but strong and trusted) RSA cryptography: ssh-keygen -a 100 -t rsa -b 4096\nWhen prompted, enter a strong password that you will remember.\nNote: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.\nIn your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.\nNow, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.\nYou can either use copy-paste or the ssh-copy-id command:\n$ ssh-copy-id user@remote-host\nThe authenticity of host 'remote-host (192.168.111.135)' can't be established.\nECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.\nAre you sure you want to continue connecting (yes/no)? yes\n/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed\n/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys\nuser@remote-host's password:\n\nNumber of key(s) added: 2\nNow try logging into the machine, with: “ssh ‘user@remote-host’” and check to make sure that only the key(s) you wanted were added.\n##Advanced: Forwarding X\n##Fix Warning: Remote Host Identification Has Changed If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:\n$ ssh -o \"UserKnownHostsFile=/dev/null\" -o \"StrictHostKeyChecking=no\" username@bazis.labs.vu.nl\nTo make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:\nssh-keygen -R \"hostname\"\n\nReferences: 1. hpc carpentry 2. Comparing SSH keys 3. public key cryptography for non geeks 4. disable ssh host key checking\n\n\n\n\n\n\nSee jobs in the queue for a given user\n   squeue -u username\nShow available node features\n   sinfo -o \"%20N  %10c  %10m  %25f  %10G \"\nSubmit a job\n   sbatch script\nShow the status of a currently running job\n   sstat -j jobID\nShow the final status of a finished job\n   sacct -j jobID\nCancel a job\n   scancel jobid\n\n\n\nOrganise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).\nDon’t run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun –pty bash option.\n\n\n\nThe SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.\nConstraints available on BAZIS are cpu architecture and gpu. Example (singole constraint):\n#SBATCH --constraint=zen2\nExample combining constraints:\n#SBATCH --constraint=\"zen2|haswell\"\n\n\n\nThe parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)\n\n\nA physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.\n\n\n\nA physical socket on a motherboard which accepts a physical CPU part.\n\n\n\nA physical part that is plugged into a socket.\n\n\n\nA physical CPU core, one of many possible cores, that are part of a CPU.\n\n\n\nA virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system. On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.\n\n\n\nA communication bus between system memory and a Socket/CPU.\n\n\n\nA communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,…) in the server.\nSlurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. –cpus-per-taks= for example is actually specifying the number of cores per task."
+  },
+  {
+    "objectID": "topics/bazis.html#connect",
+    "href": "topics/bazis.html#connect",
+    "title": "BAZIS HPC",
+    "section": "",
+    "text": "Use your favourite SSH client to login at (bazis.labs.vu.nl?). On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone (ssh.data.vu.nl?), or use eduVPN Institutional Access (below).\n\n\n\nInstall the client. Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( kb-item 11809 )\n\n\n\nMobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you’ll be asked if you want change these files on the HPC system.\nOther SFTP browsers There are a large number of free FTP browser out there. Some examples are\n\nFilezilla (Windows, MacOS, Linux)\nCyberduck (Windows, MacOS)\nWinSCP (Windows)\n\n\n\n\nSSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.\nThe cluster uses ssh keys to manage batch jobs.\nOn your workstation create ssh key pair ssh-keygen -t ed25519 -a 100\n\n-a (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.\n-t (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.\n-f (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don’t specify!\n\nIf ed25519 is not available, use the older (but strong and trusted) RSA cryptography: ssh-keygen -a 100 -t rsa -b 4096\nWhen prompted, enter a strong password that you will remember.\nNote: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.\nIn your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.\nNow, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.\nYou can either use copy-paste or the ssh-copy-id command:\n$ ssh-copy-id user@remote-host\nThe authenticity of host 'remote-host (192.168.111.135)' can't be established.\nECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.\nAre you sure you want to continue connecting (yes/no)? yes\n/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed\n/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys\nuser@remote-host's password:\n\nNumber of key(s) added: 2\nNow try logging into the machine, with: “ssh ‘user@remote-host’” and check to make sure that only the key(s) you wanted were added.\n##Advanced: Forwarding X\n##Fix Warning: Remote Host Identification Has Changed If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:\n$ ssh -o \"UserKnownHostsFile=/dev/null\" -o \"StrictHostKeyChecking=no\" username@bazis.labs.vu.nl\nTo make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:\nssh-keygen -R \"hostname\"\n\nReferences: 1. hpc carpentry 2. Comparing SSH keys 3. public key cryptography for non geeks 4. disable ssh host key checking"
+  },
+  {
+    "objectID": "topics/bazis.html#using-slurm",
+    "href": "topics/bazis.html#using-slurm",
+    "title": "BAZIS HPC",
+    "section": "",
+    "text": "See jobs in the queue for a given user\n   squeue -u username\nShow available node features\n   sinfo -o \"%20N  %10c  %10m  %25f  %10G \"\nSubmit a job\n   sbatch script\nShow the status of a currently running job\n   sstat -j jobID\nShow the final status of a finished job\n   sacct -j jobID\nCancel a job\n   scancel jobid\n\n\n\nOrganise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).\nDon’t run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun –pty bash option.\n\n\n\nThe SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.\nConstraints available on BAZIS are cpu architecture and gpu. Example (singole constraint):\n#SBATCH --constraint=zen2\nExample combining constraints:\n#SBATCH --constraint=\"zen2|haswell\"\n\n\n\nThe parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)\n\n\nA physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.\n\n\n\nA physical socket on a motherboard which accepts a physical CPU part.\n\n\n\nA physical part that is plugged into a socket.\n\n\n\nA physical CPU core, one of many possible cores, that are part of a CPU.\n\n\n\nA virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system. On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.\n\n\n\nA communication bus between system memory and a Socket/CPU.\n\n\n\nA communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,…) in the server.\nSlurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. –cpus-per-taks= for example is actually specifying the number of cores per task."
+  },
+  {
+    "objectID": "topics/data-publication.html",
+    "href": "topics/data-publication.html",
+    "title": "Data Publication",
+    "section": "",
+    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. UNESCO defines Open Science as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences).\n\n\n\nInstead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data\n\n\n\n\nA persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda.\n\n\n\nA data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license.\n\n\n\n\nAs with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
+  },
+  {
+    "objectID": "topics/data-publication.html#open-access-and-open-science",
+    "href": "topics/data-publication.html#open-access-and-open-science",
+    "title": "Data Publication",
+    "section": "",
+    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. UNESCO defines Open Science as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences)."
+  },
+  {
+    "objectID": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
+    "href": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
+    "title": "Data Publication",
+    "section": "",
+    "text": "Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data"
+  },
+  {
+    "objectID": "topics/data-publication.html#what-is-a-persistent-identifier",
+    "href": "topics/data-publication.html#what-is-a-persistent-identifier",
+    "title": "Data Publication",
+    "section": "",
+    "text": "A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda."
+  },
+  {
+    "objectID": "topics/data-publication.html#licensing-the-data",
+    "href": "topics/data-publication.html#licensing-the-data",
+    "title": "Data Publication",
+    "section": "",
+    "text": "A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license."
+  },
+  {
+    "objectID": "topics/data-publication.html#licensing-software",
+    "href": "topics/data-publication.html#licensing-software",
+    "title": "Data Publication",
+    "section": "",
+    "text": "As with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
+  },
+  {
+    "objectID": "topics/research-data-management.html",
+    "href": "topics/research-data-management.html",
+    "title": "Research Data Management",
+    "section": "",
+    "text": "Research Data Management\nResearch data management (RDM) concerns the organisation, documentation, storage, archiving and sharing of digital and analogue data. Data management applies throughout the entire research data life cycle, which is visualised in the circle above. RDM aims to ensure reliable verification of results, and permits new and innovative research built on existing information. RDM is also part of the research process and is intended to make the research process as efficient as possible. This LibGuide provides guidance on research data management planning, data storage and protection, data archiving, and other resources. The Data Management Plan provides information on how these activities will be carried out during the research project.\nGood data management will heighten the quality of your own research (data) as well as your institution’s scientific output, and it contributes significantly to your field as a whole.\nGood data management:\n\nPromotes the integrity of your research,\nIncreases the impact of your research,\nImproves the quality of your data,\nSupports future use of your research data, and\nComplies with internal and external regulations."
   }
 ]

@@ -1,51 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ubvu.github.io/open-handbook/pathways.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics.html</loc>
+    <lastmod>2024-06-27T07:18:52.717Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/topics/fair-principles.html</loc>
-    <lastmod>2024-05-27T11:48:17.670Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/fair-principles.html</loc>
+    <lastmod>2024-06-27T07:18:52.719Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/topics/research-data-management.html</loc>
-    <lastmod>2024-05-27T11:48:17.670Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/data-management-plan.html</loc>
+    <lastmod>2024-06-27T07:18:52.718Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/topics.html</loc>
-    <lastmod>2024-05-27T11:48:17.670Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/workspace.html</loc>
+    <lastmod>2024-06-24T14:19:40.245Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/blog/2024-05-23welcome.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/simpleslurm.html</loc>
+    <lastmod>2024-06-24T14:19:40.243Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/blog.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/R.html</loc>
+    <lastmod>2024-06-24T14:19:40.224Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/about.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/montecarlo.html</loc>
+    <lastmod>2024-06-24T14:19:40.242Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/index.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/jupyter.html</loc>
+    <lastmod>2024-06-24T14:19:40.241Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/pathways/data-lifecycle.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/connect.html</loc>
+    <lastmod>2024-06-24T14:31:54.167Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/topics/data-publication.html</loc>
-    <lastmod>2024-05-27T11:48:17.670Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/pathways.html</loc>
+    <lastmod>2024-06-27T07:18:52.701Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/topics/data-management-plan.html</loc>
-    <lastmod>2024-05-27T11:48:17.670Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/index.html</loc>
+    <lastmod>2024-06-27T07:18:52.700Z</lastmod>
   </url>
   <url>
-    <loc>https://ubvu.github.io/open-handbook/contributing.html</loc>
-    <lastmod>2024-05-27T11:48:17.666Z</lastmod>
+    <loc>https://peer35.github.io/open-handbook/blog.html</loc>
+    <lastmod>2024-06-27T07:18:52.698Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/about.html</loc>
+    <lastmod>2024-06-27T07:18:52.698Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/blog/2024-05-23welcome.html</loc>
+    <lastmod>2024-06-27T07:18:52.699Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/contributing.html</loc>
+    <lastmod>2024-06-27T07:18:52.699Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/pathways/data-lifecycle.html</loc>
+    <lastmod>2024-06-27T07:18:52.702Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/commands.html</loc>
+    <lastmod>2024-06-24T14:19:40.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/irods.html</loc>
+    <lastmod>2024-06-24T14:44:35.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/matlab.html</loc>
+    <lastmod>2024-06-24T14:19:40.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/python_env.html</loc>
+    <lastmod>2024-06-27T08:10:07.962Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/rdm.html</loc>
+    <lastmod>2024-06-24T14:19:40.243Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis/torch.html</loc>
+    <lastmod>2024-06-24T14:19:40.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/bazis.html</loc>
+    <lastmod>2024-06-27T08:58:47.329Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/data-publication.html</loc>
+    <lastmod>2024-06-27T07:18:52.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peer35.github.io/open-handbook/topics/research-data-management.html</loc>
+    <lastmod>2024-06-27T07:18:52.719Z</lastmod>
   </url>
 </urlset>
