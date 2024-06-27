@@ -3,22 +3,10 @@
     "listing": "/topics.html",
     "items": [
       "/topics/bazis.html",
-      "/topics/bazis/connect.html",
-      "/topics/bazis/irods.html",
       "/topics/data-management-plan.html",
       "/topics/data-publication.html",
       "/topics/fair-principles.html",
-      "/topics/bazis/matlab.html",
-      "/topics/bazis/rdm.html",
-      "/topics/bazis/torch.html",
-      "/topics/bazis/python_env.html",
-      "/topics/bazis/R.html",
-      "/topics/research-data-management.html",
-      "/topics/bazis/jupyter.html",
-      "/topics/bazis/montecarlo.html",
-      "/topics/bazis/simpleslurm.html",
-      "/topics/bazis/commands.html",
-      "/topics/bazis/workspace.html"
+      "/topics/research-data-management.html"
     ]
   },
   {
