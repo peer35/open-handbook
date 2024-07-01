@@ -1,0 +1,100 @@
+# Compute environments
+For different applications, 
+- Data gathering
+- Data analysis
+- Hosting web applications
+- Running (licensed) server applications
+- Visualization
+
+## Workstations and Laptops
+Pros:
+- Always available, install software and go
+- Can use graphical tools
+Cons:
+- Not all software is available on all OS's 
+- Limited performance
+- Laptops: can not run 24/7
+- Can not host web applications for 3rd party
+
+## Virtual servers
+### SciCloud
+Pros:
+- Fixed price per month
+- Windows or Linux
+- Can host web applications for 3rd parties
+- Mount SciStor shares
+- Possible to use GUI tools
+Cons:
+- No GPU
+- Some server maintenance necessary (application & OS updates)
+- Not easy to start multiple identical servers 
+- Knowledge needed on how to setup your environment*
+
+* IT for Research will only do the basic OS updates. We can help you get started but all other setup and maintenance is your own responsibility.
+
+### SURF Research Cloud
+Pros:
+- Windows or Linux
+- Easier to spin up multiple identical servers
+- GPU available
+- Possible to use GUI tools
+- Can host web applications for 3rd parties
+- Make use of existing setups created by others
+Cons:
+- Less suitable for hosting web applicaions because of cost model
+- Some extra work needed to make server rebuildable
+
+### Azure Virtual Desktop
+Pros:
+- Free for researchers
+- Possible to use GUI tools
+Cons:
+- Windows only
+- Can not leave running 24/7
+- Extra software only available on request
+
+## Containers
+It is possible to spin up Docker containers on SciCloud and SURF Research Cloud.
+Pros:
+- Easier to spin up multiple indentical applications
+- Platform independent, Easy to develop on your laptop and then deploy somewhere else
+- More reproducible, your Docker- and compose files document your setup
+- Things don't break as easily on OS updates
+Cons:
+- Some knowledge about Docker needed
+- Some CLI knowledge needed 
+
+### OpenShift
+Pros:
+- CI/CD pipelines, e.g. push code on Github/Gitlab and automatically rebuild the container
+- No need to worry about updating a (virtual) server
+Cons:
+- It takes extra work to make your containers suitable for OpenShift.
+
+## Physical servers
+In unusual cases you need a server to run specific applications, but the performance of a Virtual Server on SciCloud is not sufficient or some other requitement demands physical hardware. 
+In that case you could opt to buy your own hardware and host it in IT for research's Data Centre. 
+IT will take care of the hardware and network connectivity, when absolutely necessary you can have physical access to the machine.
+
+Please contact ITvO to discuss your requirements.
+
+## Jupyter Notebooks
+### VU
+### BAZIS
+### Research Cloud
+### Google
+Only use data which can be considered public.
+
+## HPC
+### BAZIS
+#### Buy your own nodes
+### Snellius
+
+
+## Highly secure environments 
+In order to minimize the chances of data leaks IT Privacy & Security could require you to work in a secure environment where it is impossible to copy data. 
+You will work on a remote desktop with the analysis tools you need. The data will only be accessible within the virtual environment. 
+Only and IT admin or Data Steward will be able to install software and import or export data.
+### SANE
+### Custom solutions on SciCloud
+
