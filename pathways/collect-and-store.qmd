@@ -1,0 +1,7 @@
+# Collect & Store Data
+
+{{< include ../topics/data-collection.qmd >}}
+
+{{< include ../topics/data-storage.qmd >}}
+
+{{< include ../topics/data-protection.qmd >}}
