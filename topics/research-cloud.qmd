@@ -1,0 +1,10 @@
+---
+Author: "Peter Vos"
+---
+
+# SURF Research Cloud
+https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud
+
+## Getting started
+1. Request a Collaboration on SRAM or add the Research Cloud Service to an existing Collaboration.
+2. Get a wallet, either by 

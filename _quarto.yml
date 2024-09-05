@@ -2,12 +2,12 @@ project:
   type: website
 
 website:
-  site-url: "https://ubvu.github.io/open-handbook"
+  site-url: "https://peer35.github.io/open-handbook"
   title: "{{< var title >}}"
   description: "A place for all things open research at the VU."
   favicon: public/favicon.png
-  repo-url: https://github.com/ubvu/open-handbook
-  issue-url: https://github.com/ubvu/open-handbook/issues/new/choose
+  repo-url: https://github.com/peer35/open-handbook
+  issue-url: https://github.com/peer35/open-handbook/issues/new/choose
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
@@ -30,7 +30,7 @@ website:
       - contributing.qmd
     tools:
       - icon: github
-        href: https://github.com/ubvu/open-handbook
+        href: https://github.com/peer35/open-handbook
         text: GitHub VU Open Handbook
       # - icon: rss
       #   href: https://quarto.org/docs/blog/index.xml
