@@ -1,111 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics.html</loc>
-    <lastmod>2024-06-27T07:18:52.717Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/blog.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/persistent-identifier.html</loc>
-    <lastmod>2024-09-05T08:19:25.117Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/index.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/fair-principles.html</loc>
-    <lastmod>2024-09-05T08:19:25.109Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/guides/process-and-analyze.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/data-publication.html</loc>
-    <lastmod>2024-09-05T08:19:25.102Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/guides/document-and-preserve.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/data-management-plan.html</loc>
-    <lastmod>2024-09-05T08:19:25.097Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/guides/publish-and-share.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/data-citation.html</loc>
-    <lastmod>2024-09-05T08:19:25.094Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/guides/data-lifecycle.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways.html</loc>
-    <lastmod>2024-06-27T07:18:52.701Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/about.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/process-and-analyze.html</loc>
-    <lastmod>2024-09-05T09:28:27.311Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/blog/2024-09-30hackathon.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/document-and-preserve.html</loc>
-    <lastmod>2024-09-05T08:19:25.061Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/blog/2024-05-23welcome.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/data-lifecycle.html</loc>
-    <lastmod>2024-09-05T08:19:25.056Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/blog/2024-11-01hackathon.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/index.html</loc>
-    <lastmod>2024-06-27T07:18:52.700Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-citation.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/contributing.html</loc>
-    <lastmod>2024-09-05T08:19:25.047Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-protection.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/blog/2024-06-27hackathon.html</loc>
-    <lastmod>2024-09-05T08:19:25.043Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-collection.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/about.html</loc>
-    <lastmod>2024-09-05T08:19:25.039Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/finding-existing-data.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/blog/2024-05-23welcome.html</loc>
-    <lastmod>2024-06-27T07:18:52.699Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/metadata.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/blog.html</loc>
-    <lastmod>2024-09-05T08:19:25.041Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-documentation.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/editors-guide.html</loc>
-    <lastmod>2024-09-05T08:19:25.050Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-and-software-licensing.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/collect-and-store.html</loc>
-    <lastmod>2024-09-05T08:19:25.053Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-publication.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/discover-and-initiate.html</loc>
-    <lastmod>2024-09-05T08:19:25.058Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/cff.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/plan-and-design.html</loc>
-    <lastmod>2024-09-05T08:19:25.065Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-storage.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/pathways/publish-and-share.html</loc>
-    <lastmod>2024-09-05T08:19:25.070Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/selecting-data.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/bazis.html</loc>
-    <lastmod>2024-09-05T08:19:25.092Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/safe-data-transfer.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/data-collection.html</loc>
-    <lastmod>2024-09-05T08:19:25.095Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/fair-principles.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/data-protection.html</loc>
-    <lastmod>2024-09-05T08:19:25.099Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/trainings.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/data-storage.html</loc>
-    <lastmod>2024-09-05T08:19:25.103Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/persistent-identifier.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/finding-existing-data.html</loc>
-    <lastmod>2024-09-05T08:19:25.115Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/research-data-management.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
   </url>
   <url>
-    <loc>https://peer35.github.io/open-handbook/topics/research-data-management.html</loc>
-    <lastmod>2024-09-05T08:19:25.119Z</lastmod>
+    <loc>https://ubvu.github.io/open-handbook/topics/bazis.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-management-section.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/topics/qualtrics.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/topics/data-management-plan.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/topics.html</loc>
+    <lastmod>2024-11-18T12:40:48.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/blog/2024-06-27hackathon.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/blog/2024-09-05hackathon.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/blog/2024-10-22post-mortem.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/editors-guide.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/guides/collect-and-store.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/guides/plan-and-design.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/guides/discover-and-initiate.html</loc>
+    <lastmod>2024-11-18T12:40:48.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/contributing.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ubvu.github.io/open-handbook/guides.html</loc>
+    <lastmod>2024-11-18T12:40:48.782Z</lastmod>
   </url>
 </urlset>

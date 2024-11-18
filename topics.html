@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.49">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-title","listing-author"],
     };
@@ -149,20 +149,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./topics.html" aria-current="page"> 
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pathways.html"> 
-<span class="menu-text">Pathways</span></a>
+    <a class="nav-link" href="./guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contributing.html"> 
@@ -171,7 +167,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/peer35/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -205,6 +201,20 @@ window.Quarto = {
 </header>
 
 
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is a topic?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.</p>
+<p>Missing a topic? You can <a href="https://ez-github-contributor.netlify.app/">submit suggestion using the Contribution portal</a>.</p>
+</div>
+</div>
 
 
 
@@ -219,9 +229,6 @@ window.Quarto = {
          <option value="listing-title-sort" data-direction="asc">
           Title
         </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
      </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -229,104 +236,196 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<table class="quarto-listing-table table">
+<table class="quarto-listing-table table table-striped table-hover">
 <thead>
 <tr>
 <th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+Reading Time
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1725524365092" data-listing-reading-time-sort="14" data-listing-word-count-sort="2616" data-listing-title-sort="BAZIS HPC" data-listing-filename-sort="bazis.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="1" data-listing-word-count-sort="142" data-listing-title-sort="Citation File Format (CFF)" data-listing-filename-sort="cff.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
-<a href="./topics/bazis.html" class="title listing-title">BAZIS HPC</a>
+<a href="./topics/cff.html" class="title listing-title">Citation File Format (CFF)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">1 min</span>
 </td>
 </tr>
-<tr data-index="1" data-listing-file-modified-sort="1725524365094" data-listing-reading-time-sort="1" data-listing-word-count-sort="155" data-listing-title-sort="Data Citation" data-listing-filename-sort="data-citation.qmd">
+<tr data-index="1" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="1" data-listing-word-count-sort="180" data-listing-title-sort="Data Citation" data-listing-filename-sort="data-citation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/data-citation.html" class="title listing-title">Data Citation</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">1 min</span>
 </td>
 </tr>
-<tr data-index="2" data-listing-file-modified-sort="1725524365095" data-listing-reading-time-sort="6" data-listing-word-count-sort="1158" data-listing-title-sort="Data Collection" data-listing-filename-sort="data-collection.qmd">
+<tr data-index="2" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="6" data-listing-word-count-sort="1141" data-listing-title-sort="Data Collection" data-listing-filename-sort="data-collection.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/data-collection.html" class="title listing-title">Data Collection</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">6 min</span>
 </td>
 </tr>
-<tr data-index="3" data-listing-file-modified-sort="1725524365097" data-listing-reading-time-sort="10" data-listing-word-count-sort="1960" data-listing-title-sort="Data Management Plan (DMP)" data-listing-filename-sort="data-management-plan.qmd">
+<tr data-index="3" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="11" data-listing-word-count-sort="2040" data-listing-title-sort="Data Management Plan (DMP)" data-listing-filename-sort="data-management-plan.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/data-management-plan.html" class="title listing-title">Data Management Plan (DMP)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">11 min</span>
 </td>
 </tr>
-<tr data-index="4" data-listing-file-modified-sort="1725524365099" data-listing-reading-time-sort="8" data-listing-word-count-sort="1583" data-listing-title-sort="Data Protection" data-listing-filename-sort="data-protection.qmd">
+<tr data-index="4" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Data Management Section" data-listing-filename-sort="data-management-section.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/data-management-section.html" class="title listing-title">Data Management Section</a>
+</td>
+<td>
+<span class="listing-reading-time">1 min</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="5" data-listing-word-count-sort="876" data-listing-title-sort="Data Protection" data-listing-filename-sort="data-protection.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/data-protection.html" class="title listing-title">Data Protection</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">5 min</span>
 </td>
 </tr>
-<tr data-index="5" data-listing-file-modified-sort="1725524365102" data-listing-reading-time-sort="4" data-listing-word-count-sort="793" data-listing-title-sort="Data Publication" data-listing-filename-sort="data-publication.qmd">
+<tr data-index="6" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="2" data-listing-word-count-sort="305" data-listing-title-sort="Data Publication" data-listing-filename-sort="data-publication.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/data-publication.html" class="title listing-title">Data Publication</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">2 min</span>
 </td>
 </tr>
-<tr data-index="6" data-listing-file-modified-sort="1725524365103" data-listing-reading-time-sort="6" data-listing-word-count-sort="1025" data-listing-title-sort="Data Storage" data-listing-filename-sort="data-storage.qmd">
+<tr data-index="7" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="5" data-listing-word-count-sort="983" data-listing-title-sort="Data Storage" data-listing-filename-sort="data-storage.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/data-storage.html" class="title listing-title">Data Storage</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">5 min</span>
 </td>
 </tr>
-<tr data-index="7" data-listing-file-modified-sort="1725524365109" data-listing-reading-time-sort="5" data-listing-word-count-sort="811" data-listing-title-sort="FAIR Principles" data-listing-filename-sort="fair-principles.qmd">
+<tr data-index="8" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="3" data-listing-word-count-sort="517" data-listing-title-sort="Data and Software Licensing" data-listing-filename-sort="data-and-software-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/data-and-software-licensing.html" class="title listing-title">Data and Software Licensing</a>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+</tr>
+<tr data-index="9" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="3" data-listing-word-count-sort="541" data-listing-title-sort="Data documentation" data-listing-filename-sort="data-documentation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/data-documentation.html" class="title listing-title">Data documentation</a>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+</tr>
+<tr data-index="10" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="4" data-listing-word-count-sort="795" data-listing-title-sort="FAIR Principles" data-listing-filename-sort="fair-principles.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/fair-principles.html" class="title listing-title">FAIR Principles</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">4 min</span>
 </td>
 </tr>
-<tr data-index="8" data-listing-file-modified-sort="1725524365115" data-listing-reading-time-sort="5" data-listing-word-count-sort="844" data-listing-title-sort="Finding Existing Data" data-listing-filename-sort="finding-existing-data.qmd">
+<tr data-index="11" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="5" data-listing-word-count-sort="833" data-listing-title-sort="Finding Existing Data" data-listing-filename-sort="finding-existing-data.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/finding-existing-data.html" class="title listing-title">Finding Existing Data</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">5 min</span>
 </td>
 </tr>
-<tr data-index="9" data-listing-file-modified-sort="1725524365117" data-listing-reading-time-sort="1" data-listing-word-count-sort="129" data-listing-title-sort="Persistent identifier" data-listing-filename-sort="persistent-identifier.qmd">
+<tr data-index="12" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="20" data-listing-word-count-sort="3840" data-listing-title-sort="High-Performance Computing Facilities" data-listing-filename-sort="bazis.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/bazis.html" class="title listing-title">High-Performance Computing Facilities</a>
+</td>
+<td>
+<span class="listing-reading-time">20 min</span>
+</td>
+</tr>
+<tr data-index="13" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="6" data-listing-word-count-sort="1184" data-listing-title-sort="Metadata" data-listing-filename-sort="metadata.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/metadata.html" class="title listing-title">Metadata</a>
+</td>
+<td>
+<span class="listing-reading-time">6 min</span>
+</td>
+</tr>
+<tr data-index="14" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="1" data-listing-word-count-sort="129" data-listing-title-sort="Persistent identifier" data-listing-filename-sort="persistent-identifier.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/persistent-identifier.html" class="title listing-title">Persistent identifier</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">1 min</span>
 </td>
 </tr>
-<tr data-index="10" data-listing-file-modified-sort="1725524365119" data-listing-reading-time-sort="1" data-listing-word-count-sort="167" data-listing-title-sort="Research Data Management (RDM)" data-listing-filename-sort="research-data-management.qmd">
+<tr data-index="15" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="3" data-listing-word-count-sort="588" data-listing-title-sort="Qualtrics" data-listing-filename-sort="qualtrics.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/qualtrics.html" class="title listing-title">Qualtrics</a>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+</tr>
+<tr data-index="16" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="1" data-listing-word-count-sort="173" data-listing-title-sort="Research Data Management (RDM)" data-listing-filename-sort="research-data-management.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
 <td>
 <a href="./topics/research-data-management.html" class="title listing-title">Research Data Management (RDM)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-reading-time">1 min</span>
+</td>
+</tr>
+<tr data-index="17" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="4" data-listing-word-count-sort="710" data-listing-title-sort="Safe Data Transportation and Transfer" data-listing-filename-sort="safe-data-transfer.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/safe-data-transfer.html" class="title listing-title">Safe Data Transportation and Transfer</a>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+</tr>
+<tr data-index="18" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="5" data-listing-word-count-sort="942" data-listing-title-sort="Storing vs. Archiving Data" data-listing-filename-sort="selecting-data.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/selecting-data.html" class="title listing-title">Storing vs.&nbsp;Archiving Data</a>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="19" data-listing-file-modified-sort="1731933648850" data-listing-reading-time-sort="7" data-listing-word-count-sort="1205" data-listing-title-sort="Trainings" data-listing-filename-sort="trainings.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./topics/trainings.html" class="title listing-title">Trainings</a>
+</td>
+<td>
+<span class="listing-reading-time">7 min</span>
 </td>
 </tr>
 </tbody>
@@ -427,7 +526,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/peer35\.github\.io\/open-handbook");
+      var filterRegex = new RegExp("https:\/\/ubvu\.github\.io\/open-handbook");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -779,8 +878,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Editor’s guide</p>
 </a>
   </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
+<p>GHOST Collective</p>
+</a>
+  </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/peer35/open-handbook/edit/main/topics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/peer35/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

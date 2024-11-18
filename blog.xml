@@ -6,11 +6,229 @@
       version="2.0">
 <channel>
 <title>{{&lt; var title &gt;}}</title>
-<link>https://peer35.github.io/open-handbook/blog.html</link>
-<atom:link href="https://peer35.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://ubvu.github.io/open-handbook/blog.html</link>
+<atom:link href="https://ubvu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at the VU.</description>
-<generator>quarto-1.5.49</generator>
-<lastBuildDate>Wed, 26 Jun 2024 22:00:00 GMT</lastBuildDate>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Fri, 01 Nov 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Fourth Handbook Hackathon</title>
+  <dc:creator>Chris Hartgerink</dc:creator>
+  <dc:creator>Lena Karvovskaya</dc:creator>
+  <dc:creator>Jolien Scholten</dc:creator>
+  <dc:creator>Tycho Hofstra</dc:creator>
+  <dc:creator>Elisa Rodenburg</dc:creator>
+  <dc:creator>Stephanie van de Sandt</dc:creator>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-11-01hackathon.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the <a href="https://rdm.vu.nl/blog/2024-09-30hackathon.html">third hackathon</a>, we migrated to <code>rdm.vu.nl</code>, which is a huge milestone! 🎉</p>
+<p>For the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.</p>
+<p>We considered how (un)balanced the various <a href="https://rdm.vu.nl/topics.html">Topics</a> had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.</p>
+<p>One breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):</p>
+<ul>
+<li>What is it?</li>
+<li>What can it be used for?</li>
+<li>How to request access</li>
+<li>Are there costs involved</li>
+<li>Getting started (with screenshot)</li>
+<li>How does it work/more detailed instructions</li>
+<li>Contact</li>
+</ul>
+<p>And the following structure for concepts (for example, DMP, data citation, data storage):</p>
+<ul>
+<li>What is it</li>
+<li>Examples</li>
+<li>Tools/services/resources related to concept provided by VU</li>
+<li>How does this help you in your research?</li>
+</ul>
+<p>We will follow up with a new hackathon in late november.</p>
+<section id="issues-worked-on" class="level2">
+<h2 class="anchored" data-anchor-id="issues-worked-on">Issues worked on</h2>
+<p><a href="https://github.com/ubvu/open-handbook/issues/232" class="uri">https://github.com/ubvu/open-handbook/issues/232</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/issues/233" class="uri">https://github.com/ubvu/open-handbook/issues/233</a></p>
+</section>
+<section id="pull-requests-worked-on" class="level2">
+<h2 class="anchored" data-anchor-id="pull-requests-worked-on">Pull Requests worked on</h2>
+<p><a href="https://github.com/ubvu/open-handbook/pull/229" class="uri">https://github.com/ubvu/open-handbook/pull/229</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/231" class="uri">https://github.com/ubvu/open-handbook/pull/231</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/234" class="uri">https://github.com/ubvu/open-handbook/pull/234</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/235" class="uri">https://github.com/ubvu/open-handbook/pull/235</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/236" class="uri">https://github.com/ubvu/open-handbook/pull/236</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/237" class="uri">https://github.com/ubvu/open-handbook/pull/237</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>hackathon</category>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-11-01hackathon.html</guid>
+  <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why was rdm.vu.nl down for ten hours?</title>
+  <dc:creator>Chris Hartgerink</dc:creator>
+  <dc:creator>Lena Karvovskaya</dc:creator>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-10-22post-mortem.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.<sup>1</sup></p>
+<section id="root-cause" class="level2">
+<h2 class="anchored" data-anchor-id="root-cause">Root cause</h2>
+<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
+<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220">#220</a>, before the downtime started.</p>
+</section>
+<section id="how-could-the-downtime-happen-if-the-fix-was-clear" class="level2">
+<h2 class="anchored" data-anchor-id="how-could-the-downtime-happen-if-the-fix-was-clear">How could the downtime happen if the fix was clear?</h2>
+<p>The fix for the domain specification was not merged in time for two reasons.</p>
+<section id="reason-1" class="level3">
+<h3 class="anchored" data-anchor-id="reason-1">Reason 1</h3>
+<p>At this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.</p>
+</section>
+<section id="reason-2" class="level3">
+<h3 class="anchored" data-anchor-id="reason-2">Reason 2</h3>
+<p>The domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator <span class="citation" data-cites="chartgerink">(<strong>chartgerink?</strong>)</span> both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved.</p>
+</section>
+</section>
+<section id="improvements" class="level2">
+<h2 class="anchored" data-anchor-id="improvements">Improvements</h2>
+<p>The domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.</p>
+<p>However, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>We would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to <code>rdm.vu.nl</code> and figure out these initial unexpected hurdles.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a></li>
+<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220">pull Request #220</a></li>
+<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">commit 669b065</a> is where the</li>
+<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">commit 678ff88</a></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><code>ubvu.github.io/open-handbook</code> remained online during this entire time, and functions indirectly as a backup.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>downtime</category>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-10-22post-mortem.html</guid>
+  <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Third Handbook Hackathon</title>
+  <dc:creator>Alex van der Jagt, FGB, sec. KNOP</dc:creator>
+  <dc:creator>Chris Hartgerink (host)</dc:creator>
+  <dc:creator>Diogenes Cruz de Arcelino</dc:creator>
+  <dc:creator>Elisa Rodenburg, UBVU</dc:creator>
+  <dc:creator>Jessica Hrudey, FGB</dc:creator>
+  <dc:creator>Jolien Scholten, UB</dc:creator>
+  <dc:creator>Lena Karvovskaya, UBVU</dc:creator>
+  <dc:creator>Stephanie van de Sandt, UBVU</dc:creator>
+  <dc:creator>Tycho Hofstra, UBVU</dc:creator>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-09-30hackathon.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to the VU domain (rdm.vu.nl). The event centered around sprinting to a finish line by refining existing content and ensuring accessibility standards are met.</p>
+<p>Key activities included:</p>
+<ol type="1">
+<li><p><strong>Proofreading and Topic Refinement</strong>: Participants reviewed existing topics to ensure clarity and focus. This led to the realization that some topics, like “Data Publication,” would benefit from being split into more specific subtopics, such as “Open Science” or “Software Licensing.”</p></li>
+<li><p><strong>Guide Titles Revision</strong>: We started normalizing guide titles into questions, making navigation easier and more value informed. We ideated options for guides now titled “Plan &amp; Design” to be converted into actionable questions like “How do I plan for managing my data?”</p></li>
+<li><p><strong>Alt Text Improvement</strong>: We reviewed existing alt texts for images and refined them to ensure accessibility. We also identified some remaining images that had no alt text, and added it.</p></li>
+<li><p><strong>Image Selection</strong>: Contributors identified and proposed openly licensed images to enhance the visual appeal of the guides, with some creative choices from <a href="https://doi.org/10.5281/zenodo.11147887">Zenodo’s RDM LEGO collection</a> <span class="citation" data-cites="bres_2024_11147887">(Bres and Bittner 2024)</span>.</p></li>
+</ol>
+<p>Overall, the hackathon was a productive session, and the handbook is now in its final stage, with the team preparing for the official launch on &lt;rdm.vu.nl&gt;. In next hackathons, we may focus on splitting existing topics and adding new ones, as our list of idea topics is growing rapidly.</p>
+<section id="hackathon-issues" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
+<p><a href="https://github.com/ubvu/open-handbook/issues/175" class="uri">https://github.com/ubvu/open-handbook/issues/175</a> <a href="https://github.com/ubvu/open-handbook/issues/178" class="uri">https://github.com/ubvu/open-handbook/issues/178</a></p>
+</section>
+<section id="hackathon-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
+<p><a href="https://github.com/ubvu/open-handbook/pull/118" class="uri">https://github.com/ubvu/open-handbook/pull/118</a> <a href="https://github.com/ubvu/open-handbook/pull/165" class="uri">https://github.com/ubvu/open-handbook/pull/165</a> <a href="https://github.com/ubvu/open-handbook/pull/176" class="uri">https://github.com/ubvu/open-handbook/pull/176</a> <a href="https://github.com/ubvu/open-handbook/pull/177" class="uri">https://github.com/ubvu/open-handbook/pull/177</a> <a href="https://github.com/ubvu/open-handbook/pull/179" class="uri">https://github.com/ubvu/open-handbook/pull/179</a> <a href="https://github.com/ubvu/open-handbook/pull/180" class="uri">https://github.com/ubvu/open-handbook/pull/180</a> <a href="https://github.com/ubvu/open-handbook/pull/181" class="uri">https://github.com/ubvu/open-handbook/pull/181</a> <a href="https://github.com/ubvu/open-handbook/pull/184" class="uri">https://github.com/ubvu/open-handbook/pull/184</a> <a href="https://github.com/ubvu/open-handbook/pull/186" class="uri">https://github.com/ubvu/open-handbook/pull/186</a> <a href="https://github.com/ubvu/open-handbook/pull/188" class="uri">https://github.com/ubvu/open-handbook/pull/188</a></p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-bres_2024_11147887" class="csl-entry">
+Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">A collection of AI generated images visualising various RDM aspects</span>.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.11147887">https://doi.org/10.5281/zenodo.11147887</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-09-30hackathon.html</guid>
+  <pubDate>Mon, 30 Sep 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Second Handbook Hackathon</title>
+  <dc:creator>Alex van der Jagt</dc:creator>
+  <dc:creator>Chris Hartgerink</dc:creator>
+  <dc:creator>Elisa Rodenburg</dc:creator>
+  <dc:creator>Jens de Bruijn</dc:creator>
+  <dc:creator>Jolien Scholten</dc:creator>
+  <dc:creator>Joy Jiayi Cheng</dc:creator>
+  <dc:creator>Lena Karvovskaya</dc:creator>
+  <dc:creator>Meron Vermaas</dc:creator>
+  <dc:creator>Peter Vos</dc:creator>
+  <dc:creator>Stephanie van de Sandt</dc:creator>
+  <dc:creator>Tycho Hofstra</dc:creator>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-09-05hackathon.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.</p>
+<p>Collectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include <a href="https://github.com/ubvu/open-handbook/issues/125">making sure all images are migrated into the handbook</a>, <a href="https://github.com/ubvu/open-handbook/issues/124">ensuring appropriate page titles</a>, and <a href="https://github.com/ubvu/open-handbook/issues/131">refining the contribution guide</a>.</p>
+<p>During the hackathon, we observed a lot of links in <a href="https://libguides.vu.nl/rdm">the old LibGuide resource</a>, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.</p>
+<p>The general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl.</p>
+<section id="hackathon-issues" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
+<ul>
+<li><a href="https://github.com/ubvu/open-handbook/issues/123" class="uri">https://github.com/ubvu/open-handbook/issues/123</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/128" class="uri">https://github.com/ubvu/open-handbook/issues/128</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/125" class="uri">https://github.com/ubvu/open-handbook/issues/125</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/124" class="uri">https://github.com/ubvu/open-handbook/issues/124</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/123" class="uri">https://github.com/ubvu/open-handbook/issues/123</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/130" class="uri">https://github.com/ubvu/open-handbook/issues/130</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/131" class="uri">https://github.com/ubvu/open-handbook/issues/131</a></li>
+</ul>
+</section>
+<section id="hackathon-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
+<ul>
+<li><a href="https://github.com/ubvu/open-handbook/pull/126" class="uri">https://github.com/ubvu/open-handbook/pull/126</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/110" class="uri">https://github.com/ubvu/open-handbook/pull/110</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/127" class="uri">https://github.com/ubvu/open-handbook/pull/127</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/129" class="uri">https://github.com/ubvu/open-handbook/pull/129</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/132" class="uri">https://github.com/ubvu/open-handbook/pull/132</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/133" class="uri">https://github.com/ubvu/open-handbook/pull/133</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/134" class="uri">https://github.com/ubvu/open-handbook/pull/134</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/135" class="uri">https://github.com/ubvu/open-handbook/pull/135</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-09-05hackathon.html</guid>
+  <pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>First Handbook Hackathon</title>
   <dc:creator>Alex van der Jagt</dc:creator>
@@ -25,7 +243,7 @@
   <dc:creator>Meron Vermaas</dc:creator>
   <dc:creator>Peter Vos</dc:creator>
   <dc:creator>Stephanie van de Sandt</dc:creator>
-  <link>https://peer35.github.io/open-handbook/blog/2024-06-27hackathon.html</link>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-06-27hackathon.html</link>
   <description><![CDATA[ 
 
 
@@ -41,12 +259,12 @@
 
 
  ]]></description>
-  <guid>https://peer35.github.io/open-handbook/blog/2024-06-27hackathon.html</guid>
-  <pubDate>Wed, 26 Jun 2024 22:00:00 GMT</pubDate>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-06-27hackathon.html</guid>
+  <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hello world!</title>
-  <link>https://peer35.github.io/open-handbook/blog/2024-05-23welcome.html</link>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-05-23welcome.html</link>
   <description><![CDATA[ 
 
 
@@ -58,8 +276,8 @@
 
 
  ]]></description>
-  <guid>https://peer35.github.io/open-handbook/blog/2024-05-23welcome.html</guid>
-  <pubDate>Wed, 22 May 2024 22:00:00 GMT</pubDate>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-05-23welcome.html</guid>
+  <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
