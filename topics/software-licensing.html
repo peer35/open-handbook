@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Qualtrics – Research Support Handbook</title>
+<title>Software Licensing – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,27 +121,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#license-limitation" id="toc-license-limitation" class="nav-link active" data-scroll-target="#license-limitation">License Limitation</a></li>
-  <li><a href="#creating-and-accessing-user-accounts" id="toc-creating-and-accessing-user-accounts" class="nav-link" data-scroll-target="#creating-and-accessing-user-accounts">Creating and Accessing User Accounts</a></li>
-  <li><a href="#note-to-existing-users" id="toc-note-to-existing-users" class="nav-link" data-scroll-target="#note-to-existing-users">Note to Existing Users</a>
-  <ul class="collapse">
-  <li><a href="#security-settings-login-error-disabled-account" id="toc-security-settings-login-error-disabled-account" class="nav-link" data-scroll-target="#security-settings-login-error-disabled-account">Security Settings: Login Error Disabled Account</a></li>
-  </ul></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
-  <ul class="collapse">
-  <li><a href="#qualtrics-basecamp" id="toc-qualtrics-basecamp" class="nav-link" data-scroll-target="#qualtrics-basecamp">Qualtrics Basecamp</a></li>
-  <li><a href="#qualtrics-knowledge-base" id="toc-qualtrics-knowledge-base" class="nav-link" data-scroll-target="#qualtrics-knowledge-base">Qualtrics Knowledge Base</a></li>
-  <li><a href="#qualtrics-community" id="toc-qualtrics-community" class="nav-link" data-scroll-target="#qualtrics-community">Qualtrics Community</a></li>
-  </ul></li>
+  <li><a href="#mit-license" id="toc-mit-license" class="nav-link active" data-scroll-target="#mit-license">MIT License</a></li>
+  <li><a href="#gnu-gplv3" id="toc-gnu-gplv3" class="nav-link" data-scroll-target="#gnu-gplv3">GNU GPLv3</a></li>
+  <li><a href="#apache-license-2.0" id="toc-apache-license-2.0" class="nav-link" data-scroll-target="#apache-license-2.0">Apache License 2.0</a></li>
+  <li><a href="#adding-a-license-to-github" id="toc-adding-a-license-to-github" class="nav-link" data-scroll-target="#adding-a-license-to-github">Adding a license to GitHub</a></li>
+  <li><a href="#further-considerations" id="toc-further-considerations" class="nav-link" data-scroll-target="#further-considerations">Further considerations</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/qualtrics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/software-licensing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Qualtrics</h1>
+<h1 class="title">Software Licensing</h1>
 </div>
 
 
@@ -158,72 +151,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Qualtrics is a cloud-based subscription and software platform (SaaS) that enables users to create and manage online surveys. The Qualtrics survey tool can support a variety of (complex) survey design requirements by providing such functionalities as different question types, display and branching logic configuration and the use of embedded data and API’s.</p>
-<p>VU Amsterdam holds an academic license which includes non-standard, advanced features and functions, including but not limited to:</p>
+<p>Publishing research software under an appropriate license is crucial for its accessibility, usability, and further integration into research. Choosing a license usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked.</p>
+<p>A software license states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licenses are as permissible as possible.</p>
+<p>There are many licenses out there; below we list some very frequently used licenses in research software. However, if none of these licenses fit your case, there are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable software license. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
+<section id="mit-license" class="level2">
+<h2 class="anchored" data-anchor-id="mit-license">MIT License</h2>
+<p>The <a href="https://mit-license.org">MIT License</a> is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and license text.</p>
+<p>However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general.</p>
+</section>
+<section id="gnu-gplv3" class="level2">
+<h2 class="anchored" data-anchor-id="gnu-gplv3">GNU GPLv3</h2>
+<p>The <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License (GPLv3)</a> is another option, designed to ensure that the software and any derivatives remain open-source.</p>
+<p>This encourages collaborative improvement of software. Any software that includes GPL-licensed code must also be open-source under the GPLpotentially deterring commercial use or integration with proprietary software. In conclusion, when you want your code to be used by others, but only the code that uses your code is also open source, this is the way to go.</p>
+</section>
+<section id="apache-license-2.0" class="level2">
+<h2 class="anchored" data-anchor-id="apache-license-2.0">Apache License 2.0</h2>
+<p>The <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> allows for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented.</p>
+<p>It is a more complex license than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.</p>
+</section>
+<section id="adding-a-license-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="adding-a-license-to-github">Adding a license to GitHub</h2>
+<p>On GitHub you add a license on creating a new repository, by selecting the license from the drop-down menu. If your repository already exists, add a new file called “LICENSE” using the “+”-button on top of the repository (see below).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="github_file_creation_button.png" class="img-fluid figure-img"></p>
+<figcaption>Location of file creation button</figcaption>
+</figure>
+</div>
+<p>One the next page, start type LICENSE as the file name, and a button to “Choose a licence template” should automatically pop up. Follow the steps provided by GitHub to finish adding the license to the repository.</p>
+<p>You should now see your license shown on the main page of your repository.</p>
+</section>
+<section id="further-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="further-considerations">Further considerations</h2>
 <ul>
-<li><strong>FILE UPLOAD</strong> – a non-standard question type that allows respondents to upload a file along with their survey response</li>
-<li><strong>SIGNATURE QUESTION</strong> – a non-standard question type that presents survey participants with an entry box where they can draw their signature.</li>
-<li><strong>API INTEGRATION</strong> – an advanced license feature that can be used to automate repetitive processes inside of Qualtrics or to pass information in and out of Qualtrics.</li>
-<li><strong>OFFLINE SURVEY APP</strong> – an advanced license feature that comprises a downloadable application available for iOS and Android that allows you to administer surveys on your mobile device or tablet without an internet connection.</li>
+<li>If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;</li>
+<li>When choosing a licence, do not just think about what <em>others</em> may do with the software, but also what <em>you</em> might want to do with the software in the future.</li>
 </ul>
-<section id="license-limitation" class="level2">
-<h2 class="anchored" data-anchor-id="license-limitation">License Limitation</h2>
-<p>Whilst all VU students, employees and researchers are eligible to make use of a Qualtrics license, VU’s Qualtrics license usage is limited for creating, managing and collecting data for scientific research purposes only.</p>
-<p>Qualtrics should not be used for non-scientific purposes such as the creation of registration or attendance lists, and course evaluation surveys for example; instead users should go to other available tools such as MS Forms.</p>
-</section>
-<section id="creating-and-accessing-user-accounts" class="level2">
-<h2 class="anchored" data-anchor-id="creating-and-accessing-user-accounts">Creating and Accessing User Accounts</h2>
-<p>The VU Qualtrics Central Brand (hereafter VU’s Central Brand) at [vuamsterdam.eu.qualtrics.com] allows for user’s auto-enrolment, an automated account creation, and registration process. Any user with an enabled VU email address may auto-enroll on VU’s Central Brand. The email address will function as the account’s username.</p>
-<p>VU’s Central Brand makes use of Single-Sign On (SSO). This means that users can log in to Qualtrics using VU’s internal login system. Multi-Factor Authentication (MFA) is mandatory to all Qualtrics users utilizing the <code>vuamsterdam</code> brand. MFA acts as an additional layer of security to prevent unauthorized users from accessing accounts and resources, even when the password has been stolen. Qualtrics will use multi-factor authentication to validate user identity and provide quick and convenient access to authorized users.</p>
-<hr>
-<p><strong>To create a user account and access the Qualtrics environment</strong> at the Central Brand, please proceed as follows:</p>
-<ol type="1">
-<li>Go to: <a href="https://vuamsterdam.eu.qualtrics.com">https://vuamsterdam.eu.qualtrics.com</a></li>
-<li>On the login page, choose: Vrije Universiteit SSO</li>
-<li>Log in with your VU account credentials (email address and password)</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/qualtrics-vu-brand-login-page.png" class="img-fluid figure-img"></p>
-<figcaption>VU’s central brand login page</figcaption>
-</figure>
-</div>
-<p>It is recommended to save <a href="vuamsterdam.eu.qualtrics.com">VU’s Central Brand</a> as a Favourite or Bookmark link for future reference.</p>
-</section>
-<section id="note-to-existing-users" class="level2">
-<h2 class="anchored" data-anchor-id="note-to-existing-users">Note to Existing Users</h2>
-<section id="security-settings-login-error-disabled-account" class="level3">
-<h3 class="anchored" data-anchor-id="security-settings-login-error-disabled-account">Security Settings: Login Error Disabled Account</h3>
-<p>Security settings are in place that disable a user account after a certain amount of inactivity. This threshold is currently 12 months. This setting follows security requirements regarding User Account Management.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/qualtrics-account-disabled.png" class="img-fluid figure-img"></p>
-<figcaption>Notification of disabled Qualtrics account</figcaption>
-</figure>
-</div>
-<p>A disabled account status does not affect its data.</p>
-<p>Users who receive an error when trying to log back in after extended periods of inactivity (<code>[User account is disabled]</code>) should contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> to have their accounts re-enabled.</p>
-</section>
-</section>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>The following resources are available for you to get started with Qualtrics:</p>
-<section id="qualtrics-basecamp" class="level3">
-<h3 class="anchored" data-anchor-id="qualtrics-basecamp">Qualtrics Basecamp</h3>
-<p><a href="https://basecamp.qualtrics.com">basecamp.qualtrics.com</a>, the online learning platform where you have access to learning instructions on how to use Qualtrics.</p>
-</section>
-<section id="qualtrics-knowledge-base" class="level3">
-<h3 class="anchored" data-anchor-id="qualtrics-knowledge-base">Qualtrics Knowledge Base</h3>
-<p>Qualtrics offers access to an extensive library of knowledge base articles, including detailed instructions on how to use and configure (advance) features.</p>
-<p>Qualtrics Knowledge Base library can be accessed directly at <a href="https://www.qualtrics.com/support/">qualtrics.com/support</a></p>
-</section>
-<section id="qualtrics-community" class="level3">
-<h3 class="anchored" data-anchor-id="qualtrics-community">Qualtrics Community</h3>
-<p>Ask questions to the <a href="https://www.qualtrics.com/community/">Qualtrics community</a> (platform of all Qualtrics users).</p>
-<p>When logging in choose “Sign in with SSO”, when asked “Enter your company’s Organization ID” fill in <code>vuamsterdam</code>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -677,7 +642,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/qualtrics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/software-licensing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
