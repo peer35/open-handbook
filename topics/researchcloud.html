@@ -6,15 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Chris Hartgerink">
-<meta name="author" content="Lena Karvovskaya">
-<meta name="author" content="Jolien Scholten">
-<meta name="author" content="Tycho Hofstra">
-<meta name="author" content="Elisa Rodenburg">
-<meta name="author" content="Stephanie van de Sandt">
-<meta name="dcterms.date" content="2024-11-01">
 
-<title>Fourth Handbook Hackathon – Research Support Handbook</title>
+<title>SURF Research Cloud – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,44 +121,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#issues-worked-on" id="toc-issues-worked-on" class="nav-link active" data-scroll-target="#issues-worked-on">Issues worked on</a></li>
-  <li><a href="#pull-requests-worked-on" id="toc-pull-requests-worked-on" class="nav-link" data-scroll-target="#pull-requests-worked-on">Pull Requests worked on</a></li>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a>
+  <ul class="collapse">
+  <li><a href="#an-sram-collaboration-connected-to-research-cloud" id="toc-an-sram-collaboration-connected-to-research-cloud" class="nav-link" data-scroll-target="#an-sram-collaboration-connected-to-research-cloud">1. An SRAM Collaboration connected to Research Cloud</a></li>
+  <li><a href="#a-wallet-with-credits" id="toc-a-wallet-with-credits" class="nav-link" data-scroll-target="#a-wallet-with-credits">2. A Wallet with credits</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2024-11-01hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/researchcloud.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Fourth Handbook Hackathon</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">hackathon</div>
-  </div>
-  </div>
+<h1 class="title">SURF Research Cloud</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Authors</div>
-    <div class="quarto-title-meta-contents">
-             <p>Chris Hartgerink </p>
-             <p>Lena Karvovskaya </p>
-             <p>Jolien Scholten </p>
-             <p>Tycho Hofstra </p>
-             <p>Elisa Rodenburg </p>
-             <p>Stephanie van de Sandt </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 1, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -175,40 +156,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the <a href="https://rdm.vu.nl/blog/2024-09-30hackathon.html">third hackathon</a>, we migrated to <code>rdm.vu.nl</code>, which is a huge milestone! 🎉</p>
-<p>For the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.</p>
-<p>We considered how (un)balanced the various <a href="https://rdm.vu.nl/topics.html">Topics</a> had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.</p>
-<p>One breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):</p>
-<ul>
-<li>What is it?</li>
-<li>What can it be used for?</li>
-<li>How to request access</li>
-<li>Are there costs involved</li>
-<li>Getting started (with screenshot)</li>
-<li>How does it work/more detailed instructions</li>
-<li>Contact</li>
-</ul>
-<p>And the following structure for concepts (for example, DMP, data citation, data storage):</p>
-<ul>
-<li>What is it</li>
-<li>Examples</li>
-<li>Tools/services/resources related to concept provided by VU</li>
-<li>How does this help you in your research?</li>
-</ul>
-<p>We will follow up with a new hackathon in late november.</p>
-<section id="issues-worked-on" class="level2">
-<h2 class="anchored" data-anchor-id="issues-worked-on">Issues worked on</h2>
-<p><a href="https://github.com/ubvu/open-handbook/issues/232" class="uri">https://github.com/ubvu/open-handbook/issues/232</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/issues/233" class="uri">https://github.com/ubvu/open-handbook/issues/233</a></p>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p><a href="https://www.surf.nl/en/services/surf-research-cloud">SURF Research Cloud</a> is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions, research communities and suppliers can contribute to Research Cloud’s functionality and catalogue by integrating their computing and data services.</p>
+<p>SURF Research Cloud is hosted at the SURF datacenter in Amsterdam.</p>
 </section>
-<section id="pull-requests-worked-on" class="level2">
-<h2 class="anchored" data-anchor-id="pull-requests-worked-on">Pull Requests worked on</h2>
-<p><a href="https://github.com/ubvu/open-handbook/pull/229" class="uri">https://github.com/ubvu/open-handbook/pull/229</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/231" class="uri">https://github.com/ubvu/open-handbook/pull/231</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/234" class="uri">https://github.com/ubvu/open-handbook/pull/234</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/235" class="uri">https://github.com/ubvu/open-handbook/pull/235</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/236" class="uri">https://github.com/ubvu/open-handbook/pull/236</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/237" class="uri">https://github.com/ubvu/open-handbook/pull/237</a></p>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<p>SURF Research Cloud enables you to run 1 or more servers with applications that can be accessible over the internet.</p>
+<ul>
+<li><p>Hosting web applications, these can be connected to SRAM for secure authentication. You can easily start more servers to increase availability and preformance.</p></li>
+<li><p>Running a desktop environment with analysis tools, use your favorite desktop tools on an environment with more performance. Unlike SciCloud GPU resources are available. You can easily connect an environment to your data on Research Drive or Yoda.</p></li>
+<li><p>Hosting a highly secure research environment where sensitive data cannot leave the VRE: <a href="https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data">SURF SANE</a>.</p></li>
+</ul>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>You will need to apply for a wallet with credits, see <a href="#how-to-request-access">How to request access</a> below.</p>
+<p>In 2025 the credit cost is:</p>
+<ul>
+<li>1.03 credits per CPU hour (only if the system is active).</li>
+<li>21 credits per GPU hour (only if the system is active).</li>
+<li>HDD storage 681 credits per TB per month, SSD storage 1525 credits per TB per month.</li>
+</ul>
+<p>See the <a href="https://www.surf.nl/files/2024-08/surf-services-and-rates-2025_0.pdf">SURF services and rates document</a>.</p>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<p>All VU researchers can get access to SURF Research Cloud. To start building an environment in Research Cloud you need 2 things:</p>
+<section id="an-sram-collaboration-connected-to-research-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="an-sram-collaboration-connected-to-research-cloud">1. An SRAM Collaboration connected to Research Cloud</h3>
+<ul>
+<li>First apply for a new SRAM Collaboration (CO): log in to <a href="https://sram.surf.nl">SRAM</a> and click the “Request collaboration” button.</li>
+<li>The SRAM admins at IT for Research (ITvO) will contact you to discuss your specific needs and help you to get started.</li>
+<li>Once the Collaboration request is approved you can connect the Research Cloud Application to the new collaboration.</li>
+<li>Invite the colleagues that need to work in your VRE to your new CO.</li>
+</ul>
+</section>
+<section id="a-wallet-with-credits" class="level3">
+<h3 class="anchored" data-anchor-id="a-wallet-with-credits">2. A Wallet with credits</h3>
+<p>There are 2 ways to obtain credits:</p>
+<ul>
+<li>Apply for a <em>NWO Small Compute Grant</em> by following the links on <a href="https://www.surf.nl/en/small-compute-applications-nwo">the Small Compute applications page</a>. In the request form select “SURF Research Cloud - HPC Cloud”.</li>
+<li>If for whatever reason your application for this grant is denied, you could also claim credits from VU Amsterdam <a href="https://www.surf.nl/research-capacity-computing-service-rccs-directe-toegang-tot-onze-rekensystemen-en-expertise">Research Capacity Computing Service contract with SURF</a> contract. Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> for details on how to obtain these credits.</li>
+</ul>
+<p>Once the request is granted you will have access to a <em>wallet</em> in Research Cloud and can start to build an environment.</p>
+</section>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>Documentation for Research Cloud can be found on the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud">SURF User Knowledge Base</a>.</p>
+<p><a href="mailto:itvo.it@vu.nl">IT for Research</a> can assist you in setting up a new Research Cloud environment.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Wondering if SURF Research Cloud fits your research needs? Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a></p>
 
 
 </section>
@@ -661,7 +663,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2024-11-01hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/researchcloud.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

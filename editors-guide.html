@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-aec89e41cba5c6e429debb0e3d7f5a99.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f16c22b6b6b760b90415d21888f36db8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -132,6 +132,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#github-etiquette" id="toc-github-etiquette" class="nav-link" data-scroll-target="#github-etiquette">GitHub etiquette</a></li>
   </ul></li>
+  <li><a href="#protocols" id="toc-protocols" class="nav-link" data-scroll-target="#protocols">Protocols</a>
+  <ul class="collapse">
+  <li><a href="#hackathon-protocol" id="toc-hackathon-protocol" class="nav-link" data-scroll-target="#hackathon-protocol">Hackathon protocol</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/editors-guide.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -158,17 +162,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Welcome to the Editor’s guide to the Handbook! This page contains resources around how the editors work.</p>
-<p>Temporary initial editors are:</p>
+<p>The current editors are:</p>
 <ul>
 <li>Chris Hartgerink</li>
 <li>Elisa Rodenburg</li>
-<li>Jessica Hrudey</li>
 <li>Jolien Scholten</li>
-<li>Lena Karvovskaya</li>
 </ul>
+<p>They can be pinged on GitHub as a team by using <code>@ubvu/editors</code> as the tag.</p>
 <section id="what-does-an-editor-do" class="level2">
 <h2 class="anchored" data-anchor-id="what-does-an-editor-do">What does an editor do?</h2>
-<p>Editors tie together all the strings in this community handbook. We keep a bird’s eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar.</p>
+<p>Editors tie together all the strings in this VU Amsterdam community handbook. We keep a bird’s eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar. Editors also help keep the content relevant to the entirety of VU Amsterdam (faculty specific information is not within scope).</p>
 <p>Each editor commits themselves to providing timely reviews of topics, guides, or both.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This commitment is for a limited time and can be renewed. We also welcome more editors at any time, given that we do not expect all editors to review everything.</p>
 <p>As we go on this journey together, we may assign more specific responsibilities as they emerge.</p>
 </section>
@@ -177,17 +180,25 @@ ul.task-list li input[type="checkbox"] {
 <p>As editors, we maintain a bunch of quality standards, both automated and not automated. If you are reading this as a contributor, you will greatly help us out by taking these into account.</p>
 <p>Here are some quality standards we maintain throughout the handbook:</p>
 <ul>
+<li>Writing must be primarily in active voice, both for consistent and engaging text across all pages</li>
 <li>Acronyms must be written in full at least once on the page where they are used</li>
-<li>All changes to the handbook are made via pull requests. Each change needs approval from two editors.</li>
+<li>All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+<ul>
+<li>Pull requests may not be merged if the QA automations fail</li>
+</ul></li>
+<li>Links must be <code>https://</code></li>
 <li>All images must have alt text</li>
 <li>Links must be descriptive (no “click here” links)</li>
 <li>No writing in name of the handbook (for example, “we recommend repository X”)</li>
+<li>Where possible, pages with a DOI must link through the DOI (for example, <code>https://doi.org/10.4444/xxxx</code> instead of the direct link <code>https://nature.com/...</code>)</li>
 </ul>
+<p>We try to automate most of these rules, but this is not always possible or accurate enough.</p>
 <section id="topics" class="level3">
 <h3 class="anchored" data-anchor-id="topics">Topics</h3>
 <p>For topics we maintain an additional set of standards:</p>
 <ul>
 <li>Topics must be nouns or noun phrases</li>
+<li>Topics are self-contained and aim for brevity</li>
 <li>All topics must be title capitalized (see also the helpful tool <a href="https://capitalizemytitle.com/style/APA/">CapitalizeMyTitle.com</a>)</li>
 <li>No <code>include</code> statements are allowed in topics
 <ul>
@@ -200,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="guides">Guides</h3>
 <p>For guides we maintain other standards:</p>
 <ul>
-<li>Guides must be phrased as questions that the reader will get answers to</li>
+<li>Guides must be phrased as questions that the reader will get answers to (for example, “how do I preserve data?”)</li>
 </ul>
 </section>
 </section>
@@ -234,6 +245,37 @@ Not all pull requests make it into the handbook, and that is okay. We want to en
 Stale pull requests can be closed with a note for the contributor that they are welcome to request the pull request to be re-opened. We automatically mark pull requests as stale after 30 days.
 
 Pull requests that provide too much discussion and do not have a pathway to resolution may be closed for being disputed. This does not mean the content goes to waste – here we recommend an issue to be opened to continue the discussion. Please note that disputed topics can only be carried on if done so in a mutually constructive manner. -->
+</section>
+</section>
+<section id="protocols" class="level2">
+<h2 class="anchored" data-anchor-id="protocols">Protocols</h2>
+<section id="hackathon-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="hackathon-protocol">Hackathon protocol</h3>
+<p>We sometimes run hackathons to create space to contribute. We run hackathons as follows:</p>
+<p>Preparation:</p>
+<ul>
+<li>Hackathons are two hours long</li>
+<li>Hackathons are run using Zoom</li>
+<li>Each hackathon has a theme (it helps focus people’s energy on something and can inspire participation)</li>
+<li>We use a collaborative note taking document that requires no logging in, which is the central place to navigate the hackathon</li>
+<li>Assign a host</li>
+</ul>
+<p>During:</p>
+<ul>
+<li>Open 10 breakout rooms in zoom, allowing participants to freely move around</li>
+<li>The host…
+<ul>
+<li>…Welcomes everyone with an icebreaker question</li>
+<li>…Shares the link to the note taking document when people join</li>
+<li>…Sets the stage for the hackathon when it starts</li>
+<li>…Announces a break at the halfway mark</li>
+</ul></li>
+<li>Keep track of all the issues and pull requests opened for the speed blog</li>
+</ul>
+<p>After:</p>
+<ul>
+<li>Finish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done.</li>
+</ul>
 
 
 </section>
