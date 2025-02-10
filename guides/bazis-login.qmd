@@ -1,0 +1,87 @@
+---
+title: BAZIS Login Instructions
+image: '/public/cover-images/DALLE_research-data-storage-2.jpg'
+description: "Learn how to get started with BAZIS."
+---
+
+
+# Setup
+
+## Quick Start
+When you get your account you will receive a temporary password by email, which you can use to connect to the cluster using ssh. To log in to the cluster, you first need to log in to the VU network (`ssh \<VUNETID>\@ssh.data.vu.nl`) and then “hop” to the actual cluster (`ssh \<VUNETID>\@bazis.labs.vu.nl`). For `ssh.data.vu.nl` you use your VUnetID and VUnetID password. For `bazis.labs.vu.nl`, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after first logon). 
+
+Direct access is only possible from the Campus or from a SURF network location. From other network locations, first connect to the stepstone `\<VUNETID\>@ssh.data.vu.nl`, or use eduVPN Institutional Access (below). 
+
+You can use any SSH client to login at `\<VUNETID\>@bazis.labs.vu.nl`. Example clients are [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/), [MobaXterm](https://mobaxterm.mobatek.net/) (Windows) and [iTerm2](https://iterm2.com/) (macOS).
+
+
+## Connecting with SSH (MOBAXTERM example)
+Here we provide the steps to connect to the cluster using MobaXterm.
+
+1. Download and install MobaXTerm from [mobatek.net](https://mobaxterm.mobatek.net/download.html).
+2. Open MobaXTerm and click on Session
+3. Enter the Basic SSH settings as follows:
+   1. Remote host: `bazis.labs.vu.nl`
+   2. Tick "specify username"
+   3. Enter your username (VUnetID)
+4. Go to “Network settings” and click SSH gateway (jump host)
+5. Enter the following details and click OK
+   1. Gateway host: `ssh.data.vu.nl`
+   2. Enter your username (VUnetID)
+6. Save the settings. When not connected automatically, you can click on User sessions, and double click "bazis.labs.vu.nl (VUNETID)"
+7. You will be asked for a password for "ssh.data.vu.nl". This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.
+8. If not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.
+9. You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).
+10. Congratulations, you are now connected to the cluster! The next steps are to set up your scripts and data!
+
+As an alternative, you can use eduVPN to connect to the VU network, however the above configuration is recommended and generally works best in the long term. You can [find the client on the eduVPN pages](https://www.eduvpn.org/client-apps/). Start eduVPN and choose Institute Access to connect. You will need to enable Multi-Factor Authentication (MFA). Students can activate MFA at the servicedesk ([kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809)).
+
+
+## [TIP] Password-less login
+If you frequently log in to the cluster, it might be usefull to set up a key-based login. 
+
+First generate a key on your personal device:
+    
+    ssh-keygen -t ed25519 -C "<Your VU Email>" -f ~/.ssh/bazis_direct_login
+
+Copy the public key to both the ssh-stepstone (`ssh.data.vu.nl`) and bazis (`bazis.labs.vu.nl`). ssh-copy-id will add your key to the authorized keys file on the target server. 
+    
+    # Irregardless of your network location, you can execute the following. 
+    # You may be prompted once to provide your password.
+    ssh-copy-id -i ~/.ssh/bazis_direct_login.pub <VUNETID>@ssh.data.vu.nl
+
+    # When connected to a VU/SURF network location, execute the following:
+    ssh-copy-id -i ~/.ssh/bazis_direct_login.pub <VUNETID>@bazis.labs.vu.nl
+
+Make sure your private key is added to the ssh-agent on your personal device:
+
+    ssh-add ~/.ssh/bazis_direct_login
+
+Add the complete configuration in your ssh config file (`~/.ssh/config`):
+    
+    Host stepstone-vu
+        HostName ssh.data.vu.nl
+        User <VUNETID>
+        AddKeysToAgent yes
+        IdentityFile ~/.ssh/bazis_direct_login
+        IdentitiesOnly yes
+
+    Host bazis-direct-login
+        HostName bazis.labs.vu.nl
+        ProxyJump stepstone-vu
+        ServerAliveInterval 120
+        User <VUNETID> 
+        AddKeysToAgent yes
+        IdentityFile ~/.ssh/bazis_direct_login
+        IdentitiesOnly yes
+
+Done! You can now connect directly to bazis, from any location, without being prompted for a password:
+
+    ssh bazis-direct-login
+
+
+## Login Troubleshooting
+
+- ssh agent issues
+- bash issues
+- network location
