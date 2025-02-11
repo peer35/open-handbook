@@ -5,17 +5,19 @@ description: "Learn how to get started with BAZIS."
 ---
 
 
-# Setup
-
 ## Quick Start
-When you get your account you will receive a temporary password by email, which you can use to connect to the cluster using ssh. To log in to the cluster, you first need to log in to the VU network (`ssh \<VUNETID>\@ssh.data.vu.nl`) and then “hop” to the actual cluster (`ssh \<VUNETID>\@bazis.labs.vu.nl`). For `ssh.data.vu.nl` you use your VUnetID and VUnetID password. For `bazis.labs.vu.nl`, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after first logon). 
-
-Direct access is only possible from the Campus or from a SURF network location. From other network locations, first connect to the stepstone `\<VUNETID\>@ssh.data.vu.nl`, or use eduVPN Institutional Access (below). 
-
-You can use any SSH client to login at `\<VUNETID\>@bazis.labs.vu.nl`. Example clients are [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/), [MobaXterm](https://mobaxterm.mobatek.net/) (Windows) and [iTerm2](https://iterm2.com/) (macOS).
 
 
-## Connecting with SSH (MOBAXTERM example)
+You will receive a temporary password by email once your account is created, which you can use to connect to the cluster using ssh. If you do not have an account yet, you can request one [via this form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=83139c79473e8150bfa46d72e36d432e).  
+
+To log in to the cluster, you first need to log in to the VU network (`ssh \<VUNETID>\@ssh.data.vu.nl`) and then “hop” to the actual cluster (`ssh \<VUNETID>\@bazis.labs.vu.nl`). For `ssh.data.vu.nl` you use your VUnetID and VUnetID password. For `bazis.labs.vu.nl`, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after your first login). 
+
+Direct access to the cluster is only possible from the VU Campus or from a SURF network location. From other network locations, first connect to the stepstone `\<VUNETID\>@ssh.data.vu.nl`, or use [eduVPN Institutional Access](https://www.eduvpn.org/client-apps/).
+
+You can use any SSH client to login at `\<VUNETID\>@bazis.labs.vu.nl`. Example clients are [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/) (Windows), [MobaXterm](https://mobaxterm.mobatek.net/) (Windows) and [iTerm2](https://iterm2.com/) (macOS). It is also possible to connect through a coding editor, such as [Visual Studio Code](https://code.visualstudio.com/).
+
+
+## Connecting with SSH (MOBAXTERM)
 Here we provide the steps to connect to the cluster using MobaXterm.
 
 1. Download and install MobaXTerm from [mobatek.net](https://mobaxterm.mobatek.net/download.html).
@@ -34,10 +36,65 @@ Here we provide the steps to connect to the cluster using MobaXterm.
 9. You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).
 10. Congratulations, you are now connected to the cluster! The next steps are to set up your scripts and data!
 
-As an alternative, you can use eduVPN to connect to the VU network, however the above configuration is recommended and generally works best in the long term. You can [find the client on the eduVPN pages](https://www.eduvpn.org/client-apps/). Start eduVPN and choose Institute Access to connect. You will need to enable Multi-Factor Authentication (MFA). Students can activate MFA at the servicedesk ([kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809)).
+
+## Connecting with SSH (VS Code Editor)
+
+1. Download and install the [VS Code editor](https://code.visualstudio.com/). If you run Windows, also install [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/).
+2. Open VS Code and enter the shortcut: `CTRL+SHIFT+P`
+3. Search and select 'Remote-SSH: Open SSH Configuration File.."
+4. Copy-paste the following host info in the config file, replace \<VUNETID> with your own VUNETID:
+---
+    # For connections from any network location:
+    
+    Host stepstone-vu
+        HostName ssh.data.vu.nl
+        User <VUNETID>
+        PubkeyAuthentication no
+
+    Host bazis-direct-login
+        HostName bazis.labs.vu.nl
+        ProxyJump stepstone-vu
+        ServerAliveInterval 120
+        User <VUNETID>
 
 
-## [TIP] Password-less login
+    # Or, if you are connected to eduVPN / VU Campus network, 
+    # you don't need a proxyjump:
+
+    Host bazis-direct-login-noproxy
+        HostName bazis.labs.vu.nl
+        ServerAliveInterval 120
+        User <VUNETID>
+
+---
+5. Save and close the file. 
+6. Navigate to the "Remote explorer" icon in the left ribbon ![ ](image-2.png)and select either "bazis-direct-login" or "bazis-direct-login-noproxy" based on your setup choice.
+7. You will be prompted twice for a password, first for `ssh.data.vu.nl` , then for `bazis.labs.vu.nl`.
+8. Once connected, your files may not be visible right a way. If they are not, select the "explorer" icon in the left ribbon ![alt text](image-3.png). Open a folder and select the path you wish to open in your editor.
+9. Done! You are now connected to the BAZIS cluster and visually acces your selected folder. 
+    
+**(!) Please be aware that you will still need to use the command line interface to submit jobs to the cluster (also see VS-code faq page ref)**
+
+If you wish, you can also setup a [password-less login](#[TIP]-Password-less-login).
+
+## Login Troubleshooting Checklist 
+
+- If you can't connect to the BAZIS cluster:
+  - Make sure your ssh-agent is running: `eval $(ssh-agent -s)`. This should return: `Agent pid /<number>/`
+  - Is your password correct? Mix ups between the VUNETID password and BAZIS cluster password occur regularly. 
+  - If your authentication attempts are timed out: Wait 15 minutes and try again.
+  - Is your keyboard layout set correctly (e.g. US international)?
+  - If you are connecting from outside the VU Campus: are you connected to eduVPN OR `ssh.data.vu.nl`?
+
+- If none of the above helped in resolving your issue:
+  - Send an email to itvo.it@vu.nl with the following information:
+    - Your operating system (windows, macos, linux)
+    - The ssh client you are using (bash shell, mobaxterm, iterm, wsl)
+    - The network location (country) you are trying to connect from
+    - A verbose report of your ssh attempt (run and copy:  `ssh -vvv \<VUNETID>\@bazis.labs.vu.nl` and/or `ssh -vvv \<VUNETID>\@ssh.data.vu.nl`)
+
+
+## [OPTIONAL] Password-less login
 If you frequently log in to the cluster, it might be usefull to set up a key-based login. 
 
 First generate a key on your personal device:
@@ -79,9 +136,3 @@ Done! You can now connect directly to bazis, from any location, without being pr
 
     ssh bazis-direct-login
 
-
-## Login Troubleshooting
-
-- ssh agent issues
-- bash issues
-- network location
