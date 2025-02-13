@@ -8,7 +8,7 @@ description: "Learn how to get started with BAZIS."
 ## Quick Start
 
 
-You will receive a temporary password by email once your account is created, which you can use to connect to the cluster using ssh. If you do not have an account yet, you can request one [via this form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=83139c79473e8150bfa46d72e36d432e).  
+You will receive a temporary password by email once your account is created, which you can use to connect to the cluster using the Secure Shell protocol (SSH). If you do not have an account yet, you can request one [via this form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=83139c79473e8150bfa46d72e36d432e).  
 
 To log in to the cluster, you first need to log in to the VU network (`ssh \<VUNETID>\@ssh.data.vu.nl`) and then “hop” to the actual cluster (`ssh \<VUNETID>\@bazis.labs.vu.nl`). For `ssh.data.vu.nl` you use your VUnetID and VUnetID password. For `bazis.labs.vu.nl`, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after your first login). 
 
@@ -71,13 +71,13 @@ Here we provide the steps to connect to the cluster using MobaXterm.
 6. Navigate to the "Remote explorer" icon in the left ribbon ![ ](image-2.png)and select either "bazis-direct-login" or "bazis-direct-login-noproxy" based on your setup choice.
 7. You will be prompted twice for a password, first for `ssh.data.vu.nl` , then for `bazis.labs.vu.nl`.
 8. Once connected, your files may not be visible right a way. If they are not, select the "explorer" icon in the left ribbon ![alt text](image-3.png). Open a folder and select the path you wish to open in your editor.
-9. Done! You are now connected to the BAZIS cluster and visually acces your selected folder. 
+9. Done! You are now connected to the BAZIS cluster and have visible access to your selected folder. 
     
 **(!) Please be aware that you will still need to use the command line interface to submit jobs to the cluster (also see VS-code faq page ref)**
 
 If you wish, you can also setup a [password-less login](#[TIP]-Password-less-login).
 
-## Login Troubleshooting Checklist 
+## Login Troubleshooting
 
 - If you can't connect to the BAZIS cluster:
   - Make sure your ssh-agent is running: `eval $(ssh-agent -s)`. This should return: `Agent pid /<number>/`
@@ -101,7 +101,7 @@ First generate a key on your personal device:
     
     ssh-keygen -t ed25519 -C "<Your VU Email>" -f ~/.ssh/bazis_direct_login
 
-Copy the public key to both the ssh-stepstone (`ssh.data.vu.nl`) and bazis (`bazis.labs.vu.nl`). ssh-copy-id will add your key to the authorized keys file on the target server. 
+Copy the public key to **both** the ssh-stepstone (`ssh.data.vu.nl`) and bazis (`bazis.labs.vu.nl`). ssh-copy-id will copy and add your key to the authorized keys file on the target server. 
     
     # Irregardless of your network location, you can execute the following. 
     # You may be prompted once to provide your password.
@@ -126,6 +126,17 @@ Add the complete configuration in your ssh config file (`~/.ssh/config`):
     Host bazis-direct-login
         HostName bazis.labs.vu.nl
         ProxyJump stepstone-vu
+        ServerAliveInterval 120
+        User <VUNETID> 
+        AddKeysToAgent yes
+        IdentityFile ~/.ssh/bazis_direct_login
+        IdentitiesOnly yes
+
+    # Or, if you are connected to eduVPN / VU Campus network, 
+    # you don't need a proxyjump:
+
+    Host bazis-direct-login-noproxy
+        HostName bazis.labs.vu.nl
         ServerAliveInterval 120
         User <VUNETID> 
         AddKeysToAgent yes
