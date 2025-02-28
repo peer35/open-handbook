@@ -1,0 +1,7 @@
+---
+title: BAZIS Code Example SLURM & Python
+image: '/public/cover-images/DALLE_research-data-storage-2.jpg'
+description: "How to submit a slurm job with a python script."
+---
+
+

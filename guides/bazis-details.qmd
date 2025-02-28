@@ -1,0 +1,8 @@
+---
+title: BAZIS Landing Page
+image: '/public/cover-images/DALLE_research-data-storage-2.jpg'
+description: "Welcome page"
+---
+
+
+## Quick Start

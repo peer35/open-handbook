@@ -1,0 +1,20 @@
+---
+title: BAZIS Landing Page
+image: '/public/cover-images/DALLE_research-data-storage-2.jpg'
+description: "Welcome page"
+---
+
+
+## Introduction BAZIS
+
+BAZIS is a high performance computing (HPC) cluster managed by the IT for Research department at the Vrije Universiteit Amsterdam. Use of BAZIS is purposed for students/researchers who need more computing power than a conventional computer offers to get their work done. BAZIS is a heterogeneous system composed of various sub-clusters (or so-called, partitions), in which each sub-cluster is owned by / assigned to a specific group of users. Additionally, a 'general' partition is also available for those who are not working on the cluster in the context of a specific research group. 
+
+This set of pages contains all information to get started with BAZIS, such as how to login, hardware specs, use software on the cluster, tips and tricks. 
+
+
+## Prerequisites
+A basic understanding of programming and using the command line interface (bash) is recommended. 
+
+
+## Request access
+A BAZIS account can be requested [via this form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=83139c79473e8150bfa46d72e36d432e). Please specify in the request your vunetid, research department / study programme and supervisor (if applicable). 
