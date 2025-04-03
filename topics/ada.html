@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guides – Research Support Handbook</title>
+<title>ADA HPC – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,70 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style type="text/css">
-.quarto-grid-item .listing-item-img-placeholder {
-  background-color: #0080c9;
-}
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -143,8 +78,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -159,25 +94,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./guides.html" aria-current="page"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -193,15 +128,32 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl">Collect &amp; Store <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==">Discover &amp; Initiate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==">Document &amp; Preserve <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbiUyMCUyNiUyMERlc2lnbg==">Plan &amp; Design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=">Process &amp; Analyse <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHVibGlzaCUyMCUyNiUyMFNoYXJl">Publish &amp; Share <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a>
+  <ul class="collapse">
+  <li><a href="#buying-dedicated-compute-nodes" id="toc-buying-dedicated-compute-nodes" class="nav-link" data-scroll-target="#buying-dedicated-compute-nodes">Buying dedicated compute nodes</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/ada.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Guides</h1>
-</div>
+<h1 class="title">ADA HPC</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
 
 
@@ -217,237 +169,48 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-What is a guide?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.</p>
-<p>Missing a guide? You can <a href="https://ez-github-contributor.netlify.app/">submit questions you are dealing with using the Contribution portal</a>.</p>
-</div>
-</div>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p>ADA is a compute cluster for research at the Vrije Universiteit Amsterdam. ADA is named in honor of <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a>, the pioneering mathematician and writer known for her work on Charles Babbage’s Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. ADA is the rebranded name of our previous cluster, BAZIS, and is maintained by the IT for Research team.</p>
+<p>ADA is a heterogenious cluster composed of partitions and servers financed by various VU research departments and the VU IT department. The cluster is particularly useful for executing multi-node computations that are not possible on the general VU compute servers but do not require the scale of the National Supercomputer, Snellius.</p>
+<p>ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the general (IT) partition.</p>
+<p>A large collection of tools, compilers and libraries is available for your analysis, and your data on <a href="./SciStor.qmd">SciStor</a> are directly accessible from ADA.</p>
+</section>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<p>Most researchers start out by running their analysis tools on their laptop. The performance of a laptop is limited however. You might find your analysis takes up so many resources that your laptop becomes unusable for other tasks, or tasks take so long that you have to find a way to keep your laptop running overnight. For example a lot of AI tasks, such as running Large Language Models (LLMs), require a dedicated GPU, which most laptops don’t have. These tasks will run very slowly, or not at all.</p>
+<p>A next step might be purchasing a Workstation with more performance and maybe a GPU. You can run the same applications as your laptop and leave it running overnight and during weekends. The modern VU offices are not geared for workstations, however, so that might not be possible.</p>
+<p>The point where your laptop or even a workstation becomes unusable for your analysis workflow is when you should consider HPC. HPC nodes have a large amount of RAM, many processor cores and often multiple GPUs. HPC clusters work with a queueing system, meaning the system will wait until enough resources are available to run your job and it will run multiple jobs simultaneously so its resources are used optimally.</p>
+<p>Be aware that it is generally not possible to run graphical desktop applications (such as RStudio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.</p>
+<p>CLI and scripting skills are very useful to have for every researcher, but if you feel you do not have the time to learn these skills there might be other options available such as <a href="https://hub.compute.vu.nl">the VU Compute Hub</a> or <a href="../topics/researchcloud.html">SURF Research Cloud</a> where you can run some graphical tools.</p>
+<p>At the moment the community partition does not include GPU resources. If you have tasks that need a GPU (such as Machine Learning) you can apply for access to the national HPC infrastructure <a href="../topics/snellius.html">Snellius</a> or consider <a href="#buying-dedicated-compute-nodes">buying ADA compute nodes</a>.</p>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<p>A form to request an account on ADA can be found on 🔒 <a href="https://services.vu.nl/esc">VU Service Portal</a> under IT &gt; My work field &gt; Research &gt; HPC Cluster Computing &gt; New ADA HPC Cluster Computing.</p>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>The ADA cluster community nodes are free to use for VU researchers, although resources are limited.</p>
+<section id="buying-dedicated-compute-nodes" class="level3">
+<h3 class="anchored" data-anchor-id="buying-dedicated-compute-nodes">Buying dedicated compute nodes</h3>
+<p>If your research projects require heavy usage of HPC you can consider spending part of your research budget to buy compute hardware for your group. Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> for more information on what is possible.</p>
+</section>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>There is a <a href="../guides/ADA-tips-and-tricks.qmd">guide with ADA tips &amp; tricks</a> in the Handbook.</p>
+<p>Also take a look at the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF wiki Snellius pages</a>, they contain a lot of information that applies to ADA as well.</p>
+<p>SURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. The course is aimed at using <a href="../topics/snellius.html">Snellius</a>, but what you learn is applicable to ADA as well. Please consult the <a href="https://www.surf.nl/en/agenda">SURF Agenda</a> for dates and registration.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Wondering if ADA fits your research needs? Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1743678205142" data-listing-reading-time-sort="8" data-listing-word-count-sort="1445">
-<a href="./guides/publish-and-share.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_sharing-research-data.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can I archive and publish my data?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">
-Publish &amp; Share
-</div>
-</div>
-<div class="card-text listing-description">
-All data and software leading to a published result, must be archived and published.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1743678205141" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./guides/discover-and-initiate.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientist-discovering-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you discover and reuse existing research data?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ=='); return false;">
-Discover &amp; Initiate
-</div>
-</div>
-<div class="card-text listing-description">
-There is so much data out there, that we want to help you find your way more easily.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1743678205141" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./guides/collect-and-store.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_research-data-storage-2.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data protection and security during collection, storage, and transfer?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGVjdCUyMCUyNiUyMFN0b3Jl'); return false;">
-Collect &amp; Store
-</div>
-</div>
-<div class="card-text listing-description">
-Learn about how to secure research data at any stage.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1743678205142" data-listing-reading-time-sort="11" data-listing-word-count-sort="2007">
-<a href="./guides/process-and-analyze.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-figures-swimming-in-sea-of-notes.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data provenance and accurate data analysis?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U='); return false;">
-Process &amp; Analyse
-</div>
-</div>
-<div class="card-text listing-description">
-Where data and results come from matters.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1743678205141" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<a href="./guides/document-and-preserve.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-egyptologist-evaluating-folder-structure.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure research data is FAIR?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ=='); return false;">
-Document &amp; Preserve
-</div>
-</div>
-<div class="card-text listing-description">
-Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1743678205141" data-listing-reading-time-sort="25" data-listing-word-count-sort="4884">
-<a href="./guides/plan-and-design.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientists-discussing-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you set up research data management from the start?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">
-Plan &amp; Design
-</div>
-</div>
-<div class="card-text listing-description">
-A good plan is half the work.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1743678205141" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
-<a href="./guides/policies-supporting-vision-open-science.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/VU_social_avatar_blauw-rectangle.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What policies and regulations support VU’s vision on Open Science?
-</h5>
-<div class="card-text listing-description">
-As open as possible, as closed as necessary.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1743678205141" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
-<a href="./guides/data-lifecycle.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_DMP.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What research data services and support are available for VU researchers?
-</h5>
-<div class="card-text listing-description">
-Find some resources that can help you along your research journey.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -880,12 +643,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -895,7 +658,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/ada.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

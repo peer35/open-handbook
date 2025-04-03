@@ -2,8 +2,8 @@
   {
     "listing": "/topics.html",
     "items": [
+      "/topics/ada.html",
       "/topics/academic-integrity.html",
-      "/topics/bazis.html",
       "/topics/cff.html",
       "/topics/data-archiving.html",
       "/topics/data-backup.html",
@@ -27,6 +27,7 @@
       "/topics/qualtrics.html",
       "/topics/research-data-management.html",
       "/topics/research-data-and-software-management-policy.html",
+      "/topics/researchdrive.html",
       "/topics/research-software.html",
       "/topics/researchcloud.html",
       "/topics/safe-data-transfer.html",
@@ -36,6 +37,7 @@
       "/topics/software-licensing.html",
       "/topics/selecting-data.html",
       "/topics/trainings.html",
+      "/topics/compute-hub.html",
       "/topics/yoda.html"
     ]
   },
