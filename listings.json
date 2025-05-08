@@ -1,5 +1,20 @@
 [
   {
+    "listing": "/guides.html",
+    "items": [
+      "/guides/publish-and-share.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyse.html",
+      "/guides/document-and-preserve.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html"
+    ]
+  },
+  {
     "listing": "/topics.html",
     "items": [
       "/topics/ada.html",
@@ -8,6 +23,7 @@
       "/topics/data-archiving.html",
       "/topics/data-backup.html",
       "/topics/data-citation.html",
+      "/topics/data-classification.html",
       "/topics/data-collection.html",
       "/topics/data-documentation.html",
       "/topics/data-licensing.html",
@@ -17,10 +33,12 @@
       "/topics/data-publishing.html",
       "/topics/data-storage.html",
       "/topics/dataset-and-software-registration.html",
+      "/topics/dataversenl.html",
       "/topics/ethical-review.html",
       "/topics/fair-principles.html",
       "/topics/finding-existing-data.html",
       "/topics/finding-existing-software.html",
+      "/topics/gdpr.html",
       "/topics/metadata.html",
       "/topics/open-science.html",
       "/topics/persistent-identifier.html",
@@ -39,19 +57,6 @@
       "/topics/trainings.html",
       "/topics/compute-hub.html",
       "/topics/yoda.html"
-    ]
-  },
-  {
-    "listing": "/guides.html",
-    "items": [
-      "/guides/publish-and-share.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html"
     ]
   },
   {
