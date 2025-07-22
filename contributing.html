@@ -134,8 +134,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Trainings and Knowledge Items">
+ <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
@@ -174,6 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#suggesting-edits" id="toc-suggesting-edits" class="nav-link" data-scroll-target="#suggesting-edits">Suggesting edits</a></li>
   <li><a href="#adding-a-topic" id="toc-adding-a-topic" class="nav-link" data-scroll-target="#adding-a-topic">Adding a topic</a></li>
   <li><a href="#adding-a-guide" id="toc-adding-a-guide" class="nav-link" data-scroll-target="#adding-a-guide">Adding a guide</a></li>
+  <li><a href="#editing-multiple-files" id="toc-editing-multiple-files" class="nav-link" data-scroll-target="#editing-multiple-files">Editing multiple files</a></li>
   <li><a href="#submit-a-pull-request" id="toc-submit-a-pull-request" class="nav-link" data-scroll-target="#submit-a-pull-request">Submit a pull request</a></li>
   <li><a href="#writing-text" id="toc-writing-text" class="nav-link" data-scroll-target="#writing-text">Writing text</a>
   <ul class="collapse">
@@ -217,7 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>You can contribute to the Research Support Handbook by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. If you are in need of specific information, you can skip ahead using the table of contents.</p>
+<p>You can contribute to the Research Support Handbook by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. There are two ways to contribute: <a href="#contributing-via-github">via GitHub</a> or by using the <a href="#contributing-portal">contribution portal</a>. If you are in need of specific information, you can skip ahead using the table of contents.</p>
 <section id="contributing-portal" class="level2">
 <h2 class="anchored" data-anchor-id="contributing-portal">Contributing portal</h2>
 <p>We offer a portal to reduce the barriers to contribute to the Research Support Handbook. You only need an internet connection and articulate what you want us to include. No accounts necessary 😊</p>
@@ -255,7 +276,7 @@ Warning
 <figcaption>Screenshot of the contributor portal</figcaption>
 </figure>
 </div>
-<p>If you want to be credited with contributing, please share your name. If you’d like to hear back about what was done with your feedback or proposal, please also provide a direct way to contact you.</p>
+<p>If you want to be credited with contributing, please share your name. If you’d like to hear back about what was done with your feedback or proposal, please also provide a direct way to contact you. Once you have submitted the contribution, the editors will decide how to add your contribution to the handbook. Take a look at the <a href="./editors-guide.html">Editor’s guide</a> to learn more about what criteria they consider.</p>
 </section>
 <section id="contributing-via-github" class="level2">
 <h2 class="anchored" data-anchor-id="contributing-via-github">Contributing via GitHub</h2>
@@ -334,12 +355,35 @@ Note
 <p>You need to count the heading level in your guide to identify your shift number. In this case, there are two <code>##</code> so we shift by two. You can verify the filename directly, but it should correspond to each word separated by a minus sign (for example, <code>data-management-plan.qmd</code>).</p>
 <p>After that, you are ready to <a href="#submit-a-pull-request">submit your pull request</a>!</p>
 </section>
+<section id="editing-multiple-files" class="level3">
+<h3 class="anchored" data-anchor-id="editing-multiple-files">Editing multiple files</h3>
+<p>There are situations in which you need to edit multiple files. If you carry out all edits in separate <a href="#submit-a-pull-request">pull requests</a>, this may be a long and repetitive task. Instead, you can change multiple files at once in a single pull request.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In case you want to edit multiple files in one go, here’s a video to help you along the way!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="./CleanShot%202025-06-13%20at%2014.30.36(2).mp4" class="img-fluid" controls=""><a href="./CleanShot 2025-06-13 at 14.30.36(2).mp4">Video</a></video></p>
+<figcaption>Video describing the steps to use the GitHub editor to edit multiple files</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="submit-a-pull-request" class="level3">
 <h3 class="anchored" data-anchor-id="submit-a-pull-request">Submit a pull request</h3>
 <p>Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the Research Support Handbook. The handbook editors will review what you wrote, ask some questions, and accept or decline your contributions.</p>
 <p>We recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.</p>
 <p>If you are adding a <strong>new</strong> topic or guide, it is definitely recommended to <a href="https://github.com/ubvu/open-handbook/issues/new/choose">open an issue first</a> to see whether there is a need for it (and maybe you’ll find collaborators!).</p>
-<p>During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along. By contributing, you become part of the process :blush:</p>
+<p>During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along. By contributing, you become part of the process :blush:. Once you have submitted the contribution, the editors will decide how to add your contribution to the handbook. Take a look at the <a href="./editors-guide.html">Editor’s guide</a> to learn more about what criteria they consider.</p>
 </section>
 <section id="writing-text" class="level3">
 <h3 class="anchored" data-anchor-id="writing-text">Writing text</h3>
@@ -353,7 +397,7 @@ Note
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; this is how you add quotes</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>or lists</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>that can go on </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>that can go on</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>and on</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, <a href="https://github.com/ubvu/open-handbook/issues/new/choose">let us know by reporting an issue</a>!</p>
 <section id="adding-relative-links" class="level4">
@@ -379,7 +423,7 @@ Note
 <p>Relative links link to the <code>.qmd</code> files, never to the <code>.html</code> pages. These only exist when the pages are rendered!</p>
 </div>
 </div>
-<p>If we were editing a topic, and we wanted to link out to a guide, we would need to use <code>../guides/example-guide.qmd</code>. This because we would be in the topic folder for that file, and need to navigate one level up (<code>../</code>) and then down into the guides folder.</p>
+<p>If we were editing a topic, and we wanted to link out to a guide, we would need to use <code>../guides/example-guide.qmd</code>. This because we would be in the topic folder for that file, and need to navigate one level up (<code>../</code>) and then down into the guides folder. For topic to topic references, we do the same (<code>../topics/example-topic.qmd</code>). This ensures that the links work also when a topic is embedded into a guide directly.</p>
 <section id="section-links" class="level5">
 <h5 class="anchored" data-anchor-id="section-links">Section links</h5>
 <p>Whenever we link to a specific guide or topic, you can also link to a specific section. This helps you point readers to what you want them to read, and helps them find the information they need.</p>
@@ -448,19 +492,54 @@ Note
 </section>
 <section id="rendering-handbook-locally" class="level2">
 <h2 class="anchored" data-anchor-id="rendering-handbook-locally">Rendering handbook locally</h2>
-<p>Sometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. <a href="https://quarto.org/docs/download/">You need to install Quarto</a> and assuming a successful installation, you then need to run the following code in your terminal:</p>
+<p>Sometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. <a href="https://quarto.org/docs/download/">You need to install Quarto</a> and assuming a successful installation, you then need to run the following code in your terminal<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clone the git repository</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> repo clone https://github.com/ubvu/open-handbook</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/ubvu/open-handbook</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Go into the right folder</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> open-handbook</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span>  open-handbook</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the handbook</span></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, <a href="https://github.com/ubvu/open-handbook/issues/new">let us know in an issue report</a>. We’re happy to try our best if you share your error messages :blush:</p>
+<p>This will create a file called _site/index.html. You can now open the rendered website in your browser by running:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For Windows machines, use</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">start</span> <span class="op">&lt;</span>browser-name<span class="op">&gt;</span> _site/index.html</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># For Mac machines, use</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> _site/index.html</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># For Linux, it could depend on the exact Linux operating system, but you could try first</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">xdg-open</span> _site/index.html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note that you should not copy the &lt; and &gt;, they are written here to indicate where the browser name should come.</p>
+<p>Alternatively, you could also <code>preview</code> the website rather than rendering it. For this you can simply run the command <code>quarto preview</code>. This command will open a localhost window in your browser, and you can navigate through the handbook as normal. Your terminal will keep track of any pages you open. When you want to continue working in your terminal, you can use Control + C to quit the command; this will also terminate the connection with the localhost window in your browser.</p>
+<p>You can also make changes locally and push them to the github repo to open a new branch. The procedure for this in your terminal is as follows:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Navigate to the folder where the file you want to edit is located</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>foldername<span class="op">&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Open the file to edit</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Edit the file and save by using `Control + O`. Exit nano by `Control + X`</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add the file to the staging area</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="op">&lt;</span>filename<span class="op">&gt;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit the edits</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"&lt;commit message&gt;"</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Push the edits to the remote (online) repository. You can only push to a new branch: the main branch is protected.</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co"># If you do not have editing rights to the handbook repository, you would be pushing to your fork.</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main:<span class="op">&lt;</span>new-branch-name<span class="op">&gt;</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co"># You may have to authenticate using your SSH key.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note that you should not copy the &lt; and &gt;, they are written here to indicate where file and folder names should be written. After doing this, your new branch is opened in the repository on GitHub and you can create a pull request.</p>
+<p>This procedure requires some background knowledge on working (with git) in the command line. The resources below give more explanation:</p>
+<ul>
+<li><a href="https://swcarpentry.github.io/shell-novice/02-filedir.html">Navigating Files and Directories</a> and <a href="https://swcarpentry.github.io/shell-novice/02-filedir.html">Create a text file</a> from the Carpentries’ Unix Shell lesson.</li>
+<li><a href="https://swcarpentry.github.io/git-novice/08-collab.html">Collaborating</a> and <a href="https://swcarpentry.github.io/git-novice/08-collab.html">Push local branches to a remote</a> from the Carpentries’ Version Control with Git lesson.</li>
+</ul>
+<p>We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, <a href="https://github.com/ubvu/open-handbook/issues/new">let us know in an issue report</a>. We’re happy to try our best if you share your error messages 😊</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For Linux and Mac, this is usually called the terminal. For Windows machines, you would have to use <a href="https://swcarpentry.github.io/git-novice/08-collab.html">the Git Bash</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
