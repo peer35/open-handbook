@@ -1,0 +1,22 @@
+---
+title: Zenodo
+categories: [Tools]
+---
+
+## What is it?
+Zenodo is a researh data repository.
+
+## What can it be used for?
+It can be used for publishig you research data.
+
+## How to request access
+Create an account.
+
+## Are there costs involved?
+There are no costs involved.
+
+## Getting Started
+Just do it
+
+## Contact
+Wondering if Yoda fits your research needs? Please contact the [RDM support desk](mailto:rdm@vu.nl).
