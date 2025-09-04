@@ -6,8 +6,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Emily Barabas">
+<meta name="author" content="Diógenes Cruz de Arcelino">
+<meta name="author" content="Kirianne Goossen">
+<meta name="author" content="Charlie Greene">
+<meta name="author" content="Sergio Gutierrez Maury">
+<meta name="author" content="Sam Heijnen">
+<meta name="author" content="Marcel Ras">
+<meta name="author" content="Elisa Rodenburg">
+<meta name="author" content="Jolien Scholten">
+<meta name="author" content="Dimitri Unger">
+<meta name="author" content="Peter Vos">
+<meta name="dcterms.date" content="2025-07-24">
 
-<title>Data Protection – Research Support Handbook</title>
+<title>Sixth Handbook Hackathon – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -157,19 +169,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-data-protection" id="toc-what-is-data-protection" class="nav-link active" data-scroll-target="#what-is-data-protection">What is Data Protection?</a></li>
-  <li><a href="#data-protection" id="toc-data-protection" class="nav-link" data-scroll-target="#data-protection">Data Protection</a></li>
+  <li><a href="#overview-of-results" id="toc-overview-of-results" class="nav-link active" data-scroll-target="#overview-of-results">Overview of results</a></li>
+  <li><a href="#hackathon-issues-and-pull-requests" id="toc-hackathon-issues-and-pull-requests" class="nav-link" data-scroll-target="#hackathon-issues-and-pull-requests">Hackathon Issues and Pull Requests</a></li>
+  <li><a href="#ai-generated-texts" id="toc-ai-generated-texts" class="nav-link" data-scroll-target="#ai-generated-texts">AI-generated texts</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-protection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2025-07-24hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Protection</h1>
+<h1 class="title">Sixth Handbook Hackathon</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Research Data</div>
+    <div class="quarto-category">Handbook</div>
+    <div class="quarto-category">Hackathon</div>
   </div>
   </div>
 
@@ -177,7 +191,29 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Emily Barabas </p>
+             <p>Diógenes Cruz de Arcelino </p>
+             <p>Kirianne Goossen </p>
+             <p>Charlie Greene </p>
+             <p>Sergio Gutierrez Maury </p>
+             <p>Sam Heijnen </p>
+             <p>Marcel Ras </p>
+             <p>Elisa Rodenburg </p>
+             <p>Jolien Scholten </p>
+             <p>Dimitri Unger </p>
+             <p>Peter Vos </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 24, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -187,59 +223,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-data-protection" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-data-protection">What is Data Protection?</h2>
-<p>Protection from what? From whom? When, and why? Before we talk about data protection, let us consider security first. More often than not, ‘security’ is regarded as a fixed state. In reality, security is an assessment of the level of protection against a certain threat, that you consider to deal with that threat adequately enough. Whether or not security is accurate depends on the value of the data and the quality of protective measures.</p>
-<p>The question for you as a researcher is ‘when are the measures that you take secure enough?’. In order to answer this, please be aware that there are three entities that have an opinion about what is ‘secure enough’, namely: the law, the University, and you yourself as the data processor.</p>
-<p>The University has a Security Baseline that sets a norm for levels of protection for every application it uses. The Baseline is based on international standards. For each of these applications, the University is considering for which means the security of these applications are adequate enough.</p>
-<p>The legal requirements for the processing of personal data can be found in the section ‘GDPR and Privacy’ under <a href="../guides/plan-and-design.html">Plan &amp; Design</a> There are additional laws and regulations as well. The assumption is that you are familiar with these, especially with laws regulating medical and criminal research.</p>
-<p>What you personally consider to be secure might be very different from what your colleagues, the Faculty or the University considers to be secure enough and the norms will vary with the variety of data that is being processed by different researchers and Faculties of VU Amsterdam. Very generally speaking, there are three points of protection to consider:</p>
-<ol type="1">
-<li>Protection against data loss, for which you need a back up periodically.</li>
-<li>Protection against data leakage, for which you need to consider all storage places and their access points.</li>
-<li>Protection of data integrity, for which you need version control and synchronisation management.</li>
-</ol>
-<p>The security of your protection measures depends on the threat you face. We often think of threats as active, and motivated by bad intentions. But most common forms of data loss are accidental and most leakage is caused by trusting others. In reality, devices just get lost or break down, people download malware by accident, and each one of us forgets to save a document at times or gets confused about which version was last updated.</p>
-<p>In all cases, protection starts with oversight on where your data is stored and processed. If you forget that you temporarily stored it in a certain place, you have then lost oversight of where that data is. The opposite is also true: if you know where you data is, you have insight in the level of security of the space in which you store it. As you can see, protection begins with organising your work in a reliable manner and thinking through your steps.</p>
-<p>For example, if you data is on your laptop and synchronised with your phone, then it is stored in two places. Perhaps this is enough back up, perhaps not. If you put both you devices in the same bag and you lose your bag, you have no backup. A backup to an online storage might be a good solution, but might also mean your data leaks via the internet of via the storage provider who sells the data and your behavioural data for profit. Most importantly, there is no absolute security. It is best if you consider your personal behaviour and then think of scenarios that are more or less likely to happen and what would impact you most. If you frequently work in public places you should make it a habit to lock your device each time you leave it. If you eat and drink behind your desk often, better work with a remote keyboard to protect your laptop from the unavoidable coffee shower. Do you save your respondents’ contact details on your personal phone? Then protect it with a pin.</p>
-<p>Here are some basic protection guidelines:</p>
-<ol type="1">
-<li>Data are very difficult to erase. You have probably never done it.</li>
-<li>Decide how to back up data and test it before you rely on it.</li>
-<li>Do not give others your log-in credentials. If you have done so and your family members use your work device, then change it.</li>
-<li>Do not use passwords twice, do not use your birthday, initials, streetname, hobby.</li>
-<li>Encryption sounds secure, but it fails completely without good password management.</li>
-</ol>
-</section>
-<section id="data-protection" class="level2">
-<h2 class="anchored" data-anchor-id="data-protection">Data Protection</h2>
-<p>There can be many reasons why the data of a project needs to be kept protected:</p>
+<p>On July 24, 2025, all authors participated in the sixth hackathon for the Research Support Handbook. For this hackathon, we focused on <strong>adding and updating topics</strong>.</p>
+<section id="overview-of-results" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-results">Overview of results</h2>
+<p>New topics that we have added during or in the days after the Hackathon:</p>
 <ul>
-<li>Sensitivity of the data collected</li>
-<li>Protection of the research data from competition</li>
-<li>Commercial reasons / Intellectual property</li>
-<li>Etc.</li>
+<li>ITvO</li>
+<li>Pure</li>
+<li>CARE Principles</li>
+<li>Software Archiving</li>
+<li>Software Publishing</li>
+<li>OSF</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/20130404encryption.jpg" class="img-fluid figure-img"></p>
-<figcaption>An image of a lock composed of code in a matrix green style.</figcaption>
-</figure>
-</div>
-<p>There are also many levels of security that may be implemented, depending on the needs. Sometimes it will be enough to use a password-protected cloud-based server. In extreme cases encryption may be needed and also when data is transmitted between researchers or organisations. You should contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> to discuss available options, who may connect you to legal experts where sensitive data is concerned. Check the <a href="../topics/data-storage.html">Data Storage topic</a> for links to find out more on campus solutions and cloud-based options.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>See also the <a href="../topics/safe-data-transfer.html">Safe Data Transfer</a> topic for more information on how to transport and transfer data.</p>
-</div>
-</div>
+<p>We have started on the following topics, but these still need some work before they can be published:</p>
+<ul>
+<li>RDM tools overview (to replace the <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools">current one on the VU website</a>)</li>
+<li>De-identifying data: Pseudonymisation and Anonymisation</li>
+<li>Informed consent forms (content will be discussed with the privacy experts)</li>
+</ul>
+<p>The following topics have been updated:</p>
+<ul>
+<li>DMP: we moved the instructions for selecting the VU DMP template to the guide <a href="../guides/plan-and-design.html">How can you set up research data management from the start?</a></li>
+</ul>
+<p>We worked on some guides as well:</p>
+<ul>
+<li>We updated the guide <a href="../guides/data-lifecycle.html">What research data services and support are available for VU researchers?</a></li>
+<li>We transferred all information related to OSF from the VU OSF Wiki to the Handbook, resulting in a topic (see above) and a guide <a href="../guides/use-osf.html">How can you use Open Science Framework (OSF) in your research project?</a></li>
+<li>We updated the guide <a href="../guides/plan-and-design.html">How can you set up research data management from the start?</a>, where we included the instructions for selecting the VU DMP template</li>
+</ul>
+<p>In addition, we introduced a new type of page: Manuals (a big thanks to Peter, who put a lot of effort in preparing this 🙏). A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge. It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don’t want to duplicate information. If you’re interested, you can read more in <a href="https://github.com/ubvu/open-handbook/issues/416">Issue #416</a>. The Yoda manuals have now been included in the Handbook (the website yoda.vu.nl will be phased out). Manuals on the handbook will be written in the form of a how-to, the aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.</p>
+<p>Finally, we also worked on contributing guidelines and categorised the blog posts, introducing a new type of blog post by ITvO:</p>
+<ul>
+<li>Instructions for using VSCode to contribute</li>
+<li>Updated instructions for rendering the Research Support Handbook locally</li>
+<li>Introduced Blog categories and ITvO Blog</li>
+</ul>
+</section>
+<section id="hackathon-issues-and-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-issues-and-pull-requests">Hackathon Issues and Pull Requests</h2>
+<ul>
+<li>(Yoda) manuals: <a href="https://github.com/ubvu/open-handbook/issues/416">Issue #416</a> and <a href="https://github.com/ubvu/open-handbook/pull/484">PR #484</a></li>
+<li>Information about ITvO: <a href="https://github.com/ubvu/open-handbook/issues/344">Issue #344</a> and <a href="https://github.com/ubvu/open-handbook/pull/516">PR #516</a></li>
+<li>Software Archiving: <a href="https://github.com/ubvu/open-handbook/issues/354">Issue #354</a> and <a href="https://github.com/ubvu/open-handbook/pull/500">PR #500</a></li>
+<li>Software Publishing: <a href="https://github.com/ubvu/open-handbook/issues/354">Issue #354</a> and <a href="https://github.com/ubvu/open-handbook/pull/501">PR #501</a></li>
+<li>OSF: <a href="https://github.com/ubvu/open-handbook/issues/100">Issue #100</a> and <a href="https://github.com/ubvu/open-handbook/pull/538">PR #538</a> (topic) and <a href="https://github.com/ubvu/open-handbook/pull/541">PR #541</a> (guide)</li>
+<li>CARE Principles: <a href="https://github.com/ubvu/open-handbook/issues/448">Issue #448</a> and <a href="https://github.com/ubvu/open-handbook/pull/503">PR #503</a></li>
+<li>What research data services and support are available for VU researchers? <a href="https://github.com/ubvu/open-handbook/pull/530">PR #530</a></li>
+<li>Pure: <a href="https://github.com/ubvu/open-handbook/issues/482">Issue #482</a> and <a href="https://github.com/ubvu/open-handbook/pull/497">PR #497</a> and <a href="https://github.com/ubvu/open-handbook/pull/537">#PR 537</a></li>
+<li>How can you set up research data management from the start?: <a href="https://github.com/ubvu/open-handbook/pull/524">PR #524</a></li>
+<li>DMP: <a href="https://github.com/ubvu/open-handbook/pull/525">PR #525</a></li>
+<li>Using VSCode to contribute: <a href="https://github.com/ubvu/open-handbook/pull/525">PR #509</a></li>
+<li>Rendering Handbook locally: <a href="https://github.com/ubvu/open-handbook/pull/463">PR #463</a></li>
+<li>Introducing Blog categories and ITvO Blog <a href="https://github.com/ubvu/open-handbook/pull/533">PR #533</a></li>
+</ul>
+</section>
+<section id="ai-generated-texts" class="level2">
+<h2 class="anchored" data-anchor-id="ai-generated-texts">AI-generated texts</h2>
+<p>In preparation for this hackathon, we had some texts for new topics drafted by Claude LLM, as part of a trial to explore AI-assisted content creation for the handbook. The idea was that it is easier for people to review existing content than creating something from scratch. During the hackathon, most people seemed to have a preference for writing text themselves. It is more fun, and part of the content created by Claude LLM was not useful. So for now, we think we will keep writing our own texts.</p>
 
 
 </section>
@@ -679,7 +719,7 @@ Tip
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-protection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2025-07-24hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

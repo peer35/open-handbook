@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Protection – Research Support Handbook</title>
+<title>Publish &amp; Share – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -68,7 +70,93 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-topics .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-topics'] = new List('listing-topics', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-guides .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-guides'] = new List('listing-guides', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -157,21 +245,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-data-protection" id="toc-what-is-data-protection" class="nav-link active" data-scroll-target="#what-is-data-protection">What is Data Protection?</a></li>
-  <li><a href="#data-protection" id="toc-data-protection" class="nav-link" data-scroll-target="#data-protection">Data Protection</a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link active" data-scroll-target="#topics">Topics</a></li>
+  <li><a href="#guides" id="toc-guides" class="nav-link" data-scroll-target="#guides">Guides</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-protection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/lifecycle/06-publish-share.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Protection</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Research Data</div>
-  </div>
-  </div>
+<h1 class="title">Publish &amp; Share</h1>
+</div>
 
 
 
@@ -187,59 +272,238 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-data-protection" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-data-protection">What is Data Protection?</h2>
-<p>Protection from what? From whom? When, and why? Before we talk about data protection, let us consider security first. More often than not, ‘security’ is regarded as a fixed state. In reality, security is an assessment of the level of protection against a certain threat, that you consider to deal with that threat adequately enough. Whether or not security is accurate depends on the value of the data and the quality of protective measures.</p>
-<p>The question for you as a researcher is ‘when are the measures that you take secure enough?’. In order to answer this, please be aware that there are three entities that have an opinion about what is ‘secure enough’, namely: the law, the University, and you yourself as the data processor.</p>
-<p>The University has a Security Baseline that sets a norm for levels of protection for every application it uses. The Baseline is based on international standards. For each of these applications, the University is considering for which means the security of these applications are adequate enough.</p>
-<p>The legal requirements for the processing of personal data can be found in the section ‘GDPR and Privacy’ under <a href="../guides/plan-and-design.html">Plan &amp; Design</a> There are additional laws and regulations as well. The assumption is that you are familiar with these, especially with laws regulating medical and criminal research.</p>
-<p>What you personally consider to be secure might be very different from what your colleagues, the Faculty or the University considers to be secure enough and the norms will vary with the variety of data that is being processed by different researchers and Faculties of VU Amsterdam. Very generally speaking, there are three points of protection to consider:</p>
-<ol type="1">
-<li>Protection against data loss, for which you need a back up periodically.</li>
-<li>Protection against data leakage, for which you need to consider all storage places and their access points.</li>
-<li>Protection of data integrity, for which you need version control and synchronisation management.</li>
-</ol>
-<p>The security of your protection measures depends on the threat you face. We often think of threats as active, and motivated by bad intentions. But most common forms of data loss are accidental and most leakage is caused by trusting others. In reality, devices just get lost or break down, people download malware by accident, and each one of us forgets to save a document at times or gets confused about which version was last updated.</p>
-<p>In all cases, protection starts with oversight on where your data is stored and processed. If you forget that you temporarily stored it in a certain place, you have then lost oversight of where that data is. The opposite is also true: if you know where you data is, you have insight in the level of security of the space in which you store it. As you can see, protection begins with organising your work in a reliable manner and thinking through your steps.</p>
-<p>For example, if you data is on your laptop and synchronised with your phone, then it is stored in two places. Perhaps this is enough back up, perhaps not. If you put both you devices in the same bag and you lose your bag, you have no backup. A backup to an online storage might be a good solution, but might also mean your data leaks via the internet of via the storage provider who sells the data and your behavioural data for profit. Most importantly, there is no absolute security. It is best if you consider your personal behaviour and then think of scenarios that are more or less likely to happen and what would impact you most. If you frequently work in public places you should make it a habit to lock your device each time you leave it. If you eat and drink behind your desk often, better work with a remote keyboard to protect your laptop from the unavoidable coffee shower. Do you save your respondents’ contact details on your personal phone? Then protect it with a pin.</p>
-<p>Here are some basic protection guidelines:</p>
-<ol type="1">
-<li>Data are very difficult to erase. You have probably never done it.</li>
-<li>Decide how to back up data and test it before you rely on it.</li>
-<li>Do not give others your log-in credentials. If you have done so and your family members use your work device, then change it.</li>
-<li>Do not use passwords twice, do not use your birthday, initials, streetname, hobby.</li>
-<li>Encryption sounds secure, but it fails completely without good password management.</li>
-</ol>
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">Topics</h2>
+<div id="listing-topics" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-topics-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-topics'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-striped table-hover">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+<th>
+Reading Time
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1756979399257" data-listing-reading-time-sort="4" data-listing-word-count-sort="692" data-listing-title-sort="Data Licensing" data-listing-filename-sort="data-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/data-licensing.html" class="title listing-title">Data Licensing</a>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1756979399257" data-listing-reading-time-sort="4" data-listing-word-count-sort="651" data-listing-title-sort="Data Publishing" data-listing-filename-sort="data-publishing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/data-publishing.html" class="title listing-title">Data Publishing</a>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1756979399257" data-listing-reading-time-sort="2" data-listing-word-count-sort="260" data-listing-title-sort="Data Registration in PURE" data-listing-filename-sort="data-registration.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/data-registration.html" class="title listing-title">Data Registration in PURE</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="VG9vbHM=" data-listing-file-modified-sort="1756979399258" data-listing-reading-time-sort="4" data-listing-word-count-sort="700" data-listing-title-sort="DataverseNL" data-listing-filename-sort="dataversenl.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/dataversenl.html" class="title listing-title">DataverseNL</a>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="UG9saWNpZXMlMjBhbmQlMjBMZWdpc2xhdGlvbiUyQ1Jlc3BvbnNpYmxlJTIwU2Nob2xhcnNoaXA=" data-listing-file-modified-sort="1756979399258" data-listing-reading-time-sort="4" data-listing-word-count-sort="787" data-listing-title-sort="FAIR Principles" data-listing-filename-sort="fair-principles.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/fair-principles.html" class="title listing-title">FAIR Principles</a>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="VG9vbHM=" data-listing-file-modified-sort="1756979399258" data-listing-reading-time-sort="5" data-listing-word-count-sort="865" data-listing-title-sort="Open Science Framework (OSF)" data-listing-filename-sort="osf.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/osf.html" class="title listing-title">Open Science Framework (OSF)</a>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-categories="UmVzZWFyY2glMjBEYXRhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1756979399258" data-listing-reading-time-sort="3" data-listing-word-count-sort="467" data-listing-title-sort="Persistent Identifier" data-listing-filename-sort="persistent-identifier.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/persistent-identifier.html" class="title listing-title">Persistent Identifier</a>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1756979399259" data-listing-reading-time-sort="3" data-listing-word-count-sort="510" data-listing-title-sort="Software Licensing" data-listing-filename-sort="software-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/software-licensing.html" class="title listing-title">Software Licensing</a>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1756979399259" data-listing-reading-time-sort="6" data-listing-word-count-sort="1026" data-listing-title-sort="Software Publishing" data-listing-filename-sort="software-publishing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/software-publishing.html" class="title listing-title">Software Publishing</a>
+</td>
+<td>
+<span class="listing-reading-time">6 min</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1756979399259" data-listing-reading-time-sort="2" data-listing-word-count-sort="262" data-listing-title-sort="Software Registration in PURE" data-listing-filename-sort="software-registration.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/software-registration.html" class="title listing-title">Software Registration in PURE</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-categories="VG9vbHM=" data-listing-file-modified-sort="1756979399259" data-listing-reading-time-sort="5" data-listing-word-count-sort="929" data-listing-title-sort="Yoda" data-listing-filename-sort="yoda.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/yoda.html" class="title listing-title">Yoda</a>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
-<section id="data-protection" class="level2">
-<h2 class="anchored" data-anchor-id="data-protection">Data Protection</h2>
-<p>There can be many reasons why the data of a project needs to be kept protected:</p>
-<ul>
-<li>Sensitivity of the data collected</li>
-<li>Protection of the research data from competition</li>
-<li>Commercial reasons / Intellectual property</li>
-<li>Etc.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/20130404encryption.jpg" class="img-fluid figure-img"></p>
-<figcaption>An image of a lock composed of code in a matrix green style.</figcaption>
-</figure>
+<section id="guides" class="level2">
+<h2 class="anchored" data-anchor-id="guides">Guides</h2>
+<div id="listing-guides" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1756979399147" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
+<a href="../guides/publish-and-share.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../public/cover-images/DALLE_sharing-research-data.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How can you archive and publish your data?
+</h5>
+<div class="card-text listing-description delink">
+<p>All data and software leading to a published result, must be archived and published.</p>
 </div>
-<p>There are also many levels of security that may be implemented, depending on the needs. Sometimes it will be enough to use a password-protected cloud-based server. In extreme cases encryption may be needed and also when data is transmitted between researchers or organisations. You should contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> to discuss available options, who may connect you to legal experts where sensitive data is concerned. Check the <a href="../topics/data-storage.html">Data Storage topic</a> for links to find out more on campus solutions and cloud-based options.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>See also the <a href="../topics/safe-data-transfer.html">Safe Data Transfer</a> topic for more information on how to transport and transfer data.</p>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1756979399147" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
+<a href="../guides/publishing-fair-software.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../public/RSM_sticker_3x2.PNG" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How can you publish FAIR software
+</h5>
+<div class="card-text listing-description delink">
+<p>A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1756979399147" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
+<a href="../guides/use-osf.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../public/osf_logo_dark.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How can you use Open Science Framework (OSF) in your research project?
+</h5>
+<div class="card-text listing-description delink">
+<p>OSF supports an open research life cycle.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -679,7 +943,7 @@ Tip
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-protection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/lifecycle/06-publish-share.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
