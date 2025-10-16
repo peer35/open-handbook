@@ -1,0 +1,91 @@
+---
+title: Using iBridges
+categories: []
+---
+This page explains how to set up iBridges to connect to Yoda via the iRODS protocol, on Windows, MacOS and Linux. Setting up iBridges requires some familiarity with Python. 
+
+iBridges is a fast and reliable way to work with data stored in Yoda. It offers many of the features that [icommands](./yoda_using_icommands.qmd) offers, but it is more user-friendly. 
+
+You can use iBridges in three different ways: 
+
+- via a Graphical User Interface (GUI) 
+- via the Command Line Interface (CLI)
+- as a Python package (Python API), the package offers a way to programmatically access Yoda data without knowledge of the [Python irods client](https://pypi.org/project/python-irodsclient/). 
+
+# Installation
+
+To install iBridges, take the following steps:
+
+- (Download Python)[https://www.python.org/downloads/] (unless you know otherwise, choose the 64-bit version) and install. 
+- If you already have Python installed make sure it is version  3.8 or higher.
+
+- Then create a Python (virtual environment)[https://docs.python.org/3/tutorial/venv.html] and install ibridgesgui in it:
+::: {.callout-note icon="false" appearance="simple" collapse="true"}
+
+## On Windows
+- Open Powershell.
+```powershell
+# Create a Virtual Environment
+PS C:\Users\myuser> python3 -m venv ibridges-env
+# Activate it:
+PS C:\Users\myuser> .\ibridges-env\Scripts\Activate.ps1
+# Install ibridgesgui
+(ibridges-env) PS C:\Users\myuser> pip install ibridgesgui
+```
+:::
+
+::: {.callout-note icon="false" appearance="simple" collapse="true"}
+
+## On Linux or Mac
+- Open a console
+```bash
+# Create a Virtual Environment
+me@mylaptop:~$ python3 -m venv ibridges-env
+# Activate it:
+me@mylaptop:~$ source ibridges-env/bin/activate
+# Install ibridgesgui
+(ibridges-env) me@mylaptop:~$ pip install ibridgesgui
+```
+:::
+
+# Configuration
+
+To log into iBridges, you need a configuration file called `irods_environment.json`. This is the same file as used by [icommands](./yoda_using_icommands.qmd#configuration).
+
+## Configuration through the GUI
+1. Start the GUI by typing in the terminal:
+```bash
+(ibridges-env) me@mylaptop:~$ ibridges gui
+```
+2. From the main menu click: Configure > Add Configuration.
+
+3. Go to the Yoda web portal, click your username, and select “Data Transfer”. Copy the text shown under "iCommands"
+
+4. Paste the text.
+
+4. Click ’Save’, then ’Check’ and when you get no errors, ’Close’.  
+
+## Configuration through the command line interface
+Follow the instruction detailed in [icommands](./yoda_using_icommands.qmd#configuration).
+
+# Using iBridges
+You can use iBridges to: 
+
+- transfer data from and to Yoda.
+- add self-defined metadata to single files and folders. For example, add an ‘author’ field, or ‘experimental condition’. 
+- synchronize data between your computer and Yoda.
+- search data by name, metadata, checksum, or type.
+
+All these functions can be done manually, but also in an automated way by integrating them in scripts.
+
+## Using the iBridges GUI
+To start using the iBridges GUI, please follow the instructions to start a new session external link. Use your Data Access Password as the password to log in. Use the user documentation external link to see what you can do with the iBridges GUI.
+
+## Using the Command Line Interface
+You can immediately start using the iBridges Command Line Interface (CLI). Simply try `ibridges --help` or `ibridges <command> --help` to get examples and help for the usage. For instructions on how to use the iBridges commands, please check the [iBridges documentation](https://ibridges.readthedocs.io/en/latest/).
+
+## Using the iBridges Python package
+For use with Python, the iBridges documentation contains multiple notebooks to show you the capabilities of the iBridges python package.
+
+## Help with setting up or using iBridges
+If you need help setting up or using iBridges, please do not hesitate to contact your data manager. 
