@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="This section has more in-depth information about Qualtrics.">
 
-<title>ADA documentation – Research Support Handbook</title>
+<title>Qualtrics Manuals – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../manuals/ada/login.html" rel="next">
+<link href="../../manuals/qualtrics/qualtrics-faq.html" rel="next">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-listing/list.min.js"></script>
 <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
@@ -82,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -215,7 +216,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/ada/index.html">ADA documentation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/qualtrics/index.html">Qualtrics Manuals</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -241,151 +242,37 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">ADA documentation</span></a>
+  <a href="../../manuals/qualtrics/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Qualtrics Manuals</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/login.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Login</span></a>
+  <a href="../../manuals/qualtrics/qualtrics-faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Qualtrics FAQ</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/quick-start.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quick start on ADA</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Slurm</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware and resources</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/open-ondemand.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open OnDemand</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/yoda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data transfer to and from Yoda</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/help.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting help</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Code Examples</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MATLAB</span></a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Python</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Multithreading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Multiprocessing</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PyTorch</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">R</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Multiprocessing</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#ada-at-a-glance" id="toc-ada-at-a-glance" class="nav-link" data-scroll-target="#ada-at-a-glance">ADA at a Glance</a></li>
-  <li><a href="#access-policies-and-costs" id="toc-access-policies-and-costs" class="nav-link" data-scroll-target="#access-policies-and-costs">Access, Policies, and Costs</a></li>
-  <li><a href="#when-ada-fits-your-work" id="toc-when-ada-fits-your-work" class="nav-link" data-scroll-target="#when-ada-fits-your-work">When ADA Fits Your Work</a></li>
-  <li><a href="#training-and-external-resources" id="toc-training-and-external-resources" class="nav-link" data-scroll-target="#training-and-external-resources">Training and External Resources</a></li>
-  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
-  <li><a href="#documentation-feedback" id="toc-documentation-feedback" class="nav-link" data-scroll-target="#documentation-feedback">Documentation Feedback</a></li>
-  <li><a href="#maintainers" id="toc-maintainers" class="nav-link" data-scroll-target="#maintainers">Maintainers</a></li>
-  <li><a href="#browse-the-manuals" id="toc-browse-the-manuals" class="nav-link" data-scroll-target="#browse-the-manuals">Browse the Manuals</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ADA documentation</h1>
+<h1 class="title">Qualtrics Manuals</h1>
 </div>
 
+<div>
+  <div class="description">
+    This section has more in-depth information about Qualtrics.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -400,94 +287,22 @@ window.Quarto = {
 </header>
 
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>ADA is the high-performance computing (HPC) cluster for researchers at Vrije Universiteit Amsterdam. Named after <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Ada Lovelace</a>, it serves as the successor to the BAZIS cluster and is managed by the IT for Research team.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="New here? Start with these first.">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>New here? Start with these first.
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Request an account via the 🔒 <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=83139c79473e8150bfa46d72e36d432e" target="_blank">VU Service Portal</a>.</li>
-<li>New to bash and the command line? Get familiar with Linux basics first through <a href="https://swcarpentry.github.io/shell-novice/" target="_blank">Carpentries lessons</a>.</li>
-<li>Set-up your SSH access by following the <a href="../../manuals/ada/login.html">login instructions</a>.</li>
-<li>New to HPC? Get familiar with HPC concepts through <a href="https://carpentries-incubator.github.io/hpc-intro/" target="_blank">HPC Carpentries lessons</a>.</li>
-<li>Run your first job with the <a href="../../manuals/ada/quick-start.html">Quick Start</a>.</li>
-</ul>
+<p>The <a href="../../topics/qualtrics.html">Qualtrics Topic page</a> explains what Qualtrics does and how you can set up an account.</p>
 </div>
 </div>
-</section>
-<section id="ada-at-a-glance" class="level2">
-<h2 class="anchored" data-anchor-id="ada-at-a-glance">ADA at a Glance</h2>
-<ul>
-<li><a href="../../manuals/ada/hardware.html">Heterogeneous cluster</a> with CPU and GPU partitions financed by VU departments and central IT.</li>
-<li>Access to partitions depends on departmental ownership; community partitions are available to all approved users.</li>
-<li><a href="../../manuals/ada/software.html">Software stack</a> combines centrally maintained modules with self-service tools (Pixi, Conda, Apptainer).</li>
-<li>Data on <a href="../../topics/scistor.html">SciStor</a> is mounted directly on ADA.</li>
-<li>For workloads demanding large GPU quotas, explore <a href="../../topics/snellius.html">Snellius</a> or work with your department on dedicated nodes.</li>
-</ul>
-</section>
-<section id="access-policies-and-costs" class="level2">
-<h2 class="anchored" data-anchor-id="access-policies-and-costs">Access, Policies, and Costs</h2>
-<ul>
-<li><strong>Eligibility</strong>: VU researchers and collaborators whose departments sponsor ADA hardware or are approved for community access.</li>
-<li><strong>Requesting access</strong>: follow the <a href="../../topics/ada.html#how-to-request-access">account request instructions</a>; requests must include your supervisor’s approval.</li>
-<li><strong>Usage costs</strong>: Community partitions are free to use but shared; heavy or specialised workloads may require investing in departmental nodes.</li>
-<li><strong>Dedicated hardware</strong>: Contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> to scope dedicated purchases or long-term resource planning.</li>
-</ul>
-</section>
-<section id="when-ada-fits-your-work" class="level2">
-<h2 class="anchored" data-anchor-id="when-ada-fits-your-work">When ADA Fits Your Work</h2>
-<p>Use ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the <a href="https://hub.compute.vu.nl/" target="_blank">VU Compute Hub</a> or <a href="../../topics/researchcloud.html">SURF Research Cloud</a>.</p>
-</section>
-<section id="training-and-external-resources" class="level2">
-<h2 class="anchored" data-anchor-id="training-and-external-resources">Training and External Resources</h2>
-<ul>
-<li><strong>SURF Snellius wiki</strong>: <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius" target="_blank">Snellius knowledge base</a> – much of it applies to ADA.</li>
-<li><strong>Workshops</strong>: SURF’s free <a href="https://www.surf.nl/en/agenda" target="_blank">Introduction to Supercomputing</a> courses provides transferable skills for ADA users.</li>
-</ul>
-</section>
-<section id="support" class="level2">
-<h2 class="anchored" data-anchor-id="support">Support</h2>
-<ul>
-<li>Technical questions, quota requests, or procurement discussions: <a href="mailto:itvo.it@vu.nl">IT for Research</a></li>
-<li>Issues using the cluster? See <a href="../../manuals/ada/help.html">Help</a> to see how to ask for assistance effectively.</li>
-</ul>
-</section>
-<section id="documentation-feedback" class="level2">
-<h2 class="anchored" data-anchor-id="documentation-feedback">Documentation Feedback</h2>
-<ul>
-<li>Found a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker with:
-<ul>
-<li>Page path (for example <code>manuals/ada/software.qmd</code>) and what needs to change</li>
-<li>A suggested fix or the exact text that confused you</li>
-<li>Optional: a PR if you already made the change</li>
-</ul></li>
-</ul>
-<p>If you prefer, you can also email [itvo.it@vu.nl] with the same details and we will triage it.</p>
-</section>
-<section id="maintainers" class="level2">
-<h2 class="anchored" data-anchor-id="maintainers">Maintainers</h2>
-<p>The cluster has been built and is maintained by:</p>
-<ul>
-<li>Davor Cvikic</li>
-<li>Kostas Vilkelis</li>
-<li>Wiebe J.R. Timmers</li>
-</ul>
-</section>
-<section id="browse-the-manuals" class="level2">
-<h2 class="anchored" data-anchor-id="browse-the-manuals">Browse the Manuals</h2>
-<p>The sections below surface all available ADA guides. Use the filters or search bar to jump directly to the topic you need.</p>
 
 
 
-</section>
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
@@ -497,133 +312,16 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="679">
-<a href="../../manuals/ada/login.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="" data-listing-file-modified-sort="1762178101895" data-listing-reading-time-sort="7" data-listing-word-count-sort="1206">
+<a href="../../manuals/qualtrics/qualtrics-faq.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Login
+Qualtrics FAQ
 </h5>
+<div class="card-text listing-description delink">
+<p>Frequently asked questions on using Qualtrics</p>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="655">
-<a href="../../manuals/ada/quick-start.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Quick start on ADA
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1354">
-<a href="../../manuals/ada/software.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Software
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
-<a href="../../manuals/ada/slurm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Slurm
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
-<a href="../../manuals/ada/hardware.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Hardware and resources
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="423">
-<a href="../../manuals/ada/open-ondemand.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Open OnDemand
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
-<a href="../../manuals/ada/yoda.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data transfer to and from Yoda
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="392">
-<a href="../../manuals/ada/help.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Getting help
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
-<a href="../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multithreading
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
-<a href="../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multiprocessing
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
-<a href="../../manuals/ada/code-examples/Python/3-torch.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PyTorch
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="290">
-<a href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multiprocessing
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-listing-date-sort="1762178101000" data-listing-file-modified-sort="1762178101894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
-<a href="../../manuals/ada/code-examples/matlab.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MATLAB
-</h5>
 </div>
 </div></a>
 </div>
@@ -1034,8 +732,8 @@ MATLAB
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../manuals/ada/login.html" class="pagination-link" aria-label="Login">
-        <span class="nav-page-text">Login</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../manuals/qualtrics/qualtrics-faq.html" class="pagination-link" aria-label="Qualtrics FAQ">
+        <span class="nav-page-text">Qualtrics FAQ</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1074,7 +772,7 @@ MATLAB
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/qualtrics/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

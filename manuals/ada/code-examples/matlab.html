@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../manuals/ada/code-examples/simpleslurm.html" rel="next">
-<link href="../../../manuals/ada/getting-started/yoda.html" rel="prev">
+<link href="../../../manuals/ada/code-examples/Python/1-python-multithreading.html" rel="next">
+<link href="../../../manuals/ada/help.html" rel="prev">
 <link href="../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -219,13 +219,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ADA Manuals</span></a>
+ <span class="menu-text">ADA documentation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/login.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Login</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/quick-start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick start on ADA</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slurm</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hardware and resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/open-ondemand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open OnDemand</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/yoda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data transfer to and from Yoda</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/help.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting help</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Getting Started</span></a>
+ <span class="menu-text">Code Examples</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -233,67 +281,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Available cluster hardware</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/hpc-101.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Essential concepts for HPC users</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/login.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Login</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/slurm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Slurm</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/yoda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data transfer to and from Yoda</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Code Examples</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MATLAB</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Python</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/simpleslurm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Slurm job</span></a>
+  <a href="../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multithreading</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PyTorch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Python</span></a>
+ <span class="menu-text">R</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -301,14 +325,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/python/python-multithreading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Multithreading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/python/torch.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PyTorch</span></a>
+  <a href="../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
       </ul>
@@ -359,7 +377,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Examples of using MATLAB in interactive and batch modes.</p>
+<p>This page shows examples of using MATLAB in interactive and batch modes.</p>
 <p>Matlab has several features to work in batch mode on a HPC cluster.</p>
 <p>Assuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node</p>
 <section id="interactive" class="level2">
@@ -824,13 +842,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../manuals/ada/getting-started/yoda.html" class="pagination-link" aria-label="Data transfer to and from Yoda">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data transfer to and from Yoda</span>
+      <a href="../../../manuals/ada/help.html" class="pagination-link" aria-label="Getting help">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Getting help</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../manuals/ada/code-examples/simpleslurm.html" class="pagination-link" aria-label="Slurm job">
-        <span class="nav-page-text">Slurm job</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="pagination-link" aria-label="Multithreading">
+        <span class="nav-page-text">Multithreading</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
