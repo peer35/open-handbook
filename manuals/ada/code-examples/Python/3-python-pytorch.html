@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-01-07">
 
-<title>Multiprocessing – Research Support Handbook</title>
+<title>PyTorch – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../../">
-<link href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html" rel="next">
-<link href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html" rel="prev">
+<link href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" rel="next">
+<link href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" rel="prev">
 <link href="../../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -192,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html">Multiprocessing</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html">PyTorch</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -298,13 +298,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">PyTorch</span></a>
   </div>
 </li>
@@ -345,18 +345,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#slurm-batch-submission-script" id="toc-slurm-batch-submission-script" class="nav-link active" data-scroll-target="#slurm-batch-submission-script">Slurm batch submission script:</a></li>
-  <li><a href="#python-script" id="toc-python-script" class="nav-link" data-scroll-target="#python-script">Python script:</a></li>
-  <li><a href="#running-the-script" id="toc-running-the-script" class="nav-link" data-scroll-target="#running-the-script">Running the script</a></li>
+  <li><a href="#example-gpu-job" id="toc-example-gpu-job" class="nav-link active" data-scroll-target="#example-gpu-job">Example GPU job</a></li>
+  <li><a href="#performance-and-results" id="toc-performance-and-results" class="nav-link" data-scroll-target="#performance-and-results">Performance and Results</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/2-python-multiprocessing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-python-pytorch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html">Multiprocessing</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html">PyTorch</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Multiprocessing</h1>
+<h1 class="title">PyTorch</h1>
 </div>
 
 
@@ -379,80 +378,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This example applies multiprocessing in Python on 1 compute node.</p>
-<p>To apply this to your own work, insert your sequential program in this template as a task. Be aware of how you read/write data in your sequential program and prevent multiple processes from reading/writing to the same data location at the same time. Best practice is to either use separate result files on scratch for each process or use queues (<code>multiprocessing.Queue</code>) or pipes (<code>multiprocessing.Pipe</code>) for inter-process communication.</p>
-<section id="slurm-batch-submission-script" class="level2">
-<h2 class="anchored" data-anchor-id="slurm-batch-submission-script">Slurm batch submission script:</h2>
-<p><code>multiproc.slurm</code></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=multiproc_1n_10c</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=1</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=10</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Optional: allow passing cores as argument</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="va">NUM_CORES</span><span class="op">=</span><span class="va">${SLURM_CPUS_PER_TASK</span><span class="op">:-</span>10<span class="va">}</span>  <span class="co"># Default to 10 if no argument is given</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir: </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Using </span><span class="va">$NUM_CORES</span><span class="st"> CPU cores for this job"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Move to scratch space and copy Python script to scratch directory</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">"</span><span class="va">$TMPDIR</span><span class="st">"</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="st">"</span><span class="va">$SLURM_SUBMIT_DIR</span><span class="st">/multiproc.py"</span> .</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Python module</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load Python/3.12.3-GCCcore-13.3.0</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Run Python script with specified number of cores</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> multiproc.py <span class="va">$NUM_CORES</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job completed at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This page shows an example of using PyTorch. PyTorch is a popular deep learning library for training artificial neural networks.</p>
+<p>It can be installed in many ways. Optimized versions with Easybuild are available in the software stack on ADA. Search the module environment for the appropiate version.</p>
+<section id="example-gpu-job" class="level2">
+<h2 class="anchored" data-anchor-id="example-gpu-job">Example GPU job</h2>
+<p>This example recipe from the <a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a> measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.</p>
+<p>It can be run as a standalone python script. Download the script:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/pytorch/tutorials/refs/heads/main/recipes_source/recipes/amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This script can be run interactively</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>But we will create a slurm script <code>Torch-AMP-ex.sh</code> to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J Torch-AMP-example</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -N 1</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=2</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gpus=1</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=0-00:10:00</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=end,fail</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Load the environment</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2024</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load PyTorch/2.1.2-foss-2023a-CUDA-12.1.1</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. (Optional) Install missing dependency seen in logs</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--user</span> tqdm <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">||</span> <span class="fu">true</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Copy the python script to scratch so we don't modify the original</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> amp_recipe.py <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Patch the script compatibility issues using sed</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/torch\.amp\.GradScaler("cuda")/torch.cuda.amp.GradScaler()/g'</span> <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/torch\.amp\.GradScaler("cuda"\s*,/torch.cuda.amp.GradScaler(/g'</span> <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Run the patched script from scratch</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Running patched script..."</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You can monitor the status of the job with <code>squeue -u $USER</code>. Once the job runs, you’ll have a <code>slurm-xxxxx.out</code> file in the directory. This log file contains both PyTorch and Slurm output.</p>
 </section>
-<section id="python-script" class="level2">
-<h2 class="anchored" data-anchor-id="python-script">Python script:</h2>
-<p><code>multiproc.py</code></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env python3</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> sys</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> multiprocessing</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">def</span> task<span class="er">(</span><span class="ex">core_id</span><span class="kw">)</span><span class="bu">:</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"""Function to simulate a CPU-intensive task."""</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="ex">print</span><span class="er">(</span><span class="ex">f</span><span class="st">"Core {core_id} is working..."</span><span class="kw">)</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="ex">result</span> = sum<span class="er">(</span><span class="ex">i</span> <span class="pp">*</span> i for i in range<span class="er">(</span><span class="ex">10**7</span><span class="kw">))</span>  <span class="co"># Example "heavy" computation</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">print</span><span class="er">(</span><span class="ex">f</span><span class="st">"Core {core_id} finished with result: {result}"</span><span class="kw">)</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ex">result</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ex">def</span> main<span class="er">(</span><span class="kw">)</span><span class="bu">:</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="ex">num_cores</span> = int<span class="er">(</span><span class="ex">sys.argv[1]</span><span class="kw">)</span> <span class="cf">if</span> <span class="ex">len</span><span class="er">(</span><span class="ex">sys.argv</span><span class="kw">)</span> <span class="op">&gt;</span> 1 <span class="cf">else</span> <span class="ex">10</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="ex">with</span> multiprocessing.Pool<span class="er">(</span><span class="va">processes</span><span class="op">=</span>num_cores<span class="kw">)</span> <span class="fu">as</span> pool:</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="ex">results</span> = pool.map<span class="er">(</span><span class="ex">task,</span> range<span class="er">(</span><span class="ex">num_cores</span><span class="kw">))</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="ex">print</span><span class="er">(</span><span class="st">"All tasks completed."</span><span class="kw">)</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="ex">print</span><span class="er">(</span><span class="st">"Results:"</span><span class="ex">,</span> results<span class="kw">)</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="ex">__name__</span> == <span class="st">"__main__"</span>:</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">main()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="running-the-script" class="level2">
-<h2 class="anchored" data-anchor-id="running-the-script">Running the script</h2>
-<p>Assuming you are inside your slurm submission directory, for example, running on 8 logical cores:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sbatch <span class="at">--cpus-per-task</span><span class="op">=</span>8 multiproc.slurm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Once you kicked your job off, its good practice to check if its really running on the amount of cores you specified. Check you current jobs and note on which node it is running:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> squeue <span class="at">-u</span> <span class="op">&lt;</span>vunetid<span class="op">&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">JOBID</span> PARTITION     NAME     USER ST       TIME  NODES NODELIST<span class="er">(</span><span class="ex">REASON</span><span class="kw">)</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">1122822</span>        defq PythonMu   <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span>  R       0:07      1 node010</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Then, ssh into that allocated compute node and run htop to checkout your work in action:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> ssh node010</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> htop <span class="at">-u</span> <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="performance-and-results" class="level2">
+<h2 class="anchored" data-anchor-id="performance-and-results">Performance and Results</h2>
+<p>Depending on the type of GPU you may find different performance.For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>GPU</th>
+<th>NVIDIA RTX 2070 super</th>
+<th>NVIDIA A30</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Default precision:</td>
+<td>6.835 sec</td>
+<td>4.444 sec</td>
+</tr>
+<tr class="even">
+<td>Mixed precision:</td>
+<td>4.747 sec</td>
+<td>0.858 sec</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -860,13 +852,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="pagination-link" aria-label="Multithreading">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Multithreading</span>
+      <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Multiprocessing</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html" class="pagination-link" aria-label="PyTorch">
-        <span class="nav-page-text">PyTorch</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
+        <span class="nav-page-text">Multiprocessing</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -905,7 +897,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/2-python-multiprocessing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-python-pytorch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

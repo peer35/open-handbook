@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-01-07">
 
-<title>PyTorch – Research Support Handbook</title>
+<title>HPC 101 – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,65 +21,29 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../../">
-<link href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" rel="next">
-<link href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" rel="prev">
-<link href="../../../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" rel="prev">
+<link href="../../public/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,9 +82,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="../../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -135,49 +99,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="../../../../topics.html">
+    <a class="dropdown-item" href="../../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../topics.html#category=Research Data">
+    <a class="dropdown-item" href="../../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../topics.html#category=Research Software">
+    <a class="dropdown-item" href="../../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../topics.html#category=Tools">
+    <a class="dropdown-item" href="../../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../../guides.html"> 
+    <a class="nav-link" href="../../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../manuals.html"> 
+    <a class="nav-link" href="../../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../contributing.html"> 
+    <a class="nav-link" href="../../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -192,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-torch.html">PyTorch</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/ada/hpc-101.html">HPC 101</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -214,55 +178,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ADA documentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/login.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/login.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Login</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/quick-start.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/quick-start.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quick start on ADA</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slurm</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware and resources</span></a>
+  <a href="../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/open-ondemand.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hardware</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../manuals/ada/open-ondemand.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open OnDemand</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/yoda.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/yoda.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data transfer to and from Yoda</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/help.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/help.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting help</span></a>
   </div>
 </li>
@@ -277,34 +241,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MATLAB</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Python</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Multithreading</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../manuals/ada/code-examples/Python/3-python-pytorch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PyTorch</span></a>
   </div>
 </li>
@@ -321,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
@@ -329,6 +293,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../manuals/ada/hpc-101.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">HPC 101</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -339,18 +309,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#example-gpu-job" id="toc-example-gpu-job" class="nav-link active" data-scroll-target="#example-gpu-job">Example GPU job</a></li>
-  <li><a href="#performance-and-results" id="toc-performance-and-results" class="nav-link" data-scroll-target="#performance-and-results">Performance and Results</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#concurrent-vs.-parallel" id="toc-concurrent-vs.-parallel" class="nav-link active" data-scroll-target="#concurrent-vs.-parallel">Concurrent vs.&nbsp;Parallel</a></li>
+  <li><a href="#multithreading-vs.-multiprocessing" id="toc-multithreading-vs.-multiprocessing" class="nav-link" data-scroll-target="#multithreading-vs.-multiprocessing">Multithreading vs.&nbsp;Multiprocessing</a></li>
+  <li><a href="#compute-time-vs.-communication-overhead" id="toc-compute-time-vs.-communication-overhead" class="nav-link" data-scroll-target="#compute-time-vs.-communication-overhead">Compute Time vs.&nbsp;Communication Overhead</a></li>
+  <li><a href="#amdahls-law" id="toc-amdahls-law" class="nav-link" data-scroll-target="#amdahls-law">Amdahls Law</a></li>
+  <li><a href="#terms" id="toc-terms" class="nav-link" data-scroll-target="#terms">Terms</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-torch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/hpc-101.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-torch.html">PyTorch</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">PyTorch</h1>
+<h1 class="title">HPC 101</h1>
 </div>
 
 
@@ -373,73 +345,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This page shows an example of using PyTorch.</p>
-<p>PyTorch is a popular deep learning library for training artificial neural networks.</p>
-<p>It can be installed in many ways. Optimized versions with Easybuild are available in the software stack on ADA. Search the module environment for the appropiate version.</p>
-<section id="example-gpu-job" class="level2">
-<h2 class="anchored" data-anchor-id="example-gpu-job">Example GPU job</h2>
-<p>This example recipe from the <a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a> measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.</p>
-<p>It can be run as a standalone python script. Download the script:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This script can be run interactively</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>But we will create a slurm script <code>Torch-AMP-ex.sh</code> to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J Torch-AMP-example</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -N 1</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=2</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gpus=1</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=0-00:10:00</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=end,fail</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-user= &lt;your email address&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># environment modules</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load shared 2022</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Your more useful application can be started below!</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Submit and run the script with Slurm</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> Torch-AMP-ex.sh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can monitor the status of the job with <code>squeue -u $USER</code>. Once the job runs, you’ll have a <code>slurm-xxxxx.out</code> file in the directory. This log file contains both PyTorch and Slurm output.</p>
+<p>This page offers a short explanation of essential concepts in High Performance Computing.</p>
+<section id="concurrent-vs.-parallel" class="level3">
+<h3 class="anchored" data-anchor-id="concurrent-vs.-parallel">Concurrent vs.&nbsp;Parallel</h3>
+<p><strong>Concurrent</strong> programs handle multiple instruction sequences at the same time.</p>
+<p><strong>Parallel</strong> programs execute multiple instruction sequences at the same time.</p>
+<p>When a program runs in parallel on multiple cores it is <strong>always concurrent</strong>.</p>
+<p>When a program is handled concurrently, it is <strong>not necessarily a parallel program</strong>. Instructions can also make use of time-sharing (e.g.&nbsp;sharing a single CPU core).</p>
 </section>
-<section id="performance-and-results" class="level2">
-<h2 class="anchored" data-anchor-id="performance-and-results">Performance and Results</h2>
-<p>Depending on the type of GPU you may find different performance.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>GPU</th>
-<th>NVIDIA RTX 2070 super</th>
-<th>NVIDIA A30</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Default precision:</td>
-<td>6.835 sec</td>
-<td>4.444 sec</td>
-</tr>
-<tr class="even">
-<td>Mixed precision:</td>
-<td>4.747 sec</td>
-<td>0.858 sec</td>
-</tr>
-</tbody>
-</table>
+<section id="multithreading-vs.-multiprocessing" class="level3">
+<h3 class="anchored" data-anchor-id="multithreading-vs.-multiprocessing">Multithreading vs.&nbsp;Multiprocessing</h3>
+<p><strong>Multithreaded</strong> programs use multiple threads and are all part of the same process. These threads share the same memory and resources.</p>
+<p><strong>Multiprocessed</strong> programs use multiple processes. Each process has its own memory and resource allocation.</p>
+<p>Both multithreaded and multiprocessed programs are <strong>concurrent programs</strong>, they are therefore also not necessarily parallel.</p>
+<p>Multiprocessed programs however enable <strong>true parallelism</strong>, by using multiple CPU cores simultanously where each CPU core is assigned one process.</p>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<section id="compute-time-vs.-communication-overhead" class="level3">
+<h3 class="anchored" data-anchor-id="compute-time-vs.-communication-overhead">Compute Time vs.&nbsp;Communication Overhead</h3>
+<p>In HPC, program execution often focuses on designing multiprocessing programs that execute tasks in parallel across multiple compute nodes. A crucial consideration is balancing compute time against communication overhead.</p>
+<p>For instance, when dealing with large datasets, distributing the workload by dividing the data into smaller chunks across multiple processors can significantly reduce computation time. However, excessively fine-grained data partitioning can lead to substantial communication overhead, where the time spent transferring data between nodes outweighs the computational gains.</p>
+</section>
+<section id="amdahls-law" class="level3">
+<h3 class="anchored" data-anchor-id="amdahls-law">Amdahls Law</h3>
+<p>Amdahls law is formula that shows how much faster a task can be completed when more resources are added to a system. In the context of P (fraction of the code that can be parallelized) and N (number of processors) the speedup is defined as follows:</p>
 <ul>
-<li><a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a></li>
+<li>Speedup = 1 / (1 - P + P / N)</li>
 </ul>
+<p>Below example illustrates that the serial portion of a program has a big impact on the overall speedup:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../public/manuals/ada/Amdahls.webp" class="img-fluid figure-img"></p>
+<figcaption>Amdahls Law</figcaption>
+</figure>
+</div>
+<p>When using ADA, take Amdahls Law into consideration: parallelize your code as much as possible before scaling up your requested processors.</p>
+</section>
+<section id="terms" class="level3">
+<h3 class="anchored" data-anchor-id="terms">Terms</h3>
+<p><strong>CPU</strong>: a physical, central processing unit in compute hardware. Most modern day CPU’s are multi-core, containing multiple cores.</p>
+<p><strong>vCPU</strong>: a virtual, central processing unit. A CPU can contain multiple vCPU’s.</p>
+<p><strong>Core</strong>: a physical processing unit on a CPU chip.</p>
+<p><strong>Logical core</strong>: a virtual processing unit. A core can have multiple logical cores.</p>
+<p><strong>Hyperthreading</strong>: a technology that allows a core to appear as two logical cores in an operating system. Most hardware in the ADA cluster uses this technology by default. Compute intensive workloads will benefit to disable hyperthreading.</p>
+<p><strong>GPU</strong>: a physical, graphical processing unit in compute hardware.</p>
+<p><strong>vGPU</strong>: a virtual, graphical processing unit. A GPU can contain multiple vGPU’s.</p>
+<p><strong>RAM</strong>: Random Access Memory, the temporary storage for data that the CPU needs. RAM offers fast Read/Write speeds and is volatile (data is lost when power is turned off).</p>
+<p><strong>HDD</strong>: Hard Disk Drive, persistent storage offering Read/Write operations.</p>
+<p><strong>SSD</strong>: Solid State Drive, persistent storage that offers faster Read/Write speeds than HDD’s.</p>
+<p><strong>Scratch Space</strong>: When we refer to scratch space, we usually refer to the local SSD storage on the compute nodes. Use of scratch can significantly speed up your programs if it relies heavily on data operations.</p>
+<!-- ## Other
+- Network topology-->
 
 
 </section>
@@ -847,14 +802,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
+      <a href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Multiprocessing</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
-        <span class="nav-page-text">Multiprocessing</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -872,17 +824,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../../../about.html">
+    <a class="nav-link" href="../../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../../../technical-details.html">
+    <a class="nav-link" href="../../technical-details.html">
 <p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../../../editors-guide.html">
+    <a class="nav-link" href="../../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -892,7 +844,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-torch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/hpc-101.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
