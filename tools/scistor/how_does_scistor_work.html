@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-04">
+<meta name="dcterms.date" content="2026-03-05">
 
-<title>Archiving Data – Research Support Handbook</title>
+<title>How does SciStor work? – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/yoda/vault_publish.html" rel="next">
-<link href="../../tools/yoda/analysing_data.html" rel="prev">
+<link href="../../tools/scistor/snapshots-data-recovery.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -153,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/vault_archive.html">Securing and Distributing Data</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/vault_archive.html">Archiving Data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">SciStor</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/snapshots-data-recovery.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/how_does_scistor_work.html">How does SciStor work?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -168,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Yoda</span></a>
+ <span class="menu-text">SciStor</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -176,38 +175,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What is Yoda?</span></a>
+  <a href="../../tools/scistor/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What is SciStor?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/cost_access.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/scistor/cost_access.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Costs and Getting Access</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/contact_support.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/scistor/contact_support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Support and Contact</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/quick_start.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/scistor/quick_start.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quick Start</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FAQ</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/known_issues.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Known Issues</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -219,200 +206,18 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Yoda Portal</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../../tools/scistor/snapshots-data-recovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Recovery</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/notifications.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notifications</span></a>
+  <a href="../../tools/scistor/how_does_scistor_work.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">How does SciStor work?</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to: Invitation to Yoda collaboration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/logging_in.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Logging In</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/group_manager.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Managing Groups, Users and Access Rights</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Using Yoda</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/finding_restoring.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Finding and Restoring Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/metadata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What is Metadata?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/workflow_metadata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Adding Metadata</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/properties_and_explanation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Properties and Explanation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/workflow_metadata_license.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Selecting a license for your Dataset</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/analysing_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analysing Data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Securing and Distributing Data</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/vault_archive.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Archiving Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/vault_publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publishing Data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Data Access and Transfer</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_instructions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Before Getting Started</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_dap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Creating a Data Access Password</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_linux.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Access on Linux</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_macos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Access on MacOS</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Access on Windows</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_cyberduck.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Cyberduck</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Encrypting your data using Cryptomator and Cyberduck</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_icommands.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using iCommands</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Python</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_rclone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Rclone</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_windowsexplorer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Windows Explorer</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_winscp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using WinSCP</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
       </ul>
   </li>
       </ul>
@@ -427,22 +232,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#creating-a-data-package" id="toc-creating-a-data-package" class="nav-link active" data-scroll-target="#creating-a-data-package">Creating a data package</a>
+  <li><a href="#naming-convention" id="toc-naming-convention" class="nav-link active" data-scroll-target="#naming-convention">Naming Convention</a></li>
+  <li><a href="#data-protection" id="toc-data-protection" class="nav-link" data-scroll-target="#data-protection">Data Protection</a>
   <ul class="collapse">
-  <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a></li>
+  <li><a href="#snapshots" id="toc-snapshots" class="nav-link" data-scroll-target="#snapshots">Snapshots</a></li>
+  <li><a href="#failover-system" id="toc-failover-system" class="nav-link" data-scroll-target="#failover-system">Failover System</a></li>
   </ul></li>
-  <li><a href="#how-to-submitting-a-data-package-to-the-vault" id="toc-how-to-submitting-a-data-package-to-the-vault" class="nav-link" data-scroll-target="#how-to-submitting-a-data-package-to-the-vault">How to: Submitting a data package to the Vault</a></li>
-  <li><a href="#data-manager-assessment" id="toc-data-manager-assessment" class="nav-link" data-scroll-target="#data-manager-assessment">Data manager assessment</a></li>
-  <li><a href="#managing-archived-data-packages" id="toc-managing-archived-data-packages" class="nav-link" data-scroll-target="#managing-archived-data-packages">Managing archived data packages</a></li>
+  <li><a href="#project-folder-structure" id="toc-project-folder-structure" class="nav-link" data-scroll-target="#project-folder-structure">Project Folder Structure</a>
+  <ul class="collapse">
+  <li><a href="#example-structure" id="toc-example-structure" class="nav-link" data-scroll-target="#example-structure">Example Structure</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/vault_archive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/how_does_scistor_work.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/vault_archive.html">Securing and Distributing Data</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/vault_archive.html">Archiving Data</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">SciStor</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/snapshots-data-recovery.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/how_does_scistor_work.html">How does SciStor work?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Archiving Data</h1>
+<h1 class="title">How does SciStor work?</h1>
 </div>
 
 
@@ -453,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2026</p>
+      <p class="date">March 5, 2026</p>
     </div>
   </div>
   
@@ -465,66 +273,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as “Vault”) of your project space, where it will be retained unchanged during its retention period (default 10 years).</p>
-<p>After archiving your data, you can optionally <a href="../../tools/yoda/vault_publish.html">publish it</a>, making your dataset findable on the internet. If you classify your data as <strong>open - freely retrievable</strong>, then the data itself can be downloaded anonymously by any third party.</p>
-<p>This page contains information about how to create a data package, how to submit a data package to the vault, how the data package will be evaluated after submission, and how to manage archived data packages.</p>
-<section id="creating-a-data-package" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-data-package">Creating a data package</h2>
-<p>The data in your research data compartment is a set of files and folders.</p>
-<p>If part of this data is to be archived, it is important that it has a logical folder structure, that it has appropriate metadata, and that it contains documentation which describes the data in more detail (such as a readme.txt file or codebook files). This ensures that other researchers will be able to understand the semantics of the data, the way in which it was collected or generated, and the conditions for (re)use.</p>
-<section id="file-formats" class="level3">
-<h3 class="anchored" data-anchor-id="file-formats">File formats</h3>
-<p>A best practice to keep your datasets re-usable is to store your data in open formats. DANS maintains a <a href="https://dans.knaw.nl/en/about/services/easy/information-about-depositing-data/before-depositing/file-formats" target="_blank">list of open file formats</a>. If using only open file formats is not feasible, consider exporting each file in a vendor-specific format to an open file format, and storing the exported open format version along with the vendor-specific format version.</p>
-<p>You can check in Yoda if you are in compliance with either the DANS Preferred formats or the 4TU Preferred formats by pressing the “Actions (Check for compliance with policy)” button.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../public/tools/yoda/arch-compliance.png" class="img-fluid figure-img"></p>
-<figcaption>Actions menu</figcaption>
-</figure>
+<p>SciStor is VU Amsterdam’s on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam’s faculty structure.</p>
+<section id="naming-convention" class="level3">
+<h3 class="anchored" data-anchor-id="naming-convention">Naming Convention</h3>
+<p>All Project Folders must adhere to the following format:</p>
+<pre><code>FAC-DPT-PRJ</code></pre>
+<p>Where:</p>
+<ul>
+<li><p><code>FAC</code>: denotes the faculty abbreviation</p></li>
+<li><p><code>DPT</code>: the department abbreviation</p></li>
+<li><p><code>PRJ</code>: the project name abbreviation.</p></li>
+</ul>
+<p>For example, a Computer Science project within the Faculty of Sciences would be named <code>BETA-CS-PRJ1</code>.</p>
+</section>
+<section id="data-protection" class="level2">
+<h2 class="anchored" data-anchor-id="data-protection">Data Protection</h2>
+<section id="snapshots" class="level3">
+<h3 class="anchored" data-anchor-id="snapshots">Snapshots</h3>
+<p>SciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Frequency</th>
+<th>Retention period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daily</td>
+<td>1 week</td>
+</tr>
+<tr class="even">
+<td>Weekly</td>
+<td>4 weeks</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="../../tools/scistor/snapshots-data-recovery.html">Data Recovery page</a> explains how you can restore data from the snaphots yourself.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>Choose a preferred fomat and the system will show you a list of filetypes in your data folder which are not compliant.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../public/tools/yoda/arch-compliance-dans.png" class="img-fluid figure-img" width="300"></p>
-<figcaption>Check for DANS compliance</figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Upon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.</p>
+</div>
 </div>
 </section>
+<section id="failover-system" class="level3">
+<h3 class="anchored" data-anchor-id="failover-system">Failover System</h3>
+<p>SciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus. In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.</p>
 </section>
-<section id="how-to-submitting-a-data-package-to-the-vault" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-submitting-a-data-package-to-the-vault">How to: Submitting a data package to the Vault</h2>
-<p>In order to submit a data package to the vault, you need to be either a group manager or a regular member of the group that contains the data.</p>
-<ol type="1">
-<li><p>First, navigate to the folder you want to archive in the Yoda portal. Ensure that you are <strong>in</strong> the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in <a href="../../tools/yoda/workflow_metadata.html">the metadata form of the folder</a>.</p></li>
-<li><p>Now press the “Actions (Submit)” button.</p></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../public/tools/yoda/arch-submit.png" class="img-fluid figure-img"></p>
-<figcaption>Submit</figcaption>
-</figure>
-</div>
-<p>If any mandatory metadata is missing, the system will tell you what metadata still needs to be entered. If all required metadata is present, the system will lock the folder and its subfolders during the archiving process. This ensures that data in the folder can no longer be changed. Once the system has copied all data to the vault, the lock will be removed automatically.</p>
 </section>
-<section id="data-manager-assessment" class="level2">
-<h2 class="anchored" data-anchor-id="data-manager-assessment">Data manager assessment</h2>
-<p>The data manager will check that the data package is self-evident for other researchers, and will check for compliance with privacy rules and regulations.</p>
-<p>The data manager can either approve the data package for archiving or suggest improvements.</p>
-<p>If the status of your data package changes you will receive a notification in the portal. You can also choose to get <a href="../../tools/yoda/notifications.html">notifications via email</a>.</p>
-</section>
-<section id="managing-archived-data-packages" class="level2">
-<h2 class="anchored" data-anchor-id="managing-archived-data-packages">Managing archived data packages</h2>
-<p>The vault of your group becomes visible in the Yoda portal once it contains at least one data package. It has the same name as the research folder, except it starts with <code>vault-</code> (e.g.&nbsp;<code>research-ub-test-project</code> will have a Vault folder called vault-ub-test-project) . Everyone with access to your group research folder also has read-only access to the vault of your group.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../public/tools/yoda/arch-gotovault.png" class="img-fluid figure-img"></p>
-<figcaption>Go to Vault button</figcaption>
-</figure>
-</div>
-<p>If the research folder has been deleted, you can request access to the archived data package via the data manager. If the data package has been published as Open Data it can be retrieved via data catalogs such as <a href="https://commons.datacite.org/" target="_blank">DataCite</a>.</p>
-<p>Yoda ensures there is always a datamanager assigned to a Vault who can access datasets even if the creators no longer have an account.</p>
+<section id="project-folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-folder-structure">Project Folder Structure</h2>
+<p>Access control in SciStor is organised across two levels.</p>
+<p><strong>Level 0 — Main Folder</strong> is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.</p>
+<p><strong>Level 1 — Subfolders</strong> allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R</td>
+<td>Read-only access</td>
+</tr>
+<tr class="even">
+<td>RW</td>
+<td>Read and write access</td>
+</tr>
+</tbody>
+</table>
+<section id="example-structure" class="level3">
+<h3 class="anchored" data-anchor-id="example-structure">Example Structure</h3>
+<pre><code>/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]
+├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]
+├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]
+├── analysis/             [RW: vunet1, ..., vunetN;   R: —]
+└── results/              [RW: vunet1, ..., vunetN;   R: —]</code></pre>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -930,14 +767,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tools/yoda/analysing_data.html" class="pagination-link" aria-label="Analysing Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Analysing Data</span>
+      <a href="../../tools/scistor/snapshots-data-recovery.html" class="pagination-link" aria-label="Data Recovery">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Recovery</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/yoda/vault_publish.html" class="pagination-link" aria-label="Publishing Data">
-        <span class="nav-page-text">Publishing Data</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -975,7 +809,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/vault_archive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/how_does_scistor_work.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
