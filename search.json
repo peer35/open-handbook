@@ -72,7 +72,7 @@
     "href": "tools/ithenticate/key-users.html",
     "title": "Key Users",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\n\n\n\nFaculty’s name\nContact adress\n\n\n\n\nAcademic Center for Dentistry Amsterdam (ACTA)\nYou can find more information on this LibGuide page.\n\n\nVUmc School of Medical Sciences (MED)\npromoties-decanalezaken@vumc.nl\n\n\nFaculty of Social Sciences (FSW)\nithenticate.fsw@vu.nl\n\n\nFaculty of Behavioural and Movement Sciences (FGB)\nYou can find more information on this LibGuide page.\n\n\nFaculty of Humanities (FGW)\nYou can find more information on this LibGuide page.\n\n\nSchool of Business and Economics (SBE)\nithenticate.sbe@vu.nl\n\n\nFaculty of Religion and Theology (FRT)\nYou can find more information on this LibGuide page.\n\n\nFaculty of Law (RCH)\nYou can find more information on this LibGuide page.\n\n\nBETA - Physics & Astronomy (PA)\nYou can find more information on this LibGuide page.\n\n\nBETA - Health Sciences (HS)\nYou can find more information on this LibGuide page.\n\n\nBETA - Mathematics (MATH)\nYou can find more information on this LibGuide page.\n\n\nBETA - Neurosciences (AN)\nhf-neurowetenschappen.beta@vu.nl\n\n\nBETA - Athena (AI)\nsecretariaat.athena.beta@vu.nl\n\n\nBETA - Institute for Environmental Studies (IES)\nYou can find more information on this LibGuide page.\n\n\nBETA - Earth Sciences (ES)\nhf-aardwetenschappen.beta@vu.nl\n\n\nBETA - A-Life/Ecological Sciences (ECSC)\nsecretariat.a-life.beta@vu.nl\n\n\nBETA - Computer Science (CSCI)\ninformatica.secretariaat.beta@vu.nl\n\n\nBETA - Chemistry & Pharmaceutical Sciences (CPS)\nsecretariaat.sf.beta@vu.nl\n\n\nBETA - Faculty of Science (BETA-MCB)\nsecretariaat.mcb.beta@vu.nl\n\n\nBETA - Environment & Health (EH)\nsecretariaat.eh.beta@vu.nl",
+    "text": "Research Support Handbook\n\n\n\n\n\n\n\nFaculty’s name\nContact adress\n\n\n\n\nAcademic Centre for Dentistry Amsterdam (ACTA)\nschool.of.phd.studies@acta.nl\n\n\nVUmc School of Medical Sciences (MED)\npromoties-decanalezaken@vumc.nl\n\n\nSchool of Social Sciences (SSC)\nithenticate.fsw@vu.nl\n\n\nFaculty of Behavioural and Movement Sciences (FGB)\nYou can find more information on this LibGuide page.\n\n\nSchool of Humanities (HUM)\nYou can find more information on this LibGuide page.\n\n\nSchool of Business and Economics (SBE)\nithenticate.sbe@vu.nl\n\n\nSchool of Religion and Theology (SRT)\ngrad.school.frt@vu.nl\n\n\nFaculty of Law (RCH)\nYou can find more information on this LibGuide page.\n\n\nBETA - Physics & Astronomy (PA)\nYou can find more information on this LibGuide page.\n\n\nBETA - Health Sciences (HS)\nsecretariaat.agw.beta@vu.nl\n\n\nBETA - Mathematics (MATH)\nYou can find more information on this LibGuide page.\n\n\nBETA - Neurosciences (AN)\nhf-neurowetenschappen.beta@vu.nl\n\n\nBETA - Athena (AI)\nsecretariaat.athena.beta@vu.nl\n\n\nBETA - Institute for Environmental Studies (IES)\nYou can find more information on this LibGuide page.\n\n\nBETA - Earth Sciences (ES)\nhf-aardwetenschappen.beta@vu.nl\n\n\nBETA - A-Life/Ecological Sciences (ECSC)\nsecretariat.a-life.beta@vu.nl\n\n\nBETA - Computer Science (CSCI)\ninformatica.secretariaat.beta@vu.nl\n\n\nBETA - Chemistry & Pharmaceutical Sciences (CPS)\nsecretariaat.sf.beta@vu.nl\n\n\nBETA - Faculty of Science (BETA-MCB)\nsecretariaat.mcb.beta@vu.nl\n\n\nBETA - Environment & Health (EH)\nsecretariaat.eh.beta@vu.nl",
     "crumbs": [
       "iThenticate",
       "Documentation",
@@ -97,7 +97,7 @@
     "href": "tools/ithenticate/exporting_results.html",
     "title": "Saving, Sharing and Exporting Results",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThe scan will be saved in the chosen folder enabling the PhD candidate to revisit the scan results. You can share the scan, for instance with the key user for iThenticate via the ‘sharing’ option after selecting the folder on the iThenticate start screen. You can find more information in the iThenticate manual.\nThe person(s) you want to share the results with needs to have an iThenticate account. All key users for iThenticate have an iThenticate account. If you want to share the results digitally with a person without an iThenticate account (for instance your (co-)supervisor), you can save the results as a PDF file via the print icon in the bottom left corner in de detailed view. Note that reviewing the results together with your supervisor is easiest by viewing your iThenticate account together, either physically or by sharing your screen in an online meeting.\n\n\n\niThenticate download",
+    "text": "Research Support Handbook\n\n\n\n\nThe scan will be saved in the chosen folder enabling the PhD candidate to revisit the scan results. You can share the scan, for instance with the key user for iThenticate via the ‘sharing’ option after selecting the folder on the iThenticate start screen. Please note that sharing subfolders is not possible in iThenticate.\nYou can find more information in the iThenticate manual.\nThe person(s) you want to share the results with needs to have an iThenticate account. All key users for iThenticate have an iThenticate account. If you want to share the results digitally with a person without an iThenticate account (for instance your (co-)supervisor), you can save the results as a PDF file via the print icon in the bottom left corner in de detailed view. Note that reviewing the results together with your supervisor is easiest by viewing your iThenticate account together, either physically or by sharing your screen in an online meeting.\n\n\n\niThenticate download",
     "crumbs": [
       "iThenticate",
       "Documentation",
@@ -1414,53 +1414,66 @@
   {
     "objectID": "tools/yoda/yoda_using_cyberduck_cryptometer.html",
     "href": "tools/yoda/yoda_using_cyberduck_cryptometer.html",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "title": "Encrypting your data",
     "section": "",
-    "text": "Research Support Handbook\nTo work with privacy sensitive data you might be required to encrypt the data you store on Yoda. An easy way to do this is to use Cyberduck (or MountainDuck) together with the free tool Cryptomator.\nCryptomator is available for Windows, MacOS and Linux.\nNote this workflow means local copies of the files on your laptop are not in the encrypted vault. To make sure local files are also safely encrypted you should enable Bitlocker, this should be the case on all VU laptops.",
+    "text": "Research Support Handbook",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Encrypting your data"
+    ]
+  },
+  {
+    "objectID": "tools/yoda/yoda_using_cyberduck_cryptometer.html#encrypting-your-data-using-cryptomator-and-cyberduck",
+    "href": "tools/yoda/yoda_using_cyberduck_cryptometer.html#encrypting-your-data-using-cryptomator-and-cyberduck",
+    "title": "Encrypting your data",
+    "section": "Encrypting your data using Cryptomator and Cyberduck",
+    "text": "Encrypting your data using Cryptomator and Cyberduck\nTo work with privacy sensitive data you might be required to encrypt the data you store on Yoda. An easy way to do this is to use Cyberduck (or MountainDuck) together with the free tool Cryptomator.\nCryptomator is available for Windows, MacOS and Linux.\n\n\n\nCryptomator workflow\n\n\nNote this workflow means local copies of the files on your laptop are not in the encrypted vault. To make sure local files are also safely encrypted you should enable Bitlocker, this should be the case on all VU laptops.",
+    "crumbs": [
+      "Yoda",
+      "Documentation",
+      "Data Access and Transfer",
+      "Encrypting your data"
     ]
   },
   {
     "objectID": "tools/yoda/yoda_using_cyberduck_cryptometer.html#using-cryptomator",
     "href": "tools/yoda/yoda_using_cyberduck_cryptometer.html#using-cryptomator",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "title": "Encrypting your data",
     "section": "Using Cryptomator",
     "text": "Using Cryptomator\nFirst connect to the Yoda WebDAV interface using Cyberduck.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Encrypting your data"
     ]
   },
   {
     "objectID": "tools/yoda/yoda_using_cyberduck_cryptometer.html#install-cryptomator",
     "href": "tools/yoda/yoda_using_cyberduck_cryptometer.html#install-cryptomator",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "title": "Encrypting your data",
     "section": "Install Cryptomator",
     "text": "Install Cryptomator\nDownload and install from the Cryptomator site.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Encrypting your data"
     ]
   },
   {
     "objectID": "tools/yoda/yoda_using_cyberduck_cryptometer.html#create-a-new-cryptomator-vault",
     "href": "tools/yoda/yoda_using_cyberduck_cryptometer.html#create-a-new-cryptomator-vault",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "title": "Encrypting your data",
     "section": "Create a new Cryptomator vault",
     "text": "Create a new Cryptomator vault\nRight click in Cyberduck and choose “New Encrypted Vault”  Give the folder a name and set a passphrase.\n The vault will look like a normal folder in Cyberduck\n\n\n\nCryptomator folder\n\n\nWhen you doubleclick the new folder you will be asked for the passphrase. \nEnter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.\nIf you cancel the passphrase prompt you will only see the Cryptomator files in the folder. Adding or deleting files could corrupt your data!\nIf you are not prompted for the passphrase click refresh first.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Encrypting your data"
     ]
   },
   {
@@ -1633,55 +1646,55 @@
     ]
   },
   {
-    "objectID": "tools/yoda/workflow_metadata_license.html",
-    "href": "tools/yoda/workflow_metadata_license.html",
-    "title": "Selecting a license for your Dataset",
+    "objectID": "tools/yoda/workflow_metadata_licence.html",
+    "href": "tools/yoda/workflow_metadata_licence.html",
+    "title": "Selecting a licence for your dataset",
     "section": "",
-    "text": "Research Support Handbook\nWhen you archive your data, you can indicate the terms and conditions on how your data can be accessed and for what purposes it can be reused, or whether it can be reused at all. Here is some useful information on selecting and writing a license. We also offer options to get advice about selecting and creating your license, but you remain responsible for your eventual choice.\nMake sure the data does not contain sensitive information before making it publicly available through a CC-BY or other open license. You can check this through the Data Classification Tool and when uncertain by contacting the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice license ’ as the subject header in your mail).\nThere are several different licenses that can be selected for your dataset. These can be separated into three categories: Open, Restricted & Closed.",
+    "text": "Research Support Handbook\nWhen you archive your data, you can indicate the terms and conditions on how your data can be accessed and for what purposes it can be reused, or whether it can be reused at all. Here is some useful information on selecting and writing a licence. We also offer options to get advice about selecting and creating your licence, but you remain responsible for your eventual choice.\nMake sure the data does not contain sensitive information before making it publicly available through a CC-BY or other open licence. You can check this through the Data Classification Tool and when uncertain by contacting the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice licence ’ as the subject header in your mail).\nThere are several different licences that can be selected for your dataset. These can be separated into three categories: Open, Restricted & Closed.",
     "crumbs": [
       "Yoda",
       "Documentation",
-      "Using Yoda",
-      "Selecting a license for your Dataset"
+      "Securing and Distributing Data",
+      "Selecting a licence for your dataset"
     ]
   },
   {
-    "objectID": "tools/yoda/workflow_metadata_license.html#open",
-    "href": "tools/yoda/workflow_metadata_license.html#open",
-    "title": "Selecting a license for your Dataset",
+    "objectID": "tools/yoda/workflow_metadata_licence.html#open",
+    "href": "tools/yoda/workflow_metadata_licence.html#open",
+    "title": "Selecting a licence for your dataset",
     "section": "Open",
-    "text": "Open\nThis information applies when your data can be published openly, so that anyone can access them.\nThere are several standard Creative Commons licenses available to make your dataset directly accessible for other users. In general, these licenses are preferred as they allow easy re-use by others. Moreover, they are well known, which ensures that others quickly grasp how they may use your data. The variations of these licenses indicate the following aspects: author attribution requirement, commercial use, modification of the dataset and changing the license of any modified dataset. A useful decision tree can be found on the Creative Commons website.\nAnother open license is the Open Data Commons Open Database License (ODbL), which can be used specifically for databases.",
+    "text": "Open\nThis information applies when your data can be published openly, so that anyone can access them.\nThere are several standard Creative Commons licences available to make your dataset directly accessible for other users. In general, these licences are preferred as they allow easy re-use by others. Moreover, they are well known, which ensures that others quickly grasp how they may use your data. The variations of these licences indicate the following aspects: author attribution requirement, commercial use, modification of the dataset and changing the licence of any modified dataset. A useful decision tree can be found on the Creative Commons website.\nAnother open licence is the Open Data Commons Open Database License (ODbL), which can be used specifically for databases.",
     "crumbs": [
       "Yoda",
       "Documentation",
-      "Using Yoda",
-      "Selecting a license for your Dataset"
+      "Securing and Distributing Data",
+      "Selecting a licence for your dataset"
     ]
   },
   {
-    "objectID": "tools/yoda/workflow_metadata_license.html#restricted",
-    "href": "tools/yoda/workflow_metadata_license.html#restricted",
-    "title": "Selecting a license for your Dataset",
+    "objectID": "tools/yoda/workflow_metadata_licence.html#restricted",
+    "href": "tools/yoda/workflow_metadata_licence.html#restricted",
+    "title": "Selecting a licence for your dataset",
     "section": "Restricted",
-    "text": "Restricted\nWhen your data can be reused for new research, but not through an open license, it is important to state with whom the data can be shared and under which conditions and for what purposes the data can be used. The reasons for choosing a restricted license may vary from field to field but often apply to human subject data and data that was provided by a company but only under specific conditions. Another reason for choosing a restricted license is a personal preference.\n\nHow to: Using the VU Restricted license\n\nDownload the VU Restricted license template.\nCheck which conditions and requirements apply to the reuse of the data based on VU RDM guidelines, laws regarding use of data (GDPR, Intellectual Property legislation, etc.), requirements from funders or collaboration parties and conditions mentioned in the informed consent form signed by participants.\nAlter the template by indicating the potential usage purposes of the data and/or any regional restrictions. If you wish to receive advice on creating your license you can contact the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice custom license data management ’ as the subject header in your mail).\n\n\n\n\nEdit restricted license text\n\n\n\nSave the document as txt file: License.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Restricted” and set License to “Custom” in the Metadata form and make sure the license is included.",
+    "text": "Restricted\nWhen your data can be reused for new research, but not through an open licence, it is important to state with whom the data can be shared and under which conditions and for what purposes the data can be used. The reasons for choosing a restricted licence may vary from field to field but often apply to human subject data and data that was provided by a company but only under specific conditions. Another reason for choosing a restricted licence is a personal preference.\n\nHow to: Using the VU Restricted licence\n\nDownload the VU Restricted licence template.\nCheck which conditions and requirements apply to the reuse of the data based on VU RDM guidelines, laws regarding use of data (GDPR, Intellectual Property legislation, etc.), requirements from funders or collaboration parties and conditions mentioned in the informed consent form signed by participants.\nAlter the template by indicating the potential usage purposes of the data and/or any regional restrictions. If you wish to receive advice on creating your licence you can contact the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice custom licence data management ’ as the subject header in your mail).\n\n\n\n\nEdit restricted licence text\n\n\n\nSave the document as txt file: Licence.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Restricted” and set Licence to “Custom” in the Metadata form and make sure the licence is included.",
     "crumbs": [
       "Yoda",
       "Documentation",
-      "Using Yoda",
-      "Selecting a license for your Dataset"
+      "Securing and Distributing Data",
+      "Selecting a licence for your dataset"
     ]
   },
   {
-    "objectID": "tools/yoda/workflow_metadata_license.html#closed",
-    "href": "tools/yoda/workflow_metadata_license.html#closed",
-    "title": "Selecting a license for your Dataset",
+    "objectID": "tools/yoda/workflow_metadata_licence.html#closed",
+    "href": "tools/yoda/workflow_metadata_licence.html#closed",
+    "title": "Selecting a licence for your dataset",
     "section": "Closed",
-    "text": "Closed\nUnder certain circumstances, it becomes undesirable, inadvisable or even illegal to reuse your data new research. The provider of the data may prohibit sharing the data or the signed informed consent form may forbid sharing the data with third parties. In this situation you can use the VU Closed license template. The VU always retains the right to access the dataset for verification purposes.\n\nHow to: Using the VU Closed license\n\nDownload the VU Closed license template template.\nAlter the template to include the reason for not being accessible by third parties.\n\n\n\n\nEdit closed license text\n\n\n\nSave the document as txt file: License.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Closed” and set License to “Custom” in the Metadata form and make sure the license is included.",
+    "text": "Closed\nUnder certain circumstances, it becomes undesirable, inadvisable or even illegal to reuse your data for new research. The provider of the data may prohibit sharing the data or the signed informed consent form may forbid sharing the data with third parties. In this situation you can use the VU Closed licence template. The VU always retains the right to access the dataset for verification purposes.\n\nHow to: Using the VU Closed licence\n\nDownload the VU Closed licence template template.\nAlter the template to include the reason for not being accessible by third parties.\n\n\n\n\nEdit closed licence text\n\n\n\nSave the document as txt file: Licence.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Closed” and set Licence to “Custom” in the Metadata form and make sure the licence is included.",
     "crumbs": [
       "Yoda",
       "Documentation",
-      "Using Yoda",
-      "Selecting a license for your Dataset"
+      "Securing and Distributing Data",
+      "Selecting a licence for your dataset"
     ]
   },
   {
@@ -2981,74 +2994,18 @@
     "text": "AI-generated texts\nIn preparation for this hackathon, we had some texts for new topics drafted by Claude LLM, as part of a trial to explore AI-assisted content creation for the handbook. The idea was that it is easier for people to review existing content than creating something from scratch. During the hackathon, most people seemed to have a preference for writing text themselves. It is more fun, and part of the content created by Claude LLM was not useful. So for now, we think we will keep writing our own texts."
   },
   {
-    "objectID": "blog/2024-11-01hackathon.html",
-    "href": "blog/2024-11-01hackathon.html",
-    "title": "Fourth Handbook Hackathon",
+    "objectID": "blog/2025-07-29itvoblog.html",
+    "href": "blog/2025-07-29itvoblog.html",
+    "title": "ITvO blog",
     "section": "",
-    "text": "Research Support Handbook\nOn October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to rdm.vu.nl, which is a huge milestone! 🎉\nFor the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.\nWe considered how (un)balanced the various Topics had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.\nOne breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):\nAnd the following structure for concepts (for example, DMP, data citation, data storage):\nWe will follow up with a new hackathon in late november."
+    "text": "Research Support Handbook"
   },
   {
-    "objectID": "blog/2024-11-01hackathon.html#issues-worked-on",
-    "href": "blog/2024-11-01hackathon.html#issues-worked-on",
-    "title": "Fourth Handbook Hackathon",
-    "section": "Issues worked on",
-    "text": "Issues worked on\nhttps://github.com/ubvu/open-handbook/issues/232\nhttps://github.com/ubvu/open-handbook/issues/233"
-  },
-  {
-    "objectID": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
-    "href": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
-    "title": "Fourth Handbook Hackathon",
-    "section": "Pull Requests worked on",
-    "text": "Pull Requests worked on\nhttps://github.com/ubvu/open-handbook/pull/229\nhttps://github.com/ubvu/open-handbook/pull/231\nhttps://github.com/ubvu/open-handbook/pull/234\nhttps://github.com/ubvu/open-handbook/pull/235\nhttps://github.com/ubvu/open-handbook/pull/236\nhttps://github.com/ubvu/open-handbook/pull/237"
-  },
-  {
-    "objectID": "blog/2025-07-28manuals.html",
-    "href": "blog/2025-07-28manuals.html",
-    "title": "New Manuals section in the Handbook",
-    "section": "",
-    "text": "Research Support Handbook\nLast week we added a new section to the Research Support Handbook: Manuals. Manuals are short pages describing how to accomplish specific tasks in a Tool and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.\nWe have started by migrating the manuals on using Yoda, from their old spot on yoda.vu.nl. Next step will be migrating the ADA HPC manuals from readthedocs.\nBy consolidating all user manuals on the Research Support Handbook we hope to increase the findability of both the manuals and the rest of the Research Support Handbook."
-  },
-  {
-    "objectID": "blog/2025-07-28manuals.html#maintaining-the-manuals",
-    "href": "blog/2025-07-28manuals.html#maintaining-the-manuals",
-    "title": "New Manuals section in the Handbook",
-    "section": "Maintaining the manuals",
-    "text": "Maintaining the manuals\nEven more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nSubscribe to the blog via RSS.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Manuals section in the Handbook\n\n\n\nHandbook\n\nYoda\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nITvO blog\n\n\n\nIT for Research\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nSergio Gutierrez, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nSixth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nEmily Barabas, Diógenes Cruz de Arcelino, Kirianne Goossen, Charlie Greene, Sergio Gutierrez Maury, Sam Heijnen, Marcel Ras, Elisa Rodenburg, Jolien Scholten, Dimitri Unger, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nHow to embed handbook pages using iframes\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 19, 2025\n\n\nChris Hartgerink, Elisa Rodenburg, Jessica Hrudey\n\n\n\n\n\n\n\n\n\n\n\n\nFifth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 28, 2024\n\n\nLena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nFourth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nChris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nWhy was rdm.vu.nl down for ten hours?\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\nChris Hartgerink, Lena Karvovskaya\n\n\n\n\n\n\n\n\n\n\n\n\nThird Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 30, 2024\n\n\nAlex van der Jagt, FGB, sec. KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 5, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJun 27, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nHello world!\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Research Support Handbook",
-    "section": "",
-    "text": "Research Support Handbook\n\n\nYour Guide Towards Good Data and Software Management Practices\n\nAll information is curated by VU staff and updated on a daily basis\n\n\n\n\nTopics, Guides and Tools\n\n\n\n\n\nTopics\nA quick way to learn about specific topics\n\n\n\nGuides\nGuide you through data and software management practices\n\n\n\nTools\nHow to use VU-supported research tools\n\n\n\n\n\nRelated Trainings and Events\n\nThe VU Network Research Data Support organises trainings that will help you develop your data management and coding skills, as well as events for researchers and support staff to exchange ideas and experiences relevant to good research practices.\n\n\n\n\n\nCalendar\n\n\n\nTrainings"
-  },
-  {
-    "objectID": "blog/2024-09-05hackathon.html",
-    "href": "blog/2024-09-05hackathon.html",
-    "title": "Second Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.\nCollectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include making sure all images are migrated into the handbook, ensuring appropriate page titles, and refining the contribution guide.\nDuring the hackathon, we observed a lot of links in the old LibGuide resource, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.\nThe general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl."
-  },
-  {
-    "objectID": "blog/2024-09-05hackathon.html#hackathon-issues",
-    "href": "blog/2024-09-05hackathon.html#hackathon-issues",
-    "title": "Second Handbook Hackathon",
-    "section": "Hackathon Issues",
-    "text": "Hackathon Issues\n\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/128\nhttps://github.com/ubvu/open-handbook/issues/125\nhttps://github.com/ubvu/open-handbook/issues/124\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/130\nhttps://github.com/ubvu/open-handbook/issues/131"
-  },
-  {
-    "objectID": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
-    "href": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
-    "title": "Second Handbook Hackathon",
-    "section": "Hackathon Pull Requests",
-    "text": "Hackathon Pull Requests\n\nhttps://github.com/ubvu/open-handbook/pull/126\nhttps://github.com/ubvu/open-handbook/pull/110\nhttps://github.com/ubvu/open-handbook/pull/127\nhttps://github.com/ubvu/open-handbook/pull/129\nhttps://github.com/ubvu/open-handbook/pull/132\nhttps://github.com/ubvu/open-handbook/pull/133\nhttps://github.com/ubvu/open-handbook/pull/134\nhttps://github.com/ubvu/open-handbook/pull/135"
+    "objectID": "blog/2025-07-29itvoblog.html#first-itvo-blog",
+    "href": "blog/2025-07-29itvoblog.html#first-itvo-blog",
+    "title": "ITvO blog",
+    "section": "First ITvO Blog",
+    "text": "First ITvO Blog\nFrom now on the ITvO (IT for Research) team will be using the Handbook Blog for sharing news, updates, and important announcements related to SciCloud, ADA HPC, SciStor, and other services provided by ITvO. Here you will find information about new features, scheduled maintenance, service improvements. Stay tuned for the latest developments and insights from the ITvO team."
   },
   {
     "objectID": "blog/2024-10-22post-mortem.html",
@@ -3100,18 +3057,95 @@
     "text": "Footnotes\n\n\nubvu.github.io/open-handbook remained online during this entire time, and functions indirectly as a backup.↩︎"
   },
   {
-    "objectID": "blog/2025-07-29itvoblog.html",
-    "href": "blog/2025-07-29itvoblog.html",
-    "title": "ITvO blog",
+    "objectID": "blog/2024-09-05hackathon.html",
+    "href": "blog/2024-09-05hackathon.html",
+    "title": "Second Handbook Hackathon",
     "section": "",
-    "text": "Research Support Handbook"
+    "text": "Research Support Handbook\nOn September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.\nCollectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include making sure all images are migrated into the handbook, ensuring appropriate page titles, and refining the contribution guide.\nDuring the hackathon, we observed a lot of links in the old LibGuide resource, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.\nThe general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl."
   },
   {
-    "objectID": "blog/2025-07-29itvoblog.html#first-itvo-blog",
-    "href": "blog/2025-07-29itvoblog.html#first-itvo-blog",
-    "title": "ITvO blog",
-    "section": "First ITvO Blog",
-    "text": "First ITvO Blog\nFrom now on the ITvO (IT for Research) team will be using the Handbook Blog for sharing news, updates, and important announcements related to SciCloud, ADA HPC, SciStor, and other services provided by ITvO. Here you will find information about new features, scheduled maintenance, service improvements. Stay tuned for the latest developments and insights from the ITvO team."
+    "objectID": "blog/2024-09-05hackathon.html#hackathon-issues",
+    "href": "blog/2024-09-05hackathon.html#hackathon-issues",
+    "title": "Second Handbook Hackathon",
+    "section": "Hackathon Issues",
+    "text": "Hackathon Issues\n\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/128\nhttps://github.com/ubvu/open-handbook/issues/125\nhttps://github.com/ubvu/open-handbook/issues/124\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/130\nhttps://github.com/ubvu/open-handbook/issues/131"
+  },
+  {
+    "objectID": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
+    "href": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
+    "title": "Second Handbook Hackathon",
+    "section": "Hackathon Pull Requests",
+    "text": "Hackathon Pull Requests\n\nhttps://github.com/ubvu/open-handbook/pull/126\nhttps://github.com/ubvu/open-handbook/pull/110\nhttps://github.com/ubvu/open-handbook/pull/127\nhttps://github.com/ubvu/open-handbook/pull/129\nhttps://github.com/ubvu/open-handbook/pull/132\nhttps://github.com/ubvu/open-handbook/pull/133\nhttps://github.com/ubvu/open-handbook/pull/134\nhttps://github.com/ubvu/open-handbook/pull/135"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research Support Handbook",
+    "section": "",
+    "text": "Research Support Handbook\n\n\nYour Guide Towards Good Data and Software Management Practices\n\nAll information is curated by VU staff and updated on a daily basis\n\n\n\n\nTopics, Guides and Tools\n\n\n\n\n\nTopics\nA quick way to learn about specific topics\n\n\n\nGuides\nGuide you through data and software management practices\n\n\n\nTools\nHow to use VU-supported research tools\n\n\n\n\n\nRelated Trainings and Events\n\nThe VU Network Research Data Support organises trainings that will help you develop your data management and coding skills, as well as events for researchers and support staff to exchange ideas and experiences relevant to good research practices.\n\n\n\n\n\nCalendar\n\n\n\nTrainings"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nSubscribe to the blog via RSS.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeventh Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 27, 2025\n\n\nDiógenes Cruz de Arcelino, Kirianne Goossen, Sergio Gutierrez Maury, Elisa Rodenburg, Jolien Scholten, Peter Vos, Tycho Hofstra, Jessica Hrudey, Tim Veken, Janna Toebosch, Sreenithya Avadakkam, Wiebe Timmers, Abeer Pervaiz\n\n\n\n\n\n\n\n\n\n\n\n\nNew Manuals section in the Handbook\n\n\n\nHandbook\n\nYoda\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nITvO blog\n\n\n\nIT for Research\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nSergio Gutierrez, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nSixth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nEmily Barabas, Diógenes Cruz de Arcelino, Kirianne Goossen, Charlie Greene, Sergio Gutierrez Maury, Sam Heijnen, Marcel Ras, Elisa Rodenburg, Jolien Scholten, Dimitri Unger, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nHow to embed handbook pages using iframes\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 19, 2025\n\n\nChris Hartgerink, Elisa Rodenburg, Jessica Hrudey\n\n\n\n\n\n\n\n\n\n\n\n\nFifth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 28, 2024\n\n\nLena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nFourth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nChris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nWhy was rdm.vu.nl down for ten hours?\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\nChris Hartgerink, Lena Karvovskaya\n\n\n\n\n\n\n\n\n\n\n\n\nThird Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 30, 2024\n\n\nAlex van der Jagt, FGB, sec. KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 5, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJun 27, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nHello world!\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/2025-07-28manuals.html",
+    "href": "blog/2025-07-28manuals.html",
+    "title": "New Manuals section in the Handbook",
+    "section": "",
+    "text": "Research Support Handbook\nLast week we added a new section to the Research Support Handbook: Manuals. Manuals are short pages describing how to accomplish specific tasks in a Tool and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.\nWe have started by migrating the manuals on using Yoda, from their old spot on yoda.vu.nl. Next step will be migrating the ADA HPC manuals from readthedocs.\nBy consolidating all user manuals on the Research Support Handbook we hope to increase the findability of both the manuals and the rest of the Research Support Handbook."
+  },
+  {
+    "objectID": "blog/2025-07-28manuals.html#maintaining-the-manuals",
+    "href": "blog/2025-07-28manuals.html#maintaining-the-manuals",
+    "title": "New Manuals section in the Handbook",
+    "section": "Maintaining the manuals",
+    "text": "Maintaining the manuals\nEven more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon."
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html",
+    "href": "blog/2024-11-01hackathon.html",
+    "title": "Fourth Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to rdm.vu.nl, which is a huge milestone! 🎉\nFor the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.\nWe considered how (un)balanced the various Topics had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.\nOne breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):\nAnd the following structure for concepts (for example, DMP, data citation, data storage):\nWe will follow up with a new hackathon in late november."
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html#issues-worked-on",
+    "href": "blog/2024-11-01hackathon.html#issues-worked-on",
+    "title": "Fourth Handbook Hackathon",
+    "section": "Issues worked on",
+    "text": "Issues worked on\nhttps://github.com/ubvu/open-handbook/issues/232\nhttps://github.com/ubvu/open-handbook/issues/233"
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
+    "href": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
+    "title": "Fourth Handbook Hackathon",
+    "section": "Pull Requests worked on",
+    "text": "Pull Requests worked on\nhttps://github.com/ubvu/open-handbook/pull/229\nhttps://github.com/ubvu/open-handbook/pull/231\nhttps://github.com/ubvu/open-handbook/pull/234\nhttps://github.com/ubvu/open-handbook/pull/235\nhttps://github.com/ubvu/open-handbook/pull/236\nhttps://github.com/ubvu/open-handbook/pull/237"
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html",
+    "href": "blog/2025-11-27hackathon.html",
+    "title": "Seventh Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn November 27, 2025, all authors participated in the seventh hackathon for the Research Support Handbook. For this hackathon, we focused on Consolidating content and adding new content."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html#overview-of-results",
+    "href": "blog/2025-11-27hackathon.html#overview-of-results",
+    "title": "Seventh Handbook Hackathon",
+    "section": "Overview of results",
+    "text": "Overview of results\nWe updated the information about Pure and about data and software registration in Pure (link to LibGuide manuals instead of PDFs, information about Elsevier no longer supporting DataMonitor).\nWe created two practical pages related to the RDM Support Desk:\n\nGeneral information about the RDM Support Desk\nLanding page for requesting access to datasets\n\nRegarding videos in the Research Support Handbook: We stored relevant videos in Panopto and embedded them in our website from there, replacing the YouTube videos. This helps us maintain all video material in a central place and another advantage is that we don’t get suggestions for other videos once a video has ended, as on YouTube.\nWe expanded the Research Software topic by referring to related information in the Research Support Handbook.\nWe continued working on the topic de-identifying data, but this is still in progress.\nA few updates have been done in tools documentation for Yoda, ADA and SciStor before, during and after the hackathon. We have improved navigation in the tools section as well.\nFinally, a new release of the Handbook has been created on Zenodo."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
+    "href": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
+    "title": "Seventh Handbook Hackathon",
+    "section": "Hackathon Issues and Pull Requests",
+    "text": "Hackathon Issues and Pull Requests\n\nData and software registration updates: Issue #250, PR #621 and PR #623; PR #627 for updates in the general information about Pure. Note that the information about Pure has been transferred from topics to tools see Issue #675 and see PR #678.\nRDM Support Desk: Issue #588 and PR #610 for the information page and Issue #589 and PR #631 for the landing page with information about requesting access to datasets.\nResearch software information: Issue #410 and PR #624.\nTopic de-identifying data: Issue #492"
   },
   {
     "objectID": "blog/2024-11-28hackathon.html",
@@ -4449,7 +4483,7 @@
     "href": "tools/yoda/index.html#what-is-it",
     "title": "Yoda",
     "section": "What is it?",
-    "text": "What is it?\nYoda is an application for institutions that supports Research Data Management (RDM) throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.\n\n\n\n\n\n\nYoda helps the researcher make their data “FAIR” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying VU policy requirements for data archiving and publication. In addition, Yoda is built on iRODS so it accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.\nYoda presents researchers a comfortable, easy-to-use solution for securely storing, sharing and organising their research data that follows the internationally adopted FAIR data principles. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR.\nProject space in Yoda is basically a folder with group based access rights. Access restrictions are only set on the top level, meaning you need one Project Space per research project.\nYoda is open source software developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.",
+    "text": "What is it?\nYoda is an application for institutions that supports Research Data Management (RDM) throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.\n\n\n\n\n\n\nYoda helps the researcher make their data “FAIR” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying VU policy requirements for data archiving and publication. In addition, Yoda is built on iRODS so it accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.\nYoda is open source software developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.",
     "crumbs": [
       "Yoda",
       "What is Yoda?"
@@ -4460,7 +4494,7 @@
     "href": "tools/yoda/index.html#what-can-it-be-used-for",
     "title": "Yoda",
     "section": "What can it be used for?",
-    "text": "What can it be used for?\nThe particular strength of Yoda lies in the fact that it is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself. There is no need to upload your data to another platform.\n\nData storage\nYoda is a Cloud storage solution that can be used for small to very large datasets. The underlying iRODS software ensures data integrity. Data in Yoda is backed up daily.\n\n\nData sharing\nOnce a new Yoda group has been created you can invite collaborators yourself. Researchers from national and international research institutes can login with their institutional account via SURF Research Access Management (SRAM). Collaborators from non-research institutes can create a free EduID NL account.\n\n\nSensitive data\nThe use of Multi-Factor Authentication (MFA) with SRAM and hosting at SURF ensure, among other things, Yoda is suitable for the storage and sharing of data that score High on confidentiality in a data classification (see the Policy Classification of Research Data and the Research Data Classification Tool). Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nMetadata\nAt any moment you can add descriptive metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators.\n\n\nArchiving\nAt any moment you can submit a data folder with metadata for Archiving in the Yoda Vault. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda datamanager (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.\n\n\nPublishing metadata and data\nFrom the Yoda Vault you can submit the dataset for publication. A DOI will be generated and registered with DataCite together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.\nThe DOI link will lead to a landing page in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse.\n\n\nAutomated workflows\nSince Yoda is build on iRODS you could also build (automated) ingest and analysis workflows using iRODS Rules and Policies. Please contact IT for Research if you need assistance.",
+    "text": "What can it be used for?\nYoda is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself, wthout the need to upload your data to another platform.\n\nData storage\nYoda is a Cloud storage solution that can be used for small to very large datasets. The underlying iRODS software ensures data integrity. Data in Yoda is backed up daily.\n\n\nData sharing\nOnce a new Yoda group has been created you can invite collaborators yourself. Researchers from national and international research institutes can login with their institutional account via SURF Research Access Management (SRAM). Collaborators from non-research institutes can create a free EduID NL account.\n\n\nSensitive data\nThe use of Multi-Factor Authentication (MFA) with SRAM and hosting at SURF ensure, among other things, Yoda is suitable for the storage and sharing of data that score High on confidentiality in a data classification (see the Policy Classification of Research Data and the Research Data Classification Tool). Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nMetadata\nAt any moment you can add descriptive metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators.\n\n\nArchiving\nAt any moment you can submit a data folder with metadata for Archiving in the Yoda Vault. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda datamanager (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.\n\n\nPublishing metadata and data\nFrom the Yoda Vault you can submit the dataset for publication. A DOI will be generated and registered with DataCite together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.\nThe DOI link will lead to a landing page in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse.\n\n\nAutomated workflows\nSince Yoda is build on iRODS you could also build (automated) ingest and analysis workflows using iRODS Rules and Policies. Please contact IT for Research if you need assistance.",
     "crumbs": [
       "Yoda",
       "What is Yoda?"
@@ -4621,40 +4655,40 @@
   {
     "objectID": "tools/yoda/sram_invitations_eduid_activation.html",
     "href": "tools/yoda/sram_invitations_eduid_activation.html",
-    "title": "Research Support Handbook",
+    "title": "SRAM Invitations and eduID Activation",
     "section": "",
-    "text": "Research Support Handbook",
+    "text": "Research Support Handbook\nTo access the Yoda Portal a Single Sign-On (SSO) is required. Access to a Yoda project is managed through SRAM, where you receive an invitation to join a collaboration. If you are not affiliated with a research or educational institution, you can create a free eduID account. The system will guide you through the process.\nYou can create an account via the eduID page and use it to log in to SRAM and accept your collaboration invitation.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Yoda Portal",
-      "How to: Invitation to Yoda collaboration"
+      "SRAM Invitations and eduID Activation"
     ]
   },
   {
     "objectID": "tools/yoda/sram_invitations_eduid_activation.html#how-to-invitation-to-yoda-collaboration",
     "href": "tools/yoda/sram_invitations_eduid_activation.html#how-to-invitation-to-yoda-collaboration",
-    "title": "Research Support Handbook",
+    "title": "SRAM Invitations and eduID Activation",
     "section": "How to: Invitation to Yoda collaboration",
-    "text": "How to: Invitation to Yoda collaboration\nAfter you are added to a Yoda group by the admin or a colleague you will receive an invitation to join a Yoda “collaboration” in SRAM (SURF Research Access Management). The “join” link in the invitation will lead you to SRAM.  \n\nIf you have not logged in to SRAM before with your browser, you will see the following screen where you can search for your institute: \n\n\nIf your institute is included in this list and if you are affiliated with a research or education organisation you can choose your institution name which will redirect you to your familiar institutional login page.\nIf your institute is not in this list or if you are not affiliated with a research or education organisation please choose eduID (NL). If you do not yet have an eduID you can create one for free, the system will lead you through the process. More information on eduID here: https://www.eduid.nl/\n\n\n\n\nSRAM login with eduID\n\n\n\nWhen logged in you will be shown a welcome screen in SRAM, click proceed to accept the invitation.\nNow click the “Open” button to go to the Yoda portal.",
+    "text": "How to: Invitation to Yoda collaboration\nAfter you are added to a Yoda group by the admin or a colleague you will receive an invitation to join a Yoda “collaboration” in SRAM (SURF Research Access Management). The “join” link in the invitation will lead you to SRAM.  \n\nIf you have not logged in to SRAM before with your browser, you will see the following screen where you can search for your institute: \n\n\nIf your institute is included in this list and if you are affiliated with a research or education organisation you can choose your institution name which will redirect you to your familiar institutional login page.\nIf your institute is not in this list or if you are not affiliated with a research or education organisation please choose eduID (NL). If you do not yet have an eduID you can create one for free, the system will guide you through the process. More information on eduID [here])https://login.eduid.nl/request/436c7382-bc00-45f0-b75e-2ede39b49445?lang=en)\n\n\n\n\nSRAM login with eduID\n\n\n\nWhen logged in you will be shown a welcome screen in SRAM, click proceed to accept the invitation.\nNow click the “Open” button to go to the Yoda portal.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Yoda Portal",
-      "How to: Invitation to Yoda collaboration"
+      "SRAM Invitations and eduID Activation"
     ]
   },
   {
-    "objectID": "tools/yoda/sram_invitations_eduid_activation.html#how-to-creating-eduid",
-    "href": "tools/yoda/sram_invitations_eduid_activation.html#how-to-creating-eduid",
-    "title": "Research Support Handbook",
-    "section": "How to: Creating eduID",
-    "text": "How to: Creating eduID\n\nAfter choosing eduID (NL) you can fill in the email address to create a new eduID account.\n\n \n\nAfter requesting the account, an email is sent to your inbox to verify your eduID account. Please note that the email doesn’t always appear in the inbox folder and may be forwarded to your spam folder.\nIn order to proceed to Yoda Portal succsefuly, the eduID app is needed which can be downloaded and installed on any phone device.\n\n\n\n\nInstalling eduID app\n\n\n\nAfter setting up the app you can proceed to scan the QR code with your app.\n\n\n\n\nscanning QR code\n\n\n\nIf you wish to set up a recovery method, you can proceed to add a phone number.\n\n\n\n\nSetting up a recovery method",
+    "objectID": "tools/yoda/sram_invitations_eduid_activation.html#how-to-creating-eduid-throught-sram-invitation",
+    "href": "tools/yoda/sram_invitations_eduid_activation.html#how-to-creating-eduid-throught-sram-invitation",
+    "title": "SRAM Invitations and eduID Activation",
+    "section": "How to: Creating eduID throught SRAM invitation",
+    "text": "How to: Creating eduID throught SRAM invitation\n\nAfter choosing eduID (NL) you can fill in the email address to create a new eduID account or log in to your acount.\n\n\n\n\n\nAfter requesting the account, an email is sent to your inbox to verify your eduID account. Please note that the email doesn’t always appear in the inbox folder and may be forwarded to your spam folder.\nIn order to proceed to Yoda Portal succsefuly, the eduID app is needed which can be downloaded and installed on any phone device.\n\n\n\n\nInstalling eduID app\n\n\n\nAfter setting up the app you can proceed to scan the QR code with your app.\n\n\n\n\nscanning QR code\n\n\n\nIf you wish to set up a recovery method, you can proceed to add a phone number.\n\n\n\n\nSetting up a recovery method",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Yoda Portal",
-      "How to: Invitation to Yoda collaboration"
+      "SRAM Invitations and eduID Activation"
     ]
   },
   {
@@ -4725,27 +4759,27 @@
   {
     "objectID": "tools/yoda/properties_and_explanation.html",
     "href": "tools/yoda/properties_and_explanation.html",
-    "title": "Properties and Explanation",
+    "title": "Metadata Properties",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Using Yoda",
-      "Properties and Explanation"
+      "Metadata Properties"
     ]
   },
   {
     "objectID": "tools/yoda/properties_and_explanation.html#properties-and-explanations",
     "href": "tools/yoda/properties_and_explanation.html#properties-and-explanations",
-    "title": "Properties and Explanation",
+    "title": "Metadata Properties",
     "section": "Properties and explanations",
     "text": "Properties and explanations\nM Mandatory\nR Recommended for optimal findability\nO Optional\n\n\n\nNo\nProperty\nObligation\nExplanation\nRemarks\n\n\n\n\n1\nTitle\nM\nA descriptive title for your data package, should not be longer than about 200 characters.\n\n\n\n2\nDescription\nM\nDescribe your data package, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.\nThe text should be substantial and relevant to interpreting the content of the data package\n\n\n3\nDiscipline\nM\nThe (sub)discipline of the study.\nThe list contains a combination of research disciplines and subdisciplines. The standard used is the OECD FOS 2007. This field can have multiple values — use the plus sign to add more values.\n\n\n4\nVersion\nO\nVersion number of your data package. Useful if you need to publish an updated version of your data package later.\nYoda does not automatically assign version numbers to data packages. If you create multiple versions, you can register the version number yourself, according to your own versioning scheme.\n\n\n5\nLanguage of the data\nM\nThe primary language of your data package.\nThis element is thought of as a possible aid to assess the usability of a data package for a specific person. The standard used is ISO 639/1.\n\n\n6a\nCollection Process - Start Date\nR\nIndicate when you’ve started collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n6b\nCollection Process - End Date\nM if 6a\nIndicate when you’ve finished collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n7\nLocation(s) covered\nR\nIf your data is linked to particular locations provide place names.\nEnglish naming convention preferred. It is recommended to use the preferred spelling from the Getty Thesaurus of Geographic Names whenever possible. One location per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n8a\nPeriod Covered - Start period\nO\nAn indication of the start date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n8b\nPeriod Covered - End Period\nM if 8a\nAn indication of the end date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n9\nKeywords\nM\nFree text field for adding (searchable) keywords to your data package.\nYou can choose the keywords freely. It is best to add only one keyword per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n10a\nRelated Data package - Relation type\nR\nThe way in which the present data package (A) is related to another data package (B).\nIn this section you can enter a ‘related’ data package and the nature of that relation. For instance, you can indicate that the current data package (A) contains the raw data upon which the related data package (B) is based by selecting IsSourceOf in this field and entering the information of the other data package in the fields below. You can have multiple Related data packages — use the plus sign to add more values.\n\n\n10b\nRelated Data package - Title\nR If 10a\nTitle of the data package related to the present data package.\nThere is no automatic check whether title and persistent identifier match. Maximum length: 255 characters.\n\n\n10c\nRelated Data package – Identifier type\nM If 10d\nThe type of the persistent identifier of the related data package.\nExample: “DOI”.\n\n\n10d\nRelated Data package – Identifier\nR If 10a\nThe persistent identifier of the related data package.\nPlease fill in a resolvable URL. Example: “https://doi.org/10.48338/VU01-2LT5V4”.\n\n\n11\nRetention Period\nM\nThe minimal number of years the data will be kept in the archive. The default value is 10 years.\nIn this field you can only enter integers.\n\n\n12\nRetention Information\nO\nTo be used for remarks about the retention period.\nPlease provide a reason if you deviate from the default value of ten years. If you want to ensure that data is retained longer, then data management might request extra care for choosing sustainable file formats.\n\n\n13\nEmbargo enddate\nO\nIf the dataset has an embargo, on what date does the embargo end?\nThis functionality is not yet fully implemented. Please contact the data manager if you intend to publish a data package with an embargo.\n\n\n14\nData type\nM\nPlease indicate the type of the data.\nIf no type is selected Yoda will assume “Datapackage”.\n\n\n15\nData Classification\nM\nPlease indicate the classification of the data. Translation to VU Classifications: Public=Low, Basic=Medium, Sensitive=High, Critical=Very High.\nYou can find more information about data classification in the Research Support Handbook.\n\n\n16\nName of Collection\nO\nIf this data package is part of a larger (conceptual) collection of data packages, you can enter the collection name here.\nThe research group should ensure that all other data packages in the collection are archived with the same collection name. Maximum length: 255 characters.\n\n\n17a\nFunding information - Funder\nO\nThe name(s) of the organization(s) funding the research. If using this property also add the Award Number.\nExample: “Dutch Research Council”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n17b\nFunding information - Award number\nR if 17a\nThe grant number issued by the funding organization\n\n\n\n18\nRemarks\nO\nRemarks from the datamanager.\nRemarks serve only an administrative purpose and are not shown outside of the back-end of Yoda.\n\n\n19a\nCreator of Data package - Name\nM\nThe main researchers involved in producing the data, in priority order.\nA creator is explicitely listed as an author when the data package is cited. A creator is equivalent to a manuscript author. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n19b\nCreator of Data package – Affiliation name\nM\nThe organizational or institutional affiliation of the creator.\nExample: “Vrije Universiteit Amsterdam”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n19c\nCreator of Data package – Affiliation identifier\nR\nThe organizational or institutional identifier of the creator.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example: “https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n19d\nCreator of Data package – Persistent Identifier: Type\nM if 19e\nPlease indicate the type of persistent person identifier.\nE.g. Scopus Author ID, ORCID or ResearcherID. Multiple values are possible. If available, enter at least an ORCID.\n\n\n19e\nCreator of Data package – Persistent Identifier: Identifier\nR\nThe Persistent Identifier.\nIf you are not sure whether someone has a persistent identifier, you can check with the big three providers: Scopus Author ID, ORCID,ResearcherID. Each creator can have multiple persistent identifier — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n20a\nContributor to Data Package - Name\nR\nThe institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.For software, if there is an alternate entity that “holds, archives, publishes, prints, distributes, releases, issues, or produces” the code, use the contributor Type “hostingInstitution” for the code repository.\nContributors are not listed as creators when the data package is cited. Contributors are analogous to co-creators that would appear in the Acknowledgements-section of a manuscript. Multiple values possible — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20b\nContributor to Data Package - Type\nR if 20a\nEnter what type of contribution the registered person has had to this data package.\nSee the datacite documentation for explanation.\n\n\n20c\nContributor to Data Package - Affiliation name\nM if 20a\nThe organizational or institutional affiliation of the contributor.\nExample: “Vrije Universiteit Amsterdam”. The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n20d\nContributor to Data Package - Affiliation identifier\nR\nThe organizational or institutional identifier of the contributor.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example:“https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n20e\nContributor to Data Package - Persistent Identifier: Type\nM if 20f\nPlease indicate the type of persistent person identifier.\nEach contributor can have multiple persistent identifiers — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20f\nContributor to Data Package - Persistent Identifier: Identifier\nR\nAn unique person identifier.\nEach contributor can have multiple identifiers — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n21\nLicense\nM\nThe license under which you offer the data package for use by third parties. The preferred value for open data is CC By 4.0.\nEvery package needs to be archived with a license — even when you’re not planning to publish the data or have it reused in any form. We offer a number of possible licenses in a drop-down list. If you do not know which license to choose, contact the data manager. At the moment of publishing a data package the relevant license text will be copied into the data package. If you opt for a custom license, you will need to store the custom license text in a file titled License.txt in the root folder. If the Data Package Access (22) is Restricted Access or Closed Access, you can only opt for a custom license, the VU has created custom templates for the License.txt file.\n\n\n22\nData Package Access\nM\nOnce archived, should your dataset be accessible to third parties?\nOpen Access means that the dataset is accessible to everyone. Restricted Access means that the dataset can only be obtained on request. Closed Access means that the dataset cannot be shared, in principle.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Using Yoda",
-      "Properties and Explanation"
+      "Metadata Properties"
     ]
   },
   {
@@ -6151,7 +6185,7 @@
     "href": "tools/ithenticate/index.html#what-is-it",
     "title": "iThenticate",
     "section": "What is it?",
-    "text": "What is it?\niThenticate is plagiarism detection software that compares a researcher’s original work with published academic work available online, and bibliographical databases such as Crossref. The tool scans for text similarity between the original work and published work, resulting in a similarity score. Every similarity found by iThenticate can be analysed, enabling the researcher to look at the specific text and location of the original work",
+    "text": "What is it?\niThenticate is plagiarism detection software that compares a researcher’s original work with published academic work available online, and bibliographical databases such as Crossref. The tool scans for text similarity between the original work and published work, resulting in a similarity score. Every similarity found by iThenticate can be analysed, enabling the researcher to look at the specific text and location of the original work.",
     "crumbs": [
       "iThenticate",
       "What is iThenticate?"
@@ -6162,7 +6196,7 @@
     "href": "tools/ithenticate/index.html#what-can-it-be-used-for",
     "title": "iThenticate",
     "section": "What can it be used for?",
-    "text": "What can it be used for?\niThenticate is used by researchers to ensure the originality of written work before publication. The approach to plagiarism checks at VU is not primarily for retrospective detection but is rather employed in an educational and preventive manner, explicitly aiming to enhance awareness of scientific integrity in accordance with the Netherlands Code of Conduct for Research Integrity (NGWI).\nStarting from September 1, 2022, PhD candidates who commence their PhD research are required to conduct an initial scan in iThenticate early in their trajectory. The educational aspect involves discussing the results of the scan with their supervisor. The goal is to educate VU PhD candidates to become engaged and responsible scientific researchers.",
+    "text": "What can it be used for?\niThenticate is used by researchers to ensure the originality of written work before publication. The approach to plagiarism checks at VU is not primarily for retrospective detection but is rather employed in an educational and preventative manner, explicitly aiming to enhance awareness of scientific integrity in accordance with the Netherlands Code of Conduct for Research Integrity (NGWI).\nStarting from September 1, 2022, PhD candidates who commence their PhD research are required to conduct an initial scan in iThenticate early in their trajectory. The educational aspect involves discussing the results of the scan with their supervisor. The goal is to educate VU PhD candidates to become engaged and responsible scientific researchers.",
     "crumbs": [
       "iThenticate",
       "What is iThenticate?"
@@ -6262,7 +6296,7 @@
     "href": "tools/ithenticate/quick_start.html",
     "title": "Quick start",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nOnce you have an account you can start by logging in and starting your first scan.",
+    "text": "Research Support Handbook\n\n\n\n\nTo gain access to iThenticate you can contact your Key-User of your faculty. Your faculty’s Key-user can request an account for you.\nOnce an account has been created for you, you will receive an email from Turnitin. You can then log in and perform your first scan.\niThenticate allows you to save, share and export your results. These results can be discussed and interpreted together with your supervisor.\nYou can also adjust your similarity check settings or run a doc-to-doc comparison. These options can be found in the Advanced Settings section under Documentation.",
     "crumbs": [
       "iThenticate",
       "Quick start"
@@ -6284,7 +6318,7 @@
     "href": "tools/ithenticate/cost_access.html#how-to-request-access",
     "title": "Costs and Getting Access",
     "section": "How to request access",
-    "text": "How to request access\nVrije Universiteit Amsterdam has a campus licence for PhD candidates only. The iThenticate key-users within the faculties are the points of contact for creating accounts for PhD candidates. For requesting ithenticate account you can create a ticket in the VU Service Portal. An iThenticate key user will contact you.\nA list of key users per faculty can be found in the Handbook",
+    "text": "How to request access\nVrije Universiteit Amsterdam has a campus licence for PhD candidates only. The iThenticate key users within the faculties are the first point of contact for creating accounts for PhD candidates. To request an iThenticate account, you can contact your faculty’s Key User. The Key User can create a ticket in the VU Service Portal to request an account.\nA list of Key Users per faculty can be found on this overview.",
     "crumbs": [
       "iThenticate",
       "Costs and Getting Access"
