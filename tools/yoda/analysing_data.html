@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-23">
+<meta name="dcterms.date" content="2026-03-19">
 <meta name="description" content="This page explains how to run analysis software on your data in Yoda.">
 
 <title>Analysing Data – Research Support Handbook</title>
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-01c91078c9fac35618f7be6d01c2e1e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-fbf984ca91b3f5a494fbd717f6e99ede.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -122,8 +122,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Trainings and Knowledge Items">
- <span class="dropdown-text">Trainings and Knowledge Items</span></a>
+    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+ <span class="dropdown-text">Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
@@ -387,6 +387,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tools/yoda/yoda_using_gocommands.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Gocommands</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/yoda_using_python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Python</span></a>
   </div>
@@ -454,7 +460,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 23, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -577,6 +583,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Make sure you have a good internet connection when you download (large) files to your PC and when you upload your results to Yoda. Regardless of the method you choose, this will be the biggest determinant of download speed. On HPC and VRE systems, the connections should be ok.</p></li>
 <li><p>Treat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.</p></li>
+<li><p><a href="https://rclone.org/commands/rclone_sync/" target="_blank">Rclone</a>, <a href="https://docs.irods.org/4.3.4/icommands/user/#irsync" target="_blank">iCommands</a>, <a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md" target="_blank">Gocommands</a> and <a href="https://ibridges.readthedocs.io/en/v1.0.0/sync.html" target="_blank">iBridges</a> all have the option to sync a folder on your PC with Yoda. Since only changed files will be transferred this is quicker and you will be able to restart transfers when they get interrupted.</p></li>
 <li><p>Use iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g.&nbsp;file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.</p></li>
 <li><p>If you consistently work with large datasets on campus, e.g.&nbsp;on your PC, SciCloud or Ada, consider storing data you are actively working with on <a href="../../tools/scistor/index.html">SciStor</a>. You can store the bulk of your source data in Yoda to keep costs down and upload your results to Yoda to organize, share with external collaborators, archive and publish.</p></li>
 </ul>
@@ -1040,13 +1047,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="pagebottom py-5 page-columns page-full">
     <div class="column-page text-center">
         <ul class="footer-items list-unstyled">
-            <li class="nav-item mx-md-5">
+            <li class="nav-item mx-5">
                 <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
                     Missing something in the Handbook?<br>
                     <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
                 </p>
             </li>
-            <li class="nav-item mx-md-5">
+            <li class="nav-item mx-5">
                 <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
                 Question about your research data or research software?<br>
                 <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
@@ -1064,12 +1071,12 @@ ul.task-list li input[type="checkbox"] {
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/about">
+            <a class="nav-link" href="../../about.html">
                 <p>About</p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/contributing">
+            <a class="nav-link" href="../../contributing.html">
                 <p>Contributing</p>
             </a>
         </li>

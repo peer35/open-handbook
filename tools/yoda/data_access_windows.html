@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-05">
+<meta name="dcterms.date" content="2026-03-19">
 
 <title>Data Access on Windows – Research Support Handbook</title>
 <style>
@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-01c91078c9fac35618f7be6d01c2e1e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-fbf984ca91b3f5a494fbd717f6e99ede.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,8 +121,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Trainings and Knowledge Items">
- <span class="dropdown-text">Trainings and Knowledge Items</span></a>
+    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+ <span class="dropdown-text">Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
@@ -386,6 +386,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tools/yoda/yoda_using_gocommands.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Gocommands</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/yoda_using_python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Python</span></a>
   </div>
@@ -426,7 +432,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#file-transfer" id="toc-file-transfer" class="nav-link active" data-scroll-target="#file-transfer">File transfer</a></li>
   <li><a href="#drive-letter" id="toc-drive-letter" class="nav-link" data-scroll-target="#drive-letter">Drive letter</a></li>
-  <li><a href="#command-line-and-rclone" id="toc-command-line-and-rclone" class="nav-link" data-scroll-target="#command-line-and-rclone">Command line and Rclone</a></li>
+  <li><a href="#command-line-tools" id="toc-command-line-tools" class="nav-link" data-scroll-target="#command-line-tools">Command-line tools</a>
+  <ul class="collapse">
+  <li><a href="#rclone" id="toc-rclone" class="nav-link" data-scroll-target="#rclone">Rclone</a></li>
+  <li><a href="#irods-protocol" id="toc-irods-protocol" class="nav-link" data-scroll-target="#irods-protocol">iRODS protocol</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/data_access_windows.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -447,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 5, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -472,11 +482,18 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="drive-letter">Drive letter</h2>
 <p>You can use <a href="../../tools/yoda/yoda_using_windowsexplorer.html">Windows Explorer</a> to access the Yoda Disk via a drive letter. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&amp;11). Take care if you expect your dataset to exceed these limitations.</p>
 </section>
-<section id="command-line-and-rclone" class="level2">
-<h2 class="anchored" data-anchor-id="command-line-and-rclone">Command line and Rclone</h2>
-<p>If you are familiar with command line tools <a href="../../tools/yoda/yoda_using_rclone.html">rclone</a> is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.</p>
+<section id="command-line-tools" class="level2">
+<h2 class="anchored" data-anchor-id="command-line-tools">Command-line tools</h2>
+<section id="rclone" class="level3">
+<h3 class="anchored" data-anchor-id="rclone">Rclone</h3>
+<p>If you are familiar with command-line tools <a href="../../tools/yoda/yoda_using_rclone.html">rclone</a> is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.</p>
+</section>
+<section id="irods-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="irods-protocol">iRODS protocol</h3>
+<p>Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The command-line tools <a href="../../tools/yoda/yoda_using_icommands.html">iCommands</a> can be installed in <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">Windows Subsystem for Linux (WSL)</a> and <a href="../../tools/yoda/yoda_using_gocommands.html">gocommands</a> can be installed directly.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -902,13 +919,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="pagebottom py-5 page-columns page-full">
     <div class="column-page text-center">
         <ul class="footer-items list-unstyled">
-            <li class="nav-item mx-md-5">
+            <li class="nav-item mx-5">
                 <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
                     Missing something in the Handbook?<br>
                     <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
                 </p>
             </li>
-            <li class="nav-item mx-md-5">
+            <li class="nav-item mx-5">
                 <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
                 Question about your research data or research software?<br>
                 <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
@@ -926,12 +943,12 @@ ul.task-list li input[type="checkbox"] {
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/about">
+            <a class="nav-link" href="../../about.html">
                 <p>About</p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/contributing">
+            <a class="nav-link" href="../../contributing.html">
                 <p>Contributing</p>
             </a>
         </li>
