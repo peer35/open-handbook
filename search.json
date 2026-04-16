@@ -592,35 +592,35 @@
     "href": "technical-details.html",
     "title": "Technical details",
     "section": "",
-    "text": "Research Support Handbook\nThis handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals."
+    "text": "Research Support Handbook\nThis handbook is created with Quarto and hosted on Github pages. This document outlines how the website is deployed and which custom changes were made."
   },
   {
     "objectID": "technical-details.html#how-is-the-website-built",
     "href": "technical-details.html#how-is-the-website-built",
     "title": "Technical details",
     "section": "How is the website built?",
-    "text": "How is the website built?\nWe use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – the automation itself can be found on GitHub.\nWe use GitHub to subsequently make the website available on https://rdm.vu.nl.\nPlease refer to the Quarto documentation for detailed instructions on how to use Quarto."
+    "text": "How is the website built?\nWe use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website, e.g. after merging a Pull Request – the automation itself can be found on GitHub.\nWe use GitHub to subsequently make the website available on https://rdm.vu.nl. This domain name is registered by the central IT department.\nPlease refer to the Quarto documentation for detailed instructions on how to use Quarto."
   },
   {
     "objectID": "technical-details.html#preview-deployments",
     "href": "technical-details.html#preview-deployments",
     "title": "Technical details",
     "section": "Preview deployments",
-    "text": "Preview deployments\nWe use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of https://rdm.vu.nl. It does, however, help the editors manage changes to the handbook.\nIf this integration ever breaks, it can be fixed by one of the maintainers of the handbook repository. To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start."
+    "text": "Preview deployments\nWe use Netlify to automatically build previews of pull requests on GitHub. This is is not critical to the operation of https://rdm.vu.nl. It does, however, help the editors manage changes to the handbook.\nIf this integration ever breaks, it can be fixed by one of the maintainers of the handbook repository. To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests. Go to https://app.netlify.com/start and login with your github account. The only configuration needed on the Github side is the /netlify.toml file."
   },
   {
     "objectID": "technical-details.html#easy-github-contributor",
     "href": "technical-details.html#easy-github-contributor",
     "title": "Technical details",
     "section": "Easy GitHub contributor",
-    "text": "Easy GitHub contributor\nThe easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained."
+    "text": "Easy GitHub contributor\nThe easy GitHub contributor is a small integration created by Liberate Science GmbH to make it easier to start contributing to the handbook. It is no longer maintained, an alternative will need to be implemented in the near future."
   },
   {
     "objectID": "technical-details.html#repository-structure-overview",
     "href": "technical-details.html#repository-structure-overview",
     "title": "Technical details",
     "section": "Repository structure overview",
-    "text": "Repository structure overview\nUnderstanding the repository structure helps you locate and modify the right files:\n\nKey files and directories\n\nindex.qmd - Homepage content\n_quarto.yml - Main Quarto configuration file\n_variables.yml - Site-wide variables and settings\ncustom.scss - Custom styling\ncontributing.qmd - Contributing guidelines\neditors-guide.qmd - Editor documentation\n\n\n_quarto.yml\nThe _quarto.yml file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of using _quarto.yml is documented very well by Quarto.\n\n\n\nContent organization\n\ntopics/ - Individual topic pages (e.g., data-management-plan.qmd, gdpr.qmd)\nguides/ - Step-by-step guides organized by research lifecycle\nmanuals/ - Manuals to help researchers use specific tools\nblog/ - Blog posts and announcements\npublic/ - Static assets (images, PDFs, etc.)\n\n\n\nTechnical files\n\n_components/ - React components for interactive elements\n_extensions/ - Quarto extensions (e.g., qreacto for React integration)\n.github/workflows/ - GitHub Actions for automated building and deployment\n_site/ - Generated website files (auto-generated, don’t edit directly)\nmanuals/&lt;tool&gt;/_sidebar.yml - Specifies the order of the left sidebar of a specific tool manual\n\n\n\n\n\n\n\nCautionExtra-detailed overview\n\n\n\n\n\n.\n├── .git/ - If present, contains the raw git history\n├── .github/ - GitHub files, including automations and templates\n├── .gitignore - Which files to ignore in git commits\n├── .markdownlint.json - Markdownlint rules and exceptions\n├── CITATION.cff - Citation File Format\n├── CNAME - GitHub Pages domain name\n├── LICENSE - CC0 information\n├── README.md - General readme\n├── _components/ - React components for `/`\n├── _extensions/ - Quarto extensions\n├── _quarto.yml - Quarto metadata\n├── _site/ - If present, the rendered version of the website\n├── _variables.yml - Quarto variables, available in all .qmd files\n├── about.qmd - About page\n├── blog/ - Blog posts, one per .qmd file\n├── blog.qmd - Blog overview page\n├── contributing.qmd - Contributor guide page\n├── custom.scss - Custom styling for VU Amsterdam\n├── editors-guide.qmd - Editor guide page\n├── guides/ - Individual guides, one per `.qmd` file\n├── guides.qmd - General guides page\n├── index.qmd - Homepage `/`\n├── manuals/ - Folder containing all manuals and subpages\n├── manuals.qmd - Manual overview page\n├── manuals/&lt;tool&gt;/ - &lt;tool&gt; manuals\n├── manuals/&lt;tool&gt;/index.qmd - Manual start page\n├── manuals/&lt;tool&gt;/_sidebar.yml - Manual sidebar definition\n├── netlify.toml - Netlify (preview) deployment instructions\n├── package.json - Netlify plugin information\n├── public/ - Folder containing public assets such as screenshot images (keep files small)\n├── references.bib - Reference library for use in the handbook\n├── technical-details.qmd - Technical details page\n├── topics/ - Each `.qmd` file is one topic\n├── topics.qmd - Topic overview page\n└── utils/ - Custom utilities for the website (generally do not touch)\n    └── include-files.lua - Utility to shift headings from included files\n    └── linktarget.lua - Utility to open external links in a new tab"
+    "text": "Repository structure overview\nUnderstanding the repository structure helps you locate and modify the right files:\n\nKey files and directories\n\nindex.qmd - Homepage content\n_quarto.yml - Main Quarto configuration file\n_variables.yml - Site-wide variables and settings\ncustom.scss - Custom styling\ncontributing.qmd - Contributing guidelines\neditors-guide.qmd - Editor documentation\n\n\n_quarto.yml\nThe _quarto.yml file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of using _quarto.yml is documented very well by Quarto. Note that the Handbook uses Metadata Includes.\n\n\n\nContent organization\n\ntopics/ - Individual topic pages (e.g., data-management-plan.qmd, gdpr.qmd)\nguides/ - Step-by-step guides organized by research lifecycle\ntools/ - Tool Description and Manuals to help researchers use specific tools\nblog/ - Blog posts and announcements\npublic/ - Static assets (images, PDFs, etc.)\n\n\n\nTechnical files\n\n.github/workflows/ - GitHub Actions for automated building and deployment\n_site/ - Generated website files (auto-generated, don’t edit directly)\ntools/&lt;tool&gt;/_sidebar.yml - Specifies the order of the left sidebar of a specific tool manual\n\n\n\n\n\n\n\nCautionExtra-detailed overview\n\n\n\n\n\n.\n├── .git/ - If present, contains the raw git history\n├── .github/ - GitHub files, including automations and templates\n    └── scripts - scripts used in github workflows\n    └── workflows - these yml files automatically create Github Actions\n├── .gitignore - Which files to ignore in git commits\n├── .markdownlint.json - Markdownlint rules and exceptions\n├── CITATION.cff - Citation File Format\n├── CNAME - GitHub Pages domain name\n├── LICENSE - CC0 information\n├── README.md - General readme\n├── _footer.yml - Custom website footer\n├── _quarto.yml - Quarto metadata\n├── _site/ - If present, the rendered version of the website\n├── _templates/ - ejs templates used for custom listings\n├── _variables.yml - Quarto variables, available in all .qmd files\n├── about.qmd - About page\n├── blog/ - Blog posts, one per .qmd file\n├── blog.qmd - Blog overview page\n├── contributing.qmd - Contributor guide page\n├── custom.scss - Custom styling for VU Amsterdam\n├── editors-guide.qmd - Editor guide page\n├── guides/ - Individual guides, one per `.qmd` file\n├── guides.qmd - Guides overview page\n├── index.qmd - Homepage `/`\n├── netlify.toml - Netlify (preview) deployment instructions\n├── package.json - Netlify plugin information\n├── public/ - Folder containing public assets such as screenshot images (keep files small)\n├── references.bib - Reference library for use in the handbook\n├── technical-details.qmd - Technical details page\n├── topics/ - Each `.qmd` file is one topic\n├── topics.qmd - Topics overview page\n├── tools/ - Folder containing all tool pages and subpages\n├── tools/&lt;tool&gt;/ - &lt;tool&gt; manuals\n├── tools/&lt;tool&gt;/index.qmd - Tool start page\n├── tools/&lt;tool&gt;/_sidebar.yml - Tool sidebar definition\n├── tools.qmd - Tools overview page\n├── trainings.qmd - Overview of RDM trainings\n├── yoda-contact.qmd - Contact page for https://publication.yoda.vu.nl Landin Pages\n└── utils/ - Custom utilities for the website (generally do not touch)\n    └── include-files.lua - Utility to shift headings from included files\n    └── linktarget.lua - Utility to open external links in a new tab"
   },
   {
     "objectID": "technical-details.html#about-quarto",
@@ -634,7 +634,14 @@
     "href": "technical-details.html#common-errors-and-troubleshooting",
     "title": "Technical details",
     "section": "Common errors and troubleshooting",
-    "text": "Common errors and troubleshooting\n\nBuild errors\nError: “File not found” - Cause: Missing file reference or incorrect path - Solution: Check file paths in links and references - Can ignore in PR? No, this will break the build\nError: “YAML parsing error” - Cause: Invalid YAML syntax in front matter or _quarto.yml - Solution: Check YAML indentation and syntax - Can ignore in PR? No, this will prevent building\nError: “Duplicate anchor” - Cause: Multiple headings with the same text create duplicate IDs - Solution: Make heading text unique or use custom IDs - Can ignore in PR? Yes, but should be fixed for better navigation\n\n\nStyle issues\nInfo: “Missing alt text” - Cause: Images without alt text - Solution: Add descriptive alt text for accessibility - Can ignore in PR? Should be addressed for accessibility, but won’t break the build\n\n\nMarkdownlint errors\nMarkdownlint checks for consistent markdown formatting. This only runs if topics or guides are changed.\nCommon errors include:\nMD001: Heading levels should only increment by one level at a time - Cause: Skipping heading levels (e.g., H1 directly to H3) - Solution: Use proper heading hierarchy - Escape: Add &lt;!-- markdownlint-disable MD001 --&gt; before the heading\nMD033: Inline HTML - Cause: Using HTML tags in markdown - Solution: Use markdown syntax instead, or use HTML when necessary - Escape: Add &lt;!-- markdownlint-disable MD033 --&gt; around HTML sections - Can ignore in PR? Usually yes, HTML is sometimes needed for advanced formatting\nMD041: First line in file should be a top level heading - Cause: File doesn’t start with H1 heading - Solution: Add H1 heading or use YAML front matter - Escape: Add &lt;!-- markdownlint-disable MD041 --&gt; at the top - Can ignore in PR? Yes, especially for files with YAML front matter\nThe full set of rules can be found in the markdownlint documentation.\n\n\nHow to disable Markdownlint rules\nYou can disable specific rules in a document in several ways:\nFor a single line:\n&lt;!-- markdownlint-disable-next-line MD033 --&gt;\n&lt;div&gt;Some HTML content&lt;/div&gt;\nFor a section:\n&lt;!-- markdownlint-disable MD033 --&gt;\n&lt;div&gt;HTML content&lt;/div&gt;\n&lt;span&gt;More HTML&lt;/span&gt;\n&lt;!-- markdownlint-enable MD033 --&gt;\nFor an entire file:\n&lt;!-- markdownlint-disable MD013 MD033 --&gt;\nIn a .markdownlint.json config file:\n{\n  \"MD013\": false,\n  \"MD033\": false\n}\nPlease edit the existing .markdownlint.json file in case you want to ignore certain rules project-wide."
+    "text": "Common errors and troubleshooting\n\nBuild errors\nError: “File not found” - Cause: Missing file reference or incorrect path - Solution: Check file paths in links and references - Can ignore in PR? No, this will break the build\nError: “YAML parsing error” - Cause: Invalid YAML syntax in front matter or _quarto.yml - Solution: Check YAML indentation and syntax - Can ignore in PR? No, this will prevent building\nError: “Duplicate anchor” - Cause: Multiple headings with the same text create duplicate IDs - Solution: Make heading text unique or use custom IDs - Can ignore in PR? Yes, but should be fixed for better navigation\n\n\nStyle issues\nInfo: “Missing alt text” - Cause: Images without alt text - Solution: Add descriptive alt text for accessibility - Can ignore in PR? Should be addressed for accessibility, but won’t break the build\n\n\nMarkdownlint errors\nMarkdownlint checks for consistent markdown formatting. This only runs if topics or guides are changed.\nCommon errors include:\nMD001: Heading levels should only increment by one level at a time - Cause: Skipping heading levels (e.g., H1 directly to H3) - Solution: Use proper heading hierarchy - Escape: Add &lt;!-- markdownlint-disable MD001 --&gt; before the heading\nMD033: Inline HTML - Cause: Using HTML tags in markdown - Solution: Use markdown syntax instead, or use HTML when necessary - Escape: Add &lt;!-- markdownlint-disable MD033 --&gt; around HTML sections - Can ignore in PR? Usually yes, HTML is sometimes needed for advanced formatting\nMD041: First line in file should be a top level heading - Cause: File doesn’t start with H1 heading - Solution: Add H1 heading or use YAML front matter - Escape: Add &lt;!-- markdownlint-disable MD041 --&gt; at the top - Can ignore in PR? Yes, especially for files with YAML front matter\nThe full set of rules can be found in the markdownlint documentation.\n\n\nHow to disable Markdownlint rules\nYou can disable specific rules in a document in several ways:\nFor a single line:\n&lt;!-- markdownlint-disable-next-line MD033 --&gt;\n&lt;div&gt;Some HTML content&lt;/div&gt;\nFor a section:\n&lt;!-- markdownlint-disable MD033 --&gt;\n&lt;div&gt;HTML content&lt;/div&gt;\n&lt;span&gt;More HTML&lt;/span&gt;\n&lt;!-- markdownlint-enable MD033 --&gt;\nFor an entire file:\n&lt;!-- markdownlint-disable MD013 MD033 --&gt;\nIn a .markdownlint.json config file:\n{\n  \"MD013\": false,\n  \"MD033\": false\n}\n\n\n\n\n\n\nTip\n\n\n\nA better way to include HTML is to explicitly declare it in the .qmd-file:\n    ```{=html}\n    &lt;div&gt;\n        Some HTML content\n    &lt;/div&gt;\n    ```\n\n\nPlease edit the existing .markdownlint.json file in case you want to ignore certain rules project-wide."
+  },
+  {
+    "objectID": "technical-details.html#custom-changes",
+    "href": "technical-details.html#custom-changes",
+    "title": "Technical details",
+    "section": "Custom changes",
+    "text": "Custom changes\nTo avoid unecessary technical maintenance we try to stick as close as possible to the standard functionalities of Quarto. However, a few tweaks were needed to get the desired layout.\n\nBuild process\n\nFixing modified dates\nThe pages in the Tools section show a ‘last-modified’ date, Quarto gets this from the last modified date of the .qmd file. The standard build process automatically sets the file date to the date the build process runs. To get a better date the build process uses an extra fix-timestamps script that sets the file date to the last commit date.\nThe same script is included in the Netlify preview build.\n\n\nOpening external websites in a new tab\nThe Quarto standard method of making external links open in a new tab does not play well with the preview builds. A simpler script is used to achieve the same thing. All links starting with https: get the attribute _blank.\n\n\n\nLayout\nNote that Bootstrap is included in Quarto by Default. It provides a rich set of tools to create a responsive layout by using specific class names and styling set in custom.scss.\nRefer to the documentation to see how this works.\n\nCustom listings\nThe topics.qmd, guides.qmd and tools.qmd files use a Custom Listing Template for the page listing. You can find these in the /_templates folder. Bootstrap Accordion is used for the layout.\n\n\nCustom footer\nUnfortunately Quarto does not provide a way to use templates for other parts of the website layout. See this discussion. To create the footer a piece of HTML code is used which “abuses” the standard quarto layout to create the desired look, together with styling in custom.scss. You can find it in _footer.yml which is included in _quarto.yml.\n\n\nCustom header\nThe navbar in the header is completely styled by the custom.scss. Note that the menu items do not have a unique id, it relies on the nth-child(n) selector to give them their specific color, e.g.:\n.navbar .nav-item:nth-child(2) {\n    background-color: $guides-color;\n}\nMake sure to modify this if a menu item is added or the order is changed."
   },
   {
     "objectID": "tools/ada/4-slurm.html",
@@ -1351,8 +1358,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "OSF",
-      "What is OSF?"
+      "OSF"
     ]
   },
   {
@@ -1362,8 +1368,7 @@
     "section": "What is it?",
     "text": "What is it?\nThe Open Science Framework (OSF) is a cloud-based open-source research project management tool that supports researchers throughout the active research stage. It facilitates collaboration, connects services across the research life cycle, materials, and other research objects for private use or public sharing. The OSF is developed by the Center of Open Science (COS) that strives to increase openness, integrity, and reproducibility of research. This is in line with the VU open science commitment where the aim is to make the process of creating and sharing scientific knowledge more transparent, inclusive and equitable.\n\nAs a collaboration tool, OSF helps research teams work on projects privately or make them publicly accessible for broad dissemination.\nAs a workflow system, OSF enables connections to the many products researchers already use, streamlining their process and increasing efficiency.\nResearchers can manage files, data, code, and protocols in one centralised location and easily build custom organisation for their unique needs.\nIntegrated metadata support on project level improves findability and reuse of research materials. Soon content on OSF will support FAIR metadata for all files, which will even further enhance responsible preservation and discovery.\n\nIn the introduction video below, you can see how Open Science Framework (OSF) supports the Open Research Lifecycle.",
     "crumbs": [
-      "OSF",
-      "What is OSF?"
+      "OSF"
     ]
   },
   {
@@ -1373,8 +1378,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nOSF can be used during the active research stage. It can be used for preregistration, projects or preprints:\n\nPreregistration of your research ideas - OSF Support.\nProjects: See the video Welcome to OSF Projects - OSF Support.\nWhitin an OSF project you can store, share and collaborate with your colleagues. You can invite both internal and external collaborators to different components within your project. You can choose to have your project open, for everyone to read, or you can choose to have it closed for up to four years of embargo. It is possible to create a DOI for your research project, see the manual Create DOIs (OSF Projects) - OSF Support.\nPreprints: OSF can also be used to publish your preprints. See the manual Creating a Preprint - OSF Support, which describes in seven steps how you can publish a preprint. Please note that you have to submit it to a community preprint service. You can select a preprint service that matches best with your discipline. When your preprint is approved, it will be linked to VU Amsterdam and listed in the VU preprint overview on OSF.",
     "crumbs": [
-      "OSF",
-      "What is OSF?"
+      "OSF"
     ]
   },
   {
@@ -1393,7 +1397,7 @@
     "href": "tools/osf/cost_access.html#how-to-get-access",
     "title": "Costs and Getting Access",
     "section": "How to get access?",
-    "text": "How to get access?\nIf you like to start with OSF please go to: OSF.\nYou can either create a new OSF account and choose \"Sign up using Institution\" and select Vrije Universiteit Amsterdam (OSF Guide). VU researchers can make use of OSF by logging in with their VUnetID credentials (SSO). The OSF account will be automatically created. Or you can add your VUnetID login to your existing OSF account (OSF Guide). If you already have an OSF account and would like to affiliate this to VU Amsterdam, please visit: Affiliate an OSF Project with an Institution - OSF Support and registrations with the VU (OSF Guide).\nWhen the OSF account is created, you can start directly with using OSF to create a project, registering your preregistration or publishing using the preprints options at OSF (see the section What it can be used for?).\n\nAccess for students\nStudents are also welcome to use OSF. Note that logging in with VUnetID requires MFA via de SURFsecureID (with the tiqr app or a YubiKey). Secure sign on - MS Authenticator activation for SURF Secure ID has more information on how to register for MFA if you have not already done so.",
+    "text": "How to get access?\nVU Amsterdam researchers can access OSF at https://osf.io/. If you have a VUnetID, you can log in with your VU credentials. You can also create an account yourself.\n\nAccess for students\nStudents are also welcome to use OSF. Note that VU students might need to visit the Service Desk to enable MFA via SURFsecureID for their student.vu.nl account if they have not done so before. The procedure is explained in this document on the VU services portal. Secure sign on - MS Authenticator activation for SURF Secure ID has more information on how to register for MFA if you have not already done so.",
     "crumbs": [
       "OSF",
       "Costs and Getting Access"
@@ -1427,7 +1431,7 @@
     "href": "tools/osf/account.html#retaining-access-to-your-data-when-leaving-vu-amsterdam",
     "title": "Deleting and Migrating your Account",
     "section": "Retaining access to your data when leaving VU Amsterdam",
-    "text": "Retaining access to your data when leaving VU Amsterdam\nIf you want to retain access to your OSF Projects, you could create a new account with a personal email address. Then merge this account with your institutional account, see the OSF Guide. Do this while your VUnetID is still active!\nIf your VUnetID has already expired, you can still create a new OSF account and ask a Project Admin to re-add you to the Projects.\nIf your VUnetID has expired and you are the only Project Admin please contact OSF Support.\n\nDeleting your account\nYou’re always welcome to deactivate or delete your account. If you would like to delete your OSF account and personal data, please email OSF Support.",
+    "text": "Retaining access to your data when leaving VU Amsterdam\nIf you want to retain access to your OSF Projects after leaving VU Amsterdam, you can create a new OSF account with a personal email address and merge it with your institutional account (see the OSF Guide). Make sure to do this before your VUnetID expires.\nIf your VUnetID has already expired, you can still create a new OSF account and ask a Project Admin to re-add you to your Projects.\nIf your VUnetID has expired and you are the only Project Admin please contact OSF Support.\n\nDeleting your account\nYou can deactivate or delete your OSF account at any time. To permanently delete your account and personal data, please contact OSF Support.",
     "crumbs": [
       "OSF",
       "Documentation",
@@ -1439,7 +1443,7 @@
     "href": "tools/osf/quick_start.html",
     "title": "Quick Start",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nTo get started with OSF please visit the Getting started on the OSF (Video) - OSF Support. You can also subscribe to the onboarding webinars OSF | Trainings and Webinars.\nOnce a year, there will be an OSF workshop organised by VU application managers, where you learn how you can use OSF. See the Trainings page for training materials and scheduled workshops.\n\nInformation for New Users\nMany manuals are available for users starting with OSF. They are listed below for the different types of functionality that OSF provides.\n\nFile Management and Licensing\n\nFile naming (OSF Projects) - OSF Support\nOrganising files (OSF Projects) - OSF Support \nLicensing - OSF Support \nVersion Control Version Control - OSF Support\n\n\n\nResearch Design\n\nPreregistration Preregistration - OSF Support\nCreating a data management plan (DMP) Creating a data management plan (DMP) document - OSF Support\n\n\n\nHandling Data\n\nHow to Make a Data Dictionary How to Make a Data Dictionary - OSF Support\nSharing Research Outputs Sharing Research Outputs - OSF Support\nSharing data Data Management - OSF Support\n\n\n\nPreprints\n\nWelcome to OSF Preprints (Video) - OSF&gt; Support\n\n\n\nCreating and Managing OSF Projects\n\nManaging projects (OSF Projects) - OSF&gt; Support\n\n\n\n\nThe Open Scholarship Knowledgebase (OSKB)\nResource guides on reproducibility: oercommons.org/curated-collections/1038\n\n\nCurated Reading List of Metascience\nThe Center for Open Science (COS) has compiled a list of papers related to the need for more transparent research and the effectiveness of such research practices. You can find the list on their Open Science Literature page. The list includes literature on the following aspects:\n\nBeneﬁts of transparency\nData sharing policies and practices\nReporting Standards, Guidelines, and Checklists\nEffects of preregistration or Registered Reports\nQuestionable research practices\nThe Reproducibility Crisis\nEvaluating Journals Policies\nRecommendations for Increasing Reproducibility\nAttitudes about open science\n\n\n\nOvercoming the Knowledge Barrier\nOn their page Overcoming the Knowledge Barrier, the Center for Open Science provides a lot of information to get started with an open and reproducible research practice. This page lists a lot of resources to get you up to speed with open science practices:\n\nPrimers on implementing open science practices\nTutorials and online curricula for coded statistical analysis\nLinks to open science communities\n\n\n\nCenter for Open Science content\n\nBlog series\nWebinars\nResources for researchers",
+    "text": "Research Support Handbook\n\n\n\n\nTo get started with OSF please visit the Getting started on the OSF (Video) - OSF Support. You can also subscribe to the onboarding webinars OSF | Trainings and Webinars.\nYou can either create a new OSF account and choose Sign up using Institution and select Vrije Universiteit Amsterdam (see the OSF Guide). VU researchers can make use of OSF by logging in with their VUnetID credentials (SSO). The OSF account will be automatically created. It is also possible to link your credentials to your existing OSF account (see the OSF Guide).\nIf you already have an OSF account and would like to affiliate this to VU Amsterdam, please visit the page Affiliate an OSF Project with an Institution and the page Affiliate an OSF Registration with an Institution.\nWhen the OSF account is created, you can start directly with using OSF to create a project, registering your preregistration or publishing using the preprints options at OSF (see the section What it can be used for?).\nOnce a year, there will be an OSF workshop organised by VU application managers, where you learn how you can use OSF. See the Trainings page for training materials and scheduled workshops.\n\nInformation for New Users\nMany manuals are available for users starting with OSF. They are listed below for the different types of functionality that OSF provides.\n\nFile Management and Licensing\n\nFile naming (OSF Projects) - OSF Support\nOrganising files (OSF Projects) - OSF Support \nLicensing - OSF Support \nVersion Control Version Control - OSF Support\n\n\n\nResearch Design\n\nPreregistration Preregistration - OSF Support\nCreating a data management plan (DMP) Creating a data management plan (DMP) document - OSF Support\n\n\n\nHandling Data\n\nHow to Make a Data Dictionary How to Make a Data Dictionary - OSF Support\nSharing Research Outputs Sharing Research Outputs - OSF Support\nSharing data Data Management - OSF Support\n\n\n\nPreprints\n\nWelcome to OSF Preprints (Video) - OSF&gt; Support\n\n\n\nCreating and Managing OSF Projects\n\nManaging projects (OSF Projects) - OSF&gt; Support\n\n\n\n\nThe Open Scholarship Knowledgebase (OSKB)\nResource guides on reproducibility: oercommons.org/curated-collections/1038\n\n\nCurated Reading List of Metascience\nThe Center for Open Science (COS) has compiled a list of papers related to the need for more transparent research and the effectiveness of such research practices. You can find the list on their Open Science Literature page. The list includes literature on the following aspects:\n\nBeneﬁts of transparency\nData sharing policies and practices\nReporting Standards, Guidelines, and Checklists\nEffects of preregistration or Registered Reports\nQuestionable research practices\nThe Reproducibility Crisis\nEvaluating Journals Policies\nRecommendations for Increasing Reproducibility\nAttitudes about open science\n\n\n\nOvercoming the Knowledge Barrier\nOn their page Overcoming the Knowledge Barrier, the Center for Open Science provides a lot of information to get started with an open and reproducible research practice. This page lists a lot of resources to get you up to speed with open science practices:\n\nPrimers on implementing open science practices\nTutorials and online curricula for coded statistical analysis\nLinks to open science communities\n\n\n\nCenter for Open Science content\n\nBlog series\nWebinars\nResources for researchers",
     "crumbs": [
       "OSF",
       "Quick Start"
@@ -1452,8 +1456,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciStor",
-      "What is SciStor?"
+      "SciStor"
     ]
   },
   {
@@ -1463,8 +1466,7 @@
     "section": "What is it?",
     "text": "What is it?\nThe storage service SciStor is intended for cheaply storing large amounts of research data on campus.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the ADA HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a project folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one folder could be used to host data from different subprojects.\nData is backed up daily with snapshots and replicated to a second location for disaster recovery, the documentation explains how.",
     "crumbs": [
-      "SciStor",
-      "What is SciStor?"
+      "SciStor"
     ]
   },
   {
@@ -1474,8 +1476,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\n\nNetworked Drive\nBecause SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor project folders on your laptop and work as if the data is on a local disk.\n\n\nAccess off-campus\nAlthough SciStor is most useful on campus you can also access your project folders off-campus via EduVPN institute access.\n\n\nLab instruments\nIn many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.\n\n\nStorage space for SciCloud servers\nSciCloud virtual servers are provisioned with a 20 to 50GB local disk. A SciStor project folder can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.\n\n\nADA\nThe ADA HPC cluster is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.\n\n\nSharing data\nBecause SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could register them as an external employee or host a copy of the data on another storage platform like Research Drive or Yoda\n\n\nData life-cycle\nSciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in Yoda. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.",
     "crumbs": [
-      "SciStor",
-      "What is SciStor?"
+      "SciStor"
     ]
   },
   {
@@ -2052,8 +2053,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Yoda",
-      "What is Yoda?"
+      "Yoda"
     ]
   },
   {
@@ -2063,8 +2063,7 @@
     "section": "What is it?",
     "text": "What is it?\nYoda is an application for institutions that supports Research Data Management (RDM) throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.\n\n\n\n\n\n\nYoda helps the researcher make their data “FAIR” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying VU policy requirements for data archiving and publication. In addition, Yoda is built on iRODS so it accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.\nYoda is open source software developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.",
     "crumbs": [
-      "Yoda",
-      "What is Yoda?"
+      "Yoda"
     ]
   },
   {
@@ -2074,8 +2073,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nYoda is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself, wthout the need to upload your data to another platform.\n\nData storage\nYoda is a Cloud storage solution that can be used for small to very large datasets. The underlying iRODS software ensures data integrity. Data in Yoda is backed up daily.\n\n\nData sharing\nOnce a new Yoda group has been created you can invite collaborators yourself. Researchers from national and international research institutes can login with their institutional account via SURF Research Access Management (SRAM). Collaborators from non-research institutes can create a free EduID NL account.\n\n\nSensitive data\nThe use of Multi-Factor Authentication (MFA) with SRAM and hosting at SURF ensure, among other things, Yoda is suitable for the storage and sharing of data that score High on confidentiality in a data classification (see the Policy Classification of Research Data and the Research Data Classification Tool). Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nMetadata\nAt any moment you can add descriptive metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators.\n\n\nArchiving\nAt any moment you can submit a data folder with metadata for Archiving in the Yoda Vault. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda datamanager (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.\n\n\nPublishing metadata and data\nFrom the Yoda Vault you can submit the dataset for publication. A DOI will be generated and registered with DataCite together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.\nThe DOI link will lead to a landing page in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse.\n\n\nAutomated workflows\nSince Yoda is build on iRODS you could also build (automated) ingest and analysis workflows using iRODS Rules and Policies. Please contact IT for Research if you need assistance.",
     "crumbs": [
-      "Yoda",
-      "What is Yoda?"
+      "Yoda"
     ]
   },
   {
@@ -4048,8 +4046,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "DataverseNL",
-      "What is DataverseNL?"
+      "DataverseNL"
     ]
   },
   {
@@ -4059,8 +4056,7 @@
     "section": "What is it?",
     "text": "What is it?\nDataverseNL is an Open Access dataset archiving and publication platform used by various institutions. VU Amsterdam has a section for each faculty to archive and publish their datasets.\nDataverseNL helps the researcher make their data “FAIR” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. DataverseNL provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying VU policy requirements for data archiving and publication. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR.\nDataverse is open source software developed and maintained by Harvard University. The Dutch version is hosted by DANS.",
     "crumbs": [
-      "DataverseNL",
-      "What is DataverseNL?"
+      "DataverseNL"
     ]
   },
   {
@@ -4070,8 +4066,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nDataverseNL is a simple method to archive and publish datasets. Through the platform it becomes very easy to share data and documents from your research. The platform generates a webpage displaying your data and accompanying metadata, and a Digital Object Identifier (DOI) which enables increased visibility and quick references to your dataset. It is possible to make files within your dataset only accessible on request. Please note that DataverseNL is only suitable for archiving and publishing datasets that do not contain personal data or other types of confidential data. Even though access to data files in DataverseNL can be restricted, datasets containing personal data or other types of confidential data must not be uploaded to DataverseNL. A suitable repository for archiving and publishing personal and sensitive data is Yoda.\n\nData storage\nDataverseNL is a Cloud storage solution that can be used for small to large datasets. The datasets are preserved through backup copies of the data.\n\n\nData sharing\nThrough the generated DOI you can make your dataset easy to find and access. You can reference it in your publications and through your profile page on the VU Research Portal (PURE).\n\n\nSensitive data\nAlthough DataverseNL is meant for Open Access datasets, it is possible to restrict access to particular files. This means it is possible to archive medium sensitive (anonymised) data. As explained above, personal data or other types of confidential data that score High or Very High on confidentiality (see the Policy Classification of Research Data and the Research Data Classification Tool) must not be uploaded to DataverseNL. Data that score High or Very High on confidentiality can be archived and published in Yoda.\n\n\nMetadata\nYou can add descriptive metadata to a dataset draft in DataverseNL. After publication of the dataset it is still possible to alter the metadata, but this will result in a new version of the dataset. If you feel metadata fields are missing, a request can be sent to SURF to add these fields. The requirement for this change is that the added metadata fields are part of an internationally recognised dataset metadata scheme.",
     "crumbs": [
-      "DataverseNL",
-      "What is DataverseNL?"
+      "DataverseNL"
     ]
   },
   {
@@ -4114,8 +4109,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Snellius",
-      "What is Snellius?"
+      "Snellius"
     ]
   },
   {
@@ -4125,8 +4119,7 @@
     "section": "What is it?",
     "text": "What is it?\nSnellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.",
     "crumbs": [
-      "Snellius",
-      "What is Snellius?"
+      "Snellius"
     ]
   },
   {
@@ -4136,8 +4129,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\n\nSimulation and modelling\nDo you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.\n\n\nComputing power\nSnellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has ‘fat nodes’ with more memory space (1 TB) and ‘high-memory nodes’ (4 TB and 8 TB of memory space).\n\n\nTools and libraries\nAs a researcher, you can make use of a large collection of tools, compilers and libraries.\nAre you doing research or experiments in the field of machine learning, e.g. neural networks? The libraries and tools on Snellius make it a lot easier.",
     "crumbs": [
-      "Snellius",
-      "What is Snellius?"
+      "Snellius"
     ]
   },
   {
@@ -4180,8 +4172,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciSure",
-      "What is SciSure?"
+      "SciSure"
     ]
   },
   {
@@ -4191,8 +4182,7 @@
     "section": "What is it?",
     "text": "What is it?\nSciSure, previously known as eLabNext, is an application that supports researchers with documenting experiments and results in a digital lab journal. The SciSure platform is hosted by the company SciSure.\nSciSure is used by three faculties at VU Amsterdam: BETA, FGB and ACTA. If you are interested in using SciSure, but it is not yet available in your department, please contact your VU organisational admin to discuss the possibilities.",
     "crumbs": [
-      "SciSure",
-      "What is SciSure?"
+      "SciSure"
     ]
   },
   {
@@ -4202,8 +4192,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nSciSure is used as a digital lab journal where you can track your results and share data recorded in experiments in the electronic lab notebook. Experiments are organised by projects; each project can contain multiple studies. SciSure can also be used to document your inventory, e.g. samples. Next to this, SciSure can be used to create and share protocols and to register and book equipment.",
     "crumbs": [
-      "SciSure",
-      "What is SciSure?"
+      "SciSure"
     ]
   },
   {
@@ -4246,8 +4235,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Research Cloud",
-      "What is Research Cloud?"
+      "Research Cloud"
     ]
   },
   {
@@ -4257,8 +4245,7 @@
     "section": "What is it?",
     "text": "What is it?\nSURF Research Cloud is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions, research communities and suppliers can contribute to Research Cloud’s functionality and catalogue by integrating their computing and data services.\nSURF Research Cloud is hosted at the SURF data centre in Amsterdam.",
     "crumbs": [
-      "Research Cloud",
-      "What is Research Cloud?"
+      "Research Cloud"
     ]
   },
   {
@@ -4268,8 +4255,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nSURF Research Cloud enables you to run 1 or more servers with applications that can be accessible over the internet.\n\nHosting web applications, these can be connected to SRAM for secure authentication. You can easily start more servers to increase availability and preformance.\nRunning a desktop environment with analysis tools, use your favourite desktop tools on an environment with more performance. Unlike for SciCloud, GPU resources are available. You can easily connect an environment to your data on Research Drive or Yoda.\nHosting a highly secure research environment where sensitive data cannot leave the VRE: SURF SANE.",
     "crumbs": [
-      "Research Cloud",
-      "What is Research Cloud?"
+      "Research Cloud"
     ]
   },
   {
@@ -4312,8 +4298,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Nebula",
-      "What is Nebula?"
+      "Nebula"
     ]
   },
   {
@@ -4323,8 +4308,7 @@
     "section": "What is it?",
     "text": "What is it?\nNebula is a new Network Institute initiative that aims to provide researchers from all departments with safe, seamless access to open-source large language models (LLMs).\nNebula, along with the LLMs are fully hosted on the VU premises, so no data leaves our campus.",
     "crumbs": [
-      "Nebula",
-      "What is Nebula?"
+      "Nebula"
     ]
   },
   {
@@ -4334,8 +4318,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nNebula is developed to support researchers at VU Amsterdam who want to use AI models in their work. These are the main features:\n\nFamiliar Interface: The Nebula interface (Open WebUI) is inspired by the ChatGPT interface, allowing for an easy transition to the Nebula system.\n1500+ Models: With Ollama and vLLM as the backbone of Nebula, you can choose from over 1500 open-source models that are available across Ollama and HuggingFace.\nEase of Access: All you need to access Nebula is an account and a web browser on your computer, tablet or smartphone.\nOpenAI API Compatibility: Nebula allows for API access following the OpenAI API standard, so you can send your prompts from a programming language.\nCustom Models: You can attach knowledge to models on Nebula to create your own models.\nOpen-Source: You can find all the code on the Nebula GitHub page (the repository is a fork of the Open WebUI GitHub page).\n\n\nNebula in NWO and Horizon Europe proposals\nAre you preparing a Horizon Europe or NWO proposal? You can strengthen it by including Nebula, the VU Network Institute’s dedicated computational facility for research with generative AI and large language models (LLMs).\nNebula offers secure access to 1,500+ open-source LLMs, dedicated APIs, and many other features for ensuring reproducibility, FAIR principles, data sovereignty, and ethical AI research. Including Nebula under the typical “Key Research Facilities, Infrastructure and Equipment” section can enhance your proposal’s competitiveness. For your convenience, below you can find a ready-to-use piece of text to be included in your proposals:\n“VU researchers have full access to Nebula, a dedicated computational facility for advancing research involving generative AI and large language models (LLMs), with dedicated technical support. Nebula provides secure access to 1,500+ open-source LLMs, APIs, and multimodal tools, ensuring reproducibility, FAIR principles, data sovereignty, and ethical AI research for open science and societal impact.”\nIf you could allocate €10–20k for computational costs related to Nebula in your project proposal, you can support the future developments of Nebula. This will give you stable, systematic access to the platform.",
     "crumbs": [
-      "Nebula",
-      "What is Nebula?"
+      "Nebula"
     ]
   },
   {
@@ -5031,8 +5014,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Pure",
-      "What is Pure?"
+      "Pure"
     ]
   },
   {
@@ -5042,8 +5024,7 @@
     "section": "What is it?",
     "text": "What is it?\nPure is VU Amsterdam’s Current Research Information System (CRIS) that serves as the central research information system for recording all research activities and outputs. All VU researchers can register their research activities and outputs in VU Pure. This information is used for annual reports and research evaluations. Additionally this information is shown on the publicly available VU Research Portal to increase the visibility and discoverability.",
     "crumbs": [
-      "Pure",
-      "What is Pure?"
+      "Pure"
     ]
   },
   {
@@ -5053,8 +5034,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\n\nResearch output registration\nThe following record types can be registered in Pure:\n\nPublications: This can be (journal) articles, books, conference contributions, working papers, preprints, PhD theses1, patents, case notes and web publications.\nActivities: peer review, editorial work, participating in or organising an event, lectures, presentations, consultancy, PhD examinations, visiting external institutions, hosting external visitors and memberships of institutions based on academic expertise.\nDatasets: Research data that you have created for your research also constitutes research output and can be related to publications, projects and software.\nSoftware: Research software that you have created for your research also constitutes research output and can be related to publications, projects and datasets.\nPrizes/Grants: This can be a prize given for research output or a grant awarded for research proposals.\nPress/Media: This can be the participations in various media forms as an expert or public engagement activities to promote (future) research.\nProjects: This can be all forms of projects in scope and size2 with the ability to link all related research activities and output.\nCourses3: This can be the development of courses or the presentation of these courses.\n\n\n\nResearcher profiles\nVU Researchers can create and maintain comprehensive academic profiles by providing personal information, academic background and research focus and interests.\n\n\nReporting\nPure can be used to report on all the content registered. Pure is used for the annual report and research evaluations.\n\n\nCV generation:\nPure contains a tool to combine all the research activities and personal information into private or public CV documents.",
     "crumbs": [
-      "Pure",
-      "What is Pure?"
+      "Pure"
     ]
   },
   {
@@ -5064,8 +5044,7 @@
     "section": "Footnotes",
     "text": "Footnotes\n\n\nVU-related PhD theses are registered in Hora Finita and when approved are automatically imported into Pure.↩︎\nProjects registered in the VU financial systems are automatically imported into Pure.↩︎\nAll the current courses are automatically imported into Pure.↩︎",
     "crumbs": [
-      "Pure",
-      "What is Pure?"
+      "Pure"
     ]
   },
   {
@@ -5097,8 +5076,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Qualtrics",
-      "What is Qualtrics?"
+      "Qualtrics"
     ]
   },
   {
@@ -5108,8 +5086,7 @@
     "section": "What is it?",
     "text": "What is it?\nQualtrics is a cloud-based subscription and software platform (SaaS) that enables users to create and manage online surveys. The Qualtrics survey tool can support a variety of (complex) survey design requirements by providing such functionalities as different question types, display and branching logic configuration and the use of embedded data and APIs.",
     "crumbs": [
-      "Qualtrics",
-      "What is Qualtrics?"
+      "Qualtrics"
     ]
   },
   {
@@ -5119,8 +5096,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nAll VU students, employees and researchers are eligible to make use of a Qualtrics licence. VU’s Qualtrics licence usage is limited for creating, managing and collecting data for scientific research purposes only.\nQualtrics should not be used for non-scientific purposes such as the creation of registration or attendance lists and course evaluation surveys for example; instead users should go to other available tools such as MS Forms.\nVU Amsterdam holds an academic licence which includes non-standard, advanced features and functions, including but not limited to:\n\nFILE UPLOAD – a non-standard question type that allows respondents to upload a file along with their survey response\nSIGNATURE QUESTION – a non-standard question type that presents survey participants with an entry box where they can draw their signature.\nAPI INTEGRATION – an advanced licence feature that can be used to automate repetitive processes inside of Qualtrics or to pass information in and out of Qualtrics.\nOFFLINE SURVEY APP – an advanced licence feature that comprises a downloadable application available for iOS and Android that allows you to administer surveys on your mobile device or tablet without an internet connection.",
     "crumbs": [
-      "Qualtrics",
-      "What is Qualtrics?"
+      "Qualtrics"
     ]
   },
   {
@@ -5163,8 +5139,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "VU Compute Hub",
-      "What is VU Compute Hub?"
+      "VU Compute Hub"
     ]
   },
   {
@@ -5174,8 +5149,7 @@
     "section": "What is it?",
     "text": "What is it?\nThe VU Compute Hub is a JupyterHub instance hosted by IT at VU Amsterdam. It allows you to run a number of common analysis tools on a server. The Hub is mainly aimed at providing environments for student courses, but is available for VU researchers as well.",
     "crumbs": [
-      "VU Compute Hub",
-      "What is VU Compute Hub?"
+      "VU Compute Hub"
     ]
   },
   {
@@ -5185,8 +5159,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nThe VU Compute Hub is a great environment to try if your analysis takes too much time on a laptop. It allows you to use the graphical tools you are familiar with in an environment with more compute power where you can leave your script running until it is finished.\nSince every VU researcher can just log in, the barrier to entry is very low.\nBe aware the service is mainly aimed at education. If your scripts use a lot of resources, it might be time for you to start using a High Performance Computing (HPC) environment: ADA at VU Amsterdam or the national supercomputer Snellius. Please contact IT for Research to discuss the best options.\n\nAvailable tools\nThe following applications are currently available: Jupyter Notebooks, MATLAB, STATA, R Studio and QGIS.",
     "crumbs": [
-      "VU Compute Hub",
-      "What is VU Compute Hub?"
+      "VU Compute Hub"
     ]
   },
   {
@@ -5229,8 +5202,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "DMPonline",
-      "What is DMPonline?"
+      "DMPonline"
     ]
   },
   {
@@ -5240,8 +5212,7 @@
     "section": "What is it?",
     "text": "What is it?\nDMPonline is an online platform that enables researchers to create, manage, and share Data Management Plans (DMPs). VU Amsterdam offers DMPonline as the institutional online tool for writing Data Management Plans. The platform provides structured templates to help researchers address data collection, legal and ethical requirements, storage, preservation, documentation, and responsibilities and resources throughout the research lifecycle.",
     "crumbs": [
-      "DMPonline",
-      "What is DMPonline?"
+      "DMPonline"
     ]
   },
   {
@@ -5251,8 +5222,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\nDMPonline can be used for:\n\nWriting Data Management Plans: Create comprehensive DMPs that meet funder and institutional requirements, using guidance in the tool that supports the writing process.\nCollaborative planning: Work together with colleagues, data stewards, and other stakeholders on DMP development.\nFeedback and review: Request feedback from faculty data stewards or RDM Support Desk colleagues.\nVU DMP template: Use the VU DMP template to write a comprehensive DMP (accepted by NWO, ZonMw and ERC).\nExport function: Export DMPs in different formats that can be submitted to funders or other stakeholders.\nGDPR registration: Register personal data processing activities to comply with VU Amsterdam’s GDPR requirements. You can read how to do this in the guide How can you comply with the GDPR?.",
     "crumbs": [
-      "DMPonline",
-      "What is DMPonline?"
+      "DMPonline"
     ]
   },
   {
@@ -5295,8 +5265,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "Research Drive",
-      "What is Research Drive?"
+      "Research Drive"
     ]
   },
   {
@@ -5306,8 +5275,7 @@
     "section": "What is it?",
     "text": "What is it?\nSURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.\nResearch Drive is based on the Open Source Nextcloud software and is hosted by SURF in their Amsterdam datacentre.",
     "crumbs": [
-      "Research Drive",
-      "What is Research Drive?"
+      "Research Drive"
     ]
   },
   {
@@ -5317,8 +5285,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\n\nData storage\nResearch Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the Nextcloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.\n\n\nData sharing\nAs project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.\nYou can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.\n\n\nSensitive data\nHosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the Policy Classification of Research Data and the Research Data Classification Tool). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nData life cycle\nResearch Drive is meant for data you are actively working with. We recommend to archive datasets that are no longer actively used, but can’t be deleted, in a repository. Transferring data from Research Drive to a repository ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam. Repositories that are available at VU Amsterdam are Yoda and DataverseNL. Yoda is suitable for all types of data, including personal data and other types of confidential data. DataverseNL is only suitable for data that can be made available publicly.\n\n\nCollaborative tools\nWithin Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the SURF User Knowledge Base.\n\n\nSURFdrive replacement\nSince both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.\nResearchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in English and Dutch. Please contact the Research Support Desk if you have any questions about migrating to Research Drive.",
     "crumbs": [
-      "Research Drive",
-      "What is Research Drive?"
+      "Research Drive"
     ]
   },
   {
@@ -5395,7 +5362,7 @@
     "href": "tools/osf/sensitive-data.html",
     "title": "Working with Sensitive Data",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nActively choose \"Germany - Frankfurt\" in the account settings as default storage location when you start a new project. Your research data will be stored in the EU jurisdiction.\nMulti-Factor Authentication (MFA) via de SURFsecureID (with the tiqr app or a YubiKey) is enabled for all users who log in with VUnetID credentials for improved security and protection of your research data.\nOSF has implemented several measures (e.g. OSF storage encryption, regular backups, Standard Contractual Clauses) to increase security of your stored research data as well as guarantee GDPR compliance.\nThe OSF is developed to facilitate Open Science and sharing of digital research objects. Medium-level sensitive data (e.g. research data that score ‘medium’ at confidentiality in a data classification, research proposals) can be stored, provided it is available only to a specific group of users. VU Amsterdam does not recommend you to store privacy-sensitive data in OSF. For this type of data, please use a more suitable platform such as Research Drive or Yoda. If there is no other suitable way to share a file with privacy-sensitive data, make sure you encrypt the file(s) before you upload them to the OSF. A good way to do this is by adding the files to a password-protected zip file (how-to guide). Storing data that score ‘high’ or ‘very high’ on confidentiality in a data classification (e.g. directly identifying information, all special category personal data, classified information, data about vulnerable people, key files) is prohibited. Please contact the RDM Support Desk.\nIn case of a security incident or data leak, the data breach response plan is available. Please report possible incidents at OSF Support and always at the VU IT Servicedesk via email or phone: 020 598 0000.\nMore information on the OSF security policy and implemented measures can be found on OSF Guide.",
+    "text": "Research Support Handbook\n\n\n\n\nWhen creating a new project, actively choose \"Germany - Frankfurt\" in the account settings as the default storage location. This ensures your research data is stored within EU jurisdiction.\nFor improved security, Multi-Factor Authentication (MFA) via SURFsecureID (using the tiqr app or a YubiKey) is enabled for all users who log in with VUnetID credentials.\nOSF has implemented several measures, including storage encryption, regular backups and the use of Standard Contractual Clauses to increase security of your stored research data and ensure GDPR compliance.\nMore information on the OSF security policies and implemented measures can be found in the OSF Guide.\n\nMedium-sensitive data\nOSF is developed to facilitate Open Science and sharing of digital research objects. Medium-sensitive data (e.g. research data that score ‘medium’ at confidentiality in a data classification, research proposals) can be stored, provided access is restricted to a specific group of users.\nVU Amsterdam does not recommend storing privacy-sensitive data in OSF. For privacy-sensitive data, please use a more suitable platform such as Research Drive or Yoda.\nIf there is no alternative for sharing privacy-sensitive data via OSF, ensure that files are encrypted before uploading them to OSF. You can do this is by adding the files to a password-protected zip file).\n\n\nHigh-sensitive data\nStoring data classified as ‘high’ or ‘very high’ in a data classification (e.g. directly identifying information, all special category personal data, classified information, data about vulnerable people, key files) is prohibited. Please contact the RDM Support Desk.\nIn case of a security incident or data leak, consult the data breach response plan. Please report possible incidents at OSF Support and always notify the VU IT Servicedesk via email or phone: 020 598 0000.",
     "crumbs": [
       "OSF",
       "Documentation",
@@ -5407,7 +5374,7 @@
     "href": "tools/osf/connecting-apps.html",
     "title": "Connecting Storage and Apps",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nOSF allows you to connect to other storage platforms and services via Add-ons, see the OSF Add-ons and integrations Guide for more information. Storage Add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project:\n\nwhat data (folders) is being shared;\nwho this resource is being shared with and;\nwho manages the Add-on (e.g. how long will it be available).\n\nRecommended connected storage options are Research Drive (how-to guide) and SURFdrive (how-to guide). The VU discourages using Dropbox and Google Drive for storing research data.\nFor projects with a Code component creating connections to GitHub repos is a good idea, see the OSF Guide. If you just want to publish a GitHub repo itself consider using Zenodo, see this guide.\nYou can also connect a dataset in DataverseNL to your project, so published datasets can be viewed in OSF. You can even upload to and delete files from datasets in Draft (how-to guide).\nRemember, everyone who has access to your project will be able to see the files in the storage folder you connect, even if you have not explicitly shared the files on the source location!",
+    "text": "Research Support Handbook\n\n\n\n\nOSF allows you to connect to other storage platforms and services via Add-ons, see the OSF Add-ons and integrations Guide for more information. Storage Add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project:\n\nwhat data (folders) is being shared\nwho this resource is being shared with\nwho manages the Add-on (e.g. how long will it be available)\n\nRecommended connected storage options are Research Drive (how-to guide) and SURFdrive (how-to guide). The VU discourages using Dropbox and Google Drive for storing research data.\nFor projects that include code, connecting to GitHub repository is recommended. To do so please follow the steps in the OSF Guide. If you only wish to publish a GitHub repository, consider using Zenodo.\nYou can also connect a dataset from DataverseNL to your project, allowing published datasets to be viewed directly within OSF. It is possible to upload and delete files from datasets that are still in Draft.\nPlease note that anyone with access to your OSF project will also be able to view the files in any connected storage location, even if those files have not been explicitly shared on the original platform.",
     "crumbs": [
       "OSF",
       "Documentation",
@@ -5442,7 +5409,7 @@
     "href": "tools/osf/preregistration.html#what-is-preregistration",
     "title": "Preregistration",
     "section": "What is preregistration?",
-    "text": "What is preregistration?\n\nIt is the act of specifying in advance how data will be collected and analysed.\nPreregistrations are time-stamped, immutable documents.\nPreregistrations make the distinction between hypothesis testing, conﬁrmatory research and hypothesis generating, exploratory research more clear.\nPresenting exploratory results as conﬁrmatory increases the publish ability of results at the expense of credibility of results.",
+    "text": "What is preregistration?\nPreregistration is the practice of specifying in advance how data will be collected and analysed. These plans are documented in time-stamped, immutable records, ensuring transparency and accountability in the research process. By clearly outlining hypothesis and methods beforehand, preregistration helps distinguish between hypothesis testing, conﬁrmatory research and hypothesis generating research. This distinction is crucial, as presenting exploratory findings as confirmatory may increase the publishability of results, but does so at the expense of their credibility. You can read more about this in the Preregistration topic.",
     "crumbs": [
       "OSF",
       "Documentation",
@@ -5466,7 +5433,7 @@
     "href": "tools/osf/preregistration.html#resources-and-further-readings",
     "title": "Preregistration",
     "section": "Resources and Further Readings",
-    "text": "Resources and Further Readings\n\nCan you preregister if you are using existing data? Yes, see template available at osf.io/registries\n“The Preregistration Revolution”, which covers nine challenging situations in which preregistration is beneﬁcial\nA blog series about preregistration\nThe Guardian: Trust in science would be improved by study pre-registration\nNature: A manifesto for reproducible science\nA presentation from a community member introducing OSF\nA helpful OSF presentation on how to create your first works",
+    "text": "Resources and Further Readings\n\nPreregistration is also possible if you are using existing data. Templates are available at OSF Registries.\nThe Preregistration Revolution covers nine scenarios in which preregistration is beneficial.\nYou can visit the blog series on preregistration by the Center for Open Science.\nThe Guardian: Trust in science would be improved by study pre-registration.\nNature: A manifesto for reproducible science.\nYou can visit this OSF presentation introducing the platform.\nYou can visit this OSF presentation on creating your first project in OSF.",
     "crumbs": [
       "OSF",
       "Documentation",
@@ -5555,8 +5522,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "iThenticate",
-      "What is iThenticate?"
+      "iThenticate"
     ]
   },
   {
@@ -5566,8 +5532,7 @@
     "section": "What is it?",
     "text": "What is it?\niThenticate is plagiarism detection software that compares a researcher’s original work with published academic work available online, and bibliographical databases such as Crossref. The tool scans for text similarity between the original work and published work, resulting in a similarity score. Every similarity found by iThenticate can be analysed, enabling the researcher to look at the specific text and location of the original work.",
     "crumbs": [
-      "iThenticate",
-      "What is iThenticate?"
+      "iThenticate"
     ]
   },
   {
@@ -5577,8 +5542,7 @@
     "section": "What can it be used for?",
     "text": "What can it be used for?\niThenticate is used by researchers to ensure the originality of written work before publication. The approach to plagiarism checks at VU is not primarily for retrospective detection but is rather employed in an educational and preventative manner, explicitly aiming to enhance awareness of scientific integrity in accordance with the Netherlands Code of Conduct for Research Integrity (NGWI).\nStarting from September 1, 2022, PhD candidates who commence their PhD research are required to conduct an initial scan in iThenticate early in their trajectory. The educational aspect involves discussing the results of the scan with their supervisor. The goal is to educate VU PhD candidates to become engaged and responsible scientific researchers.",
     "crumbs": [
-      "iThenticate",
-      "What is iThenticate?"
+      "iThenticate"
     ]
   },
   {
@@ -6070,8 +6034,7 @@
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6081,8 +6044,7 @@
     "section": "Welcome",
     "text": "Welcome\nADA is a high performance compute (HPC) cluster for research at the Vrije Universiteit Amsterdam.\nADA is named in honour of Ada Lovelace, the pioneering mathematician and writer known for her work on Charles Babbage’s Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. ADA is the rebranded name of our previous cluster, BAZIS, and is maintained by the IT for Research team.\n\n\n\n\n\n\nNoteNew here? Start with these first.\n\n\n\n\nRequest an account via the 🔒 VU Service Portal.\nNew to bash and the command line? Get familiar with Linux basics first through Carpentries lessons.\nSet-up your SSH access by following the login instructions.\nNew to HPC? Get familiar with HPC concepts through HPC Carpentries lessons.\nRun your first job with the Quick Start.\n\n\n\n\n\n\n\n\n\nTipCurrent platform changes\n\n\n\nSee HPC Updates for the current user-facing changes in the ongoing ADA platform update.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6092,8 +6054,7 @@
     "section": "ADA at a Glance",
     "text": "ADA at a Glance\n\nHeterogeneous cluster with CPU and GPU partitions financed by VU departments and central IT.\nAccess to partitions depends on departmental ownership; community partitions are available to all approved users.\nSoftware stack combines centrally maintained modules with self-service tools (Pixi, Conda, Apptainer).\nData on SciStor is mounted directly on ADA.\nFor workloads demanding large GPU quotas, explore Snellius or work with your department on dedicated nodes.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6103,8 +6064,7 @@
     "section": "Access, Policies, and Costs",
     "text": "Access, Policies, and Costs\n\nEligibility: VU researchers and collaborators whose departments sponsor ADA hardware or are approved for community access.\nRequesting access: follow the account request instructions; requests must include your supervisor’s approval.\nUsage costs: Community partitions are free to use but shared; heavy or specialised workloads may require investing in departmental nodes.\nDedicated hardware: Contact IT for Research to scope dedicated purchases or long-term resource planning.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6114,8 +6074,7 @@
     "section": "When ADA Fits Your Work",
     "text": "When ADA Fits Your Work\nUse ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the VU Compute Hub or SURF Research Cloud.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6125,8 +6084,7 @@
     "section": "Training and External Resources",
     "text": "Training and External Resources\n\nSURF Snellius wiki: Snellius knowledge base – much of it applies to ADA.\nWorkshops: SURF’s free Introduction to Supercomputing courses provides transferable skills for ADA users.\nHPC Course VU: Once a year, the VU organizes the HPC Course. All ADA users will be notified when registration opens.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6136,8 +6094,7 @@
     "section": "Support",
     "text": "Support\n\nTechnical questions, quota requests, or procurement discussions: IT for Research\nIssues using the cluster? See Help to see how to ask for assistance effectively.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6147,8 +6104,7 @@
     "section": "Documentation Feedback",
     "text": "Documentation Feedback\n\nFound a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker with:\n\nPage path (for example tools/ada/software.qmd) and what needs to change\nA suggested fix or the exact text that confused you\nOptional: a PR if you already made the change\n\n\nIf you prefer, you can also email [itvo.it@vu.nl] with the same details and we will triage it.",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6158,8 +6114,7 @@
     "section": "Maintainers",
     "text": "Maintainers\nThe cluster has been built and is maintained by:\n\nDavor Cvikic\nKostas Vilkelis\nWiebe Timmers",
     "crumbs": [
-      "ADA",
-      "What is ADA?"
+      "ADA"
     ]
   },
   {
@@ -6272,28 +6227,28 @@
     "href": "editors-guide.html#quality-standards",
     "title": "Editor’s guide",
     "section": "Quality standards",
-    "text": "Quality standards\nAs editors, we maintain a bunch of quality standards, both automated and not automated. If you are reading this as a contributor, you will greatly help us out by taking these into account.\nHere are some quality standards we maintain throughout the handbook:\n\nWriting must be primarily in active voice, both for consistent and engaging text across all pages\nAcronyms must be written in full at least once on the page where they are used\nAll changes to the handbook are made via pull requests. Each change needs approval from two editors.\n\nPull requests may not be merged if the QA automations fail\n\nLinks must be https://\nAll images must have alt text\nLinks must be descriptive (no “click here” links)\nNo writing in name of the handbook (for example, “we recommend repository X”)\nWhere possible, pages with a DOI must link through the DOI (for example, https://doi.org/10.4444/xxxx instead of the direct link https://nature.com/...)\n\nWe try to automate most of these rules, but this is not always possible or accurate enough.\n\nTopics\nFor topics we maintain an additional set of standards:\n\nTopics must be nouns or noun phrases\nTopics are self-contained and aim for brevity\nAll topics must be title capitalized (see also the helpful tool CapitalizeMyTitle.com)\nNo include statements are allowed in topics\n\nInclude statements must be prefaced with the relevant section heading, as the title of a topic is not reproduced.\n\nNo use of special Quarto code is allowed. Only use regular markdown in topics.\n\n\n\nGuides\nFor guides we maintain other standards:\n\nGuides must be phrased as questions that the reader will get answers to (for example, “how do I preserve data?”)"
+    "text": "Quality standards\nAs editors, we maintain a bunch of quality standards, both automated and not automated. If you are reading this as a contributor, you will greatly help us out by taking these into account.\nHere are some quality standards we maintain throughout the handbook:\n\nWriting must be primarily in active voice, both for consistent and engaging text across all pages\nAcronyms must be written in full at least once on the page where they are used\nAll changes to the Research Support Handbook are made via pull requests. Each change needs approval from at least one editor.\n\nPull requests may not be merged if the QA automations fail\n\nLinks must be https://\nAll images must have alt text\nLinks must be descriptive (no “click here” links)\nNo writing in name of the handbook (for example, “we recommend repository X”)\nWhere possible, pages with a DOI must link through the DOI (for example, https://doi.org/10.4444/xxxx instead of the direct link https://nature.com/...)\n\nWe try to automate most of these rules, but this is not always possible or accurate enough.\n\nTopics\nFor topics we maintain an additional set of standards:\n\nTopics must be nouns or noun phrases\nTopics are self-contained and aim for brevity\nAll topics must be title capitalized (see also the helpful tool CapitalizeMyTitle.com)\nNo include statements are allowed in topics\n\nInclude statements must be prefaced with the relevant section heading, as the title of a topic is not reproduced.\n\nNo use of special Quarto code is allowed. Only use regular markdown in topics.\n\n\n\nGuides\nFor guides we maintain other standards:\n\nGuides must be phrased as questions that the reader will get answers to (for example, “how do I preserve data?”)\n\n\n\nTools\nFor tools we maintain the following standards:\n\nTools must be supported in some way by VU Amsterdam, either full support such as for Research Drive or SciStor, or at least some consultancy, such as for SURF tools like Snellius or Research Cloud.\nEach tool description consists of at least the pages: What is …?, Costs and Getting Access, Support and Contact, Quick Start.\nA tool section can contain an additional Documentation section for “How to’s” and manuals that help researchers accomplish specific tasks with the tool. The structure of the Documentation section is necessarily more free form. To help navigation, additional subsections can be made under Documentation.\nThe pages in tools always show the date of the last commit to the page, to show researchers the manuals are actively kept up to date.\nTool pages will be checked and if necessary revised at least twice a year at the Handbook Hackathons."
   },
   {
     "objectID": "editors-guide.html#how-to-keep-an-overview-of-everything",
     "href": "editors-guide.html#how-to-keep-an-overview-of-everything",
     "title": "Editor’s guide",
     "section": "How to keep an overview of everything?",
-    "text": "How to keep an overview of everything?\nWith so many issues and pull requests, it is easy to get lost as an editor. We have a project management board that can be helpful identifying what is going on at this time:\n\nTopics\nGuides"
+    "text": "How to keep an overview of everything?\nWith so many issues and pull requests, it is easy to get lost as an editor. We have a project management board that can be helpful identifying what is going on at this time.\nWe create Milestones for upcoming Hackathons. This allows us to prioritise issues by assigning them to a milestone, indicating that we want to work on the issue at or before that Hackathon."
   },
   {
     "objectID": "editors-guide.html#etiquette",
     "href": "editors-guide.html#etiquette",
     "title": "Editor’s guide",
     "section": "Etiquette",
-    "text": "Etiquette\nAs editors, we may have to make tough calls at times. It is important for us to make people feel welcome and appreciated, even if their contribution is not immediately included. That being said, we reciprocate the consideration given to us. We operate under a generosity policy, and if reciprocated, we stay generous.\n\nGitHub etiquette\nAs editors, we also maintain a certain GitHub etiquette. It is necessary to make managing a project with so many moving pieces and contributors. Important is:\n\nNew topics or guides must be linked to the issue proposing it\nEach pull request should have a clear purpose and stick to it (for example, no editing a guide when proposing a topic)\n\nItem 2 also means changes should be branch specific, as pull requests are based off branches. It makes it much harder to review things if there are many different kinds of changes, as we editors will need to keep track of all of this.\nSimplicity is our friend. Simplicity helps us from making mistakes."
+    "text": "Etiquette\nAs editors, we may have to make tough calls at times. It is important for us to make people feel welcome and appreciated, even if their contribution is not immediately included. That being said, we reciprocate the consideration given to us. We operate under a generosity policy, and if reciprocated, we stay generous.\n\nGitHub etiquette\nAs editors, we also maintain a certain GitHub etiquette. It is necessary to make managing a project with so many moving pieces and contributors. Important is:\n\nNew topics, tool pages or guides must be linked to the issue proposing it\nEach pull request should have a clear purpose and stick to it (for example, no editing a guide when proposing a topic)\n\nItem 2 also means changes should be branch specific, as pull requests are based off branches. It makes it much harder to review things if there are many different kinds of changes, as we editors will need to keep track of all of this.\nSimplicity is our friend. Simplicity helps us from making mistakes."
   },
   {
     "objectID": "editors-guide.html#protocols",
     "href": "editors-guide.html#protocols",
     "title": "Editor’s guide",
     "section": "Protocols",
-    "text": "Protocols\n\nHackathon protocol\nWe sometimes run hackathons to create space to contribute. We run hackathons as follows:\nPreparation:\n\nHackathons are two hours long\nHackathons are run using Zoom\nEach hackathon has a theme (it helps focus people’s energy on something and can inspire participation)\nWe use a collaborative note taking document that requires no logging in, which is the central place to navigate the hackathon\nAssign a host\n\nDuring:\n\nOpen 10 breakout rooms in zoom, allowing participants to freely move around\nThe host…\n\n…Welcomes everyone with an icebreaker question\n…Shares the link to the note taking document when people join\n…Sets the stage for the hackathon when it starts\n…Announces a break at the halfway mark\n\nKeep track of all the issues and pull requests opened for the speed blog\n\nAfter:\n\nFinish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done."
+    "text": "Protocols\n\nWeekly co-working\nEach week we have an online co-working hour, attended by the editors. This is a time to discuss issues, pull requests and other relevant matters or just work on the Research Support Handbook. Other contributors are free to join as well.\n\n\nHackathon protocol\nWe run hackathons twice a year to create space to contribute. We run hackathons as follows:\nPreparation:\n\nHackathons are at least half a day long\nHackathons are always live\nEach hackathon has a theme (it helps focus people’s energy on something and can inspire participation)\nFinish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done."
   },
   {
     "objectID": "editors-guide.html#troubleshooting",
