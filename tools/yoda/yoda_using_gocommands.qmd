@@ -35,7 +35,17 @@ Before you can start using the Gocommands, you need to set up your environment t
 If you have no `irods_environment.json` file, follow [these instructions](yoda_using_icommands.qmd#environment-file). On windows store it in `%USERPROFILE%\.irods\irods_environment.json`.
 
 ## Getting started with the Gocommands
-After downloading and configuring the Gocommands, you can start running commands immediately. Note that the first time the Gocommands are run, it may ask for a password. The password you must use is a [data access password](yoda_dap.qmd).  
+First start a new session with:
+
+```sh
+./gocmd init
+```
+
+The password you must use is a [data access password](yoda_dap.qmd).  
+
+::: { .callout-tip }
+By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `gocmd init --ttl <hours>` option, e.g. `gocmd init --ttl 8` will keep the session alive for 8 hours.
+:::
 
 A test command to check that the Gocommands have been configured correctly (assuming that you have downloaded the executable in your current directory) is:
 
@@ -66,15 +76,16 @@ These are the basic commands for navigation and data transfer:
 - [gocmd put](https://github.com/cyverse/gocommands/blob/main/docs/commands/put.md) – Upload files to Yoda
 - [gocmd get](https://github.com/cyverse/gocommands/blob/main/docs/commands/get.md) – Download files from Yoda
 
-::: { .callout-tip }
-By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `gocmd init --ttl <hours>` option, e.g. `gocmd init --ttl 8` will keep the session alive for 8 hours.
-:::
+The [Gocommands data management page](https://github.com/cyverse/gocommands/blob/main/docs/data_management.md) is an excellent introduction to get started. 
 
 ### Copying files 
+The [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods) is especially useful when transferring data to Yoda.
+
 Here is an example of how you could copy files from your current directory to iRODS. This would copy the folder “folder” and its contents on your computer to the collection 'research-group' in Yoda:
 
 ```sh
 ./gocmd sync ./folder i:/vu/home/research-group/ --progress 
 ```
 
-This gives an idea of what the process is like. You can learn more about how to use the Gocommands to transfer files in the [syncing section](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md). The [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods) is especially useful when transferring data to Yoda.
+The sync command will skip files with the same local and online checksum, making it ideal for keeping data on Yoda up to date. 
+
