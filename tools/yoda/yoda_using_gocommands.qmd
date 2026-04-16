@@ -87,5 +87,5 @@ Here is an example of how you could copy files from your current directory to iR
 ./gocmd sync ./folder i:/vu/home/research-group/ --progress 
 ```
 
-The sync command will skip files with the same local and online checksum, making it ideal for keeping data on Yoda up to date. 
+The sync command will skip files if the local and online versions have the same checksum, making it ideal for keeping data on Yoda up to date. 
 
