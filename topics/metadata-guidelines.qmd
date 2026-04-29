@@ -26,7 +26,7 @@ By archiving we mean storing an immutable copy of a dataset for a longer period 
 #### For publishing
 By publishing we mean sharing the metadata and, if possible, the dataset itself on the internet making it findable and reusable by other researchers. In this way, like DataCite, our minimal metadata guidelines enables [FAIR (Findable, Accessible, Interoperable, Reusable)](fair-principles.qmd) data management.
 
-The VU data management policy requires published datasets to be registered in the research information system [Pure](/tools/pure/index.qmd) and rhe minimal metadata specification includes the necessary properties that allows for dataset registration in Pure. 
+The VU data management policy requires published datasets to be registered in the research information system [Pure](/tools/pure/index.qmd) and the minimal metadata specification includes the necessary properties that allows for dataset registration in Pure. 
 
 ### Human vs. machine readability
 When describing a dataset think about how the metadata will be used. Computers will index the metadata so you should add
