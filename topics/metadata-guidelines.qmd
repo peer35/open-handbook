@@ -58,6 +58,7 @@ If we add in some specific detail and make the subject implicit (everything is a
 By doing this we have linked or mapped the relations between our document to other internet resources in a machine readable way.
 
 ## Properties and defined types
+The following lists the common *properties* of descriptive metadata. Always make sure at least the mandatory properties are present.
 
 ### Properties and their explanation
 **M** Considered mandatory for findability of your dataset and correct registration in Pure  
@@ -94,6 +95,8 @@ By doing this we have linked or mapped the relations between our document to oth
 | 17 | Description | | M | M | Describe your dataset, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.<br>If the data is meant as replication data for a publication you can reference the publication here, it is also strongly recommended to use the relation properties.
 | 18 | GeoLocation(s) | | R | R | If your data is linked to a particular location provide a place name (English preferred) and/or the coordinates. Coordinates can either be a point location (as: longitude, latitude) or a bounding box defined by 4 coordinates (as: west longitude, east longitude, north latitude, south latitude)
 | 19 | Funding Reference(s) | | O | O | The name(s) of the organization(s) funding the research. If using this property also add the Award Number.
+
+## Additional tables
 
 ### Resource types
 | **Option** | Definition
