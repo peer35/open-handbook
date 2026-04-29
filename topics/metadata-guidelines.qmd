@@ -26,7 +26,7 @@ By archiving we mean storing an immutable copy of a dataset for a longer period 
 #### For publishing
 By publishing we mean sharing the metadata and, if possible, the dataset itself on the internet making it findable and reusable by other researchers. In this way, like DataCite, our minimal metadata guidelines enables [FAIR (Findable, Accessible, Interoperable, Reusable)](fair-principles.qmd) data management.
 
-The VU data management policy requires published datasets to be registered in the research information system [Pure](/tools/pure/index.qmd) and the minimal metadata specification includes the necessary properties that allows for dataset registration in Pure. 
+The VU data management policy requires published datasets to be registered in the research information system [Pure](/tools/pure/index.qmd). This minimal metadata specification includes the necessary properties that allows for dataset registration in Pure. 
 
 ### Human vs. machine readability
 When describing a dataset think about how the metadata will be used. Computers will index the metadata so you should add
@@ -38,33 +38,12 @@ Once someone finds your dataset he or she will want to read your description to 
 so it is important that the *Description* should be human readable. While the description should describe the data it is generally good practice to add extra information about the dataset in additional documentation. This can take the form of a `README.txt` file or codebook and can provide more context on how the data was gathered and processed, the experimental protocols and software used to generate the dataset as well as the filename system and variable nanes used in the individual files etc.
 
 ## How to use this document?
-Most, if not all, repositories and publication platforms will use their own webform for metadata with mandatory and recommended fields. Consider this document as a guideline for recommended and mandatory fields extra to those the particular system requires. Sometimes properties might be differently named (for example authors vs creators) but in all cases it should be possible to enter, at least, the mandatory metadata that is advised in this document. Similarly, during your research, if domain-specific metadata exists, that includes the mandatory properties described here, then it is recomended to use the domain-specific format as metadata. However, in cases where no domain-specific metadata exists, the guidelines presented here should be considered
+Most, if not all, repositories and publication platforms will use their own webform for metadata with mandatory and recommended fields. Consider this document as a guideline for recommended and mandatory fields extra to those the particular system requires. Sometimes properties might be differently named (for example *author* vs *creator*) but in all cases it should be possible to enter, at least, the mandatory metadata that is advised in this document. Similarly, during your research, if domain-specific metadata exists, that includes the mandatory properties described here, then it is recomended to use the domain-specific format as metadata. However, in cases where no domain-specific metadata exists, the guidelines presented here should be considered
 
 If your storage system does not provide you with functionality for entering metadata (for example ResearchDrive, Scistor) you can consider using the human-writable, machine readable form of these guidelines, [Melite](https://github.com/vu-rdm-tech/melite-metadata/blob/main/melite-proposed.md), which can be saved as a plain text file. 
 
-## Using related identifiers
-This metadata specification allows you to link the dataset or collection that it describes to other online resources. More commonly know as [Linked Data](https://en.wikipedia.org/wiki/Linked_data) these relations form the basis of the Semantic Web and can be thought of as a set of statements that relate a *subject* (the dataset described by the metadata) using a *predicate* (the related identifier property) to an *object* (represented by a unique identifier).
-
-For example, consider metadata describing this page (the dataset), we could say:
-
-* the dataset is derived from DataCite 4.
-
-* the dataset is a version of the text that is developed on GitHub.
-
-* the dataset is the source of the human-readable format Melite
-
-If we add in some specific detail and make the subject implicit (everything is about the dataset) we can rewrite the above as:
-
-* **IsDerivedFrom** 10.14454/3w3z-sa82
-
-* **IsVersionOf** https://github.com/vu-rdm-tech/metadata
-
-* **IsSourceOf** https://github.com/vu-rdm-tech/melite-metadata
-
-By doing this we have linked or mapped the relations between our document to other internet resources in a machine readable way.
-
 ## Properties and defined types
-The following lists the common *properties* of descriptive metadata. Always make sure at least the mandatory properties are present.
+The following lists the common *properties* of descriptive metadata. Always make sure at least the mandatory properties are present and have a value.
 
 ### Properties and their explanation
 **M** Considered mandatory for findability of your dataset and correct registration in Pure  
@@ -101,6 +80,65 @@ The following lists the common *properties* of descriptive metadata. Always make
 | 17 | Description | | M | M | Describe your dataset, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.<br>If the data is meant as replication data for a publication you can reference the publication here, it is also strongly recommended to use the relation properties.
 | 18 | GeoLocation(s) | | R | R | If your data is linked to a particular location provide a place name (English preferred) and/or the coordinates. Coordinates can either be a point location (as: longitude, latitude) or a bounding box defined by 4 coordinates (as: west longitude, east longitude, north latitude, south latitude)
 | 19 | Funding Reference(s) | | O | O | The name(s) of the organization(s) funding the research. If using this property also add the Award Number.
+
+## Using related identifiers
+This metadata specification allows you to link the dataset or collection that it describes to other online resources. More commonly know as [Linked Data](https://en.wikipedia.org/wiki/Linked_data) these relations form the basis of the Semantic Web and can be thought of as a set of statements that relate a *subject* (the dataset described by the metadata) using a *predicate* (the related identifier property) to an *object* (represented by a unique identifier).
+
+For example, consider metadata describing these VU minimal metadata guidelines (the dataset), we could say:
+
+* this dataset is derived from DataCite 4.
+
+* this dataset is a version of the text that is developed on GitHub.
+
+* this dataset is the source of the human-readable format Melite
+
+If we add in some specific detail and make the subject implicit (everything is about the dataset) we can rewrite the above as:
+
+* **IsDerivedFrom** 10.14454/3w3z-sa82
+
+* **IsVersionOf** https://github.com/vu-rdm-tech/metadata
+
+* **IsSourceOf** https://github.com/vu-rdm-tech/melite-metadata
+
+By doing this we have linked or mapped the relations between our document to other internet resources in a machine readable way.
+
+### Relation types
+| **Option** | Definition
+|---|---
+| **IsCitedBy** |  indicates that B includes A in a citation
+| **Cites** |  indicates that A includes B in a citation
+| **IsSupplementTo** |  indicates that A is a supplement to B
+| **IsSupplementedBy** |  indicates that B is a supplement to A
+| **IsContinuedBy** |  indicates A is continued by the work B
+| **Continues** |  indicates A is a continuation of the work B
+| **Describes** | indicates A describes B
+| **IsDescribedBy** |  indicates A is described by B
+| **HasMetadata** |  indicates resource A has additional metadata B
+| **IsMetadataFor** |  indicates additional metadata A for a resource B
+| **HasVersion** |  indicates A has a version (B)
+| **IsVersionOf** |  indicates A is a version of B
+| **IsNewVersionOf** |  indicates A is a new edition of B, where the new edition has been modified or updated
+| **IsPreviousVersionOf** |  indicates A is a previous edition of B
+| **IsPartOf** |  indicates A is a portion of B; may be used for elements of a series
+| **HasPart** |  indicates A includes the part B
+| **IsPublishedIn** |  indicates A is published inside B, but is independent of other things published inside of B
+| **IsReferencedBy** |  indicates A is used as a source of information by B
+| **References** |  indicates B is used as a source of information for A
+| **IsDocumentedBy** |  indicates B is documentation about/ explaining A; e.g. points to software documentation
+| **Documents** |  indicates A is documentation about B; e.g. points to software documentation
+| **IsCompiledBy** |  indicates B is used to compile or create A
+| **Compiles** |  indicates B is the result of a compile or
+| **IsVariantFormOf** |  indicates A is a variant or different form of B
+| **IsOriginalFormOf** |  indicates A is the original form of B
+| **IsIdenticalTo** |  indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource
+| **IsReviewedBy** |  indicates that A is reviewed by B
+| **Reviews** |  indicates that A is a review of B
+| **IsDerivedFrom** |  indicates B is a source upon which A is based
+| **IsSourceOf** |  indicates A is a source upon which B is based
+| **IsRequiredBy** |  Indicates A is required by B
+| **Requires** |  Indicates A requires B
+| **Obsoletes** |  Indicates A replaces B
+| **IsObsoletedBy** |  Indicates A is replaced by B
 
 ## Additional tables
 
@@ -157,42 +195,4 @@ The following lists the common *properties* of descriptive metadata. Always make
 | **Sponsor** |  Person or organisation that issued a contract or under the auspices of which a work has been written, printed, published, developed, etc.
 | **Supervisor** |  Designated administrator over one or more groups/teams working to produce a resource, or over one or more steps of a development process
 | **WorkPackageLeader** |  A Work Package is a recognized data product, not all of which is included in publication. The package, instead, may include notes, discarded documents, etc. The Work Package Leader is
-
-### Relation types
-| **Option** | Definition
-|---|---
-| **IsCitedBy** |  indicates that B includes A in a citation
-| **Cites** |  indicates that A includes B in a citation
-| **IsSupplementTo** |  indicates that A is a supplement to B
-| **IsSupplementedBy** |  indicates that B is a supplement to A
-| **IsContinuedBy** |  indicates A is continued by the work B
-| **Continues** |  indicates A is a continuation of the work B
-| **Describes** | indicates A describes B
-| **IsDescribedBy** |  indicates A is described by B
-| **HasMetadata** |  indicates resource A has additional metadata B
-| **IsMetadataFor** |  indicates additional metadata A for a resource B
-| **HasVersion** |  indicates A has a version (B)
-| **IsVersionOf** |  indicates A is a version of B
-| **IsNewVersionOf** |  indicates A is a new edition of B, where the new edition has been modified or updated
-| **IsPreviousVersionOf** |  indicates A is a previous edition of B
-| **IsPartOf** |  indicates A is a portion of B; may be used for elements of a series
-| **HasPart** |  indicates A includes the part B
-| **IsPublishedIn** |  indicates A is published inside B, but is independent of other things published inside of B
-| **IsReferencedBy** |  indicates A is used as a source of information by B
-| **References** |  indicates B is used as a source of information for A
-| **IsDocumentedBy** |  indicates B is documentation about/ explaining A; e.g. points to software documentation
-| **Documents** |  indicates A is documentation about B; e.g. points to software documentation
-| **IsCompiledBy** |  indicates B is used to compile or create A
-| **Compiles** |  indicates B is the result of a compile or
-| **IsVariantFormOf** |  indicates A is a variant or different form of B
-| **IsOriginalFormOf** |  indicates A is the original form of B
-| **IsIdenticalTo** |  indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource
-| **IsReviewedBy** |  indicates that A is reviewed by B
-| **Reviews** |  indicates that A is a review of B
-| **IsDerivedFrom** |  indicates B is a source upon which A is based
-| **IsSourceOf** |  indicates A is a source upon which B is based
-| **IsRequiredBy** |  Indicates A is required by B
-| **Requires** |  Indicates A requires B
-| **Obsoletes** |  Indicates A replaces B
-| **IsObsoletedBy** |  Indicates A is replaced by B
 
