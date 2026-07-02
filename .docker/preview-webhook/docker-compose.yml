@@ -1,0 +1,11 @@
+services:
+  preview-webhook:
+    build: .
+    restart: unless-stopped
+    environment:
+      - DEPLOY_SECRET=${DEPLOY_SECRET}
+      - PREVIEW_DIR=/previews
+    volumes:
+      - /var/www/previews:/previews
+    ports:
+      - "127.0.0.1:9000:9000"

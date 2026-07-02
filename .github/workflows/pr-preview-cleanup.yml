@@ -1,0 +1,17 @@
+name: PR Preview Cleanup
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  cleanup-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Remove preview via webhook
+        run: |
+          curl -fS \
+            -X DELETE \
+            -H "Authorization: Bearer ${{ secrets.PREVIEW_DEPLOY_SECRET }}" \
+            "${{ vars.PREVIEW_WEBHOOK_URL }}/pr-${{ github.event.number }}"
