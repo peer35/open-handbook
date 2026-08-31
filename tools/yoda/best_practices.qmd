@@ -13,7 +13,7 @@ This is meant as a guideline, if your lab equipment produces data that does use 
 Yoda is capable of dealing with special characters and long file names, but to avoid problems when transferring your files to other systems it is good to follow some naming conventions for file and folder names:
 
 - **Only use lowercase characters**
-MacOS, irods and linux filesystems are case sensitive, but Windows is not, which will lead to unexpected behavior. 
+MacOS, irods and linux filesystems are case sensitive, but Windows is not, which can lead to unexpected behavior. 
 
 - **Avoid special characters**
 
