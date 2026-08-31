@@ -1,0 +1,149 @@
+---
+title: Using the Cyberduck iRODS plugin
+---
+
+::: {.callout-note}
+The iRODS plugin for CyberDuck is still somewhat experimental.
+:::
+
+Cyberduck can also use the native iRODS protocol to transfer data. This is more performant and potentially more stable than the WebDAV client.
+
+## Setup the connection
+### Getting Cyberduck
+- **macOS** : Cyberduck can be installed from the VU software center or downloaded from the internet.
+
+- **Microsoft Windows** : Download Cyberduck from [https://cyberduck.io/download/](https://cyberduck.io/download/) it is free and you **do not** need to register.
+
+![](/public/tools/yoda/cbd-download.png)
+
+1. Run the downloaded installer by double clicking on "Cyberduck-installer.exe" which you will find in your Download folder in explorer. Install Cyberduck with the default options, and once that is done launch Cyberduck from the start menu.
+
+![](/public/tools/yoda/cbd-startmenu.png)
+
+### Setup a Connection Profile
+You cannot directly setup an irods connection in CyberDuck, you need to create a [connection profile](https://cyberduck.io/profiles/) first.
+
+- Create a file called `irods.cyberduckprofile` in the Profiles directory.
+    - On MacOS: `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/`
+    - On Windows: `%appdata%\cyberduck\profiles`
+
+Paste the following in the file and save it:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2002-2017 iterate GmbH. All rights reserved.
+  ~ https://cyberduck.io/
+  ~
+  ~ This program is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  -->
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Protocol</key>
+        <string>irods</string>
+        <key>Vendor</key>
+        <string>iRODS Consortium</string>
+        <key>Description</key>
+        <string>iRODS (Integrated Rule-Oriented Data System)</string>
+
+        <key>Hostname Configurable</key>
+        <true/>
+        <key>Port Configurable</key>
+        <true/>
+
+        <key>Default Port</key>
+        <string>1247</string>
+
+        <!-- The zone of the iRODS server to connect to. -->
+        <!-- For backward compatibility, a root resource can be specified by appending ":<resource>" to the zone. -->
+        <!-- The specified resource is only used when uploading files. -->
+        <!-- Prefer setting "Destination Resource" under the "Properties" section. -->
+        <key>Region</key>
+        <string>vu</string>
+
+        <!-- The authentication scheme used to establish a connection to an iRODS server. -->
+        <!-- Must be set to "native" or "pam_password". "standard" is an alias for "native". -->
+        <key>Authorization</key>
+        <string>pam_password</string>
+
+        <key>Properties</key>
+        <dict>
+            <!-- The root resource to target when uploading files. -->
+            <!-- DO NOT define this option unless needed. -->
+            <!-- This option supersedes any resource defined by "Region". -->
+            <!--
+            <key>Destination Resource</key>
+            <string>demoResc</string>
+            -->
+
+            <!-- Controls whether deletion of an object permanently removes or moves it into the trash collection. -->
+            <key>Delete Objects Permanently</key>
+            <string>no</string>
+
+            <!-- The size (in bytes) of a file that must be exceeded before using parallel transfer. -->
+            <!-- The value must satisfy the range [1, 2^31-1]. -->
+            <key>Parallel Transfer Threshold</key>
+            <string>33554432</string>
+
+            <!-- The number of iRODS connections used for parallel transfer of a single file. -->
+            <!-- Each transfer will use the specified number of iRODS connections. -->
+            <!-- The value must satisfy the range [2, 10]. -->
+            <key>Parallel Transfer Connections</key>
+            <string>3</string>
+
+            <!-- The buffer size (in bytes) used for parallel transfer of a single file. -->
+            <!-- Applies to uploads and downloads. -->
+            <!-- The value must satisfy the range [1, 128MB]. -->
+            <key>Parallel Transfer Buffer Size</key>
+            <string>4194304</string>
+
+            <!-- Secure Communication Options -->
+
+            <!-- Must be set to "CS_NEG_REQUIRE", "CS_NEG_DONT_CARE", or "CS_NEG_REFUSE". -->
+            <!-- - CS_NEG_REQUIRE:   Demand TLS be used. -->
+            <!-- - CS_NEG_DONT_CARE: Let the server decide if TLS should be used. -->
+            <!-- - CS_NEG_REFUSE:    Do not use TLS. -->
+            <key>Client Server Negotiation</key>
+            <string>CS_NEG_REQUIRE</string>
+
+            <!-- Options which are only used when TLS is active. -->
+
+            <key>Encryption Algorithm</key>
+            <string>AES-256-CBC</string>
+            <key>Encryption Key Size</key>
+            <string>32</string>
+            <key>Encryption Salt Size</key>
+            <string>8</string>
+            <key>Encryption Hash Rounds</key>
+            <string>16</string>
+        </dict>
+    </dict>
+</plist>
+```
+
+### Create a new irods connection to Yoda (bookmark)
+- Bookmark > Toggle Bookmarks
+
+- Click Open Connection
+- In the top dropdown box select "iRODS (Integrated Rule-Oriented Data System)". (If you do not see it, [create a connection profile](#setup-a-connection-profile) first).
+- Set Server to: `portal.yoda.vu.nl`
+- Port 1247
+- Username
+- Password is a [data access password](yoda_dap.qmd)
+- Close the form
+
+### Connecting to Yoda
+- Double click the bookmark, you should see a list of the folders you have access to.
+- Click transfers. Here ypu can set the number of parallel transfers, this will speed up downloads and uploads of large files. Please do not set this higher than 10 to avoid overloading the server.
+
+Refer to the [Using Cyberduck page](yoda_using_cyberduck.qmd#how-to-working-with-yoda-folders-and-uploadingdownloading-files) for information on how to transfer data.
+
