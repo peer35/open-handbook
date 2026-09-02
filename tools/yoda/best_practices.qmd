@@ -1,28 +1,43 @@
 ---
-title: Best Practices
+title: Best Practices for Data Storage
 categories: []
 ---
 
-## File naming
-issue 846
+## File naming conventions
 
-::: {.callout-note}
-This is meant as a guideline, if your lab equipment produces data that does use spaces and special characters it is not always feasible to rename everything. Yoda will be able to store it properly, but be aware of the gotchas mentioned. 
-:::
+Yoda is capable of dealing with special characters and long file names, but to avoid future problems when your data might be used on other systems it is good to follow some naming conventions for file and folder names.
 
-Yoda is capable of dealing with special characters and long file names, but to avoid problems when transferring your files to other systems it is good to follow some naming conventions for file and folder names:
+This is meant as a guideline, if your source data does use spaces and special characters it is not always feasible to rename everything. The [VU provided storage solutions](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the gotchas mentioned. 
 
+### Avoiding technical issues
 - **Only use lowercase characters**
-MacOS, irods and linux filesystems are case sensitive, but Windows is not, which can lead to unexpected behavior. 
-
-- **Avoid special characters**
+MacOS, irods and linux filesystems are case sensitive, but Windows is not, which leads to unexpected behavior. 
 
 - **Avoid spaces, use `-` or `_`**
 Accessing data from the CLI (Command Line Interface) or a script is a lot easier if you avoid spaces. Take editing `run 1/my data.json`. `vi run 1/my data.json` will not work and you need to remember to use quotes `vi "run 1/my data.json"` or "escape" `vi run\ 1/my\ data.json`, while the path `run1/my_data.json` is just as clearly readable, but easier to access: `vi run1/my_data.json`. 
 
+- **Avoid other special characters such as: ! # $ % & ' @ ^ ` ~ + , . ; = ) (**
+Modern filesystems can deal with any unicode character, but applications might have trouble and special characters, like spaces, often need to be "escaped" on the commandline. 
+
 - **Try to keep file and folder names as short as possible**
-Windows for example has a maximum path (folder, subfolders and file) length of 250 characters. You could for example upload a file 100 subfolders deep from a Linux system (such as ADA or Snellius) and find you are unable to download it to your Windows laptop.
+Windows for example has a maximum path (folder, subfolders and file) length of 250 characters. You could upload a file 100 subfolders deep from a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop. _Keep file and folder names descriptive, not verbose._
 
+### Other tips
+**Agree on a naming convention before you start a new project**
+Some topics to decide on:
 
-## Storing data on your laptop 
-issue 843
+- Hyphens or underscores?
+- Dates in filenames? If using dates: YYYYMMDD is unambiguous and short.
+- How to handle versions?
+- Any prefixes for document types? (INV for invoices, etc.)
+- Agree on where to put which data, the folder structure.
+
+**Document your choices**
+Document relevant choices in a README file so collaborators know what to do and future users of the dataset can navigate the dataset more easily.
+
+## Storing data on your laptop drive
+### Avoid inadvertently syncing the data to cloud storage
+On a VU laptops OneDrive is installed. By default folders like "Documents", "Pictures", "Music" and "Videos" are automatically synced to OneDrive. To ensure no unecessary copies are made of the data, please ensure you download it to another location. 
+
+If you also use [Research Drive](/tools/researchdrive/index.qmd), also avoid folders synced with the NextCloud client. 
+
