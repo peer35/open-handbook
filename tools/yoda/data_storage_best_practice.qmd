@@ -1,6 +1,6 @@
 ---
 title: Best Practices for Data Storage
-categories: []
+categories: [Research Data,Knowledge Items]
 ---
 
 ## File naming conventions
