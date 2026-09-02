@@ -4,39 +4,51 @@ categories: [Research Data,Knowledge Items]
 ---
 
 ## File naming conventions
-
-Yoda is capable of dealing with special characters and long file names, but to avoid future problems when your data might be used on other systems it is good to follow some naming conventions for file and folder names.
-
-This is meant as a guideline, if your source data does use spaces and special characters it is not always feasible to rename everything. The [VU provided storage solutions](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the gotchas mentioned. 
+To avoid technical issues and to improve reusability of your research data it is good to follow some best practices in naming your files and folders. 
 
 ### Avoiding technical issues
+This is meant as a guideline, if your source data does not follow these data it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the gotchas mentioned. 
+
 - **Only use lowercase characters**
-MacOS, irods and linux filesystems are case sensitive, but Windows is not, which leads to unexpected behavior. 
+
+Linux and iRODS are case sensitive, but Windows and MacOS are not, which leads to unexpected behavior when transferring data. For this reason it is best to stick lowercase characters, especially when creating data on a Linux system such as [ADA](/tools/ada/index.qmd) or [Snellius](/tools/snellius/index.qmd).
 
 - **Avoid spaces, use `-` or `_`**
-Accessing data from the CLI (Command Line Interface) or a script is a lot easier if you avoid spaces. Take editing `run 1/my data.json`. `vi run 1/my data.json` will not work and you need to remember to use quotes `vi "run 1/my data.json"` or "escape" `vi run\ 1/my\ data.json`, while the path `run1/my_data.json` is just as clearly readable, but easier to access: `vi run1/my_data.json`. 
 
-- **Avoid other special characters such as: ! # $ % & ' @ ^ ` ~ + , . ; = ) (**
-Modern filesystems can deal with any unicode character, but applications might have trouble and special characters, like spaces, often need to be "escaped" on the commandline. 
+Accessing data from the CLI (Command Line Interface) or a script is a lot easier if you avoid spaces. 
+
+Take editing `run 1/my data.json`. Viewing with `cat run 1/my data.json` will not work and you need to remember to use quotes: `cat "run 1/my data.json"` ,or "escape" the space: `vi run\ 1/my\ data.json`. 
+
+The path `run1/my_data.json` is just as clearly readable, but easier to access.
+
+- **Avoid other special characters such as: ``! # $ % & ' " ` @ ^ ~ + , . ; = ) (``**
+
+Modern filesystems can deal with these characters in file and folder names, but applications might have trouble, and special characters, like spaces, often need to be "escaped" on the commandline. 
 
 - **Try to keep file and folder names as short as possible**
-Windows for example has a maximum path (folder, subfolders and file) length of 250 characters. You could upload a file 100 subfolders deep from a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop. _Keep file and folder names descriptive, not verbose._
+
+ Windows for example has a maximum path (folder, subfolders and file) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop. 
+
+File and foldernames should be short but descriptive. Avoid nesting subfolders to deep. 
 
 ### Other tips
-**Agree on a naming convention before you start a new project**
+- **Agree on a naming convention before you start a new project**
+
 Some topics to decide on:
 
 - Hyphens or underscores?
-- Dates in filenames? If using dates: YYYYMMDD is unambiguous and short.
-- How to handle versions?
-- Any prefixes for document types? (INV for invoices, etc.)
-- Agree on where to put which data, the folder structure.
+- Dates in filenames? If using dates: YYYYMMDD is unambiguous, short and sorts well.
+- How to handle version numbers in file names? Avoid using FINAL, it never is.
+- Any prefixes for document types? INV for invoices, etc. This will make finding files easier.
+- A folder structure. Where you will put which data. 
 
-**Document your choices**
+- **Document your choices**
+
 Document relevant choices in a README file so collaborators know what to do and future users of the dataset can navigate the dataset more easily.
 
 ## Storing data on your laptop drive
 ### Avoid inadvertently syncing the data to cloud storage
-Don't copy or download research data to folders synced to cloud storage (Research Drive, SURFDrive, OneDrive, Google Drive, etc.), only copy the data to synced folders if it needs to be on that storage.
+Make sure you don't copy or download research data to folders synced to cloud storage (Research Drive, SURFDrive, OneDrive, Google Drive, etc.), especially when working with sensitive data. Only copy the data to synced folders if it needs to be on the linked storage.
 
-Especially take note of OneDrive. Folders like "Documents", "Pictures", "Music" and "Videos" are automatically synced to OneDrive and many applications will save files there by default. To ensure data does not inadvertently end up on OneDrive check where you save data from for example Office applications.
+Especially take note of OneDrive. The "Documents" folder is automatically synced to OneDrive and many applications save files there by default. To ensure data does not inadvertently end up on OneDrive check where you save data from for example Office applications.
+
