@@ -37,7 +37,6 @@ Document relevant choices in a README file so collaborators know what to do and 
 
 ## Storing data on your laptop drive
 ### Avoid inadvertently syncing the data to cloud storage
-On a VU laptops OneDrive is installed. By default folders like "Documents", "Pictures", "Music" and "Videos" are automatically synced to OneDrive. To ensure no unecessary copies are made of the data, please ensure you download it to another location. 
+Don't copy or download research data to folders synced to cloud storage (Research Drive, SURFDrive, OneDrive, Google Drive, etc.), only copy the data to synced folders if it needs to be on that storage.
 
-If you also use [Research Drive](/tools/researchdrive/index.qmd), also avoid folders synced with the NextCloud client. 
-
+Especially take note of OneDrive. Folders like "Documents", "Pictures", "Music" and "Videos" are automatically synced to OneDrive and many applications will save files there by default. To ensure data does not inadvertently end up on OneDrive check where you save data from for example Office applications.
