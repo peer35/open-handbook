@@ -7,17 +7,17 @@ categories: [Research Data,Knowledge Items]
 To avoid technical issues and to improve reusability of your research data it is good to follow some best practices in naming your files and folders. 
 
 ### Avoiding technical issues
-This is meant as a guideline, if your source data does not follow these data it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the gotchas mentioned. 
+This is meant as a guideline, if your source data does not adhere to these practices it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the gotchas mentioned. 
 
 - **Only use lowercase characters**
 
-Linux and iRODS are case sensitive, but Windows and MacOS are not, which leads to unexpected behavior when transferring data. For this reason it is best to stick lowercase characters, especially when creating data on a Linux system such as [ADA](/tools/ada/index.qmd) or [Snellius](/tools/snellius/index.qmd).
+Linux and [Yoda](/tools/yoda/index.qmd) are case sensitive, but Windows and MacOS are not, which leads to unexpected behavior when transferring data. For this reason it is best to stick to lowercase characters, especially when creating data on a Linux system such as [ADA](/tools/ada/index.qmd) or [Snellius](/tools/snellius/index.qmd).
 
 - **Avoid spaces, use `-` or `_`**
 
 Accessing data from the CLI (Command Line Interface) or a script is a lot easier if you avoid spaces. 
 
-Take editing `run 1/my data.json`. Viewing with `cat run 1/my data.json` will not work and you need to remember to use quotes: `cat "run 1/my data.json"` ,or "escape" the space: `vi run\ 1/my\ data.json`. 
+Take the file `run 1/my data.json`. Viewing with `cat run 1/my data.json` will not work and you need to remember to use quotes: `cat "run 1/my data.json"` ,or "escape" the space: `vi run\ 1/my\ data.json`. 
 
 The path `run1/my_data.json` is just as clearly readable, but easier to access.
 
