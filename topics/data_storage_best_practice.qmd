@@ -7,7 +7,10 @@ categories: [Research Data,Knowledge Items]
 To avoid technical issues and to improve reusability of your research data it is good to follow some best practices in naming your files and folders. 
 
 ### Avoiding technical issues
-This is meant as a guideline, if your source data does not adhere to these practices it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the gotchas mentioned. 
+
+:::{.callout-note}
+This is meant as a guideline, if your source data does not adhere to these practices it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the issues mentioned. 
+:::
 
 - **Only use lowercase characters**
 
