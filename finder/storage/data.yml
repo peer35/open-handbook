@@ -32,7 +32,7 @@ filter:
         - acl: "Fine-grained access rights"
     - type: multi
     - description: "/finder/storage/features.qmd"
-blocks:
+tiles:
   - 1:
     - contents: "/finder/storage/yoda.qmd"
     - filter:

@@ -12,7 +12,7 @@ Usage in a .qmd page:
     :::
 
 The data file defines `filter` (the filter groups shown on the left) and
-`blocks` (the tiles shown on the right). Paths starting with "/" are resolved
+`tiles` (shown on the right). Paths starting with "/" are resolved
 against the project root, other paths against the directory of the page.
 The HTML layout comes from the pandoc templates in templates/ (see
 https://pandoc.org/MANUAL.html#template-syntax). Filtering itself is done
@@ -148,12 +148,12 @@ local function tile_context(id, spec, groups_by_key, doc_dir)
     for _, v in ipairs(kv.value) do
       local s = stringify(v)
       if group and not group.option_keys[s] then
-        warn(string.format("block %s: unknown option '%s' for filter '%s'", id, s, kv.key))
+        warn(string.format("tile %s: unknown option '%s' for filter '%s'", id, s, kv.key))
       end
       table.insert(values, s)
     end
     if not group then
-      warn(string.format("block %s: unknown filter '%s'", id, kv.key))
+      warn(string.format("tile %s: unknown filter '%s'", id, kv.key))
     end
     match[kv.key] = values
   end
@@ -235,7 +235,7 @@ function Div(div)
   end
 
   local tiles = {}
-  for _, kv in ipairs(ordered(data.blocks)) do
+  for _, kv in ipairs(ordered(data.tiles)) do
     table.insert(tiles, tile_context(kv.key, as_map(kv.value), groups_by_key, doc_dir))
   end
   local group_ctx = {}
