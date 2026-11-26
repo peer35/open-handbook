@@ -5,7 +5,7 @@ filter:
       - s: "< 1TB"
       - l: "> 1TB"
     - type: single
-    - description: "/finder/storage/volume.qmd"
+    - description: "/finder/storage/filter/volume.qmd"
   - class:
     - title: "Data Classification"
     - options:
@@ -14,7 +14,7 @@ filter:
       - h: "High"
       - vh: "Very High"
     - type: single
-    - description: "/finder/storage/classification.qmd"
+    - description: "/finder/storage/filter/classification.qmd"
   - share:
     - title: "Data Sharing"
     - options:
@@ -22,7 +22,7 @@ filter:
       - vu: "With VU colleagues"
       - all: "With anyone"
     - type: single
-    - description: "/finder/storage/sharing.qmd"
+    - description: "/finder/storage/filter/sharing.qmd"
   - feat:
     - title: "Features"
     - options:
@@ -31,7 +31,7 @@ filter:
         - col: "Collaboration tools"
         - acl: "Fine-grained access rights"
     - type: multi
-    - description: "/finder/storage/features.qmd"
+    - description: "/finder/storage/filter/features.qmd"
 tiles:
   - 1:
     - contents: "/finder/storage/yoda.qmd"
