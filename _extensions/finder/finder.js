@@ -25,7 +25,7 @@
       tiles.forEach(({ el, filter }) => {
         const ok = selection.every(({ key, multi, values }) => {
           if (values.length === 0) return true;
-          const allowed = filter[key] || [];
+          const allowed = Array.isArray(filter[key]) ? filter[key] : [];
           return multi
             ? values.every((v) => allowed.includes(v))
             : values.some((v) => allowed.includes(v));

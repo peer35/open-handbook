@@ -144,7 +144,7 @@ local function tile_context(id, spec, groups_by_key, doc_dir)
   local match = {}
   for _, kv in ipairs(ordered(spec.filter)) do
     local group = groups_by_key[kv.key]
-    local values = {}
+    local values = pandoc.List()
     for _, v in ipairs(kv.value) do
       local s = stringify(v)
       if group and not group.option_keys[s] then
