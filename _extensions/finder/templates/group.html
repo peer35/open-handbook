@@ -1,0 +1,15 @@
+<fieldset class="finder-group" data-key="$it.key$" data-type="$it.type$">
+  <legend>$it.title$</legend>
+$if(it.description)$
+  <details class="finder-info">
+    <summary>More information</summary>
+    $it.description$
+  </details>
+$endif$
+$for(it.options)$
+  <div class="finder-option">
+    <input type="$it.input_type$" name="$it.name$" value="$it.value$" id="$it.id$">
+    <label for="$it.id$">$it.label$</label>
+  </div>
+$endfor$
+</fieldset>

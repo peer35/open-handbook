@@ -14,7 +14,9 @@ Usage in a .qmd page:
 The data file defines `filter` (the filter groups shown on the left) and
 `blocks` (the tiles shown on the right). Paths starting with "/" are resolved
 against the project root, other paths against the directory of the page.
-Filtering itself is done client side by finder.js.
+The HTML layout comes from the pandoc templates in templates/ (see
+https://pandoc.org/MANUAL.html#template-syntax). Filtering itself is done
+client side by finder.js.
 ]]
 
 local path = pandoc.path
@@ -74,43 +76,70 @@ local function read_markdown(file)
   return doc.blocks, doc.meta
 end
 
-local function build_filters(groups, doc_dir)
-  local blocks = { raw('<form class="finder-filters" aria-label="Filters">') }
-  for _, g in ipairs(groups) do
-    local fieldset = string.format(
-      '<fieldset class="finder-group" data-key="%s" data-type="%s"><legend>%s</legend>',
-      html_escape(g.key), html_escape(g.type), html_escape(g.title))
-    table.insert(blocks, raw(fieldset))
-
-    if g.description then
-      local file = resolve(g.description, doc_dir)
-      local desc = read_markdown(file)
-      if desc then
-        table.insert(blocks, raw('<details class="finder-info"><summary>More information</summary>'))
-        for _, b in ipairs(desc) do table.insert(blocks, b) end
-        table.insert(blocks, raw('</details>'))
-      else
-        warn("description file not found: " .. file)
-      end
-    end
-
-    local input_type = g.type == "multi" and "checkbox" or "radio"
-    for _, opt in ipairs(g.options) do
-      local id = "finder-" .. g.key .. "-" .. opt.key
-      table.insert(blocks, raw(string.format(
-        '<div class="finder-option"><input type="%s" name="%s" value="%s" id="%s">'
-          .. '<label for="%s">%s</label></div>',
-        input_type, html_escape(g.key), html_escape(opt.key), html_escape(id),
-        html_escape(id), html_escape(opt.label))))
-    end
-    table.insert(blocks, raw('</fieldset>'))
-  end
-  table.insert(blocks, raw(
-    '<button type="reset" class="btn btn-outline-secondary btn-sm">Reset filters</button></form>'))
-  return blocks
+-- Content blocks (tile bodies, filter descriptions) stay pandoc AST so that
+-- Quarto still processes them. The templates get a marker for each, which is
+-- swapped for the real blocks after rendering.
+local slots = {}
+local function slot(blocks)
+  table.insert(slots, blocks)
+  return string.format("<!--finder-slot-%d-->", #slots)
 end
 
-local function build_tile(id, spec, groups_by_key, doc_dir)
+local function render_template(dir, name, context)
+  local file = path.join({ dir, name })
+  local text = read_file(file)
+  if not text then
+    error("[finder] template not found: " .. file)
+  end
+  local tpl = pandoc.template.compile(text, file)
+  local html = pandoc.layout.render(pandoc.template.apply(tpl, context))
+
+  -- Split the rendered HTML at the slot markers.
+  local out, pos = {}, 1
+  local function add_raw(s)
+    if s:match("%S") then table.insert(out, raw(s)) end
+  end
+  while true do
+    local s, e, n = html:find("<!%-%-finder%-slot%-(%d+)%-%->", pos)
+    if not s then break end
+    add_raw(html:sub(pos, s - 1))
+    for _, b in ipairs(slots[tonumber(n)]) do table.insert(out, b) end
+    pos = e + 1
+  end
+  add_raw(html:sub(pos))
+  return out
+end
+
+local function group_context(g, doc_dir)
+  local ctx = {
+    key = html_escape(g.key),
+    type = html_escape(g.type),
+    title = html_escape(g.title),
+    options = {},
+  }
+  if g.description then
+    local file = resolve(g.description, doc_dir)
+    local desc = read_markdown(file)
+    if desc then
+      ctx.description = slot(desc)
+    else
+      warn("description file not found: " .. file)
+    end
+  end
+  local input_type = g.type == "multi" and "checkbox" or "radio"
+  for _, opt in ipairs(g.options) do
+    table.insert(ctx.options, {
+      input_type = input_type,
+      name = html_escape(g.key),
+      value = html_escape(opt.key),
+      id = html_escape("finder-" .. g.key .. "-" .. opt.key),
+      label = html_escape(opt.label),
+    })
+  end
+  return ctx
+end
+
+local function tile_context(id, spec, groups_by_key, doc_dir)
   -- Collect and validate the filter values of this tile.
   local match = {}
   for _, kv in ipairs(ordered(spec.filter)) do
@@ -140,33 +169,27 @@ local function build_tile(id, spec, groups_by_key, doc_dir)
     end
   end
 
-  local body = {}
-  if meta.title then
-    table.insert(body, pandoc.Header(3, meta.title, { class = "card-title unnumbered unlisted" }))
-  end
-  -- Everything from the first `.description` div onwards is collapsed
-  -- behind a "Description" link.
-  local collapsed = nil
+  -- Everything from the first `.description` div onwards goes in `details`,
+  -- which the template shows behind a "Read more" link.
+  local intro, details = {}, nil
   for _, b in ipairs(content) do
-    if not collapsed and b.t == "Div" and b.classes:includes("description") then
-      collapsed = {}
-      for _, inner in ipairs(b.content) do table.insert(collapsed, inner) end
-    elseif collapsed then
-      table.insert(collapsed, b)
+    if not details and b.t == "Div" and b.classes:includes("description") then
+      details = {}
+      for _, inner in ipairs(b.content) do table.insert(details, inner) end
+    elseif details then
+      table.insert(details, b)
     else
-      table.insert(body, b)
+      table.insert(intro, b)
     end
   end
-  if collapsed then
-    table.insert(body, raw('<details class="finder-description"><summary>Read more</summary>'))
-    for _, b in ipairs(collapsed) do table.insert(body, b) end
-    table.insert(body, raw('</details>'))
-  end
 
-  return pandoc.Div(
-    pandoc.Div(body, { class = "card-body" }),
-    pandoc.Attr("", { "finder-tile", "card", "g-col-12", "g-col-md-6" },
-      { ["data-filter"] = pandoc.json.encode(match) }))
+  return {
+    id = html_escape(id),
+    title = meta.title and html_escape(stringify(meta.title)) or nil,
+    filter = html_escape(pandoc.json.encode(match)),
+    intro = slot(intro),
+    details = details and slot(details) or nil,
+  }
 end
 
 function Div(div)
@@ -213,19 +236,24 @@ function Div(div)
 
   local tiles = {}
   for _, kv in ipairs(ordered(data.blocks)) do
-    table.insert(tiles, build_tile(kv.key, as_map(kv.value), groups_by_key, doc_dir))
+    table.insert(tiles, tile_context(kv.key, as_map(kv.value), groups_by_key, doc_dir))
   end
+  local group_ctx = {}
+  for _, g in ipairs(groups) do table.insert(group_ctx, group_context(g, doc_dir)) end
 
-  local filters = pandoc.Div(build_filters(groups, doc_dir),
-    { class = "finder-sidebar g-col-12 g-col-lg-3" })
-  local results = pandoc.Div({
-    raw('<p class="finder-count" aria-live="polite"></p>'),
-    pandoc.Div(tiles, { class = "finder-tiles grid" }),
-  }, { class = "finder-results g-col-12 g-col-lg-9" })
+  -- Templates live next to this filter, unless the page points elsewhere
+  -- with `templates="dir"` (which must contain finder.html, group.html and
+  -- tile.html).
+  local template_dir = div.attributes["templates"]
+    and resolve(div.attributes["templates"], doc_dir)
+    or path.join({ path.directory(PANDOC_SCRIPT_FILE), "templates" })
 
   -- Keep any content written inside the div above the finder.
   local out = {}
   for _, b in ipairs(div.content) do table.insert(out, b) end
-  table.insert(out, pandoc.Div({ filters, results }, { class = "finder grid" }))
+  for _, b in ipairs(render_template(template_dir, "finder.html",
+      { groups = group_ctx, tiles = tiles })) do
+    table.insert(out, b)
+  end
   return out
 end

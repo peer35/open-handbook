@@ -1,0 +1,14 @@
+<div class="finder grid">
+  <div class="finder-sidebar g-col-12 g-col-lg-3">
+    <form class="finder-filters" aria-label="Filters">
+      ${ groups:group() }
+      <button type="reset" class="btn btn-outline-secondary btn-sm">Reset filters</button>
+    </form>
+  </div>
+  <div class="finder-results g-col-12 g-col-lg-9">
+    <p class="finder-count" aria-live="polite"></p>
+    <div class="finder-tiles grid">
+      ${ tiles:tile() }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="finder-tile card g-col-12 g-col-md-6" data-filter="$it.filter$">
+  <div class="card-body">
+$if(it.title)$
+    <h3 class="card-title">$it.title$</h3>
+$endif$
+    $it.intro$
+$if(it.details)$
+    <details class="finder-description">
+      <summary>Read more</summary>
+      $it.details$
+    </details>
+$endif$
+  </div>
+</div>
