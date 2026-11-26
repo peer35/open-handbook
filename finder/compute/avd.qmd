@@ -1,3 +1,11 @@
 ---
 title: Azure Virtual Desktop
 ---
+
+An [Azure Virtual Desktop](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0011861&table=kb_knowledge) for research can be provided by IT, it is a virtual Windows PC running in the [Microsoft Azure](https://azure.microsoft.com/en-us) cloud environment.
+
+::: {.description}
+
+Only a limited amount of applications are installed and the machine will be automatically shut down outside of working hours.
+
+:::

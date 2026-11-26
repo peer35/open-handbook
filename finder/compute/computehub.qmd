@@ -1,3 +1,5 @@
 ---
 title: VU Compute Hub
 ---
+
+VU IT has built a [Jupyter Notebook environment](/tools/vucomputehub/index.qmd) meant mainly for Education purposes, but accessible for researchers as well. It runs a limited amount of GUI tools.

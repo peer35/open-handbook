@@ -112,7 +112,7 @@ tiles:
   - computehub:
     - contents: "/finder/compute/computehub.qmd"
     - filter:
-      - type: ["other"]
+      - type: ["hpc"]
       - software: ["cli","i","c"]
       - hardware: ["g"]
       - scistor: ["n"]
