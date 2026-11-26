@@ -1,0 +1,93 @@
+.finder {
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.finder-sidebar {
+  position: sticky;
+  top: 5rem;
+}
+
+.finder-group {
+  margin-bottom: 1.25rem;
+}
+
+.finder-group legend {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.finder-info {
+  margin: -0.2rem 0 0.4rem;
+  font-size: 0.875rem;
+}
+
+.finder-info summary {
+  cursor: pointer;
+  color: var(--bs-link-color, #0077b3);
+}
+
+.finder-count {
+  font-size: 0.875rem;
+  color: var(--bs-secondary-color, #6c757d);
+  margin-bottom: 0.75rem;
+}
+
+/* All tiles share the height of the tallest one. */
+.finder-tiles {
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+
+.finder-tile {
+  margin: 0;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.finder-tile .card-title {
+  margin-top: 0;
+}
+
+.finder-tile table {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.finder-tile.finder-nomatch {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+@media (max-width: 991.98px) {
+  .finder-sidebar {
+    position: static;
+  }
+}
+
+.finder-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.finder-option input {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.finder-description summary {
+  cursor: pointer;
+  color: var(--bs-link-color, #0077b3);
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.finder-description[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.finder-tile.finder-nomatch .finder-description summary {
+  color: inherit;
+}

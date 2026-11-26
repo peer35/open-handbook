@@ -1,0 +1,11 @@
+---
+title: Data classification
+---
+
+Data classification here refers to the type of data regarding privacy and confidentiality. It is meant to provide guidelines for storing, accessing, and processing data in a secure and responsible manner.
+
+The data classification tool can help you to determine the classification for Availability, Integrity and Confidentiality.
+
+The data steward for the Faculty of Behavioural and Movement Sciences (FGB) has also created a guide about privacy and confidentiality risks that could help you to determine a classification for your data. The information on that page is geared towards FGB researchers but can also be helpful for other researchers.
+
+If, using the information above, you are not sure which category fits your data or would like to know more about matters related to data classification, please contact us at the Research Data Management Support Desk: rdm@vu.nl.

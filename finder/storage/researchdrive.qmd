@@ -4,6 +4,8 @@ title: Research Drive
 
 Research Drive enables you to easily store and share files with other users, inside and outside the VU.
 
+::: {.description}
+
 Please note: storing data with a 'high' classification in Research Drive is permissible, but may require taking extra security measures. Please get in touch with the Research Data Management Support Desk via rdm@vu.nl if you want to store high-classification data in Research Drive.
 
 [More info](/tools/researchdrive/index.qmd)
@@ -17,4 +19,5 @@ Please note: storing data with a 'high' classification in Research Drive is perm
 | **Location** | SURF (NL) |
 | **File recovery** | Via versioning or file restore request|
 | **Data classification** | Medium, high with additional steps |
+:::
 :::

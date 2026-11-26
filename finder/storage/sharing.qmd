@@ -1,0 +1,5 @@
+---
+title: Data sharing
+---
+
+Indicate here whether you need to share your data and with whom. Note: this refers to data sharing during the research process and not to publishing data after the research is finished.

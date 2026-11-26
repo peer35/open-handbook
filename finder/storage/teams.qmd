@@ -4,6 +4,8 @@ title: Teams
 
 Microsoft 365 cloud storage and collaboration.
 
+::: {.description}
+
 Although the classification for Sharepoint is High, this is not always the best location to store your data, as this application was not designed for research data.
 
 [More info](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4d4956d7978f09d0e553359fe153afb3)
@@ -17,4 +19,5 @@ Although the classification for Sharepoint is High, this is not always the best 
 | **Location** | Microsoft (EU) |
 | **File recovery** | Via versioning or Recycle Bin |
 | **Data classification** | Medium |
+:::
 :::

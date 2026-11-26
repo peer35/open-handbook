@@ -1,0 +1,12 @@
+---
+title: Features
+---
+A number of the storage options have additional features and/or functionality.
+
+Select Basic storage if you have no specific needs and just want to store and access your files.
+
+Select Compute/HPC if you plan to process your data using the high-performance computing facilities offered by the VU.
+
+Select Collaboration tools to highlight solutions that facilitate collaboration via integrated tools and interfaces (OnlyOffice, Jupyter Notebooks). Note: not all collaboration tools will be available for each highlighted storage option
+
+Select Fine-grained access rights if you need to give collaborators access to only certain folders, and not the entire project. Note: some tools may not offer fine-grained access rights but still offer the possibility to invite collaborators (this is, for example, the case for Yoda).

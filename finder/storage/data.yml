@@ -12,7 +12,7 @@ filter:
       - l: "Low"
       - m: "Middle"
       - h: "High"
-      - v: "Very High"
+      - vh: "Very High"
     - type: single
     - description: "/finder/storage/classification.qmd"
   - share:
@@ -34,51 +34,51 @@ filter:
     - description: "/finder/storage/features.qmd"
 blocks:
   - 1:
-    - contents: "/finder/storage/custom.qmd"
-    - filter:
-      - vol: ["s","l"]
-      - class: ["l","m","h","vh"]
-      - share: ["n","vu","all"]
-      - feat: ["b","hpc","col","acl"]
-  - 2:
     - contents: "/finder/storage/yoda.qmd"
     - filter:
       - vol: ["s","l"]
       - class: ["l","m","h"]
       - share: ["n","vu","all"]
       - feat: ["b"]
-  - 3:
+  - 2:
     - contents: "/finder/storage/researchdrive.qmd"
     - filter:
       - vol: ["s","l"]
       - class: ["l","m","h"]
       - share: ["n","vu","all"]
       - feat: ["b","col","acl"]
-  - 4:
+  - 3:
     - contents: "/finder/storage/scistor.qmd"
     - filter:
       - vol: ["s","l"]
       - class: ["l","m","h"]
       - share: ["n","vu"]
       - feat: ["b","hpc","acl"]
-  - 5:
+  - 4:
     - contents: "/finder/storage/onedrive.qmd"
     - filter:
       - vol: ["s"]
       - class: ["l","m"]
       - share: ["n","vu","all"]
       - feat: ["b","col"]
-  - 6:
+  - 5:
     - contents: "/finder/storage/teams.qmd"
     - filter:
       - vol: ["s"]
       - class: ["l","m"]
       - share: ["n","vu","all"]
       - feat: ["b","col"]
-  - 7:
+  - 6:
     - contents: "/finder/storage/portable.qmd"
     - filter:
       - vol: ["s","l"]
       - class: ["l","m","h"]
       - share: ["n"]
       - feat: ["b"]
+  - 7:
+    - contents: "/finder/storage/custom.qmd"
+    - filter:
+      - vol: ["s","l"]
+      - class: ["l","m","h","vh"]
+      - share: ["n","vu","all"]
+      - feat: ["b","hpc","col","acl"]

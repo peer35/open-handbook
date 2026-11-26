@@ -2,7 +2,11 @@
 title: OneDrive
 ---
 
-0neDrive for Business is part of VU Microsoft 365 cloud and is available for employees and students. Please note that this is personal storage that is linked to the existence of your account at the VU. If you leave, your data in OneDrive also disappear.
+OneDrive for Business is part of VU Microsoft 365 cloud and is available for employees and students. 
+
+::: {.description}
+
+Please note that this is personal storage that is linked to the existence of your account at the VU. If you leave, your data in OneDrive also disappear.
 
 Therefore, OneDrive is not a good solution to store your research data.
 
@@ -17,4 +21,6 @@ Therefore, OneDrive is not a good solution to store your research data.
 | **Location** | Microsoft (EU) |
 | **File recovery** | Via versioning or Recycle Bin |
 | **Data classification** | Medium |
+:::
+
 :::

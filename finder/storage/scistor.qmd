@@ -2,7 +2,11 @@
 title: SciStor
 ---
 
-SciStor is basic storage hosted on the VU campus. Access is via a "mount" (drive letter). SciStor is also suited for data output of  lab instruments and high-performance computing (HPC/ADA).
+SciStor is basic storage hosted on the VU campus. Access is via a "mount" (drive letter).
+
+::: {.description}
+
+ SciStor is also suited for data output of  lab instruments and high-performance computing (HPC/ADA).
 
 [More info](/tools/yoda/index.qmd)
 
@@ -15,4 +19,6 @@ SciStor is basic storage hosted on the VU campus. Access is via a "mount" (drive
 | **Location** | VU Campus (NL) |
 | **File recovery** | Via [snapshots](/tools/scistor/snapshots-data-recovery.qmd) |
 | **Data classification** | High |
+:::
+
 :::
