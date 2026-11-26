@@ -1,0 +1,18 @@
+---
+title: Yoda
+---
+
+YODA is a platform that supports research data management throughout the entire research cycle: from safe and easy storage and sharing of data during the research process, to sharing of data within research groups and projects and, ultimately, to research data archiving and publication.
+
+[More info](/tools/yoda/index.qmd)
+
+::: {.table header-rows=0}
+|  |  | 
+| --- | --- |
+| **Max. storage size** | Terabytes of data |
+| **Costs** | <500 GB: free of charge<br>500 GB to 2 TB: €200 per year<br>2TB: €200 + 250 for every TB above 2 TB | 
+| **Sharing and collaboration** | With anyone |
+| **Location** | SURF (NL) |
+| **File recovery** | Via file restore request|
+| **Data classification** | High |
+:::

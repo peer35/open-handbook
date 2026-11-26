@@ -1,0 +1,84 @@
+filter:
+  - 1:
+    - title: "Data Volume"
+    - options:
+      - 1: "<500GB"
+      - 2: ">500GB"
+    - type: single
+    - description: "/finder/storage/volume.qmd"
+  - 2:
+    - title: "Data Classification"
+    - options:
+      - 1: "Low"
+      - 2: "Middle"
+      - 3: "High"
+      - 4: "Very High"
+    - type: single
+    - description: "/finder/storage/classification.qmd"
+  - 3:
+    - title: "Data Sharing"
+    - options:
+      - 1: "Not needed"
+      - 2: "With VU colleagues"
+      - 3: "With anyone"
+    - type: single
+    - description: "/finder/storage/sharing.qmd"
+  - 4:
+    - title: "Features"
+    - options:
+        - 1: "Basic storage"
+        - 2: "ADA HPC connected"
+        - 3: "Collaboration tools"
+        - 4: "Fine-grained access rights"
+    - type: multi
+    - description: "/finder/storage/features.qmd"
+blocks:
+  - 1:
+    - contents: "/finder/storage/custom.qmd"
+    - filter:
+      - 1: [1,2]
+      - 2: [1,2,3,4]
+      - 3: [1,2,3]
+      - 4: [1,2,3,4]
+  - 2:
+    - contents: "/finder/storage/yoda.qmd"
+    - filter:
+      - 1: [1,2]
+      - 2: [1,2,3]
+      - 3: [1,2,3]
+      - 4: [1]
+  - 3:
+    - contents: "/finder/storage/researchdrive.qmd"
+    - filter:
+      - 1: [1,2]
+      - 2: [1,2,3]
+      - 3: [1,2,3]
+      - 4: [1,3,4]
+  - 4:
+    - contents: "/finder/storage/scistor.qmd"
+    - filter:
+      - 1: [1,2]
+      - 2: [1,2,3]
+      - 3: [2]
+      - 4: [1,2,4]
+  - 5:
+    - contents: "/finder/storage/onedrive.qmd"
+    - filter:
+      - 1: [1]
+      - 2: [1,2]
+      - 3: [1,2,3]
+      - 4: [1,3]
+  - 6:
+    - contents: "/finder/storage/teams.qmd"
+    - filter:
+      - 1: [1]
+      - 2: [1,2]
+      - 3: [1,2,3]
+      - 4: [1,3]
+  - 7:
+    - contents: "/finder/storage/portable.qmd"
+    - filter:
+      - 1: [1,2]
+      - 2: [1,2,3]
+      - 3: [1]
+      - 4: [1]

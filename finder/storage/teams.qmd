@@ -1,0 +1,20 @@
+---
+title: Teams
+---
+
+Microsoft 365 cloud storage and collaboration.
+
+Although the classification for Sharepoint is High, this is not always the best location to store your data, as this application was not designed for research data.
+
+[More info](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4d4956d7978f09d0e553359fe153afb3)
+
+::: {.table header-rows=0}
+|  |  | 
+| --- | --- |
+| **Max. storage size** | 1TB, up to 25TB |
+| **Costs** | No direct costs for researchers | 
+| **Sharing and collaboration** | With anyone |
+| **Location** | Microsoft (EU) |
+| **File recovery** | Via versioning or Recycle Bin |
+| **Data classification** | Medium |
+:::

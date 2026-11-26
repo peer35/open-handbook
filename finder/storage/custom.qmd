@@ -1,0 +1,8 @@
+---
+title: Custom solutions
+---
+
+If none of the options satisfy your requirements, a custom setup or configuration may be possible.
+
+Contact the [RDM Support Desk](/topics/rdm-support-desk.qmd#how-can-you-reach-the-rdm-support-desk) to explore the options.
+

@@ -1,0 +1,20 @@
+---
+title: Research Drive
+---
+
+Research Drive enables you to easily store and share files with other users, inside and outside the VU.
+
+Please note: storing data with a 'high' classification in Research Drive is permissible, but may require taking extra security measures. Please get in touch with the Research Data Management Support Desk via rdm@vu.nl if you want to store high-classification data in Research Drive.
+
+[More info](/tools/researchdrive/index.qmd)
+
+::: {.table header-rows=0}
+|  |  | 
+| --- | --- |
+| **Max. storage size** | Terabytes of data |
+| **Costs** | <500 GB: free of charge<br>500 GB to 2 TB: €200 per year<br>2TB: €200 + 250 for every TB above 2 TB | 
+| **Sharing and collaboration** | With anyone |
+| **Location** | SURF (NL) |
+| **File recovery** | Via versioning or file restore request|
+| **Data classification** | Medium, high with additional steps |
+:::

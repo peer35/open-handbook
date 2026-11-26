@@ -1,0 +1,20 @@
+---
+title: OneDrive
+---
+
+0neDrive for Business is part of VU Microsoft 365 cloud and is available for employees and students. Please note that this is personal storage that is linked to the existence of your account at the VU. If you leave, your data in OneDrive also disappear.
+
+Therefore, OneDrive is not a good solution to store your research data.
+
+[More info](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=eed3d23e9785d950e553359fe153affc)
+
+::: {.table header-rows=0}
+|  |  | 
+| --- | --- |
+| **Max. storage size** | 1TB |
+| **Costs** | No direct costs for researchers | 
+| **Sharing and collaboration** | With anyone |
+| **Location** | Microsoft (EU) |
+| **File recovery** | Via versioning or Recycle Bin |
+| **Data classification** | Medium |
+:::

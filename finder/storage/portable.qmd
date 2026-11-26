@@ -1,0 +1,22 @@
+---
+title: Encrypted portable storage
+---
+
+Encrypted USB drive/disk or USB flash drive (USB stick).
+
+You can order a drive or disk via the Order accessories form found in the service portal (link below).
+
+Please note that it is highly recommended to always use encryption with portable storage, even if your data is classified as low.
+
+[More info](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=868f521397cf09d0e553359fe153af5b)
+
+::: {.table header-rows=0}
+|  |  | 
+| --- | --- |
+| **Max. storage size** | Depends on the device chosen |
+| **Costs** | Depends on the device chosen |
+| **Sharing and collaboration** | NA |
+| **Location** | NA |
+| **File recovery** | NA |
+| **Data classification** | High (with encryption) |
+:::

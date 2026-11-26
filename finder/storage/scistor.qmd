@@ -1,0 +1,18 @@
+---
+title: SciStor
+---
+
+SciStor is basic storage hosted on the VU campus. Access is via a "mount" (drive letter). SciStor is also suited for data output of  lab instruments and high-performance computing (HPC/ADA).
+
+[More info](/tools/yoda/index.qmd)
+
+::: {.table header-rows=0}
+|  |  | 
+| --- | --- |
+| **Max. storage size** | Terabytes of data |
+| **Costs** | You pay for the amount of space allocated to your project folder: €0,16 per GB per year. |
+| **Sharing and collaboration** | VU employees and students only |
+| **Location** | VU Campus (NL) |
+| **File recovery** | Via [snapshots](/tools/scistor/snapshots-data-recovery.qmd) |
+| **Data classification** | High |
+:::
