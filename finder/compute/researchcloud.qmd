@@ -1,3 +1,19 @@
 ---
-title: researchcloud
+title: Research Cloud
 ---
+
+> Typical tasks: Data gathering, Hosting Web Applications, Running Server Applications (Data Transformation, Data Analysis).
+
+[SURF Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, but it is also possible to run Windows or Linux Desktops. 
+
+::: {.description}
+
+To use Research cloud you need to obtain [credits](/tools/researchcloud/cost_access.qmd#a-wallet-with-credits), although for research projects an NWO small compute grant can usually be obtained.
+
+You only use credits when the machines are running; this means Research Cloud is less suitable for hosting web applications that need to run 24/7.
+
+The idea of Research Cloud is to automatically deploy machines when you need them, this means setting up applications is a more involved process. The upside of this way of working is that there is a growing catalog of premade configurations available. For example, if you want to run a server with [ASReview](https://asreview.nl/) or [Whisper](https://whisperai.com/) you can deploy it with just a few clicks.
+
+Setup and maintenance of applications are your own responsibility. SURF and IT for Research can help you get started, time permitting.
+
+:::

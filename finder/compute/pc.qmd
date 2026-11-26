@@ -1,3 +1,21 @@
 ---
 title: PC
 ---
+
+> Typical tasks: Data transformation, Data analysis, Visualisation.
+
+Desktops and laptops are the most common compute environment. They can be used for a wide range of tasks, but have limited performance.
+
+::: {.description}
+
+### Laptop
+
+Every VU researcher has a digital workplace, by default this is a laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU, RAM and GPU power, usually only enough for basic office tasks and light analysis tools.
+
+If the standard laptop is too slow for your tooling, a more powerful [workstation laptop](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=588865b4874bc15010be65b40cbb3503) might help.
+
+### Desktop PC
+
+[Desktop PCs](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1) have more powerful hardware. A better CPU, more RAM and a dedicated GPU. At VU Amsterdam they can only be installed in designated lab-spaces.
+
+:::

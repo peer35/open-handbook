@@ -1,3 +1,15 @@
 ---
 title: SciCloud
 ---
+
+> Typical tasks: Data gathering, Hosting Web Applications, Running Server Applications (Data Transformation, Data Analysis).
+
+[SciCloud](/tools/scicloud/index.qmd) is a VU-hosted platform where researchers can host virtual servers or desktops for their research applications.
+
+::: {.description}
+
+Unlike Research Cloud, SciCloud uses a [low fixed price per month](/tools/scicloud/cost_access.qmd), which makes it a cheap option to run applications and websites 24/7.
+
+IT for Research will give you a machine with the basic OS installed. You are responsible for installing applications yourself, although ITvO will usually help you to get started.
+
+:::

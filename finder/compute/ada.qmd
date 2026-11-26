@@ -1,3 +1,15 @@
 ---
-title: ADA
+title: ADA HPC
 ---
+
+> Typical tasks: Data Transformation, Data Analysis.
+
+[ADA](/tools/ada/index.qmd) is the compute cluster hosted on campus by IT for Research. 
+
+::: {.description}
+
+All VU researchers can get an [account](/tools/ada/cost_access.qmd). The cluster has fast access to your data on SciStor. Access is mainly through the command-line, so some CLI skills are needed. A limited amount of GUI tools is available via [Open OnDemand](/tools/ada/open-ondemand.qmd).
+
+There are only limited resources available, although you can [buy hardware](/tools/ada/dedicated-nodes.qmd) for your research group.
+
+:::

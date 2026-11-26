@@ -1,4 +1,14 @@
 filter:
+  - type:
+    - title: "Type of platform"
+    - options:
+      - pc: "Laptop or Desktop"
+      - vd: "Virtual Desktop"
+      - vs: "Virtual Server"
+      - hpc: "High Performance Computing"
+      - other: "other"
+    - type: single
+    - description: "/finder/compute/filter/type.qmd"
   - software:
     - title: "Software"
     - options:
@@ -14,7 +24,7 @@ filter:
   - hardware:
     - title: "Hardware"
     - options:
-      - g: "GPU available"
+      - g: "GPU available (e.g. for AI workloads)"
       - s: "Scalable"
       - data: "Large datasets (> 1TB)"
     - type: multi
@@ -48,6 +58,7 @@ tiles:
   - pc:
     - contents: "/finder/compute/pc.qmd"
     - filter:
+      - type: ["pc"]
       - software: ["d","g","cli","i","w"]
       - hardware: []
       - scistor: ["y"]
@@ -56,6 +67,7 @@ tiles:
   - scicloud:
     - contents: "/finder/compute/scicloud.qmd"
     - filter:
+      - type: ["vd","vs"]
       - software: ["d","g","cli","i","h","w","c"]
       - hardware: ["s","data"]
       - scistor: ["y"]
@@ -64,16 +76,45 @@ tiles:
   - researchcloud:
     - contents: "/finder/compute/researchcloud.qmd"
     - filter:
+      - type: ["vd","vs"]
       - software: ["d","g","cli","i","h","w","c"]
-      - hardware: ["s","data"]
+      - hardware: ["g","s","data"]
       - scistor: ["y"]
       - res: ["l","m"]
       - class: ["n","y"]
   - ada:
     - contents: "/finder/compute/ada.qmd"
     - filter:
+      - type: ["hpc"]
       - software: ["g","cli","i","c"]
       - hardware: ["g","s","data"]
       - scistor: ["y"]
       - res: ["l","m","h"]
+      - class: ["n"]
+  - snellius:
+    - contents: "/finder/compute/snellius.qmd"
+    - filter:
+      - type: ["hpc"]
+      - software: ["cli","i","c"]
+      - hardware: ["g","s","data"]
+      - scistor: ["n"]
+      - res: ["l","m","h","v"]
+      - class: ["n"]
+  - avd:
+    - contents: "/finder/compute/avd.qmd"
+    - filter:
+      - type: ["vd"]
+      - software: ["d","g","cli","w"]
+      - hardware: []
+      - scistor: ["y"]
+      - res: ["l"]
+      - class: ["n","y"]
+  - computehub:
+    - contents: "/finder/compute/computehub.qmd"
+    - filter:
+      - type: ["other"]
+      - software: ["cli","i","c"]
+      - hardware: ["g"]
+      - scistor: ["n"]
+      - res: ["l","m"]
       - class: ["n"]

@@ -1,0 +1,13 @@
+---
+title: Snellius HPC
+---
+
+> Typical tasks: Data Transformation, Data Analysis.
+
+[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. 
+
+::: {.description}
+
+The VU has a contract with SURF, so all researchers can [request access to Snellius](/tools/snellius/cost_access.qmd). There are no direct costs for researchers, but the total amount of SBUs ("credits") you can claim is limited. To use your data on Snellius you need to copy it there first. Snellius has more GPU resources available than ADA.
+
+:::
