@@ -42,6 +42,22 @@
       }
     }
 
+    // Give every tile the height of the tallest tile with its description
+    // closed, so opening one tile only grows that tile.
+    function equalizeHeights() {
+      const opened = Array.from(root.querySelectorAll(".finder-tile details[open]"));
+      opened.forEach((d) => (d.open = false));
+      tiles.forEach(({ el }) => (el.style.minHeight = ""));
+      const max = Math.max(...tiles.map(({ el }) => el.offsetHeight));
+      tiles.forEach(({ el }) => (el.style.minHeight = `${max}px`));
+      opened.forEach((d) => (d.open = true));
+    }
+
+    equalizeHeights();
+    window.addEventListener("load", equalizeHeights);
+    window.addEventListener("resize", equalizeHeights);
+    if (document.fonts) document.fonts.ready.then(equalizeHeights);
+
     form.addEventListener("change", update);
     // The reset event fires before the inputs are cleared.
     form.addEventListener("reset", () => setTimeout(update));

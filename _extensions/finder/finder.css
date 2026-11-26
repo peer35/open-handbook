@@ -34,10 +34,10 @@
   margin-bottom: 0.75rem;
 }
 
-/* All tiles share the height of the tallest one. */
+/* finder.js gives all tiles the (closed) height of the tallest one;
+   an opened tile grows on its own without stretching its neighbours. */
 .finder-tiles {
-  grid-auto-rows: 1fr;
-  align-items: stretch;
+  align-items: start;
 }
 
 .finder-tile {
