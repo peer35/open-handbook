@@ -2,8 +2,8 @@ filter:
   - vol:
     - title: "Data Volume"
     - options:
-      - s: "<500GB"
-      - l: ">500GB"
+      - s: "< 1TB"
+      - l: "> 1TB"
     - type: single
     - description: "/finder/storage/volume.qmd"
   - class:
