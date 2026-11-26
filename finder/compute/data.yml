@@ -1,0 +1,79 @@
+filter:
+  - software:
+    - title: "Software"
+    - options:
+      - d: "Desktop tools"
+      - g: "GUI tools (web interface)"
+      - cli: "Command-line tools and scripting"
+      - i: "Install your own software"
+      - h: "Host server software (e.g. websites)"
+      - w: "Windows software"
+      - c: "Containers"
+    - type: multi
+    - description: "/finder/compute/filter/software.qmd"
+  - hardware:
+    - title: "Hardware"
+    - options:
+      - g: "GPU available"
+      - s: "Scalable"
+      - data: "Large datasets (> 1TB)"
+    - type: multi
+    - description: "/finder/compute/filter/hardware.qmd"
+  - scistor:
+    - title: "Connected to SciStor"
+    - options:
+      - y: "yes"
+      - n: "no"
+    - type: single
+    - description: "/finder/compute/filter/scistor.qmd"
+  - res:
+    - title: "Available resources"
+    - options: 
+      - l: "low"
+      - m: "medium"
+      - h: "high"
+      - v: "very high"
+    - type: single
+    - description: "/finder/compute/filter/resources.qmd"
+  - class:
+    - title: "Suitable for sensitive data?"
+    - options:
+      - y: "yes"
+      - n: "no"
+    - type: single
+    - description: "/finder/compute/filter/classification.qmd"
+
+
+tiles:
+  - pc:
+    - contents: "/finder/compute/pc.qmd"
+    - filter:
+      - software: ["d","g","cli","i","w"]
+      - hardware: []
+      - scistor: ["y"]
+      - res: ["l"]
+      - class: ["n","y"]
+  - scicloud:
+    - contents: "/finder/compute/scicloud.qmd"
+    - filter:
+      - software: ["d","g","cli","i","h","w","c"]
+      - hardware: ["s","data"]
+      - scistor: ["y"]
+      - res: ["l","m"]
+      - class: ["n","y"]
+  - researchcloud:
+    - contents: "/finder/compute/researchcloud.qmd"
+    - filter:
+      - software: ["d","g","cli","i","h","w","c"]
+      - hardware: ["s","data"]
+      - scistor: ["y"]
+      - res: ["l","m"]
+      - class: ["n","y"]
+  - ada:
+    - contents: "/finder/compute/ada.qmd"
+    - filter:
+      - software: ["g","cli","i","c"]
+      - hardware: ["g","s","data"]
+      - scistor: ["y"]
+      - res: ["l","m","h"]
+      - class: ["n"]

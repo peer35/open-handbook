@@ -1,0 +1,17 @@
+---
+title: Compute platform finder
+toc: false
+page-layout: full
+filters:
+  - finder
+---
+
+This tool can help you to find the appropriate VU compute solution.
+
+The options presented below are all supported by the VU.
+
+Please note that this tool is only a tool and not an oracle. Feel free to contact the Research Data Management Support Desk via rdm@vu.nl if you have any questions or requests.
+
+::: {.finder data="data.yml"}
+
+:::
