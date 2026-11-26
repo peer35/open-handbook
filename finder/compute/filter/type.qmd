@@ -1,3 +1,25 @@
 ---
 title: Type of platform
 ---
+
+#### Laptops and Workstations
+
+Desktops and laptops are the most common compute environment. They can be used for a wide range of tasks, but have limited performance.
+
+#### Virtual Desktops
+
+This is a Linux or Windows desktop or server running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop applications. Graphical performance is more limited when using a remote desktop client.
+
+
+#### Virtual Servers
+
+Used to host web and other server applications. Could also be used for data analysis tasks, but [HPC](#hpc) is generally better for that use-case. Virtual servers can be scaled to your needs, run 24/7 and made accessible for multiple users, even over the internet. This kind of setup is sometimes called a VRE (Virtual Research Environment). The advantage of a virtual over a [physical server](#physical-servers) is that you can easily allocate more resources (storage, CPU, GPU and RAM) to the server.
+
+
+#### HPC
+
+Some tasks require more compute power. Running it on a laptop takes too long and a virtual server needs so much resources the task becomes very expensive. This is when High Performance Computing comes in view.
+
+The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You submit your job (a bunch of scripts) to a queue along with hints about the amount of processing you need. The HPC cluster runs it once sufficient resources are available. Once it is done, you can collect your results.
+
+The large amount of available compute resources means it pays to figure out how to run your analysis in parallel tasks.
